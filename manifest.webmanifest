@@ -1,0 +1,13 @@
+{
+  "id": "./",
+  "name": "PLC-simulator",
+  "short_name": "PLC-simulator",
+  "description": "Lokalt PLC-labb med GXW-import, ladderövervakning, hiss och tryckknappslåda.",
+  "lang": "sv",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0c1420",
+  "theme_color": "#142131",
+  "icons": [{"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]
+}
