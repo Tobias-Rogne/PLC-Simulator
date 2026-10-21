@@ -1,0 +1,1141 @@
+<!doctype html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; worker-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'"><title>PLC-simulator 6.1 · GX PLC-labb offline</title><style>
+:root{color-scheme:dark;--bg:#0c1420;--panel:#142131;--edge:#2a3c50;--muted:#9aadc1;--ink:#edf3f9;--accent:#6fddc3;--red:#ff9b9f;--amber:#f2cc88}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}button,input,select{font:inherit}button,select{cursor:pointer}button{color:var(--ink);background:#21364b;border:1px solid #3b5269;border-radius:7px;padding:8px 12px;white-space:nowrap}button:hover:not(:disabled){background:#2d4962}button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}button:disabled{opacity:.42;cursor:default}.primary{background:#29735f;border-color:#499a82}.primary:hover:not(:disabled){background:#33876e}.danger{color:var(--red)}h1,h2,h3,p{margin:0}h1{font-size:24px;letter-spacing:-.6px}h1 span{color:var(--muted);font-weight:400}h2{font-size:15px}h3{font-size:13px;margin:15px 0 8px}p{color:var(--muted)}small,.muted{color:var(--muted)}.mono{font-family:Consolas,ui-monospace,monospace}.header{max-width:1600px;padding:21px 26px 15px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:16px}.eyebrow{text-transform:uppercase;letter-spacing:2px;color:var(--accent);font-size:10px;font-weight:750;margin-bottom:4px}.version{font-size:11px;border:1px solid var(--edge);border-radius:6px;padding:4px 7px;vertical-align:middle;margin-left:5px;color:var(--muted)}.badge{font:600 12px Consolas,monospace;border:1px solid #46566a;padding:8px 12px;border-radius:7px;background:#1b2838}.badge.run{color:var(--accent);border-color:#39816b}.badge.pause{color:var(--amber)}.toolbar{max-width:1548px;margin:0 auto 18px;padding:13px 15px;background:#172535;border:1px solid var(--edge);border-radius:10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}.toolbar .push{margin-left:auto}.select{background:#111c2b;border:1px solid #3b4e63;padding:7px;color:var(--ink);border-radius:6px}.layout{max-width:1600px;margin:auto;padding:0 26px 25px;display:grid;grid-template-columns:335px minmax(0,1fr);gap:18px}.sidebar{display:flex;flex-direction:column;gap:16px}.panel{border:1px solid var(--edge);background:var(--panel);border-radius:11px;padding:17px}.row{display:flex;align-items:center;justify-content:space-between;gap:8px}.stack{display:flex;flex-direction:column;gap:9px}.drop{margin-top:13px;padding:17px 12px;border:1px dashed #5b738b;border-radius:8px;text-align:center;background:#101b29;display:block;cursor:pointer}.drop.drag{border-color:var(--accent);background:#123b32}.drop strong{font-size:13px;display:block}.drop small{display:block;font-size:11px;margin-top:4px}.drop input{display:block;width:100%;font-size:11px;color:var(--muted);margin-top:12px}.import-message{font-size:12px;padding-top:11px;overflow-wrap:anywhere}.import-message.error{color:var(--red)}.import-message.success{color:var(--accent)}.sourcefile{font-size:11px;overflow-wrap:anywhere;margin:7px 0;color:var(--muted)}.buttonrow{display:flex;gap:6px;margin-top:12px}.buttonrow button{font-size:11px;padding:6px 8px}.shaft{position:relative;height:270px;background:linear-gradient(90deg,#101b27,#172d3c 50%,#101b27);margin:17px 0 12px;border:1px solid #405468;border-radius:8px;overflow:hidden}.shaft:before,.shaft:after{content:'';position:absolute;top:15px;bottom:15px;width:3px;background:#43586a;left:42%}.shaft:after{left:77%}.floorline{position:absolute;bottom:16px;left:0;right:0;height:1px;background:#415569}.floorline.top{bottom:210px}.floorlabel{position:absolute;left:11px;font-size:11px;color:#a9bfd2;bottom:24px}.floorlabel.top{bottom:218px}.sensor{position:absolute;right:12px;bottom:22px;font:10px Consolas,monospace;color:#71869a}.sensor.top{bottom:216px}.sensor.on{color:var(--accent)}.hall{display:inline-block;height:9px;width:9px;border-radius:50%;background:#405268;margin-right:6px}.hall.on{background:#f9d780;box-shadow:0 0 11px #f9d78088}.car{position:absolute;bottom:16px;left:47%;width:25%;height:52px;border:2px solid #8fd7e4;background:linear-gradient(135deg,#24536b,#16384d);border-radius:5px;z-index:2;display:flex;align-items:center;justify-content:center;flex-direction:column;font-size:10px;font-weight:700;letter-spacing:1px}.car b{font-size:18px;line-height:22px}.statrow{display:flex;justify-content:space-between;border-bottom:1px solid var(--edge);padding-bottom:10px;margin-bottom:11px;font-size:12px}.buttons{display:grid;grid-template-columns:1fr 1fr;gap:7px}.floorbutton{padding:12px 5px;touch-action:none;font-size:12px}.floorbutton.pressed{background:#33776b;border-color:var(--accent)}.extra{grid-column:1/-1;padding:7px}.check{display:flex;align-items:center;gap:7px;font-size:11px;color:var(--muted);margin-top:10px}.check input{accent-color:var(--accent)}.plantnote{font-size:11px;color:var(--muted);margin-top:10px}.fault{font-size:11px;border-left:2px solid var(--red);color:var(--red);padding-left:9px;margin-top:9px}.workspace{min-width:0}.tabs{display:flex;border-bottom:1px solid var(--edge);gap:3px;margin-bottom:15px;flex-wrap:wrap}.tabs button{background:transparent;border:0;border-bottom:2px solid transparent;border-radius:0;color:var(--muted);padding:11px 13px;font-size:13px}.tabs button[aria-selected=true]{border-bottom-color:var(--accent);color:var(--ink)}.workspace>.panel{min-height:650px;padding:0;overflow:hidden}.workspacehead{padding:17px 18px 0}.view{padding:0 18px 18px}.empty{min-height:490px;display:flex;align-items:center;justify-content:center;text-align:center;padding:35px}.empty-inner{max-width:370px}.empty-icon{color:#819aae;border:1px solid var(--edge);border-radius:13px;margin:0 auto 20px;width:62px;height:62px;display:grid;place-items:center;font:25px Consolas,monospace}.empty h2{font-size:19px;margin-bottom:9px}.empty p{font-size:13px}.subhead{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:10px 0 11px;flex-wrap:wrap;font-size:11px;color:var(--muted)}.ladder-sheet{border:1px solid #c7d3dc;border-radius:7px;background:#f8fafc;overflow:auto;margin-bottom:14px}.ladder-title{padding:8px 13px;color:#536578;background:#edf2f6;border-bottom:1px solid #d5dfe8;font-size:11px;display:flex;justify-content:space-between}.ladder-sheet svg{display:block;width:100%;min-width:560px;color-scheme:light}.ladder-sheet text{fill:#263b4e;font-family:Arial,sans-serif}.wire{stroke:#526779;stroke-width:.7;stroke-linecap:round}.wire.hot{stroke:#119268;stroke-width:1.05}.symbol{stroke:#3c5369;stroke-width:.8;fill:none}.symbol.hot{stroke:#09845c;stroke-width:1.2}.symbol.hot+text{fill:#087858}.timerchips{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.chip{background:#101c2a;border:1px solid #344b61;border-radius:6px;font:11px/1.5 Consolas,monospace;padding:7px 10px}.chip.on{border-color:#349277;color:var(--accent)}.explain{font-size:11px;color:var(--muted)}table{border-collapse:collapse;width:100%;font-size:12px}th,td{text-align:left;border-bottom:1px solid var(--edge);padding:9px 10px;overflow-wrap:anywhere}th{color:#a2b7ca;font-size:11px;font-weight:500}td:first-child{font-family:Consolas,monospace}td button{font:11px Consolas,monospace;padding:4px 9px;min-width:48px}.onbit{color:var(--accent)}.wordedit{width:90px;background:#101c2a;color:var(--ink);border:1px solid #3a5065;border-radius:4px;padding:4px}.devicefilter{background:#101c2a;color:var(--ink);border:1px solid #3a5065;padding:7px 10px;border-radius:6px;width:min(300px,100%);margin:10px 0}.log{background:#0e1926;border:1px solid var(--edge);border-radius:7px;white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.8 Consolas,monospace;color:#c4d3e2;padding:14px;margin-top:13px;max-height:390px;overflow:auto}.helpbox{margin-top:15px;font-size:12px;color:var(--muted)}.helpbox ul{padding-left:19px}.helpbox li{margin:7px 0}.helpbox strong{color:#dbe6ee}details{padding:9px 0;border-bottom:1px solid var(--edge)}summary{cursor:pointer;color:#dbe6ee}details p{margin:9px 0;font-size:12px}.notice{padding:10px 12px;background:#202d3b;border-left:2px solid #688eac;font-size:12px;color:#b8cbdc;border-radius:3px;margin-top:12px}.footer{max-width:1600px;padding:0 26px 25px;margin:auto;color:#8198ad;font-size:11px}.hidden,[hidden]{display:none!important}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}@media(min-width:1400px){.layout{grid-template-columns:350px minmax(0,1fr)}}@media(max-width:900px){.header{padding:16px}.toolbar{margin:0 16px 16px}.layout{padding:0 16px 20px;grid-template-columns:290px minmax(0,1fr);gap:12px}.panel{padding:13px}.workspacehead{padding:12px 12px 0}.view{padding:0 12px 12px}.tabs button{padding:10px 8px}.toolbar .push{margin-left:0}}@media(max-width:720px){.header{align-items:flex-start}.header p{font-size:11px}h1{font-size:21px}.layout{grid-template-columns:1fr}.sidebar{display:grid;grid-template-columns:1fr 1fr;align-items:start}.shaft{height:250px}.floorline.top{bottom:190px}.floorlabel.top{bottom:198px}.sensor.top{bottom:196px}.toolbar{gap:6px}.toolbar button{font-size:12px}.workspace>.panel{min-height:460px}.empty{min-height:350px}}@media(max-width:480px){.sidebar{display:flex}.header .badge{font-size:10px;padding:6px}.toolbar .push{width:100%}.layout{padding-left:12px;padding-right:12px}.header{padding:15px 12px}.toolbar{margin:0 12px 12px}.view{padding:0 10px 14px}td,th{padding:8px 5px}}
+
+.shaft{height:365px}.buttons{grid-template-columns:repeat(3,minmax(0,1fr))}.floorbutton{white-space:normal;font-size:11px}.car{height:61px;left:47%;width:25%}.car b{font-size:16px}.output-pins{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.pin-label{align-self:center;min-width:65px;font-size:11px;color:var(--muted)}.input-pin,.output-pin{font:11px Consolas,monospace;border:1px solid #3a4e63;background:#101c2b;padding:5px 8px;border-radius:5px}.input-pin i,.output-pin i{display:inline-block;width:7px;height:7px;background:#44576b;border-radius:50%;margin-right:6px}.input-pin.on i,.output-pin.on i{background:#6fddc3;box-shadow:0 0 6px #6fddc366}.input-pin.on,.output-pin.on{color:#6fddc3;border-color:#50826e}.compatibility{color:#f2cc88;background:#352d22;border-left-color:#f2cc88;margin:10px 0}.code-table td{font:11px/1.6 Consolas,monospace;white-space:pre-wrap}.code-wrap{max-height:700px;overflow:auto}.code-table th{position:sticky;top:0;background:#142131}.physical-title{font-size:12px;color:#b8ccdc;margin:13px 0 7px}.footer{line-height:1.7}.wiring td,.wiring th{font-size:10px;padding:5px}.plantnote p{font-size:11px}.check select{margin-left:auto}.sourcefile{line-height:1.7}.connected-note{font-size:11px;margin-top:9px}
+@media(max-width:720px){.shaft{height:340px}.sidebar{display:flex}.buttons{grid-template-columns:repeat(3,minmax(0,1fr))}.tabs button{font-size:11px;padding:10px 7px}.car{height:61px}.subhead{font-size:10px}.ladder-title{font-size:10px;gap:8px}.code-table td{font-size:10px}.code-table{min-width:650px}}
+
+.ladder-sheet{border-radius:3px;margin-top:12px}.ladder-sheet .ladder-title{position:sticky;left:0;min-width:0}.ladder-sheet .network-number{font:11px Consolas,monospace;fill:#788a9b}.ladder-sheet .network-heading{font:9px Arial,sans-serif;fill:#788a9b}.ladder-sheet .ladder-comment{font:13px Arial,sans-serif;fill:#586c7c}.ladder-sheet .coil-final{font:11px Consolas,monospace;fill:#718292}.ladder-sheet .coil-final.final-on{fill:#087858}.ladder-sheet .coil-final.overwritten{fill:#976015}.output-diagnostics{border:1px solid #8c6b32;border-left:3px solid #e1b96d;background:#30291f;border-radius:5px;padding:11px 13px;margin:12px 0;font-size:12px;color:#edcd99}.output-diagnostics p{color:#d6c3a7;margin-top:5px}.output-diagnostics strong{color:#f5d494}.hall{vertical-align:middle}
+.code-table .code-section td{font:13px/1.6 system-ui,sans-serif;color:#d8e9e5;background:#1a3238;border-left:3px solid var(--accent);padding:12px;white-space:pre-wrap}.code-section small{display:block;color:#9bb8b5;font:10px system-ui,sans-serif;margin-bottom:4px}.label-wrap{overflow:auto;margin-top:8px}.label-table{min-width:610px}.label-comment,.device-comment{white-space:pre-wrap;min-width:150px}.code-table th{z-index:1}
+.io-controls{display:flex;align-items:end;gap:15px;flex-wrap:wrap;margin:17px 0 12px}.io-control{display:flex;flex-direction:column;gap:6px;font-size:11px;color:var(--muted)}.segmented{display:flex;padding:3px;border:1px solid #3b5269;border-radius:8px;background:#101c2b;gap:3px}.segmented button{font-size:12px;padding:6px 13px;border:1px solid transparent;background:transparent;color:var(--muted)}.segmented button[aria-pressed=true]{color:#eafff7;background:#275649;border-color:#499a82}.plc-picture{margin-top:10px;padding:16px;border:1px solid #32485e;border-radius:9px;background:radial-gradient(ellipse at top,#233c4d,#101c2b 80%);overflow:auto}.plc-picture svg{display:block;width:100%;max-width:760px;min-width:420px;margin:auto}.plc-picture text{font-family:Consolas,ui-monospace,monospace;fill:#2b3940}.plc-shell{fill:#d6dad9;stroke:#8b999e;stroke-width:2}.plc-cover{fill:#e8eae5;stroke:#a6b0af}.plc-terminal{fill:#a3ada9;stroke:#6c7878}.plc-terminal-label{font-size:11px;text-anchor:middle;stroke:none}.plc-terminal.filtered{opacity:.22}.plc-led{fill:#543537;stroke:#3a3535;stroke-width:1.5}.plc-led.on{fill:#ff574b;stroke:#bc2726;filter:drop-shadow(0 0 4px #ff554bc0)}.plc-led-slot.unused{opacity:.18}.plc-led-slot text{font-size:11px;text-anchor:middle}.plc-led-slot[data-plc-input]{cursor:pointer}.plc-led-slot[aria-disabled=true]{cursor:default}.plc-led-slot:focus{outline:none}.plc-led-slot:focus-visible .plc-led{stroke:#09775c;stroke-width:4}.plc-status-led{fill:#3c5146;stroke:#76867b}.plc-status-led.on{fill:#42b96e;filter:drop-shadow(0 0 3px #37af6f)}.plc-status-label{font-size:12px}.plc-port{fill:#2c3a3c;stroke:#8c9997}.plc-body-label{font:16px system-ui,sans-serif}.plc-model-label{font-size:13px}.io-none{font-size:12px;color:var(--muted)}@media(max-width:480px){.io-controls{gap:11px}.io-control:last-child{width:100%}.io-control select{max-width:100%}.plc-picture{padding:8px}}
+
+.plant-tabs{display:flex;gap:5px;margin:-3px 0 16px;padding-bottom:12px;border-bottom:1px solid var(--edge)}.plant-tabs button{flex:1;min-width:0;white-space:normal;font-size:11px;padding:8px 5px}.plant-tabs button[aria-selected=true]{background:#245446;border-color:#53947f;color:#dcfff2}.push-box{position:relative;margin:17px 0 13px;padding:27px 12px 22px;border:3px solid #71808a;border-radius:9px;background:linear-gradient(125deg,#d9e0e4,#f1f4f5 55%,#cbd4da);box-shadow:inset 0 0 0 3px #f7f9fa,inset 0 -8px 18px #78889535,0 6px 12px #0002;color:#253442}.push-box:before,.push-box:after{content:'⊕';position:absolute;top:3px;color:#71808a;font-size:12px}.push-box:before{left:7px}.push-box:after{right:7px}.box-lamps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-bottom:40px}.box-lamp-unit,.box-control{display:flex;min-width:0;flex-direction:column;align-items:center;gap:5px}.box-lamp{width:44px;max-width:100%;aspect-ratio:1;border:3px solid #56636c;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#fbfcfc,#c3cdd3);box-shadow:0 2px 3px #0003,inset 0 0 0 2px #ffffff70;color:#354652;font-size:12px;font-weight:750}.box-lamp.on{background:radial-gradient(circle at 35% 30%,#fffde5,#f5d36a 70%);border-color:#a07d26;box-shadow:0 0 12px #efc654a0,inset 0 0 0 2px #ffffff90;color:#544316}.box-address{font:9px/1.5 Consolas,monospace;color:#425563;white-space:nowrap}.box-bit{font:10px Consolas,monospace;color:#324651}.box-controls{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}.box-button{position:relative;display:grid;place-items:center;width:44px;max-width:100%;aspect-ratio:1;padding:0;border:3px solid #4b5963;border-radius:50%;color:#e8eff3;background:radial-gradient(circle at 37% 30%,#60717d,#344550 75%);box-shadow:0 3px 0 #24343f,0 5px 6px #0003;font-size:12px;touch-action:none;user-select:none;-webkit-user-select:none}.box-button:hover:not(:disabled){background:radial-gradient(circle at 37% 30%,#728591,#425a69 75%)}.box-button.pressed{transform:translateY(2px);box-shadow:0 1px 0 #24343f,inset 0 2px 6px #0005;border-color:#3b9b80}.box-button:disabled{opacity:.55}.box-selector .box-control-name{position:absolute;bottom:3px;font-size:8px;z-index:1}.selector-handle{height:29px;width:8px;background:linear-gradient(90deg,#151f27,#92a0a8 50%,#202e38);border:1px solid #14212b;border-radius:4px;transform:rotate(-38deg);transition:transform .12s;display:block;margin-top:-5px}.box-selector[aria-pressed=true] .selector-handle{transform:rotate(38deg)}.box-selector[aria-pressed=true]{border-color:#409c80}.box-button:focus-visible{outline:3px solid #067e62;outline-offset:3px}
+</style><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icon.svg" type="image/svg+xml"><meta name="theme-color" content="#142131"></head><body>
+<header class="header"><div><div class="eyebrow">Lokalt PLC-labb</div><h1>PLC-simulator <span>/ GX Works2</span><span class="version">6.1</span></h1><p>Din PLC-kod. Filerna läses och simuleras på din dator.</p></div><span id="status" class="badge" role="status">● INGET PROGRAM</span></header><section id="webDelivery" style="max-width:1548px;margin:0 auto 14px;padding:0 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:12px;color:#9aadc1"><span id="webState" role="status" aria-live="polite">Förbereder offlinekopia…</span><button id="webUpdate" hidden>Uppdatera sidan</button></section>
+<div class="toolbar" aria-label="PLC-kontroller"><button id="run" class="primary" disabled>▶ RUN</button><button id="pause" disabled>Ⅱ Paus</button><button id="stop" disabled>■ STOP</button><button id="step" disabled>↦ Ett scan</button><span id="scan" class="muted mono" style="font-size:11px">Scan 0 · 0.000 s</span><label class="push muted" style="font-size:11px">Simuleringstid <select id="speed" class="select" aria-label="Simuleringshastighet"><option value="0.25">0,25×</option><option value="0.5">0,5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="5">5×</option></select></label></div>
+<main class="layout"><aside class="sidebar">
+<section class="panel" id="droparea"><div class="row"><h2>PLC-program</h2><span class="muted" style="font-size:10px">GXW → PLC</span></div><label class="drop" id="drop"><strong>Välj eller släpp din GXW-fil</strong><small>Filen läses bara på din dator</small><input id="programFile" type="file" accept=".gxw" aria-label="Välj GX Works2-projekt (.gxw)"></label><label class="check" for="profile">CPU-profil <select id="profile" class="select"><option value="FX3S" selected>FX3S</option><option value="FX3U">FX3U / FX3UC</option></select></label><p id="fileName" class="sourcefile">Inget program inläst</p><p id="message" class="import-message" aria-live="polite">Välj en GXW-fil. PLC:n och anläggningen startar i STOP.</p><div class="buttonrow"><button id="reset" disabled>Nollställ PLC</button><button id="clear" class="danger">Töm program</button></div></section>
+<section class="panel" id="simulationPanel"><nav class="plant-tabs" role="tablist" aria-label="Simuleringsanläggning"><button id="plantElevator" role="tab" aria-selected="true" aria-controls="elevatorPlant">3-våningshiss</button><button id="plantPushBox" role="tab" aria-selected="false" aria-controls="pushBoxPlant" tabindex="-1">Tryckknappslåda</button></nav><div id="elevatorPlant" role="tabpanel" aria-labelledby="plantElevator"><div class="row"><h2>3-våningshiss</h2><span id="position" class="muted" style="font-size:11px">Våning 1</span></div><label class="check"><input id="connected" type="checkbox" checked> Anslut anläggningen till PLC:n</label><div id="shaft" class="shaft">
+<div id="floor3" class="floorline"></div><div id="floor2" class="floorline"></div><div id="floor1" class="floorline"></div>
+<div id="floorLabel3" class="floorlabel"><i id="lamp3" class="hall"></i>VÅNING 3 · Y2</div><div id="floorLabel2" class="floorlabel"><i id="lamp2" class="hall"></i>VÅNING 2 · Y1</div><div id="floorLabel1" class="floorlabel"><i id="lamp1" class="hall"></i>VÅNING 1 · Y0</div>
+<div id="sensor3" class="sensor">X5 ●</div><div id="sensor2" class="sensor">X4 ●</div><div id="sensor1" class="sensor">X3 ●</div><div id="car" class="car"><b id="direction">■</b>HISS</div></div>
+<div class="statrow"><span>Motor <b id="motor">Stopp</b></span><span id="percent" class="mono">1.00 vån</span></div><div class="buttons"><button id="x0" class="floorbutton" disabled>X0 · Våning 1</button><button id="x1" class="floorbutton" disabled>X1 · Våning 2</button><button id="x2" class="floorbutton" disabled>X2 · Våning 3</button></div><label class="check"><input id="hold" type="checkbox"> Lås knappar på/av</label><label class="check"><input id="autoSensors" type="checkbox" checked> Automatiska givare X3–X5</label><div id="fault" class="fault" hidden></div><details class="plantnote"><summary>Flytta hissen vid STOP / paus</summary><input id="placement" type="range" min="0" max="2000" value="0" style="width:100%" aria-label="Hissens position"><p>Ändrar anläggningens läge. PLC-minnen nollställs separat.</p></details><p class="plantnote">Y3 = upp · Y4 = ner. Lamporna följer Y0–Y2. Körvägar, service, räknare och automatisk återgång bestäms av din PLC-kod.</p></div><div id="pushBoxPlant" role="tabpanel" aria-labelledby="plantPushBox" hidden><h2>Tryckknappslåda</h2><label class="check"><input id="boxConnected" type="checkbox" checked> Anslut anläggningen till PLC:n</label><div class="push-box" aria-label="Tryckknappslåda med fyra lampor och fem manöverdon"><div class="box-lamps"><div class="box-lamp-unit"><div class="box-lamp" id="boxH1" data-box-lamp="H1" role="img" aria-label="H1, Y0, släckt"><span>H1</span></div><span class="box-address">Y0</span></div><div class="box-lamp-unit"><div class="box-lamp" id="boxH2" data-box-lamp="H2" role="img" aria-label="H2, Y1, släckt"><span>H2</span></div><span class="box-address">Y1</span></div><div class="box-lamp-unit"><div class="box-lamp" id="boxH3" data-box-lamp="H3" role="img" aria-label="H3, Y2, släckt"><span>H3</span></div><span class="box-address">Y2</span></div><div class="box-lamp-unit"><div class="box-lamp" id="boxH4" data-box-lamp="H4" role="img" aria-label="H4, Y3, släckt"><span>H4</span></div><span class="box-address">Y3</span></div></div><div class="box-controls"><div class="box-control"><button id="boxS1" class="box-button" data-box-control="S1" aria-label="S1, brytande tryckknapp, X0" disabled><span class="box-control-name">S1</span></button><span class="box-address">X0 · NC</span><span class="box-bit" id="boxBitS1">–</span></div><div class="box-control"><button id="boxS2" class="box-button" data-box-control="S2" aria-label="S2, brytande tryckknapp, X1" disabled><span class="box-control-name">S2</span></button><span class="box-address">X1 · NC</span><span class="box-bit" id="boxBitS2">–</span></div><div class="box-control"><button id="boxS3" class="box-button box-selector" data-box-control="S3" aria-pressed="false" aria-label="S3, väljare, X2" disabled><span class="box-control-name">S3</span><i class="selector-handle" aria-hidden="true"></i></button><span class="box-address">X2 · 0/1</span><span class="box-bit" id="boxBitS3">–</span></div><div class="box-control"><button id="boxS4" class="box-button" data-box-control="S4" aria-label="S4, slutande tryckknapp, X3" disabled><span class="box-control-name">S4</span></button><span class="box-address">X3 · NO</span><span class="box-bit" id="boxBitS4">–</span></div><div class="box-control"><button id="boxS5" class="box-button" data-box-control="S5" aria-label="S5, slutande tryckknapp, X4" disabled><span class="box-control-name">S5</span></button><span class="box-address">X4 · NO</span><span class="box-bit" id="boxBitS5">–</span></div></div></div><label class="check"><input id="boxHold" type="checkbox"> Lås knappar på/av</label><p class="plantnote">Håll inne S1, S2, S4 och S5, eller slå på låsning för att växla dem med klick. Vrid S3 genom att klicka; läget ligger kvar. Lamporna följer PLC:ns Y0–Y3.</p><p class="plantnote">S1/S2 är brytande (NC): 1 i vila, 0 intryckt. S4/S5 är slutande (NO): 0 i vila, 1 intryckt.</p><details class="plantnote"><summary>Koppling enligt ritningen</summary><table class="wiring"><thead><tr><th>Don</th><th>PLC</th><th>Kontakt</th></tr></thead><tbody><tr><td>S1 / S2</td><td>X0 / X1</td><td>NC · 21–22</td></tr><tr><td>S3</td><td>X2</td><td>NO · väljare</td></tr><tr><td>S4 / S5</td><td>X3 / X4</td><td>NO · 13–14</td></tr><tr><td>H1–H4</td><td>Y0–Y3</td><td>Lampor</td></tr></tbody></table><p>Den första dubbla X3-märkningen i ritningen är korrigerad till X2.</p></details></div></section>
+</aside>
+<section class="workspace"><div class="panel"><div class="workspacehead"><nav class="tabs" role="tablist" aria-label="Arbetsyta"><button role="tab" id="tabLadder" aria-selected="true" aria-controls="ladderView">Ladder</button><button role="tab" id="tabIO" aria-selected="false" aria-controls="ioView">I/O & minnen</button><button role="tab" id="tabCode" aria-selected="false" aria-controls="codeView">Källkod</button><button role="tab" id="tabImport" aria-selected="false" aria-controls="importView">Import & hjälp</button></nav><div id="compatibility" class="notice compatibility" hidden></div></div>
+<div class="view" id="ladderView" role="tabpanel" aria-labelledby="tabLadder"><div id="empty" class="empty"><div class="empty-inner"><div class="empty-icon">─┤ ├─</div><h2>Börja med ditt PLC-program</h2><p>PLC:n är tom. Ladda en GXW-fil för att läsa och övervaka koden.</p><p style="margin-top:14px;font-size:11px">Ingen installation · ingen server · ingen internetanslutning</p></div></div><div id="monitor" hidden><div class="subhead"><span id="programSummary"></span><span id="traceSummary">Ingen scan körd</span></div><div id="outputDiagnostics" class="output-diagnostics" hidden><strong>Utgången ändras senare i samma scan</strong><div id="outputDiagnosticRows"></div><p>Grönt visar villkoret vid instruktionen. Lamporna följer utgångens slutvärde efter hela programmet.</p></div><div id="ladderPages"></div><div id="timerchips" class="timerchips"></div><p class="explain">Ett sammanhängande blad i programordning. Grönt visar villkoret när instruktionen kördes; texten under spolen visar slutvärdet efter hela scan. Lamporna följer slutvärdet. Nätverksnumren är inte PLC-stegnummer. Flankkontakter markeras med pil upp/ned.</p></div></div>
+<div class="view" id="ioView" role="tabpanel" aria-labelledby="tabIO" hidden><h2>PLC:ns devices och labels</h2><p class="explain" style="margin-top:7px">Simple visar adresser som används i koden. Full visar även alla fysiska X/Y på vald grundmodul. Klicka på manuella X-ingångar för att ändra dem. D-register kan ändras vid STOP eller paus.</p><div class="io-controls"><div class="io-control"><span>Omfattning</span><div class="segmented" role="group" aria-label="I/O-omfattning"><button id="ioSimple" aria-pressed="true">Simple</button><button id="ioFull" aria-pressed="false">Full</button></div></div><div class="io-control"><span>Visning</span><div class="segmented" role="group" aria-label="I/O-visning"><button id="ioList" aria-pressed="true">Lista</button><button id="ioPLC" aria-pressed="false">PLC-bild</button></div></div><label class="io-control" for="hardwareModel"><span>PLC-modell · grundmodul</span><select id="hardwareModel" class="select" aria-describedby="hardwareInfo"></select></label></div><p id="hardwareInfo" class="explain"></p><p id="ioSummary" class="explain" aria-live="polite" style="margin-top:6px"></p><div id="ioPins"><div id="inputPins" class="output-pins" role="group" aria-label="Ingångsindikeringar"></div><div id="outputPins" class="output-pins" role="group" aria-label="Utgångsindikeringar"></div></div><input id="deviceFilter" class="devicefilter" placeholder="Filtrera adress eller label…" aria-label="Filtrera devices"><div id="hardwareNotice" class="notice" hidden></div><div id="plcPicture" class="plc-picture" hidden></div><p id="plcPictureHelp" class="explain" hidden style="margin:8px 0 14px">Röda I/O-lysdioder följer PLC-värdena. Klicka på en X-lysdiod för att ändra en manuell ingång. Anläggningens ingångar styrs i simuleringspanelen. Nedtonade platser döljs av Simple eller filtret.</p><h3 id="deviceTableTitle" hidden>Programadresser utan plint på grundmodulen</h3><div id="deviceTableWrap" style="overflow:auto"><table><thead><tr><th>Device</th><th>Label</th><th>Värde</th><th>Typ</th><th>Labelkommentar</th></tr></thead><tbody id="deviceRows"></tbody></table></div><h3>Globala labels</h3><p class="explain">Kommentarer från projektets globala labellistor.</p><div class="label-wrap"><table class="label-table"><thead><tr><th>Lista</th><th>Label</th><th>Device</th><th>Typ</th><th>Kommentar</th></tr></thead><tbody id="globalLabelRows"></tbody></table></div><h3>Lokala labels</h3><p class="explain">Kommentarer från respektive programs lokala labellista.</p><div class="label-wrap"><table class="label-table"><thead><tr><th>Lista / program</th><th>Label</th><th>Device</th><th>Typ</th><th>Kommentar</th></tr></thead><tbody id="localLabelRows"></tbody></table></div></div>
+<div class="view" id="codeView" role="tabpanel" aria-labelledby="tabCode" hidden><h2>Avkodade källinstruktioner</h2><p id="codeSummary" class="explain" style="margin:8px 0 13px">Inget program inläst.</p><p class="explain" style="margin-bottom:12px">Avsnittskommentarer står på egna rader före koden. Labelkommentarer kommer från lokala och globala labellistor.</p><div class="code-wrap"><table class="code-table"><thead><tr><th>Program</th><th>Källbyte</th><th>Instruktion</th><th>Operander</th><th>Labelkommentar</th></tr></thead><tbody id="codeRows"></tbody></table></div></div>
+<div class="view" id="importView" role="tabpanel" aria-labelledby="tabImport" hidden><h2>Importkontroll</h2><p class="explain" style="margin-top:7px">Ett läsbart projekt kan granskas även om något ännu hindrar körning. RUN tillåts när hela det valda programmet kan köras.</p><pre id="log" class="log">Väntar på GXW…</pre><div id="notes" class="stack" style="margin-top:10px"></div><div class="helpbox">
+<details open><summary>PLC och anläggning är skilda delar</summary><p>PLC:n läser och kör instruktionerna i din fil utan krav på hiss-labels. Anläggningen reagerar enbart på de Y-adresser som är kopplade enligt listan nedan. Y20 kan därför ändras i PLC:n utan att hissen rör sig. Koppla bort anläggningen för ren PLC-testning.</p><p>Ett program med en ännu ej stödd instruktion läses in i granskningsläge. Källkod och kända devices visas, men RUN spärras. Ingen okänd instruktion hoppas över under körning.</p></details>
+<details><summary>Kopplingslista för 3-våningshiss</summary><table class="wiring"><tr><th>Ingång</th><th>Funktion</th><th>Utgång</th><th>Funktion</th></tr><tr><td>X0 / X1 / X2</td><td>Knapp våning 1 / 2 / 3</td><td>Y0 / Y1 / Y2</td><td>Lampa våning 1 / 2 / 3</td></tr><tr><td>X3 / X4 / X5</td><td>Givare våning 1 / 2 / 3</td><td>Y3 / Y4</td><td>Motor upp / ner</td></tr></table><p>I övning 6 används X2 som servicekvittering. Samma fysiska knapp är våning 3 i senare övningar. Funktionen bestäms av din kod.</p></details>
+<details><summary>Körbara instruktioner</summary><p>LD/LDI, AND/ANI, OR/ORI; LDP/LDF, ANDP/ANDF, ORP/ORF; ANB/ORB och MPS/MRD/MPP; 16-bitars LD/AND/OR-jämförelser =, &lt;&gt;, &gt;, &gt;=, &lt;, &lt;=; OUT, SET/RST, vanliga T-/C-förval, PLS/PLF till fysiska Y/M, MOV/MOVP samt INC/DEC/INCP/DECP till D-register. ALT/ALTP till Y, M, S och lokala BOOL. 16-bitars CML/CMLP, WAND/WANDP, WOR/WORP och WXOR/WXORP till D-register med K/H eller D/T/C som källor.</p><p>ALT växlar varje scan när villkoret är sant. ALTP växlar en gång när villkoret går från falskt till sant. 32-bitars former, bitgrupper (KnX/KnY/KnM) och indexering stöds ännu inte.</p><p>Godtyckliga label- och programnamn fungerar inom den stödda grammatiken. Körning stöder ett fristående program i en cyklisk task för FX3U/FX3UC eller FX3S. Annan läsbar kod kan visas i granskningsläge.</p></details>
+<details><summary>Tidsmodell och gränser</summary><p>Fast scan 5 ms i simuleringstid. PLC-koden körs i ordning, därefter rör sig anläggningen. En våning tar 4,2 sekunder. STOP släcker Y; Paus fryser simuleringen. Ingen destinationsstyrning eller servicelogik är inbyggd i mekaniken.</p><p>Detta är en begränsad utbildningsmodell. Fysisk timerfas, I/O-filter, exakta instruktionstider, specialmoduler, avbrott, ST/FBD/SFC, FB och flera tasks efterliknas inte. Flankkontakter på FX3U:s M2800–M3071 kan endast granskas. Lokala BOOL-, TIMER- och COUNTER-labels stöds. Automatisk TIMER har 100 ms tidsbas. Automatiska labels får inte blandas med fysiska adresser av samma typ när deras alias inte kan verifieras.</p></details>
+<details><summary>Tom start och lokal hantering</summary><p>All kod ingår i HTML-filen. Inga nätverksanrop görs och ingen installation behövs. En omladdning börjar med tom PLC. Det krävs ingen PDF eller färdig mall för ditt program.</p></details>
+</div></div></div></section></main><footer class="footer">PLC-simulator 6.1 · Offline PLC-labb · Hiss och tryckknappslåda · Fast PLC-scan 5 ms · Körstöd och eventuella hinder visas vid import.</footer>
+<!--
+GXW importer acknowledgements
+
+GXW container/token/declaration grammar and read-only CFB routines adapted and reimplemented for this JavaScript importer from:
+https://github.com/Arienax/gxworks-agent
+Commit 230926a661e6dd5c2134cac03193d94669d96f72
+License: Apache-2.0. Modified: bounded CFB reader, explicit FX simple-ladder subset, symbolic graph compiler and monitor layout.
+
+
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      "License" shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      "Licensor" shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      "Legal Entity" shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      "control" means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      "You" (or "Your") shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      "Source" form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      "Object" form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      "Work" shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      "Derivative Works" shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      "Contribution" shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, "submitted"
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as "Not a Contribution."
+
+      "Contributor" shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a "NOTICE" text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+   APPENDIX: How to apply the Apache License to your work.
+
+      To apply the Apache License to your work, attach the following
+      boilerplate notice, with the fields enclosed by brackets "[]"
+      replaced with your own identifying information. (Don't include
+      the brackets!)  The text should be enclosed in the appropriate
+      comment syntax for the file format. We also recommend that a
+      file or class name and description of purpose be included on the
+      same "printed page" as the copyright notice for easier
+      identification within third-party archives.
+
+   Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+
+Instruction framing/catalog reference:
+https://github.com/monozukuri-ai/gxwlib
+Commit 1e9a8d7542665e5015041d361e4bb86d7650714f
+
+MIT License
+
+Copyright (c) 2026 neka-nat
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Version 5 additions: observed FX opcode catalogue, edge contacts, comparisons, generic POU names and read-only inspection; source-derived lexical recognition is separate from executable support.
+
+-->
+<script>
+/* Kulhissen 4 - deterministic educational FX ladder runtime. MIT. */
+const SCAN_MS = 5;
+// Verified 16-bit forms; wider/digit-specified operands remain inspection-only.
+const WORD_LOGIC_ARITY=Object.freeze({CML:2,WAND:3,WOR:3,WXOR:3});
+const PULSE_ACTIONS=Object.freeze(['MOVP','INCP','DECP','ALTP',...Object.keys(WORD_LOGIC_ARITY).map(op=>op+'P')]);
+function canonical(s) {
+  const m = /^([XYMTCDS])(\d+)$/i.exec(String(s).trim());
+  if (!m) return String(s).trim();
+  const kind=m[1].toUpperCase();
+  if (/[XY]/.test(kind) && /[89]/.test(m[2])) throw Error(`Ogiltig oktal adress: ${s}`);
+  return kind + String(Number(m[2]));
+}
+function validateDevice(s, profile='FX3U', write=false) {
+  if(s.startsWith('@')) return s;
+  s=canonical(s); const m=/^([XYMTCDS])(\d+)$/.exec(s);
+  if(!m) throw Error(`Okänd adress eller label: ${s}`);
+  const [,k,ns]=m,n=Number(ns),small=profile==='FX3S';
+  const max={X:small?17:377,Y:small?15:377,M:small?1535:7679,S:small?255:4095,T:small?137:511,C:small?31:199,D:small?2999:7999}[k];
+  if(k==='M'&&n>=8000){
+    if(![8000,8001,8002,8003,8011,8012,8013,8014,8028].includes(n))throw Error(`${s}: specialreläet stöds inte.`);
+    if(write && !(small&&n===8028))throw Error(`${s}: skrivning till specialrelä stöds inte.`);
+  }else if(n>max)throw Error(`${s}: ligger utanför den stödda ${profile}-profilen.`);
+  if(write&&k==='X')throw Error(`Ingång ${s} får inte skrivas av programmet.`);
+  if(!small && k==='T' && n>=192 && n<=199)throw Error(`${s}: timer för subrutin/avbrott stöds inte.`);
+  return s;
+}
+function deviceKind(key,program={}){return key[0]==='@'?(program.symbols?.[key]?.kind||'M'):key[0];}
+function timerInfo(key,profile,bits={},symbols={}) {
+  // GX Works2 automatically assigns ordinary timer labels to the 100 ms pool.
+  // Keep their logical identity; never invent a physical T number or alias.
+  if(symbols[key]?.kind==='T')return {base:100,retentive:false};
+  const n=Number(key.slice(1));
+  if(profile==='FX3S')return {base:n<32?100:n<=62?(bits.M8028?10:100):n<=131?1:100,retentive:n>=128};
+  return {base:n<200?100:n<=245?10:n<=249?1:n<=255?100:1,retentive:n>=246&&n<=255};
+}
+class PLC {
+  constructor(program){this.program=program;this.reset();}
+  reset(){this.bits=Object.create(null);this.words=Object.create(null);this.timers=Object.create(null);this.counters=Object.create(null);this.edges=Object.create(null);this.pulses=new Set();this.running=false;this.first=true;this.scanCount=0;this.time=0;this.trace=null;}
+  start(){if(this.program.executable===false)throw Error('Programmet är inläst för granskning; RUN är spärrad.');if(!this.running){this.running=true;this.first=true;for(const c of this.program.contacts)if(['RISE','FALL'].includes(c.kind))this.edges[c.id]=false;for(const a of this.program.actions){if(PULSE_ACTIONS.includes(a.op))this.edges[a.id]=false;if(['PLS','PLF'].includes(a.op)){const n=+a.target.slice(1),ranges=this.program.latchM||(this.program.profile==='FX3S'?[[384,511]]:[[500,1023]]),latched=a.target[0]==='M'&&ranges.some(([lo,hi])=>n>=lo&&n<=hi);if(!latched)this.edges[a.id]=false;}}} }
+  stop(){this.running=false;for(const k of Object.keys(this.bits))if(k[0]==='Y')this.bits[k]=false;for(const [k,t] of Object.entries(this.timers))if(!timerInfo(k,this.program.profile,this.bits,this.program.symbols).retentive){t.elapsed=0;t.value=0;t.done=false;t.previous=false;}this.trace=null;}
+  bit(k){
+    if(k==='M8000')return this.running;if(k==='M8001')return !this.running;
+    if(k==='M8002')return this.running&&this.first;if(k==='M8003')return !(this.running&&this.first);
+    if(['M8011','M8012','M8013','M8014'].includes(k))return this.running&&Math.floor(this.time/({M8011:5,M8012:50,M8013:500,M8014:30000}[k]))%2===1;
+    const kind=deviceKind(k,this.program);if(kind==='T')return !!this.timers[k]?.done;if(kind==='C')return !!this.counters[k]?.done;
+    return !!this.bits[k];
+  }
+  number(k){if(/^K-?\d+$/.test(k))return Number(k.slice(1));if(/^H[0-9A-F]+$/i.test(k))return parseInt(k.slice(1),16);const kind=deviceKind(k,this.program);if(kind==='T')return this.timers[k]?.value||0;if(kind==='C')return this.counters[k]?.value||0;return this.words[k]||0;}
+  input(k,v){k=canonical(k);if(!/^X[0-7]+$/.test(k))throw Error('Endast X-ingångar får påverkas.');this.bits[k]=!!v;}
+  action(a,on,dt){
+    const k=a.target,kind=deviceKind(k,this.program);
+    if(PULSE_ACTIONS.includes(a.op)){const previous=!!this.edges[a.id];this.edges[a.id]=on;const fire=on&&!previous;if(fire)this.action({...a,op:a.op.slice(0,-1)},true,dt);return fire;}
+    if(a.op==='OUT'){
+      if(kind==='T'){
+        const t=this.timers[k]??={elapsed:0,value:0,done:false};
+        const {base,retentive}=timerInfo(k,this.program.profile,this.bits,this.program.symbols),preset=this.number(a.preset);
+        if(!Number.isInteger(preset)||preset<0||preset>32767)throw Error(`${k}: timerförval måste vara 0–32767.`);
+        t.preset=preset;t.base=base;t.retentive=retentive;
+        const wasOn=!!t.previous;
+        if(t.reset)t.elapsed=0;else if(on)t.elapsed=Math.min(preset*base,t.elapsed+dt);else if(!retentive)t.elapsed=0;
+        t.value=Math.min(32767,Math.floor((t.elapsed+1e-7)/base));
+        t.done=!t.reset&&(on||retentive)&&t.value>=preset&&(preset!==0||wasOn||t.done);t.previous=on&&!t.reset;
+      }else if(kind==='C'){
+        const c=this.counters[k]??={value:0,done:false,previous:false};
+        const preset=this.number(a.preset);if(!Number.isInteger(preset)||preset<0||preset>32767)throw Error(`${k}: räknarförval måste vara 0–32767 (0 fungerar som 1).`);
+        c.preset=preset;if(on&&!c.previous&&!c.done&&!c.reset){c.value=Math.min(32767,c.value+1);if(c.value>=Math.max(1,preset))c.done=true;}c.previous=on;
+      }else this.bits[k]=on;
+    }else if(a.op==='SET'){if(on)this.bits[k]=true;}
+    else if(a.op==='RST'){
+      if(kind==='T'){const t=this.timers[k]??={elapsed:0,value:0,done:false};t.reset=on;if(on){t.elapsed=0;t.value=0;t.done=false;t.previous=false;}}
+      else if(kind==='C'){const c=this.counters[k]??={value:0,done:false,previous:false};c.reset=on;if(on){c.value=0;c.done=false;}}
+      else if(on){if(k[0]==='D')this.words[k]=0;else this.bits[k]=false;}
+    }else if(a.op==='PLS'||a.op==='PLF'){
+      const prev=!!this.edges[a.id],pulse=a.op==='PLS'?on&&!prev:!on&&prev;
+      this.edges[a.id]=on;this.bits[k]=pulse;this.pulses.add(k);
+    }else if(a.op==='ALT'&&on)this.bits[k]=!this.bit(k);
+    else if(WORD_LOGIC_ARITY[a.op]&&on){
+      const [s1,s2]=a.sources.map(key=>this.number(key)),value=a.op==='CML'?~s1:a.op==='WAND'?s1&s2:a.op==='WOR'?s1|s2:s1^s2;
+      this.words[k]=(value<<16)>>16;
+    }else if(a.op==='MOV'&&on)this.words[k]=(this.number(a.source)<<16)>>16;
+    else if((a.op==='INC'||a.op==='DEC')&&on)this.words[k]=((this.number(k)+(a.op==='INC'?1:-1))<<16)>>16;
+  }
+  scan(dt=SCAN_MS){
+    if(!this.running)return false;
+    if(!Number.isFinite(dt)||dt<=0||dt>100)throw Error('Ogiltig scantid.');
+    const nodes=new Map(),contacts=new Map(),actions=new Map(),visiting=new Set();
+    const power=(id)=>{
+      if(this.program.sources.includes(id))return true;
+      if(nodes.has(id))return nodes.get(id);
+      if(visiting.has(id))throw Error('Cyklisk eller tvetydig ladderkoppling.');visiting.add(id);
+      let powered=false;
+      const gate=this.program.gates?.[id];
+      if(gate){const values=gate.inputs.map(power);powered=gate.op==='AND'?values.every(Boolean):values.some(Boolean);}
+      // Evaluate every branch even when another branch is true: all contacts get a scan snapshot.
+      for(const c of this.program.incoming[id]||[]){
+        const feed=power(c.from);let raw;
+        if(c.kind==='COMPARE'){const a=(this.number(c.operands[0])<<16)>>16,b=(this.number(c.operands[1])<<16)>>16;raw=({'=':()=>a===b,'<>':()=>a!==b,'>':()=>a>b,'>=':()=>a>=b,'<':()=>a<b,'<=':()=>a<=b}[c.comparison])();}else raw=this.bit(c.device);
+        let pass=c.kind==='NC'?!raw:raw;
+        if(c.kind==='RISE'||c.kind==='FALL'){const prev=!!this.edges[c.id];pass=c.kind==='RISE'?raw&&!prev:!raw&&prev;this.edges[c.id]=raw;}
+        contacts.set(c.id,{raw,pass,feed,powered:feed&&pass});powered=powered||(feed&&pass);
+      }
+      visiting.delete(id);nodes.set(id,powered);return powered;
+    };
+    try{
+      for(const a of this.program.actions){const on=power(a.node),executed=this.action(a,on,dt);actions.set(a.id,{powered:executed??on,state:this.bit(a.target),value:this.number(a.target)});}
+      // Contacts used only in an unpowered/dead branch must still be represented.
+      for(const c of this.program.contacts)if(!contacts.has(c.id)){power(c.to);}
+      this.scanCount++;this.time+=dt;this.trace={nodes,contacts,actions,scan:this.scanCount,first:this.first};this.first=false;return true;
+    }catch(e){this.stop();throw e;}
+  }
+}
+
+
+/* Physical educational plant. It has no knowledge of ladder labels, counters,
+ * service logic or destinations: only the explicit wired X/Y terminals below. */
+const ELEVATOR_IO=Object.freeze({buttons:Object.freeze(['X0','X1','X2']),floorSensors:Object.freeze(['X3','X4','X5']),lamps:Object.freeze(['Y0','Y1','Y2']),up:'Y3',down:'Y4'});
+class Lift {
+  constructor({floors=3,wiring=ELEVATOR_IO}={}){
+    if(![2,3].includes(floors))throw Error('Anläggningen stöder två eller tre våningar.');
+    this.floors=floors;this.wiring=wiring;this.position=0;this.connected=true;this.conflict=false;this.limit=false;
+  }
+  get maxPosition(){return this.floors-1;}
+  get atFloor(){for(let i=0;i<this.floors;i++)if(Math.abs(this.position-i)<=.002)return i+1;return null;}
+  get sensorInputs(){const w=this.wiring,result={};for(let i=0;i<this.floors;i++)result[w.floorSensors[i]]=Math.abs(this.position-i)<=.002;return result;}
+  sensors(plc,enabled=true){if(this.connected&&enabled)for(const [key,value]of Object.entries(this.sensorInputs))plc.input(key,value);}
+  setConnected(plc,value){this.connected=!!value;this.conflict=false;this.limit=false;if(!this.connected)for(const key of [...this.wiring.buttons,...Object.keys(this.sensorInputs)])plc?.input(key,false);}
+  step(plc,ms){
+    if(!Number.isFinite(ms)||ms<0)throw Error('Ogiltig anläggningstid.');if(!this.connected)return;
+    const w=this.wiring,up=plc.running&&plc.bit(w.up),down=plc.running&&plc.bit(w.down);
+    this.conflict=up&&down;this.limit=(up&&this.position>=this.maxPosition)||(down&&this.position<=0);
+    if(up&&!down)this.position=Math.min(this.maxPosition,this.position+ms/4200);
+    else if(down&&!up)this.position=Math.max(0,this.position-ms/4200);
+  }
+}
+
+/* Pushbutton box, wired from the supplied schematic. No PLC program logic. */
+const PUSH_BOX_IO=Object.freeze({
+  controls:Object.freeze([
+    Object.freeze({id:'S1',input:'X0',contact:'NC',kind:'momentary',pin:1}),
+    Object.freeze({id:'S2',input:'X1',contact:'NC',kind:'momentary',pin:2}),
+    Object.freeze({id:'S3',input:'X2',contact:'NO',kind:'selector',pin:3}),
+    Object.freeze({id:'S4',input:'X3',contact:'NO',kind:'momentary',pin:4}),
+    Object.freeze({id:'S5',input:'X4',contact:'NO',kind:'momentary',pin:5})
+  ]),
+  lamps:Object.freeze(['Y0','Y1','Y2','Y3'].map((output,i)=>Object.freeze({id:'H'+(i+1),output,pin:9+i})))
+});
+class PushBox {
+  constructor(){this.connected=true;this.hold=false;this.positions=Object.fromEntries(PUSH_BOX_IO.controls.map(c=>[c.id,false]));}
+  control(id){const c=PUSH_BOX_IO.controls.find(c=>c.id===id);if(!c)throw Error('Okänt manöverdon: '+id);return c;}
+  setPosition(id,value){this.control(id);this.positions[id]=!!value;}
+  setHold(value){this.hold=!!value;this.releaseMomentary();}
+  press(id){const c=this.control(id);if(c.kind==='selector')this.toggleSelector();else this.setPosition(id,this.hold?!this.positions[id]:true);}
+  toggleSelector(){this.positions.S3=!this.positions.S3;}
+  releaseMomentary(){for(const c of PUSH_BOX_IO.controls)if(c.kind==='momentary')this.positions[c.id]=false;}
+  get inputValues(){return Object.fromEntries(PUSH_BOX_IO.controls.map(c=>[c.input,c.contact==='NC'?!this.positions[c.id]:this.positions[c.id]]));}
+  syncInputs(plc){if(plc&&this.connected)for(const [key,value]of Object.entries(this.inputValues))plc.input(key,value);}
+  setConnected(plc,value){this.connected=!!value;if(!this.connected){this.releaseMomentary();for(const c of PUSH_BOX_IO.controls)plc?.input(c.input,false);}else this.syncInputs(plc);}
+  lampValues(plc,active=true){return Object.fromEntries(PUSH_BOX_IO.lamps.map(l=>[l.id,!!(active&&this.connected&&plc?.bit(l.output))]));}
+}
+
+/* One active physical attachment shares the same PLC and monitor. */
+class PlantStation {
+  constructor(){this.elevator=new Lift();this.pushbox=new PushBox();this.active='elevator';}
+  get current(){return this[this.active];}
+  inputKeys(autoSensors=true){
+    if(!this.current.connected)return [];
+    return this.active==='pushbox'?PUSH_BOX_IO.controls.map(c=>c.input):[...ELEVATOR_IO.buttons,...(autoSensors?ELEVATOR_IO.floorSensors:[])];
+  }
+  ownsInput(key,autoSensors=true){return this.current.connected&&(this.active==='pushbox'?this.inputKeys().includes(key):autoSensors&&ELEVATOR_IO.floorSensors.includes(key));}
+  syncInputs(plc,autoSensors=true){if(!plc)return;if(this.active==='elevator')this.elevator.sensors(plc,autoSensors);else this.pushbox.syncInputs(plc);}
+  select(name,plc,autoSensors=true){
+    if(!['elevator','pushbox'].includes(name))throw Error('Okänd anläggning: '+name);
+    if(name===this.active)return false;
+    for(const key of this.inputKeys(autoSensors))plc?.input(key,false);
+    this.pushbox.releaseMomentary();this.active=name;this.syncInputs(plc,autoSensors);return true;
+  }
+  step(plc,ms){if(this.active==='elevator')this.elevator.step(plc,ms);}
+}
+
+/* Observed FX lexical encodings from gxworks-agent, Apache-2.0.
+ * Grammar only: recognition does not imply executable PLC support. See vendor/GXW-NOTICES.txt. */
+const GX_LEXICON = {"031203":["MEP",0],"031303":["MEF",0],"055f0b2405":["ADPRW",5],"056c012405":["RET",0],"030003":["LD",1],"030103":["LDI",1],"030603":["OR",1],"030703":["ORI",1],"030c03":["AND",1],"030d03":["ANI",1],"032003":["OUT",1],"032103":["OUT",1],"032303":["SET",1],"04000304":["LD",1],"04010304":["LDI",1],"04020204":["LDP",1],"04020304":["LDP",1],"04030204":["LDF",1],"04030304":["LDF",1],"04060304":["OR",1],"04070304":["ORI",1],"04080204":["ORP",1],"04080304":["ORP",1],"04090204":["ORF",1],"04090304":["ORF",1],"040c0304":["AND",1],"040d0304":["ANI",1],"040e0204":["ANDP",1],"040e0304":["ANDP",1],"040f0204":["ANDF",1],"040f0304":["ANDF",1],"04200304":["OUT",1],"04230304":["SET",1],"04240304":["RST",1],"04250204":["PLS",1],"04250304":["PLS",1],"04260204":["PLF",1],"04260304":["PLF",1],"0548070605":["CMP",3],"0548090005":["BKCMP=",4],"0548090105":["BKCMP<>",4],"0548090205":["BKCMP>",4],"0548090305":["BKCMP>=",4],"0548090405":["BKCMP<",4],"0548090505":["BKCMP<=",4],"0548090805":["ZCP",4],"05480d0705":["DCMP",3],"05480d0a05":["DECMP",3],"0548110905":["DZCP",4],"0548110b05":["DEZCP",4],"0548110c05":["DBKCMP=",4],"0548110d05":["DBKCMP<>",4],"0548110e05":["DBKCMP>",4],"0548110f05":["DBKCMP>=",4],"0548111005":["DBKCMP<",4],"0548111105":["DBKCMP<=",4],"0549072305":["$+",3],"0549072805":["ADD",3],"0549072a05":["SUB",3],"0549072c05":["MUL",3],"0549072e05":["DIV",3],"0549092605":["BK+",4],"0549092705":["BK-",4],"05490d2905":["DADD",3],"05490d2b05":["DSUB",3],"05490d2d05":["DMUL",3],"05490d2f05":["DDIV",3],"05490d3005":["DEADD",3],"05490d3105":["DESUB",3],"05490d3205":["DEMUL",3],"05490d3305":["DEDIV",3],"0549113405":["DBK+",4],"0549113505":["DBK-",4],"054a030005":["INC",1],"054a030205":["DEC",1],"054a050105":["DINC",1],"054a050305":["DDEC",1],"054b030e05":["NEG",1],"054b050005":["BCD",2],"054b050205":["BIN",2],"054b050405":["INT",2],"054b050a05":["GRY",2],"054b050c05":["GBIN",2],"054b050f05":["DNEG",1],"054b051505":["DENEG",1],"054b090105":["DBCD",2],"054b090305":["DBIN",2],"054b090505":["DINT",2],"054b090b05":["DGRY",2],"054b090d05":["DGBIN",2],"054b091305":["DEBCD",2],"054b091405":["DEBIN",2],"054c030b05":["SWAP",1],"054c050005":["MOV",2],"054c050305":["$MOV",2],"054c050405":["CML",2],"054c050805":["XCH",2],"054c050d05":["DSWAP",1],"054c070305":["$MOV",2],"054c070605":["BMOV",3],"054c070705":["FMOV",3],"054c090105":["DMOV",2],"054c090305":["$MOV",2],"054c090505":["DCML",2],"054c090905":["DXCH",2],"054c090f05":["DEMOV",2],"054c0b0305":["$MOV",2],"054c0b0c05":["SMOV",5],"054c0d0305":["$MOV",2],"054c0d0e05":["DFMOV",3],"054c0f0305":["$MOV",2],"054c130305":["$MOV",2],"054c150305":["$MOV",2],"054c230305":["$MOV",2],"054d030005":["CJ",1],"054e030205":["REFF",1],"054e050105":["REF",2],"054e0d0405":["DHSCS",3],"054e0d0605":["DHSCR",3],"054e0d0905":["DHCMOV",3],"054e110805":["DHSZ",4],"054e150a05":["DHSCT",5],"054f070105":["WAND",3],"054f070305":["WOR",3],"054f070505":["WXOR",3],"054f0d0905":["DAND",3],"054f0d0b05":["DOR",3],"054f0d0d05":["DXOR",3],"0550050005":["ROR",2],"0550050105":["RCR",2],"0550050205":["ROL",2],"0550050305":["RCL",2],"0550090405":["DROR",2],"0550090505":["DRCR",2],"0550090605":["DROL",2],"0550090705":["DRCL",2],"0551050005":["SFR",2],"0551050105":["SFL",2],"0551070a05":["SFWR",3],"0551070b05":["SFRD",3],"0551090605":["SFTR",4],"0551090705":["SFTL",4],"0551090805":["WSFR",4],"0551090905":["WSFL",4],"0553051905":["ZRST",2],"0553051a05":["SUM",2],"0553052205":["FLT",2],"0553070405":["DECO",3],"0553070505":["ENCO",3],"0553070705":["DIS",3],"0553070805":["UNI",3],"0553070b05":["WTOB",3],"0553070c05":["BTOW",3],"0553071305":["WSUM",3],"0553071c05":["BON",3],"0553071e05":["MEAN",3],"0553072005":["ANS",3],"0553090005":["SER",4],"0553091b05":["DSUM",2],"0553092305":["DFLT",2],"05530b1105":["SORT",5],"05530b2405":["SORT2",5],"05530d1405":["DWSUM",3],"05530d1d05":["DBON",3],"05530d1f05":["DMEAN",3],"0553110105":["DSER",4],"0553152505":["DSORT2",5],"0554030105":["CALL",1],"0555070305":["FINS",3],"0555070405":["FDEL",3],"0556090005":["FROM",4],"0556090205":["TO",4],"05560b0905":["RBFM",5],"05560b0a05":["WBFM",5],"0556110305":["DTO",4],"0556110805":["DFROM",4],"0557050005":["PR",2],"0559050005":["BINDA",2],"0559050605":["DABIN",2],"0559050c05":["COMRD",2],"0559050d05":["LEN",2],"0559070e05":["STR",3],"0559071005":["VAL",3],"0559071505":["HEX",3],"0559071605":["RIGHT",3],"0559071705":["LEFT",3],"0559071805":["MIDR",3],"0559071905":["MIDW",3],"0559071d05":["ASCI",3],"0559090105":["DBINDA",2],"0559090705":["DDABIN",2],"0559091a05":["INSTR",4],"0559091f05":["DEVAL",2],"05590d0f05":["DSTR",3],"05590d1105":["DVAL",3],"05590d1e05":["DESTR",3],"055a030b05":["RND",1],"055a050805":["SQR",2],"055a091505":["DSQR",2],"055a091605":["DESQR",2],"055a091705":["DSIN",2],"055a091805":["DCOS",2],"055a091905":["DTAN",2],"055a091a05":["DEXP",2],"055a091b05":["DLOGE",2],"055a091c05":["DLOG10",2],"055a091d05":["DASIN",2],"055a091e05":["DACOS",2],"055a091f05":["DATAN",2],"055a092005":["DRAD",2],"055b090005":["LIMIT",4],"055b090205":["BAND",4],"055b090405":["ZONE",4],"055b110105":["DLIMIT",4],"055b110305":["DBAND",4],"055b110505":["DZONE",4],"055d030a05":["TRD",1],"055d030b05":["TWR",1],"055d050e05":["HTOS",2],"055d051005":["STOH",2],"055d070805":["TADD",3],"055d070905":["TSUB",3],"055d070c05":["HOUR",3],"055d090705":["TZCP",4],"055d090f05":["DHTOS",2],"055d091105":["DSTOH",2],"055d0b0605":["TCMP",5],"055d0d0d05":["DHOUR",3],"055e090705":["PID",4],"055f050705":["SEGD",2],"055f050e05":["VRRD",2],"055f050f05":["VRSC",2],"055f070205":["TKY",3],"055f070805":["SEGL",3],"055f070d05":["CCD",3],"055f071b05":["RD3A",3],"055f071c05":["WR3A",3],"055f071e05":["CRC",3],"055f090405":["HKY",4],"055f090605":["DSW",4],"055f090905":["ARWS",4],"055f090a05":["RS",4],"055f091f05":["IVCK",4],"055f092005":["IVDR",4],"055f092105":["IVRD",4],"055f092205":["IVWR",4],"055f092305":["IVBWR",4],"055f0b1d05":["RS2",5],"055f0d0305":["DTKY",3],"055f110505":["DHKY",4],"0561030a05":["ZPUSH",1],"0561030b05":["ZPOP",1],"0561070105":["DUTY",3],"0563030f05":["ALT",1],"0563050205":["TTMR",2],"0563070305":["STMR",3],"0563070605":["SPD",3],"0563070705":["PLSY",3],"0563070805":["PWM",3],"0563070b05":["IST",3],"0563071805":["PLSV",3],"0563072305":["POP",3],"0563072405":["SCL",3],"0563072a05":["SCL2",3],"0563090405":["ROTC",4],"0563090905":["MTR",4],"0563090c05":["ABSD",4],"0563090e05":["INCD",4],"0563091005":["RAMP",4],"0563091105":["PLSR",4],"0563091605":["ZRN",4],"0563091a05":["DRVI",4],"0563091e05":["EXTR",4],"05630d0a05":["DPLSY",3],"05630d1505":["DABS",3],"05630d1905":["DPLSV",3],"05630d2505":["DSCL",3],"05630d2b05":["DSCL2",3],"05630d2e05":["DSPD",3],"0563110d05":["DABSD",4],"0563111305":["DPLSR",4],"0563111705":["DZRN",4],"0563111b05":["DDRVI",4],"0563111f05":["DEXTR",4],"0563112f05":["DTBL",2],"056a030005":["FOR",1],"056c012305":["STL",1],"064005001006":["LD=",2],"064005001106":["AND=",2],"064005001206":["OR=",2],"064005011006":["LD<>",2],"064005011106":["AND<>",2],"064005011206":["OR<>",2],"064005021006":["LD>",2],"064005021106":["AND>",2],"064005021206":["OR>",2],"064005031006":["LD>=",2],"064005031106":["AND>=",2],"064005031206":["OR>=",2],"064005041006":["LD<",2],"064005041106":["AND<",2],"064005041206":["OR<",2],"064005051006":["LD<=",2],"064005051106":["AND<=",2],"064005051206":["OR<=",2],"064009061006":["LDD=",2],"064009061106":["ANDD=",2],"064009061206":["ORD=",2],"064009071006":["LDD<>",2],"064009071106":["ANDD<>",2],"064009071206":["ORD<>",2],"064009081006":["LDD>",2],"064009081106":["ANDD>",2],"064009081206":["ORD>",2],"064009091006":["LDD>=",2],"064009091106":["ANDD>=",2],"064009091206":["ORD>=",2],"0640090a1006":["LDD<",2],"0640090a1106":["ANDD<",2],"0640090a1206":["ORD<",2],"0640090b1006":["LDD<=",2],"0640090b1106":["ANDD<=",2],"0640090b1206":["ORD<=",2],"064807060206":["CMPP",3],"064809000206":["BKCMP=P",4],"064809010206":["BKCMP<>P",4],"064809020206":["BKCMP>P",4],"064809030206":["BKCMP>=P",4],"064809040206":["BKCMP<P",4],"064809050206":["BKCMP<=P",4],"064809080206":["ZCPP",4],"06480d070206":["DCMPP",3],"06480d0a0206":["DECMPP",3],"064811090206":["DZCPP",4],"0648110b0206":["DEZCPP",4],"0648110c0206":["DBKCMP=P",4],"0648110d0206":["DBKCMP<>P",4],"0648110e0206":["DBKCMP>P",4],"0648110f0206":["DBKCMP>=P",4],"064811100206":["DBKCMP<P",4],"064811110206":["DBKCMP<=P",4],"064907230206":["$+P",3],"064907280206":["ADDP",3],"0649072a0206":["SUBP",3],"0649072c0206":["MULP",3],"0649072e0206":["DIVP",3],"064909260206":["BK+P",4],"064909270206":["BK-P",4],"06490d290206":["DADDP",3],"06490d2b0206":["DSUBP",3],"06490d2d0206":["DMULP",3],"06490d2f0206":["DDIVP",3],"06490d300206":["DEADDP",3],"06490d310206":["DESUBP",3],"06490d320206":["DEMULP",3],"06490d330206":["DEDIVP",3],"064911340206":["DBK+P",4],"064911350206":["DBK-P",4],"064a03000206":["INCP",1],"064a03020206":["DECP",1],"064a05010206":["DINCP",1],"064a05030206":["DDECP",1],"064b030e0206":["NEGP",1],"064b05000206":["BCDP",2],"064b05020206":["BINP",2],"064b05040206":["INTP",2],"064b050a0206":["GRYP",2],"064b050c0206":["GBINP",2],"064b050f0206":["DNEGP",1],"064b05150206":["DENEGP",1],"064b09010206":["DBCDP",2],"064b09030206":["DBINP",2],"064b09050206":["DINTP",2],"064b090b0206":["DGRYP",2],"064b090d0206":["DGBINP",2],"064b09130206":["DEBCDP",2],"064b09140206":["DEBINP",2],"064c030b0206":["SWAPP",1],"064c05000206":["MOVP",2],"064c05030206":["$MOVP",2],"064c05040206":["CMLP",2],"064c05080206":["XCHP",2],"064c050d0206":["DSWAPP",1],"064c07060206":["BMOVP",3],"064c07070206":["FMOVP",3],"064c09010206":["DMOVP",2],"064c09050206":["DCMLP",2],"064c09090206":["DXCHP",2],"064c090f0206":["DEMOVP",2],"064c0b0c0206":["SMOVP",5],"064c0d0e0206":["DFMOVP",3],"064d03000206":["CJP",1],"064e03020206":["REFFP",1],"064e05010206":["REFP",2],"064f07010206":["WANDP",3],"064f07030206":["WORP",3],"064f07050206":["WXORP",3],"065005000206":["RORP",2],"065005010206":["RCRP",2],"065005020206":["ROLP",2],"065005030206":["RCLP",2],"065009040206":["DRORP",2],"065009050206":["DRCRP",2],"065009060206":["DROLP",2],"065009070206":["DRCLP",2],"065105000206":["SFRP",2],"065105010206":["SFLP",2],"0651070a0206":["SFWRP",3],"0651070b0206":["SFRDP",3],"065109060206":["SFTRP",4],"065109070206":["SFTLP",4],"065109080206":["WSFRP",4],"065109090206":["WSFLP",4],"065305190206":["ZRSTP",2],"0653051a0206":["SUMP",2],"065305220206":["FLTP",2],"065307040206":["DECOP",3],"065307050206":["ENCOP",3],"065307070206":["DISP",3],"065307080206":["UNIP",3],"0653070b0206":["WTOBP",3],"0653070c0206":["BTOWP",3],"065307130206":["WSUMP",3],"0653071c0206":["BONP",3],"0653071e0206":["MEANP",3],"065309000206":["SERP",4],"0653091b0206":["DSUMP",2],"065309230206":["DFLTP",2],"06530d140206":["DWSUMP",3],"06530d1d0206":["DBONP",3],"06530d1f0206":["DMEANP",3],"065311010206":["DSERP",4],"065403010206":["CALLP",1],"065507030206":["FINSP",3],"065507040206":["FDELP",3],"065609000206":["FROMP",4],"065609020206":["TOP",4],"065611030206":["DTOP",4],"065611080206":["DFROMP",4],"065905000206":["BINDAP",2],"065905060206":["DABINP",2],"0659050c0206":["COMRDP",2],"0659050d0206":["LENP",2],"0659070e0206":["STRP",3],"065907100206":["VALP",3],"065907150206":["HEXP",3],"065907160206":["RIGHTP",3],"065907170206":["LEFTP",3],"065907180206":["MIDRP",3],"065907190206":["MIDWP",3],"0659071d0206":["ASCIP",3],"065909010206":["DBINDAP",2],"065909070206":["DDABINP",2],"0659091a0206":["INSTRP",4],"0659091f0206":["DEVALP",2],"06590d0f0206":["DSTRP",3],"06590d110206":["DVALP",3],"06590d1e0206":["DESTRP",3],"065a030b0206":["RNDP",1],"065a05080206":["SQRP",2],"065a09150206":["DSQRP",2],"065a09160206":["DESQRP",2],"065a09170206":["DSINP",2],"065a09180206":["DCOSP",2],"065a09190206":["DTANP",2],"065a091a0206":["DEXPP",2],"065a091b0206":["DLOGEP",2],"065a091c0206":["DLOG10P",2],"065a091d0206":["DASINP",2],"065a091e0206":["DACOSP",2],"065a091f0206":["DATANP",2],"065a09200206":["DRADP",2],"065b09000206":["LIMITP",4],"065b09020206":["BANDP",4],"065b09040206":["ZONEP",4],"065b11010206":["DLIMITP",4],"065b11030206":["DBANDP",4],"065b11050206":["DZONEP",4],"065d030a0206":["TRDP",1],"065d030b0206":["TWRP",1],"065d050e0206":["HTOSP",2],"065d05100206":["STOHP",2],"065d07080206":["TADDP",3],"065d07090206":["TSUBP",3],"065d09070206":["TZCPP",4],"065d090f0206":["DHTOSP",2],"065d09110206":["DSTOHP",2],"065d0b060206":["TCMPP",5],"065f05070206":["SEGDP",2],"065f050e0206":["VRRDP",2],"065f050f0206":["VRSCP",2],"065f070d0206":["CCDP",3],"065f071b0206":["RD3AP",3],"065f071c0206":["WR3AP",3],"065f071e0206":["CRCP",3],"0661030a0206":["ZPUSHP",1],"0661030b0206":["ZPOPP",1],"0663030f0206":["ALTP",1],"066307230206":["POPP",3],"066307240206":["SCLP",3],"0663091e0206":["EXTRP",4],"06630d250206":["DSCLP",3],"0663111f0206":["DEXTRP",4],"0202":["NOP",0],"031803":["ORB",0],"031903":["ANB",0],"032403":["RST",1],"033403":["END",0],"04210304":["OUT_T_C",2],"04230204":["SET",1],"04240204":["RST",1],"031a03":["MPS",0],"031b03":["MRD",0],"031c03":["MPP",0]};
+
+/* Read-only GX Works2 simple-ladder import. Format research and portions adapted
+ * from gxworks-agent (Apache-2.0) and gxwlib (MIT); see vendor/GXW-NOTICES.txt.
+ * Unknown layouts/instructions fail closed. No native project bytes are changed. */
+const GXW_LIMIT=40*1024*1024,CFB_END=0xfffffffe,CFB_FREE=0xffffffff;
+const gxError=s=>{throw Error('GXW: '+s);};
+const gxText=(b,encoding='utf-16le')=>new TextDecoder(encoding,{fatal:true}).decode(b);
+const gxView=b=>new DataView(b.buffer,b.byteOffset,b.byteLength);
+const gxHex=b=>Array.from(b,x=>x.toString(16).padStart(2,'0')).join('');
+
+class GXCompoundFile {
+  constructor(bytes){
+    this.data=bytes instanceof Uint8Array?bytes:new Uint8Array(bytes);const b=this.data;
+    if(b.length<512||gxHex(b.subarray(0,8))!=='d0cf11e0a1b11ae1')gxError('ingen giltig CFB-projektfil.');
+    if(b.length>GXW_LIMIT)gxError('filen överstiger 40 MB.');
+    const v=gxView(b),major=v.getUint16(26,true),shift=v.getUint16(30,true);
+    if(v.getUint16(28,true)!==0xfffe||!((major===3&&shift===9)||(major===4&&shift===12))||v.getUint16(32,true)!==6)gxError('CFB-versionen stöds inte.');
+    this.sectorSize=2**shift;this.sectorCount=Math.ceil(b.length/this.sectorSize)-1;
+    const count=v.getUint32(44,true),difCount=v.getUint32(72,true),fatIDs=[];
+    if(count>this.sectorCount||difCount>this.sectorCount||v.getUint32(56,true)!==4096)gxError('ogiltiga CFB-storlekar.');
+    const add=a=>{for(const x of a)if(x!==CFB_FREE)fatIDs.push(x);};
+    add(Array.from({length:109},(_,i)=>v.getUint32(76+i*4,true)));
+    let next=v.getUint32(68,true);const seen=new Set();
+    for(let i=0;i<difCount;i++){
+      if(seen.has(next))gxError('cyklisk DIFAT.');seen.add(next);
+      const values=this.uints(this.sector(next));add(values.slice(0,-1));next=values.at(-1);
+    }
+    if(fatIDs.length!==count||new Set(fatIDs).size!==count)gxError('FAT-tabellen är ofullständig eller dubblerad.');
+    this.fat=fatIDs.flatMap(id=>this.uints(this.sector(id)));
+    const dir=this.regular(v.getUint32(48,true));this.entries=[];
+    if(dir.length/128>8192)gxError('för många CFB-poster.');
+    for(let o=0;o+128<=dir.length;o+=128){
+      const d=gxView(dir.subarray(o,o+128)),type=d.getUint8(66),len=d.getUint16(64,true);
+      if(type===0){this.entries.push(null);continue;}
+      if(![1,2,5].includes(type)||len<2||len>64||len%2||d.getUint16(len-2,true)!==0)gxError('skadad CFB-katalogpost.');
+      const size=d.getUint32(120,true)+(major===4?d.getUint32(124,true)*2**32:0);
+      if(size>GXW_LIMIT)gxError('en dataström överstiger 40 MB.');
+      this.entries.push({name:gxText(dir.subarray(o,o+len-2)),type,left:d.getUint32(68,true),right:d.getUint32(72,true),child:d.getUint32(76,true),start:d.getUint32(116,true),size});
+    }
+    const root=this.entries[0];if(root?.type!==5)gxError('CFB-roten saknas.');
+    const miniCount=v.getUint32(64,true);if(miniCount>this.sectorCount)gxError('ogiltig MiniFAT-storlek.');
+    this.miniFat=miniCount?this.uints(this.regular(v.getUint32(60,true),miniCount*this.sectorSize)):[];
+    this.miniData=root.size?this.regular(root.start,root.size):new Uint8Array();
+    this.streams=new Map();const visited=new Set();
+    const walk=(id,depth=0)=>{
+      if(id===CFB_FREE)return;
+      if(depth>128||visited.has(id)||!this.entries[id])gxError('cyklisk eller skadad CFB-katalog.');
+      visited.add(id);const e=this.entries[id];walk(e.left,depth+1);
+      if(e.type===2){if(this.streams.has(e.name))gxError('tvetydigt strömnamn '+e.name);this.streams.set(e.name,e);}
+      else gxError('kataloger inuti projektets datalager stöds inte.');
+      walk(e.right,depth+1);
+    };walk(root.child);
+  }
+  uints(b){const v=gxView(b);return Array.from({length:b.length/4},(_,i)=>v.getUint32(i*4,true));}
+  sector(id,length=this.sectorSize){const o=(id+1)*this.sectorSize;if(!Number.isInteger(id)||id>=this.sectorCount||length<=0||length>this.sectorSize||o+length>this.data.length)gxError('sektor utanför filen.');return this.data.subarray(o,o+length);}
+  chain(start,table,max){const ids=[],seen=new Set();let id=start;while(id!==CFB_END){if(!Number.isInteger(id)||id>=table.length||id>=max||seen.has(id))gxError('avbruten eller cyklisk sektorkedja.');seen.add(id);ids.push(id);id=table[id];}return ids;}
+  regular(start,size=null){
+    if(size===0)return new Uint8Array();const ids=this.chain(start,this.fat,this.sectorCount),length=size??ids.length*this.sectorSize;
+    if(length>GXW_LIMIT||ids.length<Math.ceil(length/this.sectorSize))gxError('avkortad dataström.');
+    const out=new Uint8Array(length);for(let i=0;i<ids.length;i++){const n=Math.min(this.sectorSize,Math.max(0,length-i*this.sectorSize));if(n)out.set(this.sector(ids[i],n),i*this.sectorSize);else this.sector(ids[i]);}return out;
+  }
+  read(name){
+    const e=this.streams.get(name);if(!e)gxError('dataström saknas: '+name);if(!e.size)return new Uint8Array();
+    if(e.size>=4096)return this.regular(e.start,e.size);
+    const ids=this.chain(e.start,this.miniFat,Math.ceil(this.miniData.length/64));if(ids.length<Math.ceil(e.size/64))gxError('avkortad MiniFAT-ström.');
+    const out=new Uint8Array(e.size);for(let i=0;i<ids.length;i++){const o=ids[i]*64,n=Math.min(64,Math.max(0,e.size-i*64));if(o+64>this.miniData.length)gxError('minisektor utanför datalagret.');if(n)out.set(this.miniData.subarray(o,o+n),i*64);}return out;
+  }
+}
+
+class GXReader {
+  constructor(b){this.b=b;this.v=gxView(b);this.o=0;}
+  u(){if(this.o+4>this.b.length)gxError('avkortad tabell.');const n=this.v.getUint32(this.o,true);this.o+=4;return n;}
+  s(){const n=this.u(),end=this.o+n*2;if(n<1||end>this.b.length||this.v.getUint16(end-2,true)!==0)gxError('ogiltig tabelltext.');const s=gxText(this.b.subarray(this.o,end-2));this.o=end;if(s.includes('\0'))gxError('NUL i tabelltext.');return s;}
+  header(){this.s();this.s();this.o+=42;if(this.o>=this.b.length)gxError('avkortat källhuvud.');return this.o;}
+}
+const gxXml=s=>s.replace(/&(#x[0-9a-f]+|#\d+|amp|lt|gt|quot|apos);/gi,(_,e)=>e[0]==='#'?String.fromCodePoint(parseInt(e.slice(e[1]?.toLowerCase()==='x'?2:1),e[1]?.toLowerCase()==='x'?16:10)):({amp:'&',lt:'<',gt:'>',quot:'"',apos:"'"}[e.toLowerCase()]));
+function gxDirectory(raw){
+  if(raw.length>1024*1024)gxError('för stor projektkatalog.');const xml=gxText(raw,'utf-8');if(/<!DOCTYPE|<!ENTITY/i.test(xml))gxError('XML-deklarationer stöds inte.');
+  const files=new Map(),ids=new Set();
+  for(const m of xml.matchAll(/<D_Projectdata\b[^>]*>([\s\S]*?)<\/D_Projectdata>/g)){
+    const text=k=>new RegExp('<'+k+'>([\\s\\S]*?)</'+k+'>').exec(m[1])?.[1];
+    if(text('bScrapFlag')==='true')continue;
+    const id=text('iID'),name=gxXml(text('szName')||'');
+    if(!/^\d+$/.test(id||'')||!name||files.has(name)||ids.has(id))gxError('ogiltig eller tvetydig projektkatalog.');
+    files.set(name,id);ids.add(id);
+  }
+  if(!files.size)gxError('projektkatalogen är tom.');return files;
+}
+function readGXLabels(raw,name){
+  const r=new GXReader(raw),local=/\.lh$/i.test(name);r.header();let owner='global';
+  if(local){owner=r.s();const type=r.u(),status=r.u();r.s();r.s();if(type!==0x1000000||status!==0)gxError('lokala FB-/funktionsdeklarationer stöds inte.');}
+  const count=r.u();if(count>4096)gxError('för många labels.');const rows=[];
+  for(let i=0;i<count;i++){
+    const label={name:r.s(),type:r.s(),classCode:r.u(),device:r.s(),iec:r.s(),extension:r.u(),scope:owner,table:name};
+    if(label.extension!==0)gxError('struktur-labels stöds inte.');
+    label.initial=r.s();r.s();r.u();label.comment=r.s();label.array=r.u();label.typeCode=r.u();const typeReference=r.s();
+    label.device=label.device?canonical(label.device):null;label.cls=local?'VAR':'VAR_GLOBAL';
+    const tc=['TIMER','COUNTER'].includes(label.type);
+    if(label.classCode!==(local?1:8)||label.array!==0||!['BOOL','INT','WORD','TIMER','COUNTER'].includes(label.type)||label.typeCode!==({BOOL:1,INT:2,WORD:4,TIMER:11,COUNTER:13}[label.type])||typeReference!==''||!(tc?label.initial==='':['FALSE','0',''].includes(label.initial)))gxError('labeltypen, klassen eller initialvärdet stöds inte: '+label.name);
+    if(!label.device&&(!local||!['BOOL','TIMER','COUNTER'].includes(label.type)))gxError('label saknar stödd fysisk adress: '+label.name);
+    rows.push(label);
+  }
+  return rows;
+}
+
+// Binary spellings are explicit observations, not an arithmetic FNC mapping.
+const GX_OPS={
+  ...GX_LEXICON,
+  '030003':['LD',1],'030103':['LDI',1],'030603':['OR',1],'030703':['ORI',1],
+  '030c03':['AND',1],'030d03':['ANI',1],'031903':['ANB',0],'031803':['ORB',0],
+  '031a03':['MPS',0],'031b03':['MRD',0],'031c03':['MPP',0],
+  '032003':['OUT',1],'032303':['SET',1],'032403':['RST',1],'04210304':['OUT',2],
+  '054c050005':['MOV',2],'054a030005':['INC',1],'054a030205':['DEC',1],
+  // Native three-byte OUT for a symbolic timer/counter still has a preset.
+  '032103':['OUT',2],
+  '033403':['END',0],'0202':['NOP',0]
+};
+function readGXTokens(raw,{strict=true}={}){
+  const r=new GXReader(raw),h=r.header();if(raw[h]!==1||h+25>raw.length)gxError('endast enkel ladder stöds; detta källformat känns inte igen.');
+  const v=gxView(raw),size=v.getUint32(h+1,true),again=v.getUint32(h+5,true),start=h+25,end=start+size-20;
+  if(size!==again||size<23||end>raw.length||![20,24].includes(raw.length-end)||![0,1].includes(v.getUint32(h+9,true))||gxHex(raw.subarray(h+13,start))!=='0c00000000000000ffffffff')gxError('okänt eller skadat ladderhuvud.');
+  const tokens=[];for(let o=start;o<end;){const n=raw[o];if(n<2||o+n>end||raw[o+n-1]!==n)gxError('skadad instruktion vid byte '+o);if(tokens.length>=20000)gxError('för många källposter.');tokens.push({raw:raw.subarray(o,o+n),offset:o});o+=n;}
+  const instructions=[];let comment='';
+  const operand=t=>{
+    const b=t.raw,kind=b[1],payload=b.subarray(2,-1);
+    if(kind===0xdf){const label=gxText(payload,'windows-1252');if(!label||/[\x00-\x1f]/.test(label))gxError('ogiltig labelkodning.');return label;}
+    const dev={144:'M',152:'S',156:'X',157:'Y',168:'D',194:'T',197:'C'}[kind];
+    if(dev&&payload.length>=1&&payload.length<=2){const value=payload[0]+(payload[1]||0)*256;return dev+(dev==='X'||dev==='Y'?value.toString(8):value);}
+    if(kind===0xe8&&payload.length>=1&&payload.length<=2){let n=payload[0]+(payload[1]||0)*256;if(payload.length===2&&n>=32768)n-=65536;return 'K'+n;}
+    if([0xea,0xeb].includes(kind)&&payload.length>=1&&payload.length<=4){let n=0;for(let i=0;i<payload.length;i++)n+=payload[i]*2**(i*8);return 'H'+n.toString(16).toUpperCase();}
+    if(!strict)return '<'+gxHex(b)+'>';
+    gxError('okänd operand '+gxHex(b)+' vid byte '+t.offset);
+  };
+  for(let i=0;i<tokens.length;){
+    const t=tokens[i++],b=t.raw;
+    if(b[1]===0x80&&[0,1].includes(b[2])){const text=gxText(b.subarray(3,-1),'windows-1252');comment+= (comment?'\n':'')+text;continue;}
+    let op=GX_OPS[gxHex(b)];if(!op){if(strict)gxError('instruktionen '+gxHex(b)+' vid byte '+t.offset+' stöds inte.');const args=[];while(tokens[i]&&tokens[i].raw[1]>0x82)args.push(operand(tokens[i++]));instructions.push({op:'OP_'+gxHex(b),args,offset:t.offset,comment,unknown:true});comment='';continue;}
+    if(op[0]==='OUT_T_C')op=['OUT',2];if(op[0]==='ANDI')op=['ANI',1];
+    const args=[];for(let a=0;a<op[1];a++){if(!tokens[i])gxError('saknad operand.');args.push(operand(tokens[i++]));}
+    if(instructions.length>=4096)gxError('fler än 4096 instruktioner.');instructions.push({op:op[0],args,offset:t.offset,comment});comment='';
+    if(op[0]==='END'&&i!==tokens.length)gxError('kod efter END stöds inte.');
+  }
+  if(instructions.at(-1)?.op!=='END')gxError('END saknas.');return instructions;
+}
+
+function compileGXInstructions(instructions,labels=[],profile='FX3U',scope='MAIN'){
+  if(instructions.length>4096)gxError('fler än 4096 instruktioner.');
+  const map=new Map();for(const l of labels){const key=(l.scope+':'+l.name).toUpperCase();if(map.has(key))gxError('dubblerad label '+l.name);map.set(key,l);}
+  const symbols=Object.create(null),rawM=new Set(),symbolic=new Set(),rawTC=new Set(),symbolicTC=new Set(),resolve=(name,write=false)=>{
+    const local=map.get((scope+':'+name).toUpperCase()),global=map.get(('global:'+name).toUpperCase());if(local&&global)gxError('tvetydig lokal/global label '+name);
+    const l=local||global,device=l?(l.device||'@'+scope+':'+l.name):canonical(name);
+    validateDevice(device,profile,write);
+    if(device[0]==='@'){
+      if(!['BOOL','TIMER','COUNTER'].includes(l.type))gxError('automatisk labeltyp stöds inte: '+name);
+      const kind={BOOL:'M',TIMER:'T',COUNTER:'C'}[l.type];symbols[device]={kind,type:l.type,name:l.name,scope};
+      if(kind==='M')symbolic.add(device);else symbolicTC.add(kind);
+    }
+    if(!l&&/^M\d+$/.test(device)&&+device.slice(1)<8000)rawM.add(device);
+    if(/^[TC]\d+$/.test(device))rawTC.add(device[0]);
+    if(l&&((l.type==='BOOL'&&device[0]==='D')||(['INT','WORD'].includes(l.type)&&device[0]!=='D')||(l.type==='TIMER'&&device[0]!=='@'&&device[0]!=='T')||(l.type==='COUNTER'&&device[0]!=='@'&&device[0]!=='C')))gxError('labelns datatyp passar inte adressen: '+name);return device;
+  };
+  const kindOf=key=>deviceKind(key,{symbols}),wordDevice=key=>/^[DTC]\d+$/.test(key)||key[0]==='@'&&['T','C'].includes(kindOf(key));
+  const contacts=[],actions=[],sources=[],incoming=Object.create(null),gates=Object.create(null),groups=[],blocks=[],branches=[];
+  let current=null,afterAction=false,ended=false;
+  const rail=()=>{const id='gxrail'+sources.length;sources.push(id);return id;};
+  const contact=(name,kind,feed=null)=>{
+    const device=resolve(name);if(device[0]==='D')gxError('ordregister kan inte användas som bitkontakt.');
+    if(['RISE','FALL'].includes(kind)&&profile==='FX3U'&&/^M\d+$/.test(device)&&+device.slice(1)>=2800&&+device.slice(1)<=3071)gxError('flankkontakter M2800–M3071 har särskild förbrukningssemantik som ännu inte kan köras.');
+    const from=feed?.node||rail(),to='gxn'+contacts.length,c={id:'gxc'+contacts.length,from,to,device,kind,label:name};
+    contacts.push(c);incoming[to]=[c];return {node:to,kind:'contact',contact:c,depth:1};
+  };
+  const combine=(op,a,b,node=null)=>{const depth=Math.max(a.depth,b.depth)+1;if(depth>64)gxError('logikdjupet överstiger 64 nivåer.');if(!node){node='gxgate'+Object.keys(gates).length;gates[node]={op,inputs:[a.node,b.node]};}return {node,kind:op,left:a,right:b,depth};};
+  const numeric=name=>{const value=/^(K-?\d+|H[0-9A-F]+)$/.test(name)?name:resolve(name);if(!(/^(K-?\d+|H[0-9A-F]+)$/.test(value)||wordDevice(value))||value[0]==='K'&&(+value.slice(1)<-32768||+value.slice(1)>32767)||value[0]==='H'&&parseInt(value.slice(1),16)>65535)gxError('operanden kräver 16-bitars K/H eller D/T/C.');return value;};
+  const need=()=>{if(!current)gxError('logiskt villkor saknas.');};
+  for(const ins of instructions){
+    const {op,args}=ins;if(ended)gxError('kod efter END.');
+    if(op==='NOP')continue;
+    const comparison=/^(LD|AND|OR)(=|<>|>=|<=|>|<)$/.exec(op);
+    if(comparison){
+      const [,connection,operator]=comparison;
+      if(connection==='LD'){if(current&&!afterAction){blocks.push(current);if(blocks.length>8)gxError('fler än 8 logikblock.');}else if(blocks.length)gxError('oavslutat logikblock.');}
+      else need();
+      const from=connection==='AND'?current.node:rail(),to='gxn'+contacts.length,c={id:'gxc'+contacts.length,from,to,kind:'COMPARE',comparison:operator,operands:args.map(numeric),label:op+' '+args.join(' '),device:null};
+      contacts.push(c);incoming[to]=[c];const e={node:to,kind:'contact',contact:c,depth:1};current=connection==='LD'?e:combine(connection==='AND'?'AND':'OR',current,e,connection==='AND'?to:null);afterAction=false;
+    }else if(['LD','LDI','LDP','LDF'].includes(op)){
+      if(current&&!afterAction){blocks.push(current);if(blocks.length>8)gxError('fler än 8 logikblock.');}
+      else if(blocks.length)gxError('oavslutat logikblock före nytt nätverk.');
+      current=contact(args[0],{LD:'NO',LDI:'NC',LDP:'RISE',LDF:'FALL'}[op]);afterAction=false;
+    }else if(['AND','ANI','OR','ORI','ANDP','ANDF','ORP','ORF'].includes(op)){
+      need();const serial=['AND','ANI','ANDP','ANDF'].includes(op),kind={ANI:'NC',ORI:'NC',ANDP:'RISE',ORP:'RISE',ANDF:'FALL',ORF:'FALL'}[op]||'NO',c=contact(args[0],kind,serial?current:null);
+      current=combine(serial?'AND':'OR',current,c,serial?c.node:null);afterAction=false;
+    }else if(op==='ANB'||op==='ORB'){
+      need();if(!blocks.length)gxError(op+' saknar sparat block.');current=combine(op==='ANB'?'AND':'OR',blocks.pop(),current);afterAction=false;
+    }else if(op==='MPS'){need();if(branches.length>=11)gxError('fler än 11 MPS-nivåer.');branches.push(current);}
+    else if(op==='MRD'||op==='MPP'){if(!branches.length)gxError(op+' saknar MPS.');current=op==='MPP'?branches.pop():branches.at(-1);afterAction=false;}
+    else if(op==='END'){if(blocks.length||branches.length||current&&!afterAction)gxError('ofullständigt nätverk eller obalanserad stack vid END.');ended=true;}
+    else if(['OUT','SET','RST','MOV','INC','DEC','PLS','PLF','ALT',...Object.keys(WORD_LOGIC_ARITY),...PULSE_ACTIONS].includes(op)){
+      need();if(blocks.length)gxError('oavslutat ANB/ORB-block vid spole.');
+      const base=PULSE_ACTIONS.includes(op)?op.slice(0,-1):op,wordArity=WORD_LOGIC_ARITY[base],arity=wordArity||(base==='MOV'?2:1);
+      if(op!=='OUT'&&args.length!==arity)gxError(op+' kräver '+arity+' operander.');
+      const label=args[wordArity?wordArity-1:base==='MOV'?1:0],target=resolve(label,true);let preset=null,source=null,wordSources=[];
+      if(op==='OUT'&&['T','C'].includes(kindOf(target))){if(args.length!==2)gxError('timer/räknare saknar förval.');preset=/^K\d+$/.test(args[1])?args[1]:resolve(args[1]);if(!/^(K\d+|D\d+)$/.test(preset)||preset[0]==='K'&&+preset.slice(1)>32767)gxError('förval måste vara K0–K32767 eller D-register.');}
+      else if(op==='OUT'&&args.length!==1)gxError('förval vid vanlig spole.');
+      if(op==='OUT'&&target[0]==='D'||op==='SET'&&['T','C','D'].includes(kindOf(target)))gxError(op+' '+target+' stöds inte.');
+      if(['PLS','PLF'].includes(op)&&!/^([YM])\d+$/.test(target))gxError(op+' kräver fysisk Y-/M-adress.');
+      if(base==='ALT'&&!['Y','M','S'].includes(kindOf(target)))gxError(op+' kräver Y, M, S eller lokal BOOL.');
+      if((['MOV','INC','DEC'].includes(base)||wordArity)&&target[0]!=='D')gxError(op+' kräver D-register.');
+      if(wordArity)wordSources=args.slice(0,-1).map(numeric);
+      if(base==='MOV'){source=/^(K-?\d+|H[0-9A-F]+)$/.test(args[0])?args[0]:resolve(args[0]);if(!(/^(K-?\d+|H[0-9A-F]+)$/.test(source)||wordDevice(source))||source[0]==='K'&&(+source.slice(1)<-32768||+source.slice(1)>32767)||source[0]==='H'&&parseInt(source.slice(1),16)>65535)gxError('MOV-källan stöds inte.');}
+      const a={id:'gxa'+actions.length,node:current.node,op,target,label,preset,source,sources:wordSources,operandLabels:[...args],step:ins.offset??actions.length};actions.push(a);
+      const previous=groups.at(-1);if(previous?.expr===current)previous.actions.push(a);else groups.push({expr:current,actions:[a],comment:ins.comment||''});afterAction=true;
+    }else gxError('instruktionen '+op+' stöds inte.');
+  }
+  if(!ended)gxError('END saknas.');
+  if(rawM.size&&symbolic.size)gxError('automatiska lokala labels blandas med råa M-adresser; deras alias kan inte verifieras.');
+  for(const kind of symbolicTC)if(rawTC.has(kind))gxError('automatiska lokala '+kind+'-labels blandas med fysiska '+kind+'-adresser; deras alias kan inte verifieras.');
+  const tc=new Set();for(const a of actions)if(a.op==='OUT'&&['T','C'].includes(kindOf(a.target))){if(tc.has(a.target))gxError('flera OUT till samma timer/räknare.');tc.add(a.target);}
+  // Reject contacts that never contribute to an action, including abandoned LDs.
+  const used=new Set(),visit=(id)=>{if(used.has(id))return;used.add(id);for(const c of incoming[id]||[])visit(c.from);for(const id2 of gates[id]?.inputs||[])visit(id2);};for(const a of actions)visit(a.node);
+  if(contacts.some(c=>!used.has(c.to)))gxError('villkor utan spole.');
+  const networks=groups.map((g,i)=>gxLayout(g,i+1));
+  const notes=[`GXW-källan ${scope}.Program.pou läses direkt; kompilerade resurskopior används inte som aktuell kod.`,'Ladderbilden återskapas från instruktionerna. Positionerna motsvarar inte GX Works2-redigerarens ursprungliga layout.'];
+  if(symbolic.size)notes.push('Automatiska lokala BOOL-labels körs som separata symboliska minnen. Råa M-adresser får inte blandas in.');
+  const coilCounts=new Map();for(const a of actions)if(a.op==='OUT')coilCounts.set(a.target,(coilCounts.get(a.target)||0)+1);for(const [device,count] of coilCounts)if(count>1)notes.push(`${device}: ${count} OUT-spolar. Sista skrivningen i scan bestämmer slutvärdet.`);
+  if(symbolicTC.size)notes.push('Lokala TIMER/COUNTER körs med egna typade tillstånd. Automatisk TIMER har 100 ms tidsbas; fysisk T-/C-adress gissas inte.');
+  return {version:5,format:'GXW',programName:scope,executable:true,issues:[],profile,symbols,instructions,networks,contacts,actions,sources,incoming,gates,devices:[...new Set([...contacts.map(c=>c.device).filter(Boolean),...contacts.flatMap(c=>c.operands||[]).filter(wordDevice),...actions.map(a=>a.target),...actions.flatMap(a=>[a.preset,a.source,...a.sources]).filter(x=>x&&wordDevice(x)),...labels.map(l=>l.device).filter(Boolean)])],labels,notes,pageCount:0,ladderPages:[],validated:true};
+}
+
+function gxLayout(group,page){
+  const sizes=new WeakMap(),measure=e=>{if(sizes.has(e))return sizes.get(e);let size;if(e.kind==='contact')size={w:190,h:85};else{const a=measure(e.left),b=measure(e.right);size=e.kind==='AND'?{w:a.w+b.w,h:Math.max(a.h,b.h)}:{w:Math.max(a.w,b.w),h:a.h+b.h};}sizes.set(e,size);return size;};
+  const m=measure(group.expr),left=55,right=Math.max(840,left+m.w+280),top=0,bottom=Math.max(m.h,group.actions.length*85)+65;
+  const n={page,left,right,top,bottom,height:14,contacts:[],actions:[],wires:[],sources:[],symbols:[],texts:[],steps:group.actions.map(a=>({step:a.step}))};
+  const wire=(x1,y1,x2,y2,node)=>n.wires.push({x1,y1,x2,y2,node});
+  const text=(value,x,y,size=14,max=180)=>n.texts.push({text:value,x,y,h:size,w:Math.min(max,value.length*size*.57)});
+  const draw=(e,x,y,w)=>{
+    if(e.kind==='contact'){
+      const c=e.contact,center=x+w/2;n.contacts.push({...c,x:center,y,x1:center-6,x2:center+6,height:18});wire(x,y,center-6,y,c.from);wire(center+6,y,x+w,y,c.to);text(c.label,x+5,y-22,14,w-10);return;
+    }
+    const a=measure(e.left),b=measure(e.right);
+    if(e.kind==='AND'){const split=w*a.w/(a.w+b.w);draw(e.left,x,y,split);draw(e.right,x+split,y,w-split);}
+    else{
+      const y2=y+a.h;draw(e.left,x,y,w);draw(e.right,x,y2,w);wire(x,y,x,y2,e.right.kind==='contact'?e.right.contact.from:e.right.node);wire(x+w,y,x+w,y2,e.node);
+    }
+  };
+  draw(group.expr,left,45,m.w);const join=left+m.w;
+  for(let i=0;i<group.actions.length;i++){
+    const a=group.actions[i],y=45+i*85,x1=right-225,x2=right-8;n.actions.push({...a,y});wire(join,45,join,y,a.node);wire(join,y,x1,y,a.node);wire(x2,y,right,y,a.node);
+    const caption=a.sources.length?a.op+' '+a.operandLabels.join(' '):`${a.op==='OUT'?'':a.op+' '}${a.label}${a.preset?' '+a.preset:''}${a.source?' ← '+a.source:''}`;
+    n.symbols.push({x1,x2,y,y1:y-13,y2:y+13,kind:'box'});text(caption,x1+12,y+5,14,x2-x1-24);
+  }
+  return n;
+}
+
+function compileGXW(bytes,profile='FX3U'){
+  const outer=new GXCompoundFile(bytes),files=gxDirectory(outer.read('projectdatalist.xml')),inner=new GXCompoundFile(outer.read('_hdb'));
+  const read=name=>{const id=files.get(name);if(!id)gxError('källfil saknas: '+name);return inner.read(id);};
+  const projects=[...files.keys()].filter(n=>/\.prj$/i.test(n));if(projects.length!==1)gxError('projektets CPU-uppgifter är tvetydiga.');
+  const r=new GXReader(read(projects[0]));r.s();const cpu=r.s(),expected={'FX3U/FX3UC':'FX3U',FX3S:'FX3S'}[cpu];
+  if(!expected)gxError('CPU '+cpu+' stöds inte.');if(expected!==profile)gxError('projektet använder '+cpu+'. Välj den CPU-profilen och importera igen.');
+  const pous=[...files.keys()].filter(n=>/\.Program\.pou$/i.test(n));if(pous.length!==1)gxError('endast ett fristående cykliskt program kan köras.');const scope=pous[0].slice(0,-12);
+  if([...files.keys()].some(n=>/\.pou$/i.test(n)&&n!==pous[0]))gxError('fler POU-/FB-källor stöds inte.');
+  const tasks=[...files.keys()].filter(n=>/\.tsk$/i.test(n));if(tasks.length!==1)gxError('endast en cyklisk task stöds.');
+  const task=new GXReader(read(tasks[0]));task.header();const event=task.s(),interval=task.s();task.u();task.u();const count=task.u();
+  if(event!=='TRUE'||interval!=='0'||count!==1||task.s()!==scope||task.u()!==1||task.s()!=='')gxError('taskens körvillkor eller programordning stöds inte.');
+  const labels=[...files.keys()].filter(n=>/\.(gh|lh)$/i.test(n)).flatMap(n=>readGXLabels(read(n),n));
+  const model=compileGXInstructions(readGXTokens(read(pous[0])),labels,profile,scope);model.cpu=cpu;model.project=projects[0].slice(0,-4);return model;
+}
+
+// Loading and execution are different operations. A readable GXW stays available
+// for inspection when some code or CPU feature cannot be executed faithfully.
+function importGXW(bytes,profile='FX3U'){
+  try{return compileGXW(bytes,profile);}catch(error){
+    const outer=new GXCompoundFile(bytes),files=gxDirectory(outer.read('projectdatalist.xml')),inner=new GXCompoundFile(outer.read('_hdb'));
+    const issues=[error.message],labels=[],instructions=[],programs=[];let cpu='Okänd',project='GXW-projekt';
+    for(const [name,id] of files){
+      if(!inner.streams.has(id))continue;
+      const raw=inner.read(id);
+      try{
+        if(/\.prj$/i.test(name)){const r=new GXReader(raw);r.s();cpu=r.s();project=name.slice(0,-4);}
+        if(/\.(gh|lh)$/i.test(name))labels.push(...readGXLabels(raw,name));
+        if(/\.Program\.pou$/i.test(name)){const nameOnly=name.slice(0,-12);programs.push(nameOnly);instructions.push(...readGXTokens(raw,{strict:false}).map(x=>({...x,program:nameOnly})));}
+      }catch(e){if(!issues.includes(e.message))issues.push(name+': '+e.message);}
+    }
+    const devices=new Set(labels.map(l=>l.device).filter(Boolean));for(const ins of instructions)for(const arg of ins.args)if(/^[XYMTCDS]\d+$/.test(arg))devices.add(canonical(arg));
+    const symbols=Object.create(null);for(const l of labels)if(!l.device&&['BOOL','TIMER','COUNTER'].includes(l.type)){const scope=programs.find(p=>p.toUpperCase()===l.scope.toUpperCase())||l.scope;symbols['@'+scope+':'+l.name]={kind:{BOOL:'M',TIMER:'T',COUNTER:'C'}[l.type],type:l.type,name:l.name,scope};}
+    return {version:5,format:'GXW',programName:programs.join(', ')||'Program',project,cpu,profile,symbols,executable:false,validated:false,issues,labels,instructions,devices:[...devices],networks:[],contacts:[],actions:[],sources:[],incoming:{},gates:{},notes:['Projektet är inläst för granskning. RUN är spärrad tills alla instruktioner och programvillkor kan köras korrekt.'],projectFiles:[...files.keys()]};
+  }
+}
+
+/* Layout and scan diagnostics for the offline ladder monitor. MIT. */
+
+function layoutLadderSheet(model) {
+  const networks=model.networks;
+  const left=networks.length?Math.min(...networks.map(n=>n.left)):55;
+  const right=Math.max(840,...networks.map(n=>n.right));
+  const rows=[];
+  let cursor=36,previous=-Infinity;
+  for(const n of networks){
+    const end=n.steps.at(-1).step;
+    const comments=model.instructions.filter(i=>i.offset>previous&&i.offset<=end&&i.comment).map(i=>i.comment);
+    previous=end;
+    const columns=Math.max(24,Math.floor((right-left-24)/7.2));
+    const lines=[];
+    for(const comment of comments)for(const paragraph of comment.split(/\r?\n/)){
+      let rest=paragraph.trim();
+      while(rest.length>columns){let split=rest.lastIndexOf(' ',columns);if(split<columns/2)split=columns;lines.push(rest.slice(0,split));rest=rest.slice(split).trimStart();}
+      if(rest)lines.push(rest);
+    }
+    const commentHeight=lines.length?lines.length*20+12:0;
+    const dy=cursor+commentHeight,delta=right-n.right;
+    const x=value=>value>=n.right-225?value+delta:value;
+    const bottom=Math.max(45,...n.contacts.map(c=>c.y),...n.actions.map(a=>a.y),...n.wires.flatMap(w=>[w.y1,w.y2]));
+    rows.push({page:n.page,numberY:dy+45,comments:lines.map((text,i)=>({text,x:left+10,y:cursor+18+i*20})),
+      contacts:n.contacts.map(c=>({...c,y:c.y+dy})),
+      actions:n.actions.map(a=>({...a,y:a.y+dy})),
+      wires:n.wires.map(w=>({...w,x1:x(w.x1),x2:x(w.x2),y1:w.y1+dy,y2:w.y2+dy})),
+      symbols:n.symbols.map(s=>({...s,x1:x(s.x1),x2:x(s.x2),y:s.y+dy,y1:s.y1+dy,y2:s.y2+dy})),
+      texts:n.texts.map(t=>({...t,x:x(t.x),y:t.y+dy})),
+      firstByte:n.steps[0].step,lastByte:end});
+    cursor=dy+bottom+58;
+  }
+  const endY=cursor+22;
+  return {left,right,x:left-55,width:right-left+78,height:endY+42,rows,endY};
+}
+
+function outputWriteConflicts(model,trace,bit) {
+  if(!trace)return [];
+  const network=new Map(model.networks.flatMap(n=>n.actions.map(a=>[a.id,n.page])));
+  const writes=new Map();
+  for(const a of model.actions){
+    const state=trace.actions.get(a.id);
+    if(!/^Y\d+$/.test(a.target)||!state)continue;
+    if(!['OUT','PLS','PLF'].includes(a.op)&&!state.powered)continue;
+    const row={id:a.id,op:a.op,network:network.get(a.id),state:state.state};
+    if(!writes.has(a.target))writes.set(a.target,[]);
+    writes.get(a.target).push(row);
+  }
+  const conflicts=[];
+  for(const [target,rows] of writes){
+    const final=bit(target),earlier=rows.findLast(row=>row.state!==final);
+    if(earlier)conflicts.push({target,final,earlier,last:rows.at(-1)});
+  }
+  return conflicts;
+}
+
+/* Presentation of declaration comments only. Program section comments are
+ * instruction metadata and must never become comments on a device or label. */
+function labelDeviceKey(label){return label.device||'@'+label.scope+':'+label.name;}
+function labelsAtDevice(labels,key){return labels.filter(label=>labelDeviceKey(label).toUpperCase()===key.toUpperCase());}
+function referenceComments(labels,references,scope){
+  const names=new Set(references.map(name=>name.toUpperCase()));
+  return labels.filter(label=>(label.scope.toUpperCase()==='GLOBAL'||label.scope.toUpperCase()===scope.toUpperCase())&&names.has(label.name.toUpperCase())&&label.comment)
+    .map(label=>`${label.name}: ${label.comment}`).join('\n');
+}
+
+/* Hardware is a display contract, independent of the PLC address space.
+ * Verified base-unit layouts: Mitsubishi JY997D48601-G §4.7 and
+ * JY997D16501-Y §4.7.2–4.7.3. No expansion modules are inferred. */
+const ioRange=(kind,count)=>Array.from({length:count},(_,i)=>kind+i.toString(8));
+function fx3sInputs(count){const even=ioRange('X',count).filter((_,i)=>i%2===0),odd=ioRange('X',count).filter((_,i)=>i%2===1);return [ ['PE','S/S',...(count===16?['S/S']:[]),...odd,...(count===6?['·']:[])],['L','N',...(count===16?['S/S']:[]),...even,...(count===6?['·']:[])] ];}
+function fx3uInputs(count){return [['PE','S/S','0V',...ioRange('X',count).filter((_,i)=>i%2===0),'·'],['L','N','·','24V',...ioRange('X',count).filter((_,i)=>i%2===1)]];}
+const definitions=[
+  ['FX3S-10MR/ES','FX3S',6,4,fx3sInputs(6),[['0V','Y0','Y1','Y2','Y3','·'],['24V','COM0','COM1','COM2','COM3','·']]],
+  ['FX3S-14MR/ES','FX3S',8,6,fx3sInputs(8),[['0V','Y0','Y1','Y2','Y4','·'],['24V','COM0','COM1','COM2','Y3','Y5']]],
+  ['FX3S-20MR/ES','FX3S',12,8,fx3sInputs(12),[['0V','Y0','Y1','Y2','Y3','Y4','Y6','·'],['24V','COM0','COM1','COM2','COM3','COM4','Y5','Y7']]],
+  ['FX3S-30MR/ES','FX3S',16,14,fx3sInputs(16),[['0V','Y0','Y1','Y2','Y4','COM3','Y7','Y11','Y12','Y14','·'],['24V','COM0','COM1','COM2','Y3','Y5','Y6','Y10','COM4','Y13','Y15']]],
+  ['FX3U-16MR/ES','FX3U',8,8,fx3uInputs(8),[['Y0','Y2','·','Y4','Y6','·'],['COM1','Y1','Y3','COM2','Y5','Y7']]],
+  ['FX3U-32MR/ES','FX3U',16,16,fx3uInputs(16),[['Y0','Y2','·','Y4','Y6','·','Y10','Y12','·','Y14','Y16','·'],['COM1','Y1','Y3','COM2','Y5','Y7','COM3','Y11','Y13','COM4','Y15','Y17']]]
+];
+const PLC_HARDWARE=Object.freeze(definitions.map(([id,profile,inputCount,outputCount,inputRows,outputRows])=>Object.freeze({id,profile,inputCount,outputCount,inputs:Object.freeze(ioRange('X',inputCount)),outputs:Object.freeze(ioRange('Y',outputCount)),inputRows:Object.freeze(inputRows.map(Object.freeze)),outputRows:Object.freeze(outputRows.map(Object.freeze))})));
+function hardwareFor(profile,id){return PLC_HARDWARE.find(h=>h.profile===profile&&h.id===id)||PLC_HARDWARE.find(h=>h.id===(profile==='FX3S'?'FX3S-30MR/ES':'FX3U-32MR/ES'));}
+function compareDevices(a,b){return a[0].localeCompare(b[0])||(parseInt(a.slice(1),/[XY]/.test(a[0])?8:10)-parseInt(b.slice(1),/[XY]/.test(b[0])?8:10))||a.localeCompare(b);}
+function programDevices(model){
+  if(!model)return [];
+  const devices=new Set(),labels=model.labels||[];
+  for(const ins of model.instructions||[]){
+    const scope=(ins.program||model.programName||'MAIN').toUpperCase();
+    for(const arg of ins.args){
+      const matches=labels.filter(l=>l.name.toUpperCase()===arg.toUpperCase()&&[scope,'GLOBAL'].includes(l.scope.toUpperCase()));
+      if(matches.length)for(const l of matches)devices.add(l.device||'@'+(ins.program||model.programName||'MAIN')+':'+l.name);
+      else if(/^[XYMTCDS]\d+$/i.test(arg)){try{devices.add(canonical(arg));}catch{/* Keep malformed operands in source inspection only. */}}
+    }
+  }
+  return [...devices].sort(compareDevices);
+}
+function monitorDevices(model,hardware,scope='simple'){
+  const keys=programDevices(model);
+  return [...new Set(scope==='full'?[...hardware.inputs,...hardware.outputs,...keys]:keys)].sort(compareDevices);
+}
+function matchesDevice(key,labels,filter){return (key+' '+labels.filter(l=>labelDeviceKey(l).toUpperCase()===key.toUpperCase()).map(l=>l.name).join(' ')).toLowerCase().includes(filter.trim().toLowerCase());}
+function outsideHardware(keys,hardware){const physical=new Set([...hardware.inputs,...hardware.outputs]);return keys.filter(k=>/^[XY]/.test(k)&&!physical.has(k));}
+function hardwareLedPositions(hardware){
+  const small=hardware.profile==='FX3S',columns=small?4:8,startX=small?464:338,pitch=small?35:30;
+  return [...hardware.inputs.map((key,i)=>({key,x:startX+i%columns*pitch,y:small?157+Math.floor(i/columns)*27:153+Math.floor(i/columns)*28})),...hardware.outputs.map((key,i)=>({key,x:startX+i%columns*pitch,y:small?369+Math.floor(i/columns)*27:385+Math.floor(i/columns)*28}))];
+}
+
+const $=id=>document.getElementById(id);
+let ioScope='simple',ioLayout='list',plcPictureSignature='';
+const hardwareSelection={FX3S:'FX3S-30MR/ES',FX3U:'FX3U-32MR/ES'};
+function activeHardware(){return hardwareFor($('profile').value,hardwareSelection[$('profile').value]);}
+function setupHardware(){const profile=$('profile').value;$('hardwareModel').innerHTML=PLC_HARDWARE.filter(h=>h.profile===profile).map(h=>`<option value="${h.id}">${h.id} · ${h.inputCount} IN / ${h.outputCount} OUT</option>`).join('');$('hardwareModel').value=activeHardware().id;plcPictureSignature='';}
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const station=new PlantStation(),lift=station.elevator,box=station.pushbox,boxReleaseQueue=new Set();
+let model=null,plc=null,paused=false,busy=false,epoch=0,acc=0,last=performance.now(),lastRender=0,activeTab='Ladder',logLines=[],buttonDown=new Set(),pulseQueue=new Set();
+function log(s){logLines.push(s);$('log').textContent=logLines.join('\n');}
+function message(s,kind=''){$('message').textContent=s;$('message').className='import-message '+kind;}
+function runnable(){return !!model?.executable;}
+function showTab(name){activeTab=name;for(const k of ['Ladder','IO','Code','Import']){$('tab'+k).setAttribute('aria-selected',String(name===k));$(k==='Ladder'?'ladderView':k==='IO'?'ioView':k==='Code'?'codeView':'importView').hidden=name!==k;}render(true);}
+for(const k of ['Ladder','IO','Code','Import'])$('tab'+k).onclick=()=>showTab(k);
+function clear(invalidate=true){
+  if(invalidate)epoch++;plc?.stop();box.releaseMomentary();boxReleaseQueue.clear();model=null;plc=null;paused=false;acc=0;busy=false;buttonDown.clear();pulseQueue.clear();$('programFile').value='';$('empty').hidden=false;$('monitor').hidden=true;$('ladderPages').replaceChildren();$('timerchips').replaceChildren();$('codeRows').replaceChildren();$('globalLabelRows').replaceChildren();$('localLabelRows').replaceChildren();$('inputPins').replaceChildren();$('outputPins').replaceChildren();$('fileName').textContent='Inget program inläst';$('notes').replaceChildren();$('compatibility').hidden=true;$('outputDiagnostics').hidden=true;message('Välj en GXW-fil. PLC:n och anläggningen startar i STOP.');render(true);
+}
+async function loadFile(file){
+  clear();const token=epoch;busy=true;logLines=[];log('PLC-simulator 6.1 · generell GXW-import');$('fileName').textContent=file.name;message('Läser projekt…');render();
+  try{
+    if(!/\.gxw$/i.test(file.name))throw Error('Välj projektfilen från GX Works2 (.gxw).');
+    if(file.size>40*1024*1024)throw Error('Filen överstiger 40 MB.');
+    const data=new Uint8Array(await file.arrayBuffer());if(token!==epoch)return;
+    const parsed=importGXW(data,$('profile').value);if(token!==epoch)return;
+    model=parsed;plc=new PLC(model);syncPlantInputs();acc=0;
+    log(`${model.project} · CPU ${model.cpu} · ${model.programName}`);
+    log(`${model.instructions.length} instruktioner · ${model.labels.length} labels · ${model.devices.length} refererade devices.`);
+    log(`PLC-körning: ${model.executable?'tillgänglig, står i STOP':'spärrad; projektet är inläst för granskning'}.`);
+    for(const note of model.notes)log('INFO: '+note);
+    for(const issue of model.issues)log('RUN SPÄRRAD: '+issue);
+    for(const a of model.actions)log(`  (källbyte 0x${a.step.toString(16)}) ${a.op} ${a.operandLabels.join(' ')}`);
+    $('notes').innerHTML=[...model.notes,...model.issues].map(s=>`<div class="notice">${esc(s)}</div>`).join('');
+    $('compatibility').hidden=model.executable;$('compatibility').textContent=model.executable?'':'Projektet är inläst för granskning. '+model.issues.join(' ')+' RUN är spärrad; ingen del av programmet körs.';
+    message(model.executable?'Projektet är inläst. Tryck RUN för att köra PLC-koden.':'Projektet är inläst i granskningsläge. Se Källkod och Import & hjälp.','success');
+    $('empty').hidden=true;$('monitor').hidden=false;buildMonitor();buildCode();buildLabels();buildDevices();
+  }catch(e){if(token!==epoch)return;model=null;plc=null;paused=false;log('FILEN KUNDE INTE LÄSAS: '+e.message);message(e.message,'error');$('empty').hidden=false;$('monitor').hidden=true;}
+  finally{if(token===epoch){busy=false;render(true);}}
+}
+$('programFile').onchange=e=>{const file=e.target.files[0];if(file)loadFile(file);};
+for(const ev of ['dragover','dragenter'])$('droparea').addEventListener(ev,e=>{e.preventDefault();$('drop').classList.add('drag');});
+$('droparea').addEventListener('dragleave',()=>$('drop').classList.remove('drag'));
+$('droparea').addEventListener('drop',e=>{e.preventDefault();$('drop').classList.remove('drag');const f=e.dataTransfer.files[0];if(f)loadFile(f);});
+$('profile').onchange=()=>{setupHardware();if(plc){clear();logLines=[];log('CPU-profil ändrad. Importera projektet på nytt.');message('CPU-profil ändrad. Importera projektet på nytt.');}render(true);};
+$('clear').onclick=()=>{clear();logLines=[];log('PLC-programmet är tömt.');};
+$('reset').onclick=()=>{if(!plc)return;releaseQueuedBoxInputs();const inputs=Object.fromEntries(Object.entries(plc.bits).filter(([k])=>k[0]==='X'));plc.reset();Object.assign(plc.bits,inputs);paused=false;acc=0;syncPlantInputs();message('PLC-minnen nollställda. Anläggningens läge är kvar.');render(true);};
+$('run').onclick=()=>{if(!runnable()||busy)return;plc.start();paused=false;acc=0;last=performance.now();render(true);};
+$('pause').onclick=()=>{if(plc?.running){paused=!paused;if(paused)releaseQueuedBoxInputs();acc=0;render(true);}};
+$('stop').onclick=()=>{plc?.stop();releaseQueuedBoxInputs();paused=false;acc=0;render(true);};
+function oneScan(){if(!plc||!runnable())return;syncPlantInputs();try{plc.scan(SCAN_MS);station.step(plc,SCAN_MS);for(const key of pulseQueue)plc.input(key,false);pulseQueue.clear();releaseQueuedBoxInputs();}catch(e){releaseQueuedBoxInputs();paused=false;log('PLC STOPPAD: '+e.message);message('PLC-fel: '+e.message,'error');}}
+$('step').onclick=()=>{if(!runnable()||busy)return;plc.start();paused=true;oneScan();render(true);};
+$('hold').onchange=()=>{if(station.active!=='elevator')return;for(const key of ELEVATOR_IO.buttons)plc?.input(key,false);buttonDown.clear();pulseQueue.clear();render(true);};
+function press(key){if(!plc||busy||station.active!=='elevator'||!lift.connected)return;pulseQueue.delete(key);if($('hold').checked)plc.input(key,!plc.bit(key));else{plc.input(key,true);buttonDown.add(key);}render(true);}
+function release(key){buttonDown.delete(key);if(station.active!=='elevator')return;if(!$('hold').checked&&plc){if(!paused&&plc.running)pulseQueue.add(key);else plc.input(key,false);}render(true);}
+for(const k of ['0','1','2']){
+  const b=$('x'+k),key='X'+k;
+  b.addEventListener('pointerdown',e=>{if(e.button!==0)return;e.preventDefault();b.setPointerCapture(e.pointerId);press(key);});
+  for(const ev of ['pointerup','pointercancel','lostpointercapture'])b.addEventListener(ev,()=>release(key));
+  b.addEventListener('keydown',e=>{if([' ','Enter'].includes(e.key)&&!e.repeat){e.preventDefault();press(key);}});
+  b.addEventListener('keyup',e=>{if([' ','Enter'].includes(e.key)){e.preventDefault();release(key);}});
+}
+window.addEventListener('blur',()=>{if(station.active==='elevator'&&!$('hold').checked&&plc)for(const k of ELEVATOR_IO.buttons){plc.input(k,false);buttonDown.delete(k);pulseQueue.delete(k);}if(!box.hold)box.releaseMomentary();boxReleaseQueue.clear();if(station.active==='pushbox')syncPlantInputs();render(true);});
+$('autoSensors').onchange=()=>{if(plc)syncPlantInputs();render(true);};
+$('connected').onchange=()=>{lift.setConnected(station.active==='elevator'?plc:null,$('connected').checked);buttonDown.clear();pulseQueue.clear();if(plc)syncPlantInputs();render(true);};
+$('placement').oninput=e=>{if(plc?.running&&!paused)return;lift.position=Number(e.target.value)/1000;if(plc)syncPlantInputs();render(true);};
+function syncPlantInputs(){station.syncInputs(plc,$('autoSensors').checked);}
+function releaseQueuedBoxInputs(){if(!boxReleaseQueue.size)return;for(const id of boxReleaseQueue)box.setPosition(id,false);boxReleaseQueue.clear();if(station.active==='pushbox')syncPlantInputs();}
+function selectPlant(name){
+  if(busy||name===station.active)return;
+  buttonDown.clear();pulseQueue.clear();boxReleaseQueue.clear();station.select(name,plc,$('autoSensors').checked);render(true);
+}
+for(const [id,name]of [['plantElevator','elevator'],['plantPushBox','pushbox']])$(id).onclick=()=>selectPlant(name);
+$('simulationPanel').querySelector('[role="tablist"]').onkeydown=e=>{
+  if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key)||busy)return;e.preventDefault();
+  const name=e.key==='Home'?'elevator':e.key==='End'?'pushbox':station.active==='elevator'?'pushbox':'elevator';selectPlant(name);$(name==='elevator'?'plantElevator':'plantPushBox').focus();
+};
+function pressBox(id){if(!plc||busy||station.active!=='pushbox'||!box.connected)return;boxReleaseQueue.delete(id);box.press(id);syncPlantInputs();render(true);}
+function releaseBox(id){
+  if(box.hold||station.active!=='pushbox'||!box.positions[id]||boxReleaseQueue.has(id))return;
+  if(plc?.running&&!paused)boxReleaseQueue.add(id);else{box.setPosition(id,false);syncPlantInputs();}render(true);
+}
+for(const c of PUSH_BOX_IO.controls){
+  const button=$('box'+c.id);
+  if(c.kind==='selector'){button.onclick=()=>{if(!plc||busy||station.active!=='pushbox'||!box.connected)return;box.toggleSelector();syncPlantInputs();render(true);};continue;}
+  button.addEventListener('pointerdown',e=>{if(e.button!==0)return;e.preventDefault();button.setPointerCapture(e.pointerId);pressBox(c.id);});
+  for(const ev of ['pointerup','pointercancel','lostpointercapture'])button.addEventListener(ev,()=>releaseBox(c.id));
+  button.addEventListener('keydown',e=>{if([' ','Enter'].includes(e.key)&&!e.repeat){e.preventDefault();pressBox(c.id);}});
+  button.addEventListener('keyup',e=>{if([' ','Enter'].includes(e.key)){e.preventDefault();releaseBox(c.id);}});
+  button.onclick=e=>{if(e.detail===0){pressBox(c.id);releaseBox(c.id);}};
+}
+$('boxConnected').onchange=()=>{boxReleaseQueue.clear();box.setConnected(station.active==='pushbox'?plc:null,$('boxConnected').checked);render(true);};
+$('boxHold').onchange=()=>{boxReleaseQueue.clear();box.setHold($('boxHold').checked);if(station.active==='pushbox')syncPlantInputs();render(true);};
+function renderPlantSelection(){
+  const inBox=station.active==='pushbox';$('elevatorPlant').hidden=inBox;$('pushBoxPlant').hidden=!inBox;
+  for(const [id,selected]of [['plantElevator',!inBox],['plantPushBox',inBox]]){$(id).setAttribute('aria-selected',String(selected));$(id).tabIndex=selected?0:-1;$(id).disabled=busy;}
+  for(const c of PUSH_BOX_IO.controls){const button=$('box'+c.id);button.disabled=!plc||busy||!inBox||!box.connected;button.classList.toggle('pressed',c.kind==='momentary'&&box.positions[c.id]);
+    if(c.kind==='selector'||box.hold)button.setAttribute('aria-pressed',String(box.positions[c.id]));else button.removeAttribute('aria-pressed');$('boxBit'+c.id).textContent=plc?String(+plc.bit(c.input)):'–';
+  }
+  const lamps=box.lampValues(plc,inBox);for(const l of PUSH_BOX_IO.lamps){const el=$('box'+l.id),on=lamps[l.id];el.classList.toggle('on',on);el.setAttribute('aria-label',`${l.id}, ${l.output}, ${on?'tänd':'släckt'}`);el.title=el.getAttribute('aria-label');}
+}
+function svgNetwork(n){
+  let s=`<g data-network="${n.page}"><title>Nätverk ${n.page} · källbyte 0x${n.firstByte.toString(16)}–0x${n.lastByte.toString(16)}</title><text class="network-number" x="8" y="${n.numberY+4}">${n.page}</text>`;
+  for(const c of n.comments)s+=`<text class="ladder-comment" x="${c.x}" y="${c.y}">${esc(c.text)}</text>`;
+  s+=n.wires.map(l=>`<line class="wire" data-node="${l.node}" x1="${l.x1}" y1="${l.y1}" x2="${l.x2}" y2="${l.y2}"/>`).join('');
+  for(const c of n.contacts){
+    let d=`M${c.x1} ${c.y-c.height/2}V${c.y+c.height/2} M${c.x2} ${c.y-c.height/2}V${c.y+c.height/2}`;
+    if(c.kind==='NC')d+=` M${c.x1-4} ${c.y+c.height/2}L${c.x2+4} ${c.y-c.height/2}`;
+    if(['RISE','FALL'].includes(c.kind)){const mid=(c.x1+c.x2)/2,dir=c.kind==='RISE'?-1:1,tip=c.y+dir*6;d+=` M${mid} ${c.y-dir*6}V${tip} M${mid-3} ${tip-dir*3}L${mid} ${tip}L${mid+3} ${tip-dir*3}`;}
+    if(c.kind==='COMPARE')d=`M${c.x1-11} ${c.y-10}H${c.x2+11}V${c.y+10}H${c.x1-11}Z`;
+    s+=`<path class="symbol" data-contact="${c.id}" data-kind="${c.kind}" d="${d}"><title>${esc(c.label)} · ${esc(c.device||c.operands?.join(', '))} · ${c.kind}${esc(referenceComments(model.labels,[c.label],model.programName)?'\n'+referenceComments(model.labels,[c.label],model.programName):'')}</title></path>`;
+    if(c.kind==='COMPARE')s+=`<text x="${c.x1-4}" y="${c.y+4}" font-size="12">${esc(c.comparison)}</text>`;
+  }
+  for(const a of n.symbols){const d=`M${a.x1+2} ${a.y1}H${a.x1}V${a.y2}H${a.x1+2} M${a.x2-2} ${a.y1}H${a.x2}V${a.y2}H${a.x2-2}`,action=n.actions.find(b=>Math.abs(b.y-a.y)<.5);s+=`<path class="symbol" ${action?`data-action="${action.id}"`:''} d="${d}"><title>${action?.op==='OUT'?'':esc(action?.op)+' '}${esc(action?.label)} · ${esc(action?.target)}</title></path>`;if(action)s+=`<text class="coil-final" data-coil-final="${action.id}" x="${a.x1+12}" y="${a.y+28}" font-size="11"></text>`;}
+  for(const t of n.texts)s+=`<text x="${t.x}" y="${t.y}" font-size="${t.h}" textLength="${t.w}" lengthAdjust="spacingAndGlyphs">${esc(t.text)}</text>`;
+  return s+'</g>';
+}
+function svgMonitor(){
+  const sheet=layoutLadderSheet(model);
+  let s=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="${sheet.x} 0 ${sheet.width} ${sheet.height}" style="min-width:${Math.max(680,sheet.width)}px" role="img" aria-label="Sammanhängande ladderblad för ${esc(model.programName)}"><text class="network-heading" x="8" y="19">Nätv.</text>`;
+  s+=`<path class="symbol" data-rail="1" d="M${sheet.left} 26V${sheet.height-20} M${sheet.right} 26V${sheet.height-20}"/>`;
+  s+=sheet.rows.map(svgNetwork).join('');
+  s+=`<g data-end="1"><line class="wire" data-node="${esc(model.sources[0]||'')}" x1="${sheet.left}" y1="${sheet.endY}" x2="${sheet.right-225}" y2="${sheet.endY}"/><path class="symbol" d="M${sheet.right-223} ${sheet.endY-13}H${sheet.right-225}V${sheet.endY+13}H${sheet.right-223} M${sheet.right-10} ${sheet.endY-13}H${sheet.right-8}V${sheet.endY+13}H${sheet.right-10}"/><text x="${sheet.right-213}" y="${sheet.endY+5}" font-size="14">END</text><line class="wire" data-node="${esc(model.sources[0]||'')}" x1="${sheet.right-8}" y1="${sheet.endY}" x2="${sheet.right}" y2="${sheet.endY}"/></g>`;
+  return s+'</svg>';
+}
+function buildMonitor(){
+  $('programSummary').textContent=`${model.format} · ${model.cpu} · ${model.programName} · ${model.executable?model.contacts.length+' kontakter · '+model.actions.length+' instruktioner/spolar':'granskningsläge'}`;
+  $('tabLadder').textContent='Ladder · '+model.programName;
+  $('ladderPages').innerHTML=model.executable?`<div class="ladder-sheet"><div class="ladder-title"><span>${esc(model.programName)} · sammanhängande ladder</span><span>${model.networks.length} nätverk · programordning uppifrån och ned</span></div>${svgMonitor()}</div>`:`<div class="notice">Ladderbilden kan inte köras. Projektets läsbara instruktioner och labels finns under Källkod och I/O & minnen.</div>`;
+}
+function buildCode(){
+  $('codeSummary').textContent=`${model.instructions.length} läsbara instruktioner · källbyte i respektive POU`;
+  $('codeRows').innerHTML=model.instructions.map(ins=>{
+    const scope=ins.program||model.programName,section=ins.comment?`<tr class="code-section" data-section-comment><td colspan="5"><small>Avsnitt · ${esc(scope)}</small>${esc(ins.comment)}</td></tr>`:'';
+    return section+`<tr data-instruction><td>${esc(scope)}</td><td>0x${ins.offset.toString(16)}</td><td>${esc(ins.op)}</td><td>${esc(ins.args.join(' '))}</td><td class="label-comment">${esc(referenceComments(model.labels,ins.args,scope))}</td></tr>`;
+  }).join('');
+}
+function buildLabels(){
+  for(const [id,global] of [['globalLabelRows',true],['localLabelRows',false]]){
+    const labels=model.labels.filter(l=>(l.scope==='global')===global);
+    $(id).innerHTML=labels.length?labels.map(l=>`<tr data-label="${esc(l.name)}" data-scope="${esc(l.scope)}"><td>${esc(l.table||l.scope)}${global?'':`<br><span class="muted">${esc(l.scope)}</span>`}</td><td>${esc(l.name)}</td><td>${esc(l.device||(l.type==='TIMER'?'Automatisk timer · 100 ms':l.type==='COUNTER'?'Automatisk räknare':'Automatiskt BOOL-minne'))}</td><td>${esc(l.type)}</td><td class="label-comment">${esc(l.comment)}</td></tr>`).join(''):'<tr><td colspan="5">Listan är tom.</td></tr>';
+  }
+}
+function deviceComments(key){return labelsAtDevice(model.labels,key).filter(l=>l.comment).map(l=>`${l.scope} · ${l.name}: ${l.comment}`).join('\n');}
+function aliases(key){if(!model)return '';if(key[0]==='@')return key.split(':').at(-1);return model.labels.filter(l=>l.device===key).map(l=>l.name).join(', ');}
+function devices(){return monitorDevices(model,activeHardware(),ioScope);}
+function ownedInput(key){return station.ownsInput(key,$('autoSensors').checked);}
+function matches(key){return matchesDevice(key,model?.labels||[],$('deviceFilter').value);}
+function deviceTableRow(k){
+  const kind=deviceKind(k,model||{}),name=aliases(k),physical=[...activeHardware().inputs,...activeHardware().outputs].includes(k),type=k[0]==='@'&&kind==='M'?'Lokalt BOOL-minne':kind==='X'?'Ingång':kind==='Y'?'Utgång':kind==='T'?'Timer':kind==='C'?'Räknare':kind==='D'?'16-bitars ord':'Minne';
+  return `<tr data-device="${esc(k)}"><td>${esc(k)}</td><td>${esc(name)||'–'}</td><td>${kind==='X'?`<button data-input="${esc(k)}" ${!plc||ownedInput(k)?'disabled':''} aria-label="Ändra ingång ${esc(k)}">${+!!plc?.bit(k)}</button>`:kind==='D'?`<input class="wordedit" data-word="${esc(k)}" type="number" min="-32768" max="32767" value="${plc?.number(k)||0}" ${!plc||plc.running&&!paused?'disabled':''} aria-label="Värde ${esc(k)}">`:`<span data-value="${esc(k)}">${['T','C'].includes(kind)?`${plc?.number(k)||0} · kontakt ${+!!plc?.bit(k)}`:+!!plc?.bit(k)}</span>`}</td><td>${type}${ownedInput(k)?' · anläggning':''}${/^[XY]/.test(k)&&!physical?' · utanför grundmodulen':''}</td><td class="device-comment">${model?esc(deviceComments(k)):''}</td></tr>`;
+}
+function buildDevices(){
+  const h=activeHardware(),keys=devices(),physical=new Set([...h.inputs,...h.outputs]),visible=keys.filter(matches),inPicture=ioLayout==='plc';
+  for(const [id,on]of [['ioSimple',ioScope==='simple'],['ioFull',ioScope==='full'],['ioList',!inPicture],['ioPLC',inPicture]])$(id).setAttribute('aria-pressed',String(on));
+  $('hardwareInfo').textContent=`${h.id} · ${h.inputCount} ingångar (${h.inputs[0]}–${h.inputs.at(-1)}) · ${h.outputCount} utgångar (${h.outputs[0]}–${h.outputs.at(-1)}). Grundmodul utan expansion.`;
+  $('ioSummary').textContent=`${ioScope==='simple'?'Simple · adresser använda i koden':'Full · grundmodulens X/Y och använda programadresser'} · ${visible.length} av ${keys.length} adresser${!model?' · inget program inläst':''}.`;
+  const outside=outsideHardware(programDevices(model),h);$('hardwareNotice').hidden=!outside.length;
+  $('hardwareNotice').textContent=`Används i programmet men saknar plint på ${h.id}: ${outside.join(', ')}. Värdena visas i listan; de läggs inte till som fysiska lysdioder.`;
+  const tableKeys=inPicture?visible.filter(k=>!physical.has(k)):visible;
+  $('deviceTableTitle').hidden=!inPicture||!tableKeys.length;$('deviceTableWrap').hidden=inPicture&&!tableKeys.length;
+  $('deviceRows').innerHTML=tableKeys.length?tableKeys.map(deviceTableRow).join(''):`<tr><td colspan="5">${!model&&ioScope==='simple'?'Inget program inläst.':$('deviceFilter').value?'Inga adresser matchar filtret.':'Inga adresser används i programmet.'}</td></tr>`;
+  for(const b of $('deviceRows').querySelectorAll('[data-input]'))b.onclick=()=>{plc.input(b.dataset.input,!plc.bit(b.dataset.input));render(true);};
+  for(const input of $('deviceRows').querySelectorAll('[data-word]'))input.onchange=()=>{const v=Number(input.value);if(Number.isInteger(v)&&v>=-32768&&v<=32767)plc.words[input.dataset.word]=v;else input.value=plc.number(input.dataset.word);render();};
+  $('plcPicture').hidden=!inPicture;$('plcPictureHelp').hidden=!inPicture;$('ioPins').hidden=inPicture;
+  buildIOPins(visible);buildPLCPicture(new Set(visible));
+}
+function buildIOPins(visible){
+  for(const [kind,id,label,attribute]of [['X','inputPins','Ingångar','data-input-indicator'],['Y','outputPins','Utgångar','data-output']]){
+    const keys=visible.filter(k=>k[0]===kind);$(id).hidden=!keys.length;
+    $(id).innerHTML=keys.length?`<span class="pin-label">${label}</span>`+keys.map(k=>`<span class="${kind==='X'?'input':'output'}-pin" ${attribute}="${esc(k)}" role="img"><i aria-hidden="true"></i>${esc(k)}</span>`).join(''):'';
+  }
+  renderIOPins();
+}
+function renderIOPins(){
+  for(const el of $('ioPins').querySelectorAll('[data-input-indicator],[data-output]')){
+    const key=el.dataset.inputIndicator||el.dataset.output,on=!!plc?.bit(key);
+    el.classList.toggle('on',on);
+    const text=`${key} · ${key[0]==='X'?'ingång':'utgång'}${aliases(key)?' · '+aliases(key):''} · ${on?'1 · tänd':'0 · släckt'}`;
+    el.title=text;el.setAttribute('aria-label',text);
+  }
+}
+function buildPLCPicture(visible){
+  const h=activeHardware(),signature=JSON.stringify([h.id,[...visible],!!model]);
+  if(signature!==plcPictureSignature){
+    plcPictureSignature=signature;
+    const rows=(list,y)=>{const pitch=570/Math.max(...list.map(row=>row.length));return list.map((row,r)=>row.map((key,i)=>{const io=/^[XY]/.test(key),show=!io||visible.has(key),x=42+i*pitch+(r===0?pitch*.32:0);return `<g class="plc-terminal${show?'':' filtered'}" ${io?`data-terminal="${key}"`:''}><rect x="${x}" y="${y+r*29}" width="${pitch-3}" height="25" rx="2"/><text class="plc-terminal-label" x="${x+(pitch-3)/2}" y="${y+r*29+17}">${show?esc(key):'·'}</text></g>`;}).join('')).join('');};
+    const leds=hardwareLedPositions(h).map(({key,x,y})=>{const show=visible.has(key);return `<g class="plc-led-slot${show?'':' unused'}" ${show?`data-plc-device="${key}" ${key[0]==='X'?`data-plc-input="${key}" role="button" tabindex="0" aria-label="Ändra ingång ${key}"`:''}`:''}><title>${show?esc(key+(aliases(key)?' · '+aliases(key):'')):'Plats dold av Simple eller filtret'}</title><rect x="${x-14}" y="${y-26}" width="28" height="36" fill="transparent"/><text x="${x}" y="${y-10}">${show?key.slice(1):'·'}</text><circle class="plc-led" cx="${x}" cy="${y}" r="6"/></g>`;}).join('');
+    const small=h.profile==='FX3S',statusX=small?504:589;
+    $('plcPicture').innerHTML=`<svg viewBox="0 0 660 550" role="group" aria-label="PLC-front ${h.id}. Ingångar upptill, utgångar nedtill."><rect x="18" y="18" width="624" height="514" rx="12" class="plc-shell"/><path d="M30 30H630M30 520H630" stroke="#a5afae" stroke-width="5"/><rect x="37" y="119" width="${small?370:269}" height="335" rx="5" class="plc-cover"/><text x="63" y="232" class="plc-body-label">MELSEC-F</text><text x="63" y="273" style="font:34px system-ui,sans-serif">${h.profile}</text><text x="63" y="307" class="plc-model-label">${h.id}</text><text x="63" y="337" style="font:12px system-ui,sans-serif;fill:#526665">SIMULERAD FRONTVY</text><rect x="65" y="371" width="48" height="38" rx="3" class="plc-port"/><path d="M75 382H103M75 389H103M75 396H103" stroke="#a7b8b6"/><text x="66" y="429" style="font-size:10px">PROG</text>${rows(h.inputRows,42)}${rows(h.outputRows,465)}<text x="${small?452:328}" y="132" style="font-size:13px">IN</text><text x="${small?452:328}" y="344" style="font-size:13px">OUT</text>${leds}${['POW','RUN','ERR'].map((name,i)=>`<circle class="plc-status-led" data-plc-status="${name}" cx="${statusX}" cy="${small?270+i*26:241+i*26}" r="5"/><text class="plc-status-label" x="${statusX-42}" y="${(small?270+i*26:241+i*26)+4}">${name}</text>`).join('')}<rect x="${small?582:567}" y="${small?261:328}" width="14" height="31" rx="2" class="plc-port"/></svg>`;
+  }
+  renderPLCValues();
+}
+function renderPLCValues(){
+  for(const el of $('plcPicture').querySelectorAll('[data-plc-device]')){const key=el.dataset.plcDevice,on=!!plc?.bit(key);el.querySelector('.plc-led').classList.toggle('on',on);el.querySelector('title').textContent=`${key}${aliases(key)?' · '+aliases(key):''} · ${on?'1 · tänd':'0 · släckt'}${ownedInput(key)?station.active==='pushbox'?' · tryckknappslådan':' · automatisk hissgivare':''}`;if(el.hasAttribute('data-plc-input')){const disabled=!plc||ownedInput(key);el.setAttribute('aria-disabled',String(disabled));el.setAttribute('tabindex',disabled?'-1':'0');el.setAttribute('aria-pressed',String(on));}}
+  for(const el of $('plcPicture').querySelectorAll('[data-plc-status]'))el.classList.toggle('on',el.dataset.plcStatus==='POW'||el.dataset.plcStatus==='RUN'&&!!plc?.running);
+}
+function togglePictureInput(el){if(!el||el.getAttribute('aria-disabled')==='true'||!plc)return;plc.input(el.dataset.plcInput,!plc.bit(el.dataset.plcInput));render(true);}
+$('plcPicture').onclick=e=>togglePictureInput(e.target.closest('[data-plc-input]'));
+$('plcPicture').onkeydown=e=>{if([' ','Enter'].includes(e.key)&&!e.repeat){const el=e.target.closest('[data-plc-input]');if(el){e.preventDefault();togglePictureInput(el);}}};
+$('deviceFilter').oninput=()=>render(true);
+$('hardwareModel').onchange=()=>{hardwareSelection[$('profile').value]=$('hardwareModel').value;render(true);};
+for(const [id,value]of [['ioSimple','simple'],['ioFull','full']])$(id).onclick=()=>{ioScope=value;render(true);};
+for(const [id,value]of [['ioList','list'],['ioPLC','plc']])$(id).onclick=()=>{ioLayout=value;render(true);};
+function renderOutputDiagnostics(trace){
+  const conflicts=outputWriteConflicts(model,trace,key=>plc.bit(key));
+  $('outputDiagnostics').hidden=!conflicts.length;
+  const html=conflicts.map(c=>`<p><strong>${esc(c.target)}</strong>: nätverk ${c.earlier.network} skriver ${+c.earlier.state}, nätverk ${c.last.network} skriver ${+c.last.state}. <strong>Slutvärde ${+c.final}.</strong></p>`).join('');
+  if($('outputDiagnosticRows').innerHTML!==html)$('outputDiagnosticRows').innerHTML=html;
+  const actionById=new Map(model.actions.map(a=>[a.id,a]));
+  const titles=new Map([...$('ladderPages').querySelectorAll('[data-action]')].map(el=>[el.dataset.action,el.querySelector('title')]));
+  for(const el of $('ladderPages').querySelectorAll('[data-coil-final]')){
+    const a=actionById.get(el.dataset.coilFinal),state=trace?.actions.get(a.id),numeric=['D','T','C'].includes(deviceKind(a.target,model)),value=numeric?plc.number(a.target):+plc.bit(a.target);
+    const wrote=state&&(['OUT','PLS','PLF'].includes(a.op)||state.powered),changed=!!wrote&&(numeric?state.value!==value:state.state!==!!value);
+    el.textContent=`${a.target[0]==='@'?deviceKind(a.target,model)==='T'?'Timer':deviceKind(a.target,model)==='C'?'Räknare':'Minne':a.target} · ${numeric?'värde':'slut'} ${value}${changed?' · ändras senare':''}`;
+    el.classList.toggle('final-on',!!value);el.classList.toggle('overwritten',changed);
+    const symbol=titles.get(a.id);
+    const operands=a.operandLabels||[a.label],comment=referenceComments(model.labels,operands,model.programName);
+    if(symbol)symbol.textContent=`${a.op==='OUT'?'':a.op+' '}${operands.join(' ')} · ${a.target}${comment?'\n'+comment:''}\n${state?'Signal vid instruktionen: '+(+state.powered):'Ingen scan körd'}\nSlutvärde: ${value}${changed?' · ändras av en senare instruktion':''}`;
+  }
+}
+function render(force=false){
+  renderPlantSelection();
+  const running=!!plc?.running,canRun=runnable();let st=busy?'● LÄSER PROGRAM':!model?'● INGET PROGRAM':!canRun?'◉ GRANSKNING':running?(paused?'Ⅱ PAUS / RUN':'● RUN'):'■ STOP';
+  $('status').textContent=st;$('status').className='badge'+(running?(paused?' pause':' run'):'');
+  $('run').disabled=!canRun||busy||(running&&!paused);$('pause').disabled=!running;$('pause').textContent=paused?'▶ Fortsätt':'Ⅱ Paus';$('stop').disabled=!running;$('step').disabled=!canRun||busy||(running&&!paused);$('reset').disabled=!model||busy;$('placement').disabled=running&&!paused;$('profile').disabled=busy;$('hardwareModel').disabled=busy;
+  for(const k of ['0','1','2']){$('x'+k).disabled=!model||busy||station.active!=='elevator'||!lift.connected;$('x'+k).classList.toggle('pressed',!!plc?.bit('X'+k));}
+  $('scan').textContent=`Scan ${plc?.scanCount||0} · ${((plc?.time||0)/1000).toFixed(3)} s`;
+  const pos=lift.position,up=station.active==='elevator'&&lift.connected&&running&&plc.bit(ELEVATOR_IO.up),down=station.active==='elevator'&&lift.connected&&running&&plc.bit(ELEVATOR_IO.down);
+  $('position').textContent=lift.atFloor?'Våning '+lift.atFloor:'Mellan våningar';$('percent').textContent=(pos+1).toFixed(2)+' vån';
+  const travel=$('shaft').clientHeight-88;$('car').style.bottom=(18+travel*pos/lift.maxPosition)+'px';
+  for(let i=0;i<3;i++){const base=18+travel*i/2;$('floor'+(i+1)).style.bottom=base+'px';$('floorLabel'+(i+1)).style.bottom=(base+8)+'px';$('sensor'+(i+1)).style.bottom=(base+6)+'px';$('sensor'+(i+1)).classList.toggle('on',!!plc?.bit('X'+(i+3)));const lit=station.active==='elevator'&&lift.connected&&!!plc?.bit('Y'+i),lamp=$('lamp'+(i+1));lamp.classList.toggle('on',lit);lamp.setAttribute('aria-label',`Lampa våning ${i+1}: ${lit?'tänd':'släckt'}. Y${i} slutvärde ${+!!plc?.bit('Y'+i)}${lift.connected?'':'. Anläggningen är frikopplad'}.`);lamp.title=lamp.getAttribute('aria-label');}
+  $('direction').textContent=up&&down?'!':up?'↑':down?'↓':'■';$('motor').textContent=!lift.connected?'Frikopplad':up&&down?'Konflikt':up?'Upp':down?'Ner':'Stopp';
+  $('fault').hidden=!(up&&down);$('fault').textContent='Y3 och Y4 är aktiva samtidigt. Mekaniken står still; PLC-bitarna visar kommandot.';
+  if(document.activeElement!==$('placement'))$('placement').value=Math.round(pos*1000);
+  renderIOPins();
+  if(model){
+    const trace=plc.trace;$('traceSummary').textContent=trace?`Scan ${trace.scan}${trace.first?' · startpuls M8002':''} · ${paused?'fryst':'senaste scan'}`:canRun?'Ingen scan körd':'RUN spärrad';
+    if(force||activeTab==='Ladder'){
+      renderOutputDiagnostics(trace);
+      for(const el of $('ladderPages').querySelectorAll('[data-node]'))el.classList.toggle('hot',!!trace&&(model.sources.includes(el.dataset.node)||trace.nodes.get(el.dataset.node)));
+      for(const el of $('ladderPages').querySelectorAll('[data-contact]'))el.classList.toggle('hot',!!trace?.contacts.get(el.dataset.contact)?.powered);
+      for(const el of $('ladderPages').querySelectorAll('[data-action]'))el.classList.toggle('hot',!!trace?.actions.get(el.dataset.action)?.powered);
+      for(const el of $('ladderPages').querySelectorAll('[data-rail]'))el.classList.toggle('hot',!!trace);
+      $('timerchips').innerHTML=model.actions.filter(a=>a.op==='OUT'&&['T','C'].includes(deviceKind(a.target,model))).map(a=>{const t=plc.timers[a.target]||plc.counters[a.target],timer=deviceKind(a.target,model)==='T';return `<span class="chip${t?.done?' on':''}">${esc(a.label)} · ${t?.value||0}/${t?.preset??plc.number(a.preset)}${timer?' · '+((t?.elapsed||0)/1000).toFixed(3)+' s':''}${timer?' · '+(t?.base||timerInfo(a.target,model.profile,plc.bits,model.symbols).base)+' ms/tick':''}</span>`;}).join('');
+    }
+    if(force&&activeTab==='IO')buildDevices();
+    if(activeTab==='IO')renderPLCValues();
+    if(activeTab==='IO')for(const el of $('deviceRows').querySelectorAll('[data-value],[data-input]')){const k=el.dataset.value||el.dataset.input;el.textContent=['T','C'].includes(deviceKind(k,model))?`${plc.number(k)} · kontakt ${+plc.bit(k)}`:String(+plc.bit(k));el.classList.toggle('onbit',plc.bit(k));}
+    if(activeTab==='IO')for(const el of $('deviceRows').querySelectorAll('[data-word]'))if(document.activeElement!==el)el.value=plc.number(el.dataset.word);
+  }else if(activeTab==='IO')buildDevices();
+}
+function frame(now){let dt=Math.max(0,now-last);last=now;if(plc?.running&&!paused&&!busy){acc+=Math.min(dt,250)*Number($('speed').value);let count=0;while(acc>=SCAN_MS&&count++<300){oneScan();acc-=SCAN_MS;if(!plc?.running)break;}}if(now-lastRender>=90){render();lastRender=now;}requestAnimationFrame(frame);}
+window.GXSimulator=window.Kulhissen={loadFile,snapshot:()=>({loaded:!!model,executable:!!model?.executable,issues:model?.issues||[],program:model?.programName,running:!!plc?.running,paused,scan:plc?.scanCount||0,time:plc?.time||0,position:lift.position,connected:station.current.connected,elevatorConnected:lift.connected,plant:station.active,box:{connected:box.connected,hold:box.hold,positions:{...box.positions},inputs:box.inputValues,lamps:box.lampValues(plc,station.active==='pushbox')},ioScope,ioLayout,hardware:activeHardware().id,bits:plc?{...plc.bits}:{},words:plc?{...plc.words}:{},timers:plc?JSON.parse(JSON.stringify(plc.timers)):{},counters:plc?JSON.parse(JSON.stringify(plc.counters)):{},actions:model?.actions.map(a=>({step:a.step,op:a.op,target:a.target,preset:a.preset}))||[]}),advance:ms=>{if(!plc||!paused||!runnable())throw Error('Pausa ett körbart program först.');if(!Number.isInteger(ms)||ms<0||ms>120000||ms%SCAN_MS)throw Error('Välj en multipel av 5 ms, högst 120000 ms.');for(let t=0;t<ms;t+=SCAN_MS)oneScan();render(true);}};
+setupHardware();render(true);requestAnimationFrame(frame);
+
+</script>
+<script>
+/* Web delivery only. PLC state and GXW files never enter the offline cache. */
+(()=>{
+  const status=document.getElementById('webState'),button=document.getElementById('webUpdate');
+  let registration=null,ready=false,updating=false,failed=false;
+  function render(){
+    const waiting=!!registration?.waiting,running=!!window.GXSimulator?.snapshot().running;
+    button.hidden=!waiting;button.disabled=running||updating;
+    button.title=running?'Stoppa PLC:n före uppdatering.':'Sidan laddas om. Välj din GXW-fil igen efteråt.';
+    status.dataset.state=failed?'unavailable':waiting?'update':ready?(navigator.onLine?'ready':'offline'):'preparing';
+    status.textContent=failed?'Offlinekopian kunde inte sparas. Sidan fungerar medan den är öppen.':
+      waiting?(running?'Ny version finns. Stoppa PLC:n när du vill uppdatera.':'Ny version finns. Efter uppdatering väljer du din GXW-fil igen.'):
+      ready?(navigator.onLine?'Offlinekopia klar · 6.1':'Offline · sparad version 6.1'):'Förbereder offlinekopia…';
+  }
+  if(!navigator.serviceWorker||!window.isSecureContext){failed=true;render();return;}
+  navigator.serviceWorker.addEventListener('controllerchange',()=>{if(updating)location.reload();});
+  button.addEventListener('click',()=>{
+    if(!registration?.waiting||window.GXSimulator?.snapshot().running)return;
+    updating=true;button.disabled=true;status.textContent='Uppdaterar sidan…';
+    registration.waiting.postMessage({type:'ACTIVATE_UPDATE'});
+  });
+  function watch(worker){worker?.addEventListener('statechange',()=>{if(worker.state==='redundant'&&!registration?.active)failed=true;render();});}
+  navigator.serviceWorker.register('./sw.js',{scope:'./',updateViaCache:'none'}).then(reg=>{
+    registration=reg;watch(reg.installing);
+    reg.addEventListener('updatefound',()=>watch(reg.installing));
+    return navigator.serviceWorker.ready;
+  }).then(()=>{ready=true;render();}).catch(()=>{failed=true;render();});
+  addEventListener('online',render);addEventListener('offline',render);
+  addEventListener('focus',()=>{registration?.update().catch(()=>{});});
+  setInterval(()=>{if(registration?.waiting)render();},400);
+  render();
+})();
+
+</script></body></html>
