@@ -26,7 +26,7 @@ GXW importer acknowledgements
 GXW container/token/declaration grammar and read-only CFB routines adapted and reimplemented for this JavaScript importer from:
 https://github.com/Arienax/gxworks-agent
 Commit 230926a661e6dd5c2134cac03193d94669d96f72
-License: Apache-2.0. Modified: bounded CFB reader, explicit FX simple-ladder subset, symbolic graph compiler and monitor layout.
+License: Apache-2.0. Modified: bounded CFB reader, explicit FX simple-ladder subset, symbolic graph compiler and monitor layout; version 6.2 adds bounded SFC envelope/child/reference framing adapted from src/gxw/sfc_pou.py. Execution semantics and browser SFC monitor are implemented separately.
 
 
                                  Apache License
