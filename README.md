@@ -7,6 +7,7 @@ En webbaserad simulator för att utforska PLC-program skapade i Mitsubishi GX Wo
 ## Vad kan du göra?
 
 - Läsa in GX Works2-projekt i formatet `.gxw`.
+- Visa sekventiell FX-SFC/Grafcet med steg, övergångsvillkor och liveövervakade ladderdelar.
 - Följa ladderlogiken under körning och se aktiva kontakter och instruktioner.
 - Övervaka ingångar, utgångar, minnen, register, timers och räknare.
 - Starta, pausa och stoppa PLC:n eller köra ett scan i taget.
@@ -26,7 +27,7 @@ Samma PLC-program och övervakning används i båda miljöerna. Anläggningen re
 1. [Öppna simulatorn](https://tobias-rogne.github.io/PLC-Simulator/) i webbläsaren.
 2. Välj CPU-profil som passar ditt projekt och ladda in din `.gxw`-fil.
 3. Läs importinformationen och välj den simuleringsmiljö du vill använda.
-4. Starta med **RUN** och följ programmet i **Ladder** eller **I/O & minnen**. Använd **Paus** och **Ett scan** för att undersöka körningen steg för steg.
+4. Starta med **RUN** och följ programmet i **Ladder/SFC** eller **I/O & minnen**. Använd **Paus** och **Ett scan** för att undersöka körningen steg för steg.
 
 ## Lokal körning och offline
 
@@ -41,6 +42,8 @@ När en ny appversion finns visas ett meddelande i simulatorn. Stoppa PLC:n med 
 ## Körstöd och begränsningar
 
 Simulatorn utvecklas för lärande och experiment med PLC-logik. Stöd finns för en delmängd av GX Works2-projekt och FX-instruktioner.
+
+SFC-stödet omfattar en sekventiell FX-sekvens med serieövergångar och hopp/loopar, tillsammans med cykliska ladderblock som kan aktivera startsteget via programkod. Blocken körs i blocknummerordning och visas live. Saknas startkod förblir sekvensen inaktiv. Förgreningar, parallella flöden, flera SFC-sekvenser och andra blockstyrattribut är ännu inte implementerade.
 
 Om ett projekt går att läsa men innehåller kod som inte kan simuleras visas orsaken och **RUN** spärras för hela programmet. Instruktioner som saknar körstöd hoppas inte över.
 

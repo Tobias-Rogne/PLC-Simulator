@@ -1,4 +1,4 @@
-<!doctype html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; worker-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'"><title>PLC-simulator 6.1 · GX PLC-labb offline</title><style>
+<!doctype html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; worker-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'"><title>PLC-simulator 6.4 · GX PLC-labb offline</title><style>
 :root{color-scheme:dark;--bg:#0c1420;--panel:#142131;--edge:#2a3c50;--muted:#9aadc1;--ink:#edf3f9;--accent:#6fddc3;--red:#ff9b9f;--amber:#f2cc88}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}button,input,select{font:inherit}button,select{cursor:pointer}button{color:var(--ink);background:#21364b;border:1px solid #3b5269;border-radius:7px;padding:8px 12px;white-space:nowrap}button:hover:not(:disabled){background:#2d4962}button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}button:disabled{opacity:.42;cursor:default}.primary{background:#29735f;border-color:#499a82}.primary:hover:not(:disabled){background:#33876e}.danger{color:var(--red)}h1,h2,h3,p{margin:0}h1{font-size:24px;letter-spacing:-.6px}h1 span{color:var(--muted);font-weight:400}h2{font-size:15px}h3{font-size:13px;margin:15px 0 8px}p{color:var(--muted)}small,.muted{color:var(--muted)}.mono{font-family:Consolas,ui-monospace,monospace}.header{max-width:1600px;padding:21px 26px 15px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:16px}.eyebrow{text-transform:uppercase;letter-spacing:2px;color:var(--accent);font-size:10px;font-weight:750;margin-bottom:4px}.version{font-size:11px;border:1px solid var(--edge);border-radius:6px;padding:4px 7px;vertical-align:middle;margin-left:5px;color:var(--muted)}.badge{font:600 12px Consolas,monospace;border:1px solid #46566a;padding:8px 12px;border-radius:7px;background:#1b2838}.badge.run{color:var(--accent);border-color:#39816b}.badge.pause{color:var(--amber)}.toolbar{max-width:1548px;margin:0 auto 18px;padding:13px 15px;background:#172535;border:1px solid var(--edge);border-radius:10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}.toolbar .push{margin-left:auto}.select{background:#111c2b;border:1px solid #3b4e63;padding:7px;color:var(--ink);border-radius:6px}.layout{max-width:1600px;margin:auto;padding:0 26px 25px;display:grid;grid-template-columns:335px minmax(0,1fr);gap:18px}.sidebar{display:flex;flex-direction:column;gap:16px}.panel{border:1px solid var(--edge);background:var(--panel);border-radius:11px;padding:17px}.row{display:flex;align-items:center;justify-content:space-between;gap:8px}.stack{display:flex;flex-direction:column;gap:9px}.drop{margin-top:13px;padding:17px 12px;border:1px dashed #5b738b;border-radius:8px;text-align:center;background:#101b29;display:block;cursor:pointer}.drop.drag{border-color:var(--accent);background:#123b32}.drop strong{font-size:13px;display:block}.drop small{display:block;font-size:11px;margin-top:4px}.drop input{display:block;width:100%;font-size:11px;color:var(--muted);margin-top:12px}.import-message{font-size:12px;padding-top:11px;overflow-wrap:anywhere}.import-message.error{color:var(--red)}.import-message.success{color:var(--accent)}.sourcefile{font-size:11px;overflow-wrap:anywhere;margin:7px 0;color:var(--muted)}.buttonrow{display:flex;gap:6px;margin-top:12px}.buttonrow button{font-size:11px;padding:6px 8px}.shaft{position:relative;height:270px;background:linear-gradient(90deg,#101b27,#172d3c 50%,#101b27);margin:17px 0 12px;border:1px solid #405468;border-radius:8px;overflow:hidden}.shaft:before,.shaft:after{content:'';position:absolute;top:15px;bottom:15px;width:3px;background:#43586a;left:42%}.shaft:after{left:77%}.floorline{position:absolute;bottom:16px;left:0;right:0;height:1px;background:#415569}.floorline.top{bottom:210px}.floorlabel{position:absolute;left:11px;font-size:11px;color:#a9bfd2;bottom:24px}.floorlabel.top{bottom:218px}.sensor{position:absolute;right:12px;bottom:22px;font:10px Consolas,monospace;color:#71869a}.sensor.top{bottom:216px}.sensor.on{color:var(--accent)}.hall{display:inline-block;height:9px;width:9px;border-radius:50%;background:#405268;margin-right:6px}.hall.on{background:#f9d780;box-shadow:0 0 11px #f9d78088}.car{position:absolute;bottom:16px;left:47%;width:25%;height:52px;border:2px solid #8fd7e4;background:linear-gradient(135deg,#24536b,#16384d);border-radius:5px;z-index:2;display:flex;align-items:center;justify-content:center;flex-direction:column;font-size:10px;font-weight:700;letter-spacing:1px}.car b{font-size:18px;line-height:22px}.statrow{display:flex;justify-content:space-between;border-bottom:1px solid var(--edge);padding-bottom:10px;margin-bottom:11px;font-size:12px}.buttons{display:grid;grid-template-columns:1fr 1fr;gap:7px}.floorbutton{padding:12px 5px;touch-action:none;font-size:12px}.floorbutton.pressed{background:#33776b;border-color:var(--accent)}.extra{grid-column:1/-1;padding:7px}.check{display:flex;align-items:center;gap:7px;font-size:11px;color:var(--muted);margin-top:10px}.check input{accent-color:var(--accent)}.plantnote{font-size:11px;color:var(--muted);margin-top:10px}.fault{font-size:11px;border-left:2px solid var(--red);color:var(--red);padding-left:9px;margin-top:9px}.workspace{min-width:0}.tabs{display:flex;border-bottom:1px solid var(--edge);gap:3px;margin-bottom:15px;flex-wrap:wrap}.tabs button{background:transparent;border:0;border-bottom:2px solid transparent;border-radius:0;color:var(--muted);padding:11px 13px;font-size:13px}.tabs button[aria-selected=true]{border-bottom-color:var(--accent);color:var(--ink)}.workspace>.panel{min-height:650px;padding:0;overflow:hidden}.workspacehead{padding:17px 18px 0}.view{padding:0 18px 18px}.empty{min-height:490px;display:flex;align-items:center;justify-content:center;text-align:center;padding:35px}.empty-inner{max-width:370px}.empty-icon{color:#819aae;border:1px solid var(--edge);border-radius:13px;margin:0 auto 20px;width:62px;height:62px;display:grid;place-items:center;font:25px Consolas,monospace}.empty h2{font-size:19px;margin-bottom:9px}.empty p{font-size:13px}.subhead{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:10px 0 11px;flex-wrap:wrap;font-size:11px;color:var(--muted)}.ladder-sheet{border:1px solid #c7d3dc;border-radius:7px;background:#f8fafc;overflow:auto;margin-bottom:14px}.ladder-title{padding:8px 13px;color:#536578;background:#edf2f6;border-bottom:1px solid #d5dfe8;font-size:11px;display:flex;justify-content:space-between}.ladder-sheet svg{display:block;width:100%;min-width:560px;color-scheme:light}.ladder-sheet text{fill:#263b4e;font-family:Arial,sans-serif}.wire{stroke:#526779;stroke-width:.7;stroke-linecap:round}.wire.hot{stroke:#119268;stroke-width:1.05}.symbol{stroke:#3c5369;stroke-width:.8;fill:none}.symbol.hot{stroke:#09845c;stroke-width:1.2}.symbol.hot+text{fill:#087858}.timerchips{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.chip{background:#101c2a;border:1px solid #344b61;border-radius:6px;font:11px/1.5 Consolas,monospace;padding:7px 10px}.chip.on{border-color:#349277;color:var(--accent)}.explain{font-size:11px;color:var(--muted)}table{border-collapse:collapse;width:100%;font-size:12px}th,td{text-align:left;border-bottom:1px solid var(--edge);padding:9px 10px;overflow-wrap:anywhere}th{color:#a2b7ca;font-size:11px;font-weight:500}td:first-child{font-family:Consolas,monospace}td button{font:11px Consolas,monospace;padding:4px 9px;min-width:48px}.onbit{color:var(--accent)}.wordedit{width:90px;background:#101c2a;color:var(--ink);border:1px solid #3a5065;border-radius:4px;padding:4px}.devicefilter{background:#101c2a;color:var(--ink);border:1px solid #3a5065;padding:7px 10px;border-radius:6px;width:min(300px,100%);margin:10px 0}.log{background:#0e1926;border:1px solid var(--edge);border-radius:7px;white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.8 Consolas,monospace;color:#c4d3e2;padding:14px;margin-top:13px;max-height:390px;overflow:auto}.helpbox{margin-top:15px;font-size:12px;color:var(--muted)}.helpbox ul{padding-left:19px}.helpbox li{margin:7px 0}.helpbox strong{color:#dbe6ee}details{padding:9px 0;border-bottom:1px solid var(--edge)}summary{cursor:pointer;color:#dbe6ee}details p{margin:9px 0;font-size:12px}.notice{padding:10px 12px;background:#202d3b;border-left:2px solid #688eac;font-size:12px;color:#b8cbdc;border-radius:3px;margin-top:12px}.footer{max-width:1600px;padding:0 26px 25px;margin:auto;color:#8198ad;font-size:11px}.hidden,[hidden]{display:none!important}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}@media(min-width:1400px){.layout{grid-template-columns:350px minmax(0,1fr)}}@media(max-width:900px){.header{padding:16px}.toolbar{margin:0 16px 16px}.layout{padding:0 16px 20px;grid-template-columns:290px minmax(0,1fr);gap:12px}.panel{padding:13px}.workspacehead{padding:12px 12px 0}.view{padding:0 12px 12px}.tabs button{padding:10px 8px}.toolbar .push{margin-left:0}}@media(max-width:720px){.header{align-items:flex-start}.header p{font-size:11px}h1{font-size:21px}.layout{grid-template-columns:1fr}.sidebar{display:grid;grid-template-columns:1fr 1fr;align-items:start}.shaft{height:250px}.floorline.top{bottom:190px}.floorlabel.top{bottom:198px}.sensor.top{bottom:196px}.toolbar{gap:6px}.toolbar button{font-size:12px}.workspace>.panel{min-height:460px}.empty{min-height:350px}}@media(max-width:480px){.sidebar{display:flex}.header .badge{font-size:10px;padding:6px}.toolbar .push{width:100%}.layout{padding-left:12px;padding-right:12px}.header{padding:15px 12px}.toolbar{margin:0 12px 12px}.view{padding:0 10px 14px}td,th{padding:8px 5px}}
 
 .shaft{height:365px}.buttons{grid-template-columns:repeat(3,minmax(0,1fr))}.floorbutton{white-space:normal;font-size:11px}.car{height:61px;left:47%;width:25%}.car b{font-size:16px}.output-pins{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.pin-label{align-self:center;min-width:65px;font-size:11px;color:var(--muted)}.input-pin,.output-pin{font:11px Consolas,monospace;border:1px solid #3a4e63;background:#101c2b;padding:5px 8px;border-radius:5px}.input-pin i,.output-pin i{display:inline-block;width:7px;height:7px;background:#44576b;border-radius:50%;margin-right:6px}.input-pin.on i,.output-pin.on i{background:#6fddc3;box-shadow:0 0 6px #6fddc366}.input-pin.on,.output-pin.on{color:#6fddc3;border-color:#50826e}.compatibility{color:#f2cc88;background:#352d22;border-left-color:#f2cc88;margin:10px 0}.code-table td{font:11px/1.6 Consolas,monospace;white-space:pre-wrap}.code-wrap{max-height:700px;overflow:auto}.code-table th{position:sticky;top:0;background:#142131}.physical-title{font-size:12px;color:#b8ccdc;margin:13px 0 7px}.footer{line-height:1.7}.wiring td,.wiring th{font-size:10px;padding:5px}.plantnote p{font-size:11px}.check select{margin-left:auto}.sourcefile{line-height:1.7}.connected-note{font-size:11px;margin-top:9px}
@@ -9,8 +9,11 @@
 .io-controls{display:flex;align-items:end;gap:15px;flex-wrap:wrap;margin:17px 0 12px}.io-control{display:flex;flex-direction:column;gap:6px;font-size:11px;color:var(--muted)}.segmented{display:flex;padding:3px;border:1px solid #3b5269;border-radius:8px;background:#101c2b;gap:3px}.segmented button{font-size:12px;padding:6px 13px;border:1px solid transparent;background:transparent;color:var(--muted)}.segmented button[aria-pressed=true]{color:#eafff7;background:#275649;border-color:#499a82}.plc-picture{margin-top:10px;padding:16px;border:1px solid #32485e;border-radius:9px;background:radial-gradient(ellipse at top,#233c4d,#101c2b 80%);overflow:auto}.plc-picture svg{display:block;width:100%;max-width:760px;min-width:420px;margin:auto}.plc-picture text{font-family:Consolas,ui-monospace,monospace;fill:#2b3940}.plc-shell{fill:#d6dad9;stroke:#8b999e;stroke-width:2}.plc-cover{fill:#e8eae5;stroke:#a6b0af}.plc-terminal{fill:#a3ada9;stroke:#6c7878}.plc-terminal-label{font-size:11px;text-anchor:middle;stroke:none}.plc-terminal.filtered{opacity:.22}.plc-led{fill:#543537;stroke:#3a3535;stroke-width:1.5}.plc-led.on{fill:#ff574b;stroke:#bc2726;filter:drop-shadow(0 0 4px #ff554bc0)}.plc-led-slot.unused{opacity:.18}.plc-led-slot text{font-size:11px;text-anchor:middle}.plc-led-slot[data-plc-input]{cursor:pointer}.plc-led-slot[aria-disabled=true]{cursor:default}.plc-led-slot:focus{outline:none}.plc-led-slot:focus-visible .plc-led{stroke:#09775c;stroke-width:4}.plc-status-led{fill:#3c5146;stroke:#76867b}.plc-status-led.on{fill:#42b96e;filter:drop-shadow(0 0 3px #37af6f)}.plc-status-label{font-size:12px}.plc-port{fill:#2c3a3c;stroke:#8c9997}.plc-body-label{font:16px system-ui,sans-serif}.plc-model-label{font-size:13px}.io-none{font-size:12px;color:var(--muted)}@media(max-width:480px){.io-controls{gap:11px}.io-control:last-child{width:100%}.io-control select{max-width:100%}.plc-picture{padding:8px}}
 
 .plant-tabs{display:flex;gap:5px;margin:-3px 0 16px;padding-bottom:12px;border-bottom:1px solid var(--edge)}.plant-tabs button{flex:1;min-width:0;white-space:normal;font-size:11px;padding:8px 5px}.plant-tabs button[aria-selected=true]{background:#245446;border-color:#53947f;color:#dcfff2}.push-box{position:relative;margin:17px 0 13px;padding:27px 12px 22px;border:3px solid #71808a;border-radius:9px;background:linear-gradient(125deg,#d9e0e4,#f1f4f5 55%,#cbd4da);box-shadow:inset 0 0 0 3px #f7f9fa,inset 0 -8px 18px #78889535,0 6px 12px #0002;color:#253442}.push-box:before,.push-box:after{content:'⊕';position:absolute;top:3px;color:#71808a;font-size:12px}.push-box:before{left:7px}.push-box:after{right:7px}.box-lamps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-bottom:40px}.box-lamp-unit,.box-control{display:flex;min-width:0;flex-direction:column;align-items:center;gap:5px}.box-lamp{width:44px;max-width:100%;aspect-ratio:1;border:3px solid #56636c;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#fbfcfc,#c3cdd3);box-shadow:0 2px 3px #0003,inset 0 0 0 2px #ffffff70;color:#354652;font-size:12px;font-weight:750}.box-lamp.on{background:radial-gradient(circle at 35% 30%,#fffde5,#f5d36a 70%);border-color:#a07d26;box-shadow:0 0 12px #efc654a0,inset 0 0 0 2px #ffffff90;color:#544316}.box-address{font:9px/1.5 Consolas,monospace;color:#425563;white-space:nowrap}.box-bit{font:10px Consolas,monospace;color:#324651}.box-controls{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}.box-button{position:relative;display:grid;place-items:center;width:44px;max-width:100%;aspect-ratio:1;padding:0;border:3px solid #4b5963;border-radius:50%;color:#e8eff3;background:radial-gradient(circle at 37% 30%,#60717d,#344550 75%);box-shadow:0 3px 0 #24343f,0 5px 6px #0003;font-size:12px;touch-action:none;user-select:none;-webkit-user-select:none}.box-button:hover:not(:disabled){background:radial-gradient(circle at 37% 30%,#728591,#425a69 75%)}.box-button.pressed{transform:translateY(2px);box-shadow:0 1px 0 #24343f,inset 0 2px 6px #0005;border-color:#3b9b80}.box-button:disabled{opacity:.55}.box-selector .box-control-name{position:absolute;bottom:3px;font-size:8px;z-index:1}.selector-handle{height:29px;width:8px;background:linear-gradient(90deg,#151f27,#92a0a8 50%,#202e38);border:1px solid #14212b;border-radius:4px;transform:rotate(-38deg);transition:transform .12s;display:block;margin-top:-5px}.box-selector[aria-pressed=true] .selector-handle{transform:rotate(38deg)}.box-selector[aria-pressed=true]{border-color:#409c80}.box-button:focus-visible{outline:3px solid #067e62;outline-offset:3px}
+.sfc-workspace{display:grid;grid-template-columns:300px minmax(0,1fr);gap:18px;margin-top:12px;align-items:start}.sfc-flow{background:#f8fafc;color:#4e6476;border:1px solid #c7d3dc;border-radius:4px;overflow:auto;max-height:820px}.sfc-flow svg{display:block;width:100%;min-width:280px}.sfc-flow text{font:13px Consolas,monospace;fill:#344b5e}.sfc-step rect{fill:#fff;stroke:#74899a;stroke-width:1.5}.sfc-step .sfc-initial{fill:none}.sfc-step{cursor:pointer}.sfc-step:focus{outline:none}.sfc-step:focus rect,.sfc-step.selected rect{stroke:#2276be;stroke-width:2.5}.sfc-step.active rect{fill:#d8f5e8;stroke:#138c62}.sfc-step .sfc-active-dot{fill:transparent}.sfc-step.active .sfc-active-dot{fill:#0c8b5d}.sfc-edge{stroke:#718598;stroke-width:1.5;fill:none}.sfc-transition{cursor:pointer}.sfc-transition path{stroke:#4e6476;stroke-width:3}.sfc-hit{fill:transparent}.sfc-transition:focus .sfc-hit{stroke:#2276be;stroke-width:1;outline:none}.sfc-transition.taken path,.sfc-edge.taken{stroke:#0a9265;stroke-width:3}.sfc-status{margin:12px 0;padding:9px 12px;border-left:3px solid var(--accent);background:#142b2b;color:#b9e9d6;font-size:12px}.sfc-detail{min-width:0}.sfc-detail h3{margin:14px 0 9px}.sfc-detail .ladder-sheet{margin-top:8px}.sfc-detail .ladder-sheet svg{min-width:500px}.sfc-listing{padding:12px;white-space:pre-wrap;border:1px solid var(--edge);font:12px/1.7 Consolas,monospace}.sfc-step-state{font-size:11px!important}@media(max-width:1200px){.sfc-workspace{grid-template-columns:1fr}.sfc-flow{max-height:440px}.sfc-flow svg{width:300px;margin:auto}}
+.sfc-status,#sfcPhase{overflow-wrap:anywhere}.sfc-status.waiting{border-left-color:#d5ac68;background:#30291f;color:#efd49c}.sfc-start-help{border:1px solid #695837;border-radius:5px;padding:12px 14px;margin:10px 0 12px;background:#28251f;font-size:12px;color:#e8d2ac}.sfc-start-help p{margin:7px 0 10px;color:#cfc0aa}.sfc-ladder-block{margin:16px 0;min-width:0}.sfc-ladder-block h3{font-size:14px;overflow-wrap:anywhere}.sfc-ladder-block .ladder-sheet svg{min-width:500px}
+.program-block-tabs{display:flex;gap:5px;overflow:auto;max-width:100%;padding:3px 2px 7px;margin:12px 0 3px}.program-block-tabs button{flex:none;border-radius:5px 5px 0 0;padding:8px 17px;color:var(--muted);background:#101c2b}.program-block-tabs button[aria-selected=true]{color:var(--ink);border-color:var(--accent);border-bottom:3px solid var(--accent);background:#25463f}.block-execution{margin:0 0 12px;overflow-wrap:anywhere}.trace-pending{border-left-color:var(--amber);color:var(--amber);margin:9px 0 12px}.sfc-ladder-block{min-width:0}
 </style><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icon.svg" type="image/svg+xml"><meta name="theme-color" content="#142131"></head><body>
-<header class="header"><div><div class="eyebrow">Lokalt PLC-labb</div><h1>PLC-simulator <span>/ GX Works2</span><span class="version">6.1</span></h1><p>Din PLC-kod. Filerna läses och simuleras på din dator.</p></div><span id="status" class="badge" role="status">● INGET PROGRAM</span></header><section id="webDelivery" style="max-width:1548px;margin:0 auto 14px;padding:0 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:12px;color:#9aadc1"><span id="webState" role="status" aria-live="polite">Förbereder offlinekopia…</span><button id="webUpdate" hidden>Uppdatera sidan</button></section>
+<header class="header"><div><div class="eyebrow">Lokalt PLC-labb</div><h1>PLC-simulator <span>/ GX Works2</span><span class="version">6.4</span></h1><p>Din PLC-kod. Filerna läses och simuleras på din dator.</p></div><span id="status" class="badge" role="status">● INGET PROGRAM</span></header><section id="webDelivery" style="max-width:1548px;margin:0 auto 14px;padding:0 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:12px;color:#9aadc1"><span id="webState" role="status" aria-live="polite">Förbereder offlinekopia…</span><button id="webUpdate" hidden>Uppdatera sidan</button></section>
 <div class="toolbar" aria-label="PLC-kontroller"><button id="run" class="primary" disabled>▶ RUN</button><button id="pause" disabled>Ⅱ Paus</button><button id="stop" disabled>■ STOP</button><button id="step" disabled>↦ Ett scan</button><span id="scan" class="muted mono" style="font-size:11px">Scan 0 · 0.000 s</span><label class="push muted" style="font-size:11px">Simuleringstid <select id="speed" class="select" aria-label="Simuleringshastighet"><option value="0.25">0,25×</option><option value="0.5">0,5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="5">5×</option></select></label></div>
 <main class="layout"><aside class="sidebar">
 <section class="panel" id="droparea"><div class="row"><h2>PLC-program</h2><span class="muted" style="font-size:10px">GXW → PLC</span></div><label class="drop" id="drop"><strong>Välj eller släpp din GXW-fil</strong><small>Filen läses bara på din dator</small><input id="programFile" type="file" accept=".gxw" aria-label="Välj GX Works2-projekt (.gxw)"></label><label class="check" for="profile">CPU-profil <select id="profile" class="select"><option value="FX3S" selected>FX3S</option><option value="FX3U">FX3U / FX3UC</option></select></label><p id="fileName" class="sourcefile">Inget program inläst</p><p id="message" class="import-message" aria-live="polite">Välj en GXW-fil. PLC:n och anläggningen startar i STOP.</p><div class="buttonrow"><button id="reset" disabled>Nollställ PLC</button><button id="clear" class="danger">Töm program</button></div></section>
@@ -21,23 +24,23 @@
 <div class="statrow"><span>Motor <b id="motor">Stopp</b></span><span id="percent" class="mono">1.00 vån</span></div><div class="buttons"><button id="x0" class="floorbutton" disabled>X0 · Våning 1</button><button id="x1" class="floorbutton" disabled>X1 · Våning 2</button><button id="x2" class="floorbutton" disabled>X2 · Våning 3</button></div><label class="check"><input id="hold" type="checkbox"> Lås knappar på/av</label><label class="check"><input id="autoSensors" type="checkbox" checked> Automatiska givare X3–X5</label><div id="fault" class="fault" hidden></div><details class="plantnote"><summary>Flytta hissen vid STOP / paus</summary><input id="placement" type="range" min="0" max="2000" value="0" style="width:100%" aria-label="Hissens position"><p>Ändrar anläggningens läge. PLC-minnen nollställs separat.</p></details><p class="plantnote">Y3 = upp · Y4 = ner. Lamporna följer Y0–Y2. Körvägar, service, räknare och automatisk återgång bestäms av din PLC-kod.</p></div><div id="pushBoxPlant" role="tabpanel" aria-labelledby="plantPushBox" hidden><h2>Tryckknappslåda</h2><label class="check"><input id="boxConnected" type="checkbox" checked> Anslut anläggningen till PLC:n</label><div class="push-box" aria-label="Tryckknappslåda med fyra lampor och fem manöverdon"><div class="box-lamps"><div class="box-lamp-unit"><div class="box-lamp" id="boxH1" data-box-lamp="H1" role="img" aria-label="H1, Y0, släckt"><span>H1</span></div><span class="box-address">Y0</span></div><div class="box-lamp-unit"><div class="box-lamp" id="boxH2" data-box-lamp="H2" role="img" aria-label="H2, Y1, släckt"><span>H2</span></div><span class="box-address">Y1</span></div><div class="box-lamp-unit"><div class="box-lamp" id="boxH3" data-box-lamp="H3" role="img" aria-label="H3, Y2, släckt"><span>H3</span></div><span class="box-address">Y2</span></div><div class="box-lamp-unit"><div class="box-lamp" id="boxH4" data-box-lamp="H4" role="img" aria-label="H4, Y3, släckt"><span>H4</span></div><span class="box-address">Y3</span></div></div><div class="box-controls"><div class="box-control"><button id="boxS1" class="box-button" data-box-control="S1" aria-label="S1, brytande tryckknapp, X0" disabled><span class="box-control-name">S1</span></button><span class="box-address">X0 · NC</span><span class="box-bit" id="boxBitS1">–</span></div><div class="box-control"><button id="boxS2" class="box-button" data-box-control="S2" aria-label="S2, brytande tryckknapp, X1" disabled><span class="box-control-name">S2</span></button><span class="box-address">X1 · NC</span><span class="box-bit" id="boxBitS2">–</span></div><div class="box-control"><button id="boxS3" class="box-button box-selector" data-box-control="S3" aria-pressed="false" aria-label="S3, väljare, X2" disabled><span class="box-control-name">S3</span><i class="selector-handle" aria-hidden="true"></i></button><span class="box-address">X2 · 0/1</span><span class="box-bit" id="boxBitS3">–</span></div><div class="box-control"><button id="boxS4" class="box-button" data-box-control="S4" aria-label="S4, slutande tryckknapp, X3" disabled><span class="box-control-name">S4</span></button><span class="box-address">X3 · NO</span><span class="box-bit" id="boxBitS4">–</span></div><div class="box-control"><button id="boxS5" class="box-button" data-box-control="S5" aria-label="S5, slutande tryckknapp, X4" disabled><span class="box-control-name">S5</span></button><span class="box-address">X4 · NO</span><span class="box-bit" id="boxBitS5">–</span></div></div></div><label class="check"><input id="boxHold" type="checkbox"> Lås knappar på/av</label><p class="plantnote">Håll inne S1, S2, S4 och S5, eller slå på låsning för att växla dem med klick. Vrid S3 genom att klicka; läget ligger kvar. Lamporna följer PLC:ns Y0–Y3.</p><p class="plantnote">S1/S2 är brytande (NC): 1 i vila, 0 intryckt. S4/S5 är slutande (NO): 0 i vila, 1 intryckt.</p><details class="plantnote"><summary>Koppling enligt ritningen</summary><table class="wiring"><thead><tr><th>Don</th><th>PLC</th><th>Kontakt</th></tr></thead><tbody><tr><td>S1 / S2</td><td>X0 / X1</td><td>NC · 21–22</td></tr><tr><td>S3</td><td>X2</td><td>NO · väljare</td></tr><tr><td>S4 / S5</td><td>X3 / X4</td><td>NO · 13–14</td></tr><tr><td>H1–H4</td><td>Y0–Y3</td><td>Lampor</td></tr></tbody></table><p>Den första dubbla X3-märkningen i ritningen är korrigerad till X2.</p></details></div></section>
 </aside>
 <section class="workspace"><div class="panel"><div class="workspacehead"><nav class="tabs" role="tablist" aria-label="Arbetsyta"><button role="tab" id="tabLadder" aria-selected="true" aria-controls="ladderView">Ladder</button><button role="tab" id="tabIO" aria-selected="false" aria-controls="ioView">I/O & minnen</button><button role="tab" id="tabCode" aria-selected="false" aria-controls="codeView">Källkod</button><button role="tab" id="tabImport" aria-selected="false" aria-controls="importView">Import & hjälp</button></nav><div id="compatibility" class="notice compatibility" hidden></div></div>
-<div class="view" id="ladderView" role="tabpanel" aria-labelledby="tabLadder"><div id="empty" class="empty"><div class="empty-inner"><div class="empty-icon">─┤ ├─</div><h2>Börja med ditt PLC-program</h2><p>PLC:n är tom. Ladda en GXW-fil för att läsa och övervaka koden.</p><p style="margin-top:14px;font-size:11px">Ingen installation · ingen server · ingen internetanslutning</p></div></div><div id="monitor" hidden><div class="subhead"><span id="programSummary"></span><span id="traceSummary">Ingen scan körd</span></div><div id="outputDiagnostics" class="output-diagnostics" hidden><strong>Utgången ändras senare i samma scan</strong><div id="outputDiagnosticRows"></div><p>Grönt visar villkoret vid instruktionen. Lamporna följer utgångens slutvärde efter hela programmet.</p></div><div id="ladderPages"></div><div id="timerchips" class="timerchips"></div><p class="explain">Ett sammanhängande blad i programordning. Grönt visar villkoret när instruktionen kördes; texten under spolen visar slutvärdet efter hela scan. Lamporna följer slutvärdet. Nätverksnumren är inte PLC-stegnummer. Flankkontakter markeras med pil upp/ned.</p></div></div>
+<div class="view" id="ladderView" role="tabpanel" aria-labelledby="tabLadder"><div id="empty" class="empty"><div class="empty-inner"><div class="empty-icon">─┤ ├─</div><h2>Börja med ditt PLC-program</h2><p>PLC:n är tom. Ladda en GXW-fil för att läsa och övervaka koden.</p><p style="margin-top:14px;font-size:11px">Ingen installation · ingen server · ingen internetanslutning</p></div></div><div id="monitor" hidden><div class="subhead"><span id="programSummary"></span><span id="traceSummary">Ingen scan körd</span></div><div id="outputDiagnostics" class="output-diagnostics" hidden><strong>Utgången ändras senare i samma scan</strong><div id="outputDiagnosticRows"></div><p>Grönt visar villkoret vid instruktionen. Lamporna följer utgångens slutvärde efter hela programmet.</p></div><p id="tracePending" class="notice trace-pending" hidden></p><nav id="programBlocks" class="program-block-tabs" role="tablist" aria-label="Programblock" hidden></nav><p id="blockExecution" class="explain block-execution" hidden></p><div id="programBlockPanel"><div id="ladderPages"></div><div id="timerchips" class="timerchips"></div></div><p class="explain">Ett sammanhängande blad per programblock i programordning. Grönt visar villkoret när instruktionen kördes; texten under spolen visar slutvärdet efter hela scan. Lamporna följer slutvärdet. Nätverksnumren är inte PLC-stegnummer. Flankkontakter markeras med pil upp/ned.</p></div></div>
 <div class="view" id="ioView" role="tabpanel" aria-labelledby="tabIO" hidden><h2>PLC:ns devices och labels</h2><p class="explain" style="margin-top:7px">Simple visar adresser som används i koden. Full visar även alla fysiska X/Y på vald grundmodul. Klicka på manuella X-ingångar för att ändra dem. D-register kan ändras vid STOP eller paus.</p><div class="io-controls"><div class="io-control"><span>Omfattning</span><div class="segmented" role="group" aria-label="I/O-omfattning"><button id="ioSimple" aria-pressed="true">Simple</button><button id="ioFull" aria-pressed="false">Full</button></div></div><div class="io-control"><span>Visning</span><div class="segmented" role="group" aria-label="I/O-visning"><button id="ioList" aria-pressed="true">Lista</button><button id="ioPLC" aria-pressed="false">PLC-bild</button></div></div><label class="io-control" for="hardwareModel"><span>PLC-modell · grundmodul</span><select id="hardwareModel" class="select" aria-describedby="hardwareInfo"></select></label></div><p id="hardwareInfo" class="explain"></p><p id="ioSummary" class="explain" aria-live="polite" style="margin-top:6px"></p><div id="ioPins"><div id="inputPins" class="output-pins" role="group" aria-label="Ingångsindikeringar"></div><div id="outputPins" class="output-pins" role="group" aria-label="Utgångsindikeringar"></div></div><input id="deviceFilter" class="devicefilter" placeholder="Filtrera adress eller label…" aria-label="Filtrera devices"><div id="hardwareNotice" class="notice" hidden></div><div id="plcPicture" class="plc-picture" hidden></div><p id="plcPictureHelp" class="explain" hidden style="margin:8px 0 14px">Röda I/O-lysdioder följer PLC-värdena. Klicka på en X-lysdiod för att ändra en manuell ingång. Anläggningens ingångar styrs i simuleringspanelen. Nedtonade platser döljs av Simple eller filtret.</p><h3 id="deviceTableTitle" hidden>Programadresser utan plint på grundmodulen</h3><div id="deviceTableWrap" style="overflow:auto"><table><thead><tr><th>Device</th><th>Label</th><th>Värde</th><th>Typ</th><th>Labelkommentar</th></tr></thead><tbody id="deviceRows"></tbody></table></div><h3>Globala labels</h3><p class="explain">Kommentarer från projektets globala labellistor.</p><div class="label-wrap"><table class="label-table"><thead><tr><th>Lista</th><th>Label</th><th>Device</th><th>Typ</th><th>Kommentar</th></tr></thead><tbody id="globalLabelRows"></tbody></table></div><h3>Lokala labels</h3><p class="explain">Kommentarer från respektive programs lokala labellista.</p><div class="label-wrap"><table class="label-table"><thead><tr><th>Lista / program</th><th>Label</th><th>Device</th><th>Typ</th><th>Kommentar</th></tr></thead><tbody id="localLabelRows"></tbody></table></div></div>
 <div class="view" id="codeView" role="tabpanel" aria-labelledby="tabCode" hidden><h2>Avkodade källinstruktioner</h2><p id="codeSummary" class="explain" style="margin:8px 0 13px">Inget program inläst.</p><p class="explain" style="margin-bottom:12px">Avsnittskommentarer står på egna rader före koden. Labelkommentarer kommer från lokala och globala labellistor.</p><div class="code-wrap"><table class="code-table"><thead><tr><th>Program</th><th>Källbyte</th><th>Instruktion</th><th>Operander</th><th>Labelkommentar</th></tr></thead><tbody id="codeRows"></tbody></table></div></div>
 <div class="view" id="importView" role="tabpanel" aria-labelledby="tabImport" hidden><h2>Importkontroll</h2><p class="explain" style="margin-top:7px">Ett läsbart projekt kan granskas även om något ännu hindrar körning. RUN tillåts när hela det valda programmet kan köras.</p><pre id="log" class="log">Väntar på GXW…</pre><div id="notes" class="stack" style="margin-top:10px"></div><div class="helpbox">
 <details open><summary>PLC och anläggning är skilda delar</summary><p>PLC:n läser och kör instruktionerna i din fil utan krav på hiss-labels. Anläggningen reagerar enbart på de Y-adresser som är kopplade enligt listan nedan. Y20 kan därför ändras i PLC:n utan att hissen rör sig. Koppla bort anläggningen för ren PLC-testning.</p><p>Ett program med en ännu ej stödd instruktion läses in i granskningsläge. Källkod och kända devices visas, men RUN spärras. Ingen okänd instruktion hoppas över under körning.</p></details>
 <details><summary>Kopplingslista för 3-våningshiss</summary><table class="wiring"><tr><th>Ingång</th><th>Funktion</th><th>Utgång</th><th>Funktion</th></tr><tr><td>X0 / X1 / X2</td><td>Knapp våning 1 / 2 / 3</td><td>Y0 / Y1 / Y2</td><td>Lampa våning 1 / 2 / 3</td></tr><tr><td>X3 / X4 / X5</td><td>Givare våning 1 / 2 / 3</td><td>Y3 / Y4</td><td>Motor upp / ner</td></tr></table><p>I övning 6 används X2 som servicekvittering. Samma fysiska knapp är våning 3 i senare övningar. Funktionen bestäms av din kod.</p></details>
 <details><summary>Körbara instruktioner</summary><p>LD/LDI, AND/ANI, OR/ORI; LDP/LDF, ANDP/ANDF, ORP/ORF; ANB/ORB och MPS/MRD/MPP; 16-bitars LD/AND/OR-jämförelser =, &lt;&gt;, &gt;, &gt;=, &lt;, &lt;=; OUT, SET/RST, vanliga T-/C-förval, PLS/PLF till fysiska Y/M, MOV/MOVP samt INC/DEC/INCP/DECP till D-register. ALT/ALTP till Y, M, S och lokala BOOL. 16-bitars CML/CMLP, WAND/WANDP, WOR/WORP och WXOR/WXORP till D-register med K/H eller D/T/C som källor.</p><p>ALT växlar varje scan när villkoret är sant. ALTP växlar en gång när villkoret går från falskt till sant. 32-bitars former, bitgrupper (KnX/KnY/KnM) och indexering stöds ännu inte.</p><p>Godtyckliga label- och programnamn fungerar inom den stödda grammatiken. Körning stöder ett fristående program i en cyklisk task för FX3U/FX3UC eller FX3S. Annan läsbar kod kan visas i granskningsläge.</p></details>
-<details><summary>Tidsmodell och gränser</summary><p>Fast scan 5 ms i simuleringstid. PLC-koden körs i ordning, därefter rör sig anläggningen. En våning tar 4,2 sekunder. STOP släcker Y; Paus fryser simuleringen. Ingen destinationsstyrning eller servicelogik är inbyggd i mekaniken.</p><p>Detta är en begränsad utbildningsmodell. Fysisk timerfas, I/O-filter, exakta instruktionstider, specialmoduler, avbrott, ST/FBD/SFC, FB och flera tasks efterliknas inte. Flankkontakter på FX3U:s M2800–M3071 kan endast granskas. Lokala BOOL-, TIMER- och COUNTER-labels stöds. Automatisk TIMER har 100 ms tidsbas. Automatiska labels får inte blandas med fysiska adresser av samma typ när deras alias inte kan verifieras.</p></details>
+<details><summary>SFC / Grafcet</summary><p>Sekventiella FX-SFC-program kan läsas direkt ur GXW, visas som ett flödesdiagram och köras med stegvis liveövervakning av åtgärder och övergångsvillkor. Serieövergångar och explicita hopp/loopar stöds. Flödet följer programmets egna stegnummer, adresser och villkor.</p><p>FX kräver programkod som aktiverar initialsteget, exempelvis M8002 → SET S0 i ett separat ladderblock. Cykliska ladderblock körs tillsammans med en SFC-sekvens i stigande blocknummer och visas live. Utan startkod förblir sekvensen inaktiv. Förgreningar, parallella flöden, flera SFC-sekvenser, andra åtgärdskvalificeringar och flank-/pulsinstruktioner inne i SFC-steg spärrar RUN. Läsbar kod behålls för granskning.</p></details><details><summary>Tidsmodell och gränser</summary><p>Fast scan 5 ms i simuleringstid. PLC-koden körs i ordning, därefter rör sig anläggningen. En våning tar 4,2 sekunder. STOP släcker Y; Paus fryser simuleringen. Ingen destinationsstyrning eller servicelogik är inbyggd i mekaniken.</p><p>Detta är en begränsad utbildningsmodell. Fysisk timerfas, I/O-filter, exakta instruktionstider, specialmoduler, avbrott, ST/FBD, FB och flera tasks efterliknas inte. Flankkontakter på FX3U:s M2800–M3071 kan endast granskas. Lokala BOOL-, TIMER- och COUNTER-labels stöds. Automatisk TIMER har 100 ms tidsbas. Automatiska labels får inte blandas med fysiska adresser av samma typ när deras alias inte kan verifieras.</p></details>
 <details><summary>Tom start och lokal hantering</summary><p>All kod ingår i HTML-filen. Inga nätverksanrop görs och ingen installation behövs. En omladdning börjar med tom PLC. Det krävs ingen PDF eller färdig mall för ditt program.</p></details>
-</div></div></div></section></main><footer class="footer">PLC-simulator 6.1 · Offline PLC-labb · Hiss och tryckknappslåda · Fast PLC-scan 5 ms · Körstöd och eventuella hinder visas vid import.</footer>
+</div></div></div></section></main><footer class="footer">PLC-simulator 6.4 · Offline PLC-labb · Hiss och tryckknappslåda · Fast PLC-scan 5 ms · Körstöd och eventuella hinder visas vid import.</footer>
 <!--
 GXW importer acknowledgements
 
 GXW container/token/declaration grammar and read-only CFB routines adapted and reimplemented for this JavaScript importer from:
 https://github.com/Arienax/gxworks-agent
 Commit 230926a661e6dd5c2134cac03193d94669d96f72
-License: Apache-2.0. Modified: bounded CFB reader, explicit FX simple-ladder subset, symbolic graph compiler and monitor layout.
+License: Apache-2.0. Modified: bounded CFB reader, explicit FX simple-ladder subset, symbolic graph compiler and monitor layout; version 6.2 adds bounded SFC envelope/child/reference framing adapted from src/gxw/sfc_pou.py. Execution semantics and browser SFC monitor are implemented separately.
 
 
                                  Apache License
@@ -310,7 +313,7 @@ function timerInfo(key,profile,bits={},symbols={}) {
 }
 class PLC {
   constructor(program){this.program=program;this.reset();}
-  reset(){this.bits=Object.create(null);this.words=Object.create(null);this.timers=Object.create(null);this.counters=Object.create(null);this.edges=Object.create(null);this.pulses=new Set();this.running=false;this.first=true;this.scanCount=0;this.time=0;this.trace=null;}
+  reset(){this.bits=Object.create(null);this.words=Object.create(null);this.timers=Object.create(null);this.counters=Object.create(null);this.edges=Object.create(null);this.pulses=new Set();this.running=false;this.first=true;this.scanCount=0;this.time=0;this.trace=null;this.sfcPrevious=new Set();}
   start(){if(this.program.executable===false)throw Error('Programmet är inläst för granskning; RUN är spärrad.');if(!this.running){this.running=true;this.first=true;for(const c of this.program.contacts)if(['RISE','FALL'].includes(c.kind))this.edges[c.id]=false;for(const a of this.program.actions){if(PULSE_ACTIONS.includes(a.op))this.edges[a.id]=false;if(['PLS','PLF'].includes(a.op)){const n=+a.target.slice(1),ranges=this.program.latchM||(this.program.profile==='FX3S'?[[384,511]]:[[500,1023]]),latched=a.target[0]==='M'&&ranges.some(([lo,hi])=>n>=lo&&n<=hi);if(!latched)this.edges[a.id]=false;}}} }
   stop(){this.running=false;for(const k of Object.keys(this.bits))if(k[0]==='Y')this.bits[k]=false;for(const [k,t] of Object.entries(this.timers))if(!timerInfo(k,this.program.profile,this.bits,this.program.symbols).retentive){t.elapsed=0;t.value=0;t.done=false;t.previous=false;}this.trace=null;}
   bit(k){
@@ -359,8 +362,10 @@ class PLC {
     if(!this.running)return false;
     if(!Number.isFinite(dt)||dt<=0||dt>100)throw Error('Ogiltig scantid.');
     const nodes=new Map(),contacts=new Map(),actions=new Map(),visiting=new Set();
+    const inputs=Object.fromEntries([...new Set(this.program.contacts.map(c=>c.device).filter(k=>k?.[0]==='X'))].map(k=>[k,this.bit(k)]));
+    const rails=new Map(this.program.sources.map(id=>[id,!this.program.sfc]));
     const power=(id)=>{
-      if(this.program.sources.includes(id))return true;
+      if(rails.has(id)){const on=rails.get(id);nodes.set(id,on);return on;}
       if(nodes.has(id))return nodes.get(id);
       if(visiting.has(id))throw Error('Cyklisk eller tvetydig ladderkoppling.');visiting.add(id);
       let powered=false;
@@ -368,19 +373,45 @@ class PLC {
       if(gate){const values=gate.inputs.map(power);powered=gate.op==='AND'?values.every(Boolean):values.some(Boolean);}
       // Evaluate every branch even when another branch is true: all contacts get a scan snapshot.
       for(const c of this.program.incoming[id]||[]){
-        const feed=power(c.from);let raw;
-        if(c.kind==='COMPARE'){const a=(this.number(c.operands[0])<<16)>>16,b=(this.number(c.operands[1])<<16)>>16;raw=({'=':()=>a===b,'<>':()=>a!==b,'>':()=>a>b,'>=':()=>a>=b,'<':()=>a<b,'<=':()=>a<=b}[c.comparison])();}else raw=this.bit(c.device);
+        const feed=power(c.from);let raw,values;
+        if(c.kind==='COMPARE'){const a=(this.number(c.operands[0])<<16)>>16,b=(this.number(c.operands[1])<<16)>>16;values=[a,b];raw=({'=':()=>a===b,'<>':()=>a!==b,'>':()=>a>b,'>=':()=>a>=b,'<':()=>a<b,'<=':()=>a<=b}[c.comparison])();}else raw=this.bit(c.device);
         let pass=c.kind==='NC'?!raw:raw;
         if(c.kind==='RISE'||c.kind==='FALL'){const prev=!!this.edges[c.id];pass=c.kind==='RISE'?raw&&!prev:!raw&&prev;this.edges[c.id]=raw;}
-        contacts.set(c.id,{raw,pass,feed,powered:feed&&pass});powered=powered||(feed&&pass);
+        contacts.set(c.id,{raw,pass,feed,powered:feed&&pass,...(values?{values}:{})});powered=powered||(feed&&pass);
       }
       visiting.delete(id);nodes.set(id,powered);return powered;
     };
     try{
-      for(const a of this.program.actions){const on=power(a.node),executed=this.action(a,on,dt);actions.set(a.id,{powered:executed??on,state:this.bit(a.target),value:this.number(a.target)});}
-      // Contacts used only in an unpowered/dead branch must still be represented.
-      for(const c of this.program.contacts)if(!contacts.has(c.id)){power(c.to);}
-      this.scanCount++;this.time+=dt;this.trace={nodes,contacts,actions,scan:this.scanCount,first:this.first};this.first=false;return true;
+      const writes=[],evaluate=(m,enabled)=>{
+        for(const id of m.sources)rails.set(id,enabled);
+        for(const c of m.contacts)nodes.delete(c.to);for(const id of Object.keys(m.gates||{}))nodes.delete(id);
+        for(const a of m.actions){const on=power(a.node),fired=a.virtual?on:this.action(a,on,dt),state={powered:fired??on,state:a.virtual?on:this.bit(a.target),value:a.virtual?+on:this.number(a.target),executed:true};actions.set(a.id,state);if(!a.virtual)writes.push({id:a.id,...state});}
+        for(const c of m.contacts)if(!contacts.has(c.id))power(c.to);
+      };
+      let sfcTrace=null;
+      const executeSFC=()=>{
+        const steps=this.program.sfc.steps,executed=[],cleared=[],transitions=[],conditions=new Map(),nextPrevious=new Set();
+        // One OFF execution after leaving an STL state, then jump its body.
+        // Clear departing coils before active state drives, including a backward
+        // jump to a state sharing the same Y. SET and word operations retain.
+        for(const step of steps)if(this.sfcPrevious.has(step.number)&&!this.bit('S'+step.number)){evaluate(step.actionModel,false);cleared.push(step.number);}
+        for(const step of steps){
+          if(!this.bit('S'+step.number))continue;
+          executed.push(step.number);nextPrevious.add(step.number);evaluate(step.actionModel,true);evaluate(step.transitionModel,true);
+          const result=!!actions.get(step.transitionModel.actions[0].id)?.powered;conditions.set(step.transition.number,result);
+          if(result){this.bits['S'+step.number]=false;this.bits['S'+step.transition.target]=true;transitions.push({number:step.transition.number,from:step.number,to:step.transition.target});}
+        }
+        this.sfcPrevious=nextPrevious;
+        // Inactive bodies are skipped, not evaluated with false contacts.
+        // This also avoids changing edge history in a skipped state.
+        sfcTrace={activeSteps:steps.filter(s=>this.bit('S'+s.number)).map(s=>s.number),executedSteps:executed,clearedSteps:cleared,transitions,conditions};
+      };
+      const blocks=[];
+      if(this.program.blocks){for(const block of this.program.blocks){blocks.push({number:block.number,scope:block.scope,kind:block.kind});if(block.kind==='sfc')executeSFC();else evaluate(block.model,true);}}
+      else if(this.program.sfc)executeSFC();else evaluate(this.program,true);
+      if(sfcTrace){sfcTrace.activeSteps=this.program.sfc.steps.filter(s=>this.bit('S'+s.number)).map(s=>s.number);for(const a of this.program.actions)if(!actions.has(a.id))actions.set(a.id,{powered:false,state:a.virtual?false:this.bit(a.target),value:a.virtual?0:this.number(a.target),executed:false});}
+      const words={...Object.fromEntries((this.program.devices||[]).filter(k=>k[0]==='D').map(k=>[k,this.number(k)])),...this.words};
+      this.scanCount++;this.time+=dt;this.trace={nodes,contacts,actions,writes,sfc:sfcTrace,blocks,inputs,words,scan:this.scanCount,first:this.first};this.first=false;return true;
     }catch(e){this.stop();throw e;}
   }
 }
@@ -456,14 +487,320 @@ class PlantStation {
  * Grammar only: recognition does not imply executable PLC support. See vendor/GXW-NOTICES.txt. */
 const GX_LEXICON = {"031203":["MEP",0],"031303":["MEF",0],"055f0b2405":["ADPRW",5],"056c012405":["RET",0],"030003":["LD",1],"030103":["LDI",1],"030603":["OR",1],"030703":["ORI",1],"030c03":["AND",1],"030d03":["ANI",1],"032003":["OUT",1],"032103":["OUT",1],"032303":["SET",1],"04000304":["LD",1],"04010304":["LDI",1],"04020204":["LDP",1],"04020304":["LDP",1],"04030204":["LDF",1],"04030304":["LDF",1],"04060304":["OR",1],"04070304":["ORI",1],"04080204":["ORP",1],"04080304":["ORP",1],"04090204":["ORF",1],"04090304":["ORF",1],"040c0304":["AND",1],"040d0304":["ANI",1],"040e0204":["ANDP",1],"040e0304":["ANDP",1],"040f0204":["ANDF",1],"040f0304":["ANDF",1],"04200304":["OUT",1],"04230304":["SET",1],"04240304":["RST",1],"04250204":["PLS",1],"04250304":["PLS",1],"04260204":["PLF",1],"04260304":["PLF",1],"0548070605":["CMP",3],"0548090005":["BKCMP=",4],"0548090105":["BKCMP<>",4],"0548090205":["BKCMP>",4],"0548090305":["BKCMP>=",4],"0548090405":["BKCMP<",4],"0548090505":["BKCMP<=",4],"0548090805":["ZCP",4],"05480d0705":["DCMP",3],"05480d0a05":["DECMP",3],"0548110905":["DZCP",4],"0548110b05":["DEZCP",4],"0548110c05":["DBKCMP=",4],"0548110d05":["DBKCMP<>",4],"0548110e05":["DBKCMP>",4],"0548110f05":["DBKCMP>=",4],"0548111005":["DBKCMP<",4],"0548111105":["DBKCMP<=",4],"0549072305":["$+",3],"0549072805":["ADD",3],"0549072a05":["SUB",3],"0549072c05":["MUL",3],"0549072e05":["DIV",3],"0549092605":["BK+",4],"0549092705":["BK-",4],"05490d2905":["DADD",3],"05490d2b05":["DSUB",3],"05490d2d05":["DMUL",3],"05490d2f05":["DDIV",3],"05490d3005":["DEADD",3],"05490d3105":["DESUB",3],"05490d3205":["DEMUL",3],"05490d3305":["DEDIV",3],"0549113405":["DBK+",4],"0549113505":["DBK-",4],"054a030005":["INC",1],"054a030205":["DEC",1],"054a050105":["DINC",1],"054a050305":["DDEC",1],"054b030e05":["NEG",1],"054b050005":["BCD",2],"054b050205":["BIN",2],"054b050405":["INT",2],"054b050a05":["GRY",2],"054b050c05":["GBIN",2],"054b050f05":["DNEG",1],"054b051505":["DENEG",1],"054b090105":["DBCD",2],"054b090305":["DBIN",2],"054b090505":["DINT",2],"054b090b05":["DGRY",2],"054b090d05":["DGBIN",2],"054b091305":["DEBCD",2],"054b091405":["DEBIN",2],"054c030b05":["SWAP",1],"054c050005":["MOV",2],"054c050305":["$MOV",2],"054c050405":["CML",2],"054c050805":["XCH",2],"054c050d05":["DSWAP",1],"054c070305":["$MOV",2],"054c070605":["BMOV",3],"054c070705":["FMOV",3],"054c090105":["DMOV",2],"054c090305":["$MOV",2],"054c090505":["DCML",2],"054c090905":["DXCH",2],"054c090f05":["DEMOV",2],"054c0b0305":["$MOV",2],"054c0b0c05":["SMOV",5],"054c0d0305":["$MOV",2],"054c0d0e05":["DFMOV",3],"054c0f0305":["$MOV",2],"054c130305":["$MOV",2],"054c150305":["$MOV",2],"054c230305":["$MOV",2],"054d030005":["CJ",1],"054e030205":["REFF",1],"054e050105":["REF",2],"054e0d0405":["DHSCS",3],"054e0d0605":["DHSCR",3],"054e0d0905":["DHCMOV",3],"054e110805":["DHSZ",4],"054e150a05":["DHSCT",5],"054f070105":["WAND",3],"054f070305":["WOR",3],"054f070505":["WXOR",3],"054f0d0905":["DAND",3],"054f0d0b05":["DOR",3],"054f0d0d05":["DXOR",3],"0550050005":["ROR",2],"0550050105":["RCR",2],"0550050205":["ROL",2],"0550050305":["RCL",2],"0550090405":["DROR",2],"0550090505":["DRCR",2],"0550090605":["DROL",2],"0550090705":["DRCL",2],"0551050005":["SFR",2],"0551050105":["SFL",2],"0551070a05":["SFWR",3],"0551070b05":["SFRD",3],"0551090605":["SFTR",4],"0551090705":["SFTL",4],"0551090805":["WSFR",4],"0551090905":["WSFL",4],"0553051905":["ZRST",2],"0553051a05":["SUM",2],"0553052205":["FLT",2],"0553070405":["DECO",3],"0553070505":["ENCO",3],"0553070705":["DIS",3],"0553070805":["UNI",3],"0553070b05":["WTOB",3],"0553070c05":["BTOW",3],"0553071305":["WSUM",3],"0553071c05":["BON",3],"0553071e05":["MEAN",3],"0553072005":["ANS",3],"0553090005":["SER",4],"0553091b05":["DSUM",2],"0553092305":["DFLT",2],"05530b1105":["SORT",5],"05530b2405":["SORT2",5],"05530d1405":["DWSUM",3],"05530d1d05":["DBON",3],"05530d1f05":["DMEAN",3],"0553110105":["DSER",4],"0553152505":["DSORT2",5],"0554030105":["CALL",1],"0555070305":["FINS",3],"0555070405":["FDEL",3],"0556090005":["FROM",4],"0556090205":["TO",4],"05560b0905":["RBFM",5],"05560b0a05":["WBFM",5],"0556110305":["DTO",4],"0556110805":["DFROM",4],"0557050005":["PR",2],"0559050005":["BINDA",2],"0559050605":["DABIN",2],"0559050c05":["COMRD",2],"0559050d05":["LEN",2],"0559070e05":["STR",3],"0559071005":["VAL",3],"0559071505":["HEX",3],"0559071605":["RIGHT",3],"0559071705":["LEFT",3],"0559071805":["MIDR",3],"0559071905":["MIDW",3],"0559071d05":["ASCI",3],"0559090105":["DBINDA",2],"0559090705":["DDABIN",2],"0559091a05":["INSTR",4],"0559091f05":["DEVAL",2],"05590d0f05":["DSTR",3],"05590d1105":["DVAL",3],"05590d1e05":["DESTR",3],"055a030b05":["RND",1],"055a050805":["SQR",2],"055a091505":["DSQR",2],"055a091605":["DESQR",2],"055a091705":["DSIN",2],"055a091805":["DCOS",2],"055a091905":["DTAN",2],"055a091a05":["DEXP",2],"055a091b05":["DLOGE",2],"055a091c05":["DLOG10",2],"055a091d05":["DASIN",2],"055a091e05":["DACOS",2],"055a091f05":["DATAN",2],"055a092005":["DRAD",2],"055b090005":["LIMIT",4],"055b090205":["BAND",4],"055b090405":["ZONE",4],"055b110105":["DLIMIT",4],"055b110305":["DBAND",4],"055b110505":["DZONE",4],"055d030a05":["TRD",1],"055d030b05":["TWR",1],"055d050e05":["HTOS",2],"055d051005":["STOH",2],"055d070805":["TADD",3],"055d070905":["TSUB",3],"055d070c05":["HOUR",3],"055d090705":["TZCP",4],"055d090f05":["DHTOS",2],"055d091105":["DSTOH",2],"055d0b0605":["TCMP",5],"055d0d0d05":["DHOUR",3],"055e090705":["PID",4],"055f050705":["SEGD",2],"055f050e05":["VRRD",2],"055f050f05":["VRSC",2],"055f070205":["TKY",3],"055f070805":["SEGL",3],"055f070d05":["CCD",3],"055f071b05":["RD3A",3],"055f071c05":["WR3A",3],"055f071e05":["CRC",3],"055f090405":["HKY",4],"055f090605":["DSW",4],"055f090905":["ARWS",4],"055f090a05":["RS",4],"055f091f05":["IVCK",4],"055f092005":["IVDR",4],"055f092105":["IVRD",4],"055f092205":["IVWR",4],"055f092305":["IVBWR",4],"055f0b1d05":["RS2",5],"055f0d0305":["DTKY",3],"055f110505":["DHKY",4],"0561030a05":["ZPUSH",1],"0561030b05":["ZPOP",1],"0561070105":["DUTY",3],"0563030f05":["ALT",1],"0563050205":["TTMR",2],"0563070305":["STMR",3],"0563070605":["SPD",3],"0563070705":["PLSY",3],"0563070805":["PWM",3],"0563070b05":["IST",3],"0563071805":["PLSV",3],"0563072305":["POP",3],"0563072405":["SCL",3],"0563072a05":["SCL2",3],"0563090405":["ROTC",4],"0563090905":["MTR",4],"0563090c05":["ABSD",4],"0563090e05":["INCD",4],"0563091005":["RAMP",4],"0563091105":["PLSR",4],"0563091605":["ZRN",4],"0563091a05":["DRVI",4],"0563091e05":["EXTR",4],"05630d0a05":["DPLSY",3],"05630d1505":["DABS",3],"05630d1905":["DPLSV",3],"05630d2505":["DSCL",3],"05630d2b05":["DSCL2",3],"05630d2e05":["DSPD",3],"0563110d05":["DABSD",4],"0563111305":["DPLSR",4],"0563111705":["DZRN",4],"0563111b05":["DDRVI",4],"0563111f05":["DEXTR",4],"0563112f05":["DTBL",2],"056a030005":["FOR",1],"056c012305":["STL",1],"064005001006":["LD=",2],"064005001106":["AND=",2],"064005001206":["OR=",2],"064005011006":["LD<>",2],"064005011106":["AND<>",2],"064005011206":["OR<>",2],"064005021006":["LD>",2],"064005021106":["AND>",2],"064005021206":["OR>",2],"064005031006":["LD>=",2],"064005031106":["AND>=",2],"064005031206":["OR>=",2],"064005041006":["LD<",2],"064005041106":["AND<",2],"064005041206":["OR<",2],"064005051006":["LD<=",2],"064005051106":["AND<=",2],"064005051206":["OR<=",2],"064009061006":["LDD=",2],"064009061106":["ANDD=",2],"064009061206":["ORD=",2],"064009071006":["LDD<>",2],"064009071106":["ANDD<>",2],"064009071206":["ORD<>",2],"064009081006":["LDD>",2],"064009081106":["ANDD>",2],"064009081206":["ORD>",2],"064009091006":["LDD>=",2],"064009091106":["ANDD>=",2],"064009091206":["ORD>=",2],"0640090a1006":["LDD<",2],"0640090a1106":["ANDD<",2],"0640090a1206":["ORD<",2],"0640090b1006":["LDD<=",2],"0640090b1106":["ANDD<=",2],"0640090b1206":["ORD<=",2],"064807060206":["CMPP",3],"064809000206":["BKCMP=P",4],"064809010206":["BKCMP<>P",4],"064809020206":["BKCMP>P",4],"064809030206":["BKCMP>=P",4],"064809040206":["BKCMP<P",4],"064809050206":["BKCMP<=P",4],"064809080206":["ZCPP",4],"06480d070206":["DCMPP",3],"06480d0a0206":["DECMPP",3],"064811090206":["DZCPP",4],"0648110b0206":["DEZCPP",4],"0648110c0206":["DBKCMP=P",4],"0648110d0206":["DBKCMP<>P",4],"0648110e0206":["DBKCMP>P",4],"0648110f0206":["DBKCMP>=P",4],"064811100206":["DBKCMP<P",4],"064811110206":["DBKCMP<=P",4],"064907230206":["$+P",3],"064907280206":["ADDP",3],"0649072a0206":["SUBP",3],"0649072c0206":["MULP",3],"0649072e0206":["DIVP",3],"064909260206":["BK+P",4],"064909270206":["BK-P",4],"06490d290206":["DADDP",3],"06490d2b0206":["DSUBP",3],"06490d2d0206":["DMULP",3],"06490d2f0206":["DDIVP",3],"06490d300206":["DEADDP",3],"06490d310206":["DESUBP",3],"06490d320206":["DEMULP",3],"06490d330206":["DEDIVP",3],"064911340206":["DBK+P",4],"064911350206":["DBK-P",4],"064a03000206":["INCP",1],"064a03020206":["DECP",1],"064a05010206":["DINCP",1],"064a05030206":["DDECP",1],"064b030e0206":["NEGP",1],"064b05000206":["BCDP",2],"064b05020206":["BINP",2],"064b05040206":["INTP",2],"064b050a0206":["GRYP",2],"064b050c0206":["GBINP",2],"064b050f0206":["DNEGP",1],"064b05150206":["DENEGP",1],"064b09010206":["DBCDP",2],"064b09030206":["DBINP",2],"064b09050206":["DINTP",2],"064b090b0206":["DGRYP",2],"064b090d0206":["DGBINP",2],"064b09130206":["DEBCDP",2],"064b09140206":["DEBINP",2],"064c030b0206":["SWAPP",1],"064c05000206":["MOVP",2],"064c05030206":["$MOVP",2],"064c05040206":["CMLP",2],"064c05080206":["XCHP",2],"064c050d0206":["DSWAPP",1],"064c07060206":["BMOVP",3],"064c07070206":["FMOVP",3],"064c09010206":["DMOVP",2],"064c09050206":["DCMLP",2],"064c09090206":["DXCHP",2],"064c090f0206":["DEMOVP",2],"064c0b0c0206":["SMOVP",5],"064c0d0e0206":["DFMOVP",3],"064d03000206":["CJP",1],"064e03020206":["REFFP",1],"064e05010206":["REFP",2],"064f07010206":["WANDP",3],"064f07030206":["WORP",3],"064f07050206":["WXORP",3],"065005000206":["RORP",2],"065005010206":["RCRP",2],"065005020206":["ROLP",2],"065005030206":["RCLP",2],"065009040206":["DRORP",2],"065009050206":["DRCRP",2],"065009060206":["DROLP",2],"065009070206":["DRCLP",2],"065105000206":["SFRP",2],"065105010206":["SFLP",2],"0651070a0206":["SFWRP",3],"0651070b0206":["SFRDP",3],"065109060206":["SFTRP",4],"065109070206":["SFTLP",4],"065109080206":["WSFRP",4],"065109090206":["WSFLP",4],"065305190206":["ZRSTP",2],"0653051a0206":["SUMP",2],"065305220206":["FLTP",2],"065307040206":["DECOP",3],"065307050206":["ENCOP",3],"065307070206":["DISP",3],"065307080206":["UNIP",3],"0653070b0206":["WTOBP",3],"0653070c0206":["BTOWP",3],"065307130206":["WSUMP",3],"0653071c0206":["BONP",3],"0653071e0206":["MEANP",3],"065309000206":["SERP",4],"0653091b0206":["DSUMP",2],"065309230206":["DFLTP",2],"06530d140206":["DWSUMP",3],"06530d1d0206":["DBONP",3],"06530d1f0206":["DMEANP",3],"065311010206":["DSERP",4],"065403010206":["CALLP",1],"065507030206":["FINSP",3],"065507040206":["FDELP",3],"065609000206":["FROMP",4],"065609020206":["TOP",4],"065611030206":["DTOP",4],"065611080206":["DFROMP",4],"065905000206":["BINDAP",2],"065905060206":["DABINP",2],"0659050c0206":["COMRDP",2],"0659050d0206":["LENP",2],"0659070e0206":["STRP",3],"065907100206":["VALP",3],"065907150206":["HEXP",3],"065907160206":["RIGHTP",3],"065907170206":["LEFTP",3],"065907180206":["MIDRP",3],"065907190206":["MIDWP",3],"0659071d0206":["ASCIP",3],"065909010206":["DBINDAP",2],"065909070206":["DDABINP",2],"0659091a0206":["INSTRP",4],"0659091f0206":["DEVALP",2],"06590d0f0206":["DSTRP",3],"06590d110206":["DVALP",3],"06590d1e0206":["DESTRP",3],"065a030b0206":["RNDP",1],"065a05080206":["SQRP",2],"065a09150206":["DSQRP",2],"065a09160206":["DESQRP",2],"065a09170206":["DSINP",2],"065a09180206":["DCOSP",2],"065a09190206":["DTANP",2],"065a091a0206":["DEXPP",2],"065a091b0206":["DLOGEP",2],"065a091c0206":["DLOG10P",2],"065a091d0206":["DASINP",2],"065a091e0206":["DACOSP",2],"065a091f0206":["DATANP",2],"065a09200206":["DRADP",2],"065b09000206":["LIMITP",4],"065b09020206":["BANDP",4],"065b09040206":["ZONEP",4],"065b11010206":["DLIMITP",4],"065b11030206":["DBANDP",4],"065b11050206":["DZONEP",4],"065d030a0206":["TRDP",1],"065d030b0206":["TWRP",1],"065d050e0206":["HTOSP",2],"065d05100206":["STOHP",2],"065d07080206":["TADDP",3],"065d07090206":["TSUBP",3],"065d09070206":["TZCPP",4],"065d090f0206":["DHTOSP",2],"065d09110206":["DSTOHP",2],"065d0b060206":["TCMPP",5],"065f05070206":["SEGDP",2],"065f050e0206":["VRRDP",2],"065f050f0206":["VRSCP",2],"065f070d0206":["CCDP",3],"065f071b0206":["RD3AP",3],"065f071c0206":["WR3AP",3],"065f071e0206":["CRCP",3],"0661030a0206":["ZPUSHP",1],"0661030b0206":["ZPOPP",1],"0663030f0206":["ALTP",1],"066307230206":["POPP",3],"066307240206":["SCLP",3],"0663091e0206":["EXTRP",4],"06630d250206":["DSCLP",3],"0663111f0206":["DEXTRP",4],"0202":["NOP",0],"031803":["ORB",0],"031903":["ANB",0],"032403":["RST",1],"033403":["END",0],"04210304":["OUT_T_C",2],"04230204":["SET",1],"04240204":["RST",1],"031a03":["MPS",0],"031b03":["MRD",0],"031c03":["MPP",0]};
 
-/* Read-only GX Works2 simple-ladder import. Format research and portions adapted
- * from gxworks-agent (Apache-2.0) and gxwlib (MIT); see vendor/GXW-NOTICES.txt.
- * Unknown layouts/instructions fail closed. No native project bytes are changed. */
-const GXW_LIMIT=40*1024*1024,CFB_END=0xfffffffe,CFB_FREE=0xffffffff;
+/* Bounded GX binary primitives shared by container and source readers. */
 const gxError=s=>{throw Error('GXW: '+s);};
 const gxText=(b,encoding='utf-16le')=>new TextDecoder(encoding,{fatal:true}).decode(b);
 const gxView=b=>new DataView(b.buffer,b.byteOffset,b.byteLength);
 const gxHex=b=>Array.from(b,x=>x.toString(16).padStart(2,'0')).join('');
+class GXReader {
+  constructor(b){this.b=b;this.v=gxView(b);this.o=0;}
+  u(){if(this.o+4>this.b.length)gxError('avkortad tabell.');const n=this.v.getUint32(this.o,true);this.o+=4;return n;}
+  s(){const n=this.u(),end=this.o+n*2;if(n<1||end>this.b.length||this.v.getUint16(end-2,true)!==0)gxError('ogiltig tabelltext.');const s=gxText(this.b.subarray(this.o,end-2));this.o=end;if(s.includes('\0'))gxError('NUL i tabelltext.');return s;}
+  header(){this.s();this.s();this.o+=42;if(this.o>=this.b.length)gxError('avkortat källhuvud.');return this.o;}
+}
+
+/* Shared native ladder lexer, logical compiler and regenerated layout.
+ * Format attribution: vendor/GXW-NOTICES.txt. */
+const GX_OPS={
+  ...GX_LEXICON,
+  '030003':['LD',1],'030103':['LDI',1],'030603':['OR',1],'030703':['ORI',1],
+  '030c03':['AND',1],'030d03':['ANI',1],'031903':['ANB',0],'031803':['ORB',0],
+  '031a03':['MPS',0],'031b03':['MRD',0],'031c03':['MPP',0],
+  '032003':['OUT',1],'032303':['SET',1],'032403':['RST',1],'04210304':['OUT',2],
+  '054c050005':['MOV',2],'054a030005':['INC',1],'054a030205':['DEC',1],
+  // Native three-byte OUT for a symbolic timer/counter still has a preset.
+  '032103':['OUT',2],
+  '033403':['END',0],'0202':['NOP',0]
+};
+function readGXTokens(raw,{strict=true}={}){
+  const r=new GXReader(raw),h=r.header();if(raw[h]!==1||h+25>raw.length)gxError('endast enkel ladder stöds; detta källformat känns inte igen.');
+  const v=gxView(raw),size=v.getUint32(h+1,true),again=v.getUint32(h+5,true),start=h+25,end=start+size-20;
+  if(size!==again||size<23||end>raw.length||![20,24].includes(raw.length-end)||![0,1].includes(v.getUint32(h+9,true))||gxHex(raw.subarray(h+13,start))!=='0c00000000000000ffffffff')gxError('okänt eller skadat ladderhuvud.');
+  return readGXFragment(raw,start,end-start,{strict,requireEnd:true});
+}
+
+function readGXFragment(raw,start,size,{strict=true,requireEnd=false}={}){
+  const end=start+size;if(!Number.isInteger(start)||!Number.isInteger(size)||start<0||size<0||end>raw.length)gxError('skadad källregion.');
+  const tokens=[];for(let o=start;o<end;){const n=raw[o];if(n<2||o+n>end||raw[o+n-1]!==n)gxError('skadad instruktion vid byte '+o);if(tokens.length>=20000)gxError('för många källposter.');tokens.push({raw:raw.subarray(o,o+n),offset:o});o+=n;}
+  const instructions=[];let comment='';
+  const operand=t=>{
+    const b=t.raw,kind=b[1],payload=b.subarray(2,-1);
+    if(kind===0xdf){const label=gxText(payload,'windows-1252');if(!label||/[\x00-\x1f]/.test(label))gxError('ogiltig labelkodning.');return label;}
+    const dev={144:'M',152:'S',156:'X',157:'Y',168:'D',194:'T',197:'C'}[kind];
+    if(dev&&payload.length>=1&&payload.length<=2){const value=payload[0]+(payload[1]||0)*256;return dev+(dev==='X'||dev==='Y'?value.toString(8):value);}
+    if(kind===0xe8&&payload.length>=1&&payload.length<=2){let n=payload[0]+(payload[1]||0)*256;if(payload.length===2&&n>=32768)n-=65536;return 'K'+n;}
+    if([0xea,0xeb].includes(kind)&&payload.length>=1&&payload.length<=4){let n=0;for(let i=0;i<payload.length;i++)n+=payload[i]*2**(i*8);return 'H'+n.toString(16).toUpperCase();}
+    if(!strict)return '<'+gxHex(b)+'>';
+    gxError('okänd operand '+gxHex(b)+' vid byte '+t.offset);
+  };
+  for(let i=0;i<tokens.length;){
+    const t=tokens[i++],b=t.raw;
+    if(b[1]===0x80&&[0,1].includes(b[2])){const text=gxText(b.subarray(3,-1),'windows-1252');comment+= (comment?'\n':'')+text;continue;}
+    let op=GX_OPS[gxHex(b)];if(!op){if(strict)gxError('instruktionen '+gxHex(b)+' vid byte '+t.offset+' stöds inte.');const args=[];while(tokens[i]&&tokens[i].raw[1]>0x82)args.push(operand(tokens[i++]));instructions.push({op:'OP_'+gxHex(b),args,offset:t.offset,comment,unknown:true});comment='';continue;}
+    if(op[0]==='OUT_T_C')op=['OUT',2];if(op[0]==='ANDI')op=['ANI',1];
+    const args=[];for(let a=0;a<op[1];a++){if(!tokens[i])gxError('saknad operand.');args.push(operand(tokens[i++]));}
+    if(instructions.length>=4096)gxError('fler än 4096 instruktioner.');instructions.push({op:op[0],args,offset:t.offset,comment});comment='';
+    if(op[0]==='END'&&i!==tokens.length)gxError('kod efter END stöds inte.');
+  }
+  if(requireEnd&&instructions.at(-1)?.op!=='END')gxError('END saknas.');return instructions;
+}
+
+function compileGXInstructions(instructions,labels=[],profile='FX3U',scope='MAIN',options={}){
+  const {fragment=false,condition=false,prefix=''}=options;
+  if(instructions.length>4096)gxError('fler än 4096 instruktioner.');
+  const map=new Map();for(const l of labels){const key=(l.scope+':'+l.name).toUpperCase();if(map.has(key))gxError('dubblerad label '+l.name);map.set(key,l);}
+  const symbols=Object.create(null),rawM=new Set(),symbolic=new Set(),rawTC=new Set(),symbolicTC=new Set(),resolve=(name,write=false)=>{
+    const local=map.get((scope+':'+name).toUpperCase()),global=map.get(('global:'+name).toUpperCase());if(local&&global)gxError('tvetydig lokal/global label '+name);
+    const l=local||global,device=l?(l.device||'@'+scope+':'+l.name):canonical(name);
+    validateDevice(device,profile,write);
+    if(device[0]==='@'){
+      if(!['BOOL','TIMER','COUNTER'].includes(l.type))gxError('automatisk labeltyp stöds inte: '+name);
+      const kind={BOOL:'M',TIMER:'T',COUNTER:'C'}[l.type];symbols[device]={kind,type:l.type,name:l.name,scope};
+      if(kind==='M')symbolic.add(device);else symbolicTC.add(kind);
+    }
+    if(!l&&/^M\d+$/.test(device)&&+device.slice(1)<8000)rawM.add(device);
+    if(/^[TC]\d+$/.test(device))rawTC.add(device[0]);
+    if(l&&((l.type==='BOOL'&&device[0]==='D')||(['INT','WORD'].includes(l.type)&&device[0]!=='D')||(l.type==='TIMER'&&device[0]!=='@'&&device[0]!=='T')||(l.type==='COUNTER'&&device[0]!=='@'&&device[0]!=='C')))gxError('labelns datatyp passar inte adressen: '+name);return device;
+  };
+  const kindOf=key=>deviceKind(key,{symbols}),wordDevice=key=>/^[DTC]\d+$/.test(key)||key[0]==='@'&&['T','C'].includes(kindOf(key));
+  const contacts=[],actions=[],sources=[],incoming=Object.create(null),gates=Object.create(null),groups=[],blocks=[],branches=[];
+  let current=null,afterAction=false,ended=false;
+  const rail=()=>{const id=prefix+'gxrail'+sources.length;sources.push(id);return id;};
+  const contact=(name,kind,feed=null)=>{
+    const device=resolve(name);if(device[0]==='D')gxError('ordregister kan inte användas som bitkontakt.');
+    if(['RISE','FALL'].includes(kind)&&profile==='FX3U'&&/^M\d+$/.test(device)&&+device.slice(1)>=2800&&+device.slice(1)<=3071)gxError('flankkontakter M2800–M3071 har särskild förbrukningssemantik som ännu inte kan köras.');
+    const from=feed?.node||rail(),to=prefix+'gxn'+contacts.length,c={id:prefix+'gxc'+contacts.length,from,to,device,kind,label:name};
+    contacts.push(c);incoming[to]=[c];return {node:to,kind:'contact',contact:c,depth:1};
+  };
+  const combine=(op,a,b,node=null)=>{const depth=Math.max(a.depth,b.depth)+1;if(depth>64)gxError('logikdjupet överstiger 64 nivåer.');if(!node){node=prefix+'gxgate'+Object.keys(gates).length;gates[node]={op,inputs:[a.node,b.node]};}return {node,kind:op,left:a,right:b,depth};};
+  const numeric=name=>{const value=/^(K-?\d+|H[0-9A-F]+)$/.test(name)?name:resolve(name);if(!(/^(K-?\d+|H[0-9A-F]+)$/.test(value)||wordDevice(value))||value[0]==='K'&&(+value.slice(1)<-32768||+value.slice(1)>32767)||value[0]==='H'&&parseInt(value.slice(1),16)>65535)gxError('operanden kräver 16-bitars K/H eller D/T/C.');return value;};
+  const need=()=>{if(!current)gxError('logiskt villkor saknas.');};
+  for(const ins of instructions){
+    const {op,args}=ins;if(ended)gxError('kod efter END.');
+    if(op==='NOP')continue;
+    const comparison=/^(LD|AND|OR)(=|<>|>=|<=|>|<)$/.exec(op);
+    if(comparison){
+      const [,connection,operator]=comparison;
+      if(connection==='LD'){if(current&&!afterAction){blocks.push(current);if(blocks.length>8)gxError('fler än 8 logikblock.');}else if(blocks.length)gxError('oavslutat logikblock.');}
+      else need();
+      const from=connection==='AND'?current.node:rail(),to=prefix+'gxn'+contacts.length,c={id:prefix+'gxc'+contacts.length,from,to,kind:'COMPARE',comparison:operator,operands:args.map(numeric),label:op+' '+args.join(' '),device:null};
+      contacts.push(c);incoming[to]=[c];const e={node:to,kind:'contact',contact:c,depth:1};current=connection==='LD'?e:combine(connection==='AND'?'AND':'OR',current,e,connection==='AND'?to:null);afterAction=false;
+    }else if(['LD','LDI','LDP','LDF'].includes(op)){
+      if(current&&!afterAction){blocks.push(current);if(blocks.length>8)gxError('fler än 8 logikblock.');}
+      else if(blocks.length)gxError('oavslutat logikblock före nytt nätverk.');
+      current=contact(args[0],{LD:'NO',LDI:'NC',LDP:'RISE',LDF:'FALL'}[op]);afterAction=false;
+    }else if(['AND','ANI','OR','ORI','ANDP','ANDF','ORP','ORF'].includes(op)){
+      need();const serial=['AND','ANI','ANDP','ANDF'].includes(op),kind={ANI:'NC',ORI:'NC',ANDP:'RISE',ORP:'RISE',ANDF:'FALL',ORF:'FALL'}[op]||'NO',c=contact(args[0],kind,serial?current:null);
+      current=combine(serial?'AND':'OR',current,c,serial?c.node:null);afterAction=false;
+    }else if(op==='ANB'||op==='ORB'){
+      need();if(!blocks.length)gxError(op+' saknar sparat block.');current=combine(op==='ANB'?'AND':'OR',blocks.pop(),current);afterAction=false;
+    }else if(op==='MPS'){need();if(branches.length>=11)gxError('fler än 11 MPS-nivåer.');branches.push(current);}
+    else if(op==='MRD'||op==='MPP'){if(!branches.length)gxError(op+' saknar MPS.');current=op==='MPP'?branches.pop():branches.at(-1);afterAction=false;}
+    else if(op==='END'){if(blocks.length||branches.length||current&&!afterAction)gxError('ofullständigt nätverk eller obalanserad stack vid END.');ended=true;}
+    else if(['OUT','SET','RST','MOV','INC','DEC','PLS','PLF','ALT',...Object.keys(WORD_LOGIC_ARITY),...PULSE_ACTIONS].includes(op)){
+      if(fragment&&!condition&&!current)current={node:rail(),kind:'rail',depth:1};
+      need();if(blocks.length)gxError('oavslutat ANB/ORB-block vid spole.');
+      const base=PULSE_ACTIONS.includes(op)?op.slice(0,-1):op,wordArity=WORD_LOGIC_ARITY[base],arity=wordArity||(base==='MOV'?2:1);
+      if(op!=='OUT'&&args.length!==arity)gxError(op+' kräver '+arity+' operander.');
+      const label=args[wordArity?wordArity-1:base==='MOV'?1:0],target=resolve(label,true);let preset=null,source=null,wordSources=[];
+      if(op==='OUT'&&['T','C'].includes(kindOf(target))){if(args.length!==2)gxError('timer/räknare saknar förval.');preset=/^K\d+$/.test(args[1])?args[1]:resolve(args[1]);if(!/^(K\d+|D\d+)$/.test(preset)||preset[0]==='K'&&+preset.slice(1)>32767)gxError('förval måste vara K0–K32767 eller D-register.');}
+      else if(op==='OUT'&&args.length!==1)gxError('förval vid vanlig spole.');
+      if(op==='OUT'&&target[0]==='D'||op==='SET'&&['T','C','D'].includes(kindOf(target)))gxError(op+' '+target+' stöds inte.');
+      if(['PLS','PLF'].includes(op)&&!/^([YM])\d+$/.test(target))gxError(op+' kräver fysisk Y-/M-adress.');
+      if(base==='ALT'&&!['Y','M','S'].includes(kindOf(target)))gxError(op+' kräver Y, M, S eller lokal BOOL.');
+      if((['MOV','INC','DEC'].includes(base)||wordArity)&&target[0]!=='D')gxError(op+' kräver D-register.');
+      if(wordArity)wordSources=args.slice(0,-1).map(numeric);
+      if(base==='MOV'){source=/^(K-?\d+|H[0-9A-F]+)$/.test(args[0])?args[0]:resolve(args[0]);if(!(/^(K-?\d+|H[0-9A-F]+)$/.test(source)||wordDevice(source))||source[0]==='K'&&(+source.slice(1)<-32768||+source.slice(1)>32767)||source[0]==='H'&&parseInt(source.slice(1),16)>65535)gxError('MOV-källan stöds inte.');}
+      const a={id:prefix+'gxa'+actions.length,node:current.node,op,target,label,preset,source,sources:wordSources,operandLabels:[...args],step:ins.offset??actions.length};actions.push(a);
+      const previous=groups.at(-1);if(previous?.expr===current)previous.actions.push(a);else groups.push({expr:current,actions:[a],comment:ins.comment||''});afterAction=true;
+    }else gxError('instruktionen '+op+' stöds inte.');
+  }
+  if(fragment){
+    if(ended)gxError('END är inte tillåten i ett SFC-delprogram.');
+    if(blocks.length||branches.length)gxError('obalanserad stack i SFC-delprogram.');
+    if(condition){
+      if(!current||actions.length)gxError('övergången måste innehålla ett rent logiskt villkor.');
+      const terminal={id:prefix+'gxtran',node:current.node,op:'TRAN',target:'',label:'',preset:null,source:null,sources:[],operandLabels:[],step:instructions.at(-1)?.offset??0,virtual:true};
+      actions.push(terminal);groups.push({expr:current,actions:[terminal],comment:instructions[0]?.comment||''});
+    }else if(current&&!afterAction)gxError('villkor utan spole i SFC-steg.');
+  }else if(!ended)gxError('END saknas.');
+  if(rawM.size&&symbolic.size)gxError('automatiska lokala labels blandas med råa M-adresser; deras alias kan inte verifieras.');
+  for(const kind of symbolicTC)if(rawTC.has(kind))gxError('automatiska lokala '+kind+'-labels blandas med fysiska '+kind+'-adresser; deras alias kan inte verifieras.');
+  const tc=new Set();for(const a of actions)if(a.op==='OUT'&&['T','C'].includes(kindOf(a.target))){if(tc.has(a.target))gxError('flera OUT till samma timer/räknare.');tc.add(a.target);}
+  // Reject contacts that never contribute to an action, including abandoned LDs.
+  const used=new Set(),visit=(id)=>{if(used.has(id))return;used.add(id);for(const c of incoming[id]||[])visit(c.from);for(const id2 of gates[id]?.inputs||[])visit(id2);};for(const a of actions)visit(a.node);
+  if(contacts.some(c=>!used.has(c.to)))gxError('villkor utan spole.');
+  const networks=groups.map((g,i)=>gxLayout(g,i+1));
+  const notes=[`GXW-källan ${scope}.Program.pou läses direkt; kompilerade resurskopior används inte som aktuell kod.`,'Ladderbilden återskapas från instruktionerna. Positionerna motsvarar inte GX Works2-redigerarens ursprungliga layout.'];
+  if(symbolic.size)notes.push('Automatiska lokala BOOL-labels körs som separata symboliska minnen. Råa M-adresser får inte blandas in.');
+  const coilCounts=new Map();for(const a of actions)if(a.op==='OUT')coilCounts.set(a.target,(coilCounts.get(a.target)||0)+1);for(const [device,count] of coilCounts)if(count>1)notes.push(`${device}: ${count} OUT-spolar. Sista skrivningen i scan bestämmer slutvärdet.`);
+  if(symbolicTC.size)notes.push('Lokala TIMER/COUNTER körs med egna typade tillstånd. Automatisk TIMER har 100 ms tidsbas; fysisk T-/C-adress gissas inte.');
+  return {version:5,format:'GXW',programName:scope,executable:true,issues:[],profile,symbols,instructions,networks,contacts,actions,sources,incoming,gates,devices:[...new Set([...contacts.map(c=>c.device).filter(Boolean),...contacts.flatMap(c=>c.operands||[]).filter(wordDevice),...actions.map(a=>a.target),...actions.flatMap(a=>[a.preset,a.source,...a.sources]).filter(x=>x&&wordDevice(x)),...labels.map(l=>l.device).filter(Boolean)])],labels,notes,pageCount:0,ladderPages:[],validated:true};
+}
+
+// Compose separately validated fragments without losing instruction order,
+// scoped labels or trace identities. Callers supply unique id prefixes.
+function mergeGXModels(models,metadata={}){
+  const merged={version:7,format:'GXW',executable:true,validated:true,issues:[],labels:[],instructions:[],models,contacts:[],actions:[],sources:[],networks:[],devices:[],symbols:Object.create(null),incoming:Object.create(null),gates:Object.create(null),notes:[],pageCount:0,ladderPages:[],...metadata};
+  for(const m of models){
+    for(const k of ['contacts','actions','sources','devices','instructions'])merged[k].push(...m[k]);
+    Object.assign(merged.symbols,m.symbols);Object.assign(merged.incoming,m.incoming);Object.assign(merged.gates,m.gates);
+    for(const n of m.networks){n.page=merged.networks.length+1;merged.networks.push(n);}
+  }
+  if(merged.instructions.length>4096)gxError('fler än 4096 instruktioner totalt.');
+  const actual=models.flatMap(m=>[...m.contacts.flatMap(c=>[c.device,...(c.operands||[])]),...m.actions.flatMap(a=>[a.target,a.preset,a.source,...a.sources])]).filter(Boolean);
+  for(const kind of ['M','T','C'])if(Object.values(merged.symbols).some(s=>s.kind===kind)&&actual.some(d=>d[0]===kind&&(kind!=='M'||+d.slice(1)<8000)))gxError('automatiska labels blandas med råa '+kind+'-adresser mellan delprogram.');
+  merged.devices=[...new Set(merged.devices)];return merged;
+}
+
+function gxLayout(group,page){
+  const sizes=new WeakMap(),measure=e=>{if(sizes.has(e))return sizes.get(e);let size;if(['contact','rail'].includes(e.kind))size={w:190,h:85};else{const a=measure(e.left),b=measure(e.right);size=e.kind==='AND'?{w:a.w+b.w,h:Math.max(a.h,b.h)}:{w:Math.max(a.w,b.w),h:a.h+b.h};}sizes.set(e,size);return size;};
+  const m=measure(group.expr),left=55,right=Math.max(840,left+m.w+280),top=0,bottom=Math.max(m.h,group.actions.length*85)+65;
+  const n={page,left,right,top,bottom,height:14,contacts:[],actions:[],wires:[],sources:[],symbols:[],texts:[],steps:group.actions.map(a=>({step:a.step}))};
+  const wire=(x1,y1,x2,y2,node)=>n.wires.push({x1,y1,x2,y2,node});
+  // A branch's left vertical wire carries its incoming feed, not the result
+  // of its first compound expression (which may be false after a contact).
+  const entry=e=>e.kind==='contact'?e.contact.from:e.kind==='rail'?e.node:entry(e.left);
+  const text=(value,x,y,size=14,max=180)=>n.texts.push({text:value,x,y,h:size,w:Math.min(max,value.length*size*.57)});
+  const draw=(e,x,y,w)=>{
+    if(e.kind==='rail'){wire(x,y,x+w,y,e.node);return;}
+    if(e.kind==='contact'){
+      const c=e.contact,center=x+w/2;n.contacts.push({...c,x:center,y,x1:center-6,x2:center+6,height:18});wire(x,y,center-6,y,c.from);wire(center+6,y,x+w,y,c.to);text(c.label,x+5,y-22,14,w-10);return;
+    }
+    const a=measure(e.left),b=measure(e.right);
+    if(e.kind==='AND'){const split=w*a.w/(a.w+b.w);draw(e.left,x,y,split);draw(e.right,x+split,y,w-split);}
+    else{
+      const y2=y+a.h;draw(e.left,x,y,w);draw(e.right,x,y2,w);wire(x,y,x,y2,entry(e.right));wire(x+w,y,x+w,y2,e.node);
+    }
+  };
+  draw(group.expr,left,45,m.w);const join=left+m.w;
+  for(let i=0;i<group.actions.length;i++){
+    const a=group.actions[i],y=45+i*85,x1=right-225,x2=right-8;n.actions.push({...a,y});wire(join,45,join,y,a.node);wire(join,y,x1,y,a.node);wire(x2,y,right,y,a.node);
+    const caption=a.sources.length?a.op+' '+a.operandLabels.join(' '):`${a.op==='OUT'?'':a.op+' '}${a.label}${a.preset?' '+a.preset:''}${a.source?' ← '+a.source:''}`;
+    n.symbols.push({x1,x2,y,y1:y-13,y2:y+13,kind:'box'});text(caption,x1+12,y+5,14,x2-x1-24);
+  }
+  return n;
+}
+
+
+/* Bounded GX Works2 FX SFC source. Framing adapted from gxworks-agent,
+ * Apache-2.0; see vendor/GXW-NOTICES.txt. No native DLL or cached .res is used. */
+const sfcError=s=>{throw Error('GXW SFC: '+s);};
+const sfcHex=b=>Array.from(b,x=>x.toString(16).padStart(2,'0')).join('');
+
+function readGXSFC(raw,{strict=true}={}){
+  const view=new DataView(raw.buffer,raw.byteOffset,raw.byteLength);let pos=0,total=0;
+  const word=()=>{if(pos+4>raw.length)sfcError('avkortad källpost.');const n=view.getUint32(pos,true);pos+=4;return n;};
+  const count=()=>{const n=word();if(n>8192)sfcError('för många källposter.');return n;};
+  const name=()=>{const n=count(),end=pos+n*2;if(!n||end>raw.length||view.getUint16(end-2,true)!==0)sfcError('skadat namn.');const text=new TextDecoder('utf-16le',{fatal:true}).decode(raw.subarray(pos,end-2));pos=end;if(text.includes('\0'))sfcError('NUL i namn.');return text;};
+  name();name();pos+=42;if(pos>raw.length||word()!==240)sfcError('okänt källformat.');
+  const size=word(),start=pos,end=start+size;if(size<20||end>raw.length||word()!==size)sfcError('skadad grafstorlek.');
+  const mode=[word(),word()],block=word(),code=pos,codeEnd=code+block-4;
+  if(block<4||codeEnd+4>end)sfcError('skadad grafkod.');
+  const cache=view.getUint32(codeEnd,true);if(cache<4||codeEnd+cache!==end)sfcError('grafens regioner överlappar.');
+  const issues=[],steps=[],children=[],registrations=[];let ladder=null;
+  const issue=s=>{if(strict)sfcError(s);issues.push(s);};
+  if(mode.some(Boolean))issue('grafens lagringsläge stöds inte.');
+  const tokens=[];
+  for(let p=code;p<codeEnd;){const n=raw[p];if(n<2||p+n>codeEnd||raw[p+n-1]!==n)sfcError('skadad grafpost vid byte '+p);if(tokens.length>=20000)sfcError('för många grafposter.');tokens.push({hex:sfcHex(raw.subarray(p,p+n)),raw:raw.subarray(p,p+n),offset:p});p+=n;}
+  let ti=0;
+  const reference=tag=>{const t=tokens[ti++];if(!t||t.raw[1]!==tag||![4,5].includes(t.raw.length))sfcError('saknad eller okänd grafreferens.');return t.raw[2]+(t.raw.length===5?t.raw[3]*256:0);};
+  try{
+    // Native FX Ladder Block: one cyclic, non-STL body and an empty jump
+    // back to that body. Keep it separate from actual S state relays.
+    if(tokens[0]?.hex==='056c021705'){
+      ti++;const actionNumber=reference(0x98);
+      if(tokens[ti++]?.hex!=='056c021d05')sfcError('okänd ladderblockövergång.');
+      const transitionNumber=reference(0x99);
+      if(tokens[ti++]?.hex!=='0562020005')sfcError('okänt ladderblockmål.');
+      const target=reference(0x98);
+      if(target!==actionNumber||tokens[ti++]?.hex!=='056c010a05'||ti!==tokens.length)sfcError('okänd ladderblockgraf.');
+      ladder={actionNumber,transitionNumber};
+    }
+    while(ti<tokens.length){
+      const t=tokens[ti++];if(!['056c041c05','056c041405'].includes(t.hex))sfcError('grafpost '+t.hex+' vid byte '+t.offset+' stöds inte; förgreningar och andra grafvarianter kräver ytterligare stöd.');
+      const number=reference(0x98),actionNumber=reference(0x98),tr=tokens[ti++];
+      if(!tr||!['056c020405','056c021d05'].includes(tr.hex))sfcError('endast en serieövergång eller ett explicit hopp per steg stöds.');
+      const transitionNumber=reference(0x99),targetOp=tokens[ti++];if(targetOp?.hex!=='0562020005')sfcError('okänd måloperation i övergång.');
+      const target=reference(0x98);if(tokens[ti++]?.hex!=='056c010a05')sfcError('stegavslut saknas.');
+      steps.push({number,initial:t.hex==='056c041c05',actionNumber,offset:t.offset,transition:{number:transitionNumber,target,kind:tr.hex==='056c021d05'?'jump':'next',offset:tr.offset}});
+      if(steps.length>512)sfcError('fler än 512 steg.');
+    }
+  }catch(e){if(strict)throw e;issues.push(e.message);}
+  pos=end;
+  const child=(kind,identity,number=null)=>{
+    if(word()!==1)sfcError('okänd delprogramlagring.');const size=word(),start=pos,end=start+size;
+    if(size<20||end>raw.length||word()!==size)sfcError('skadad delprogramstorlek.');
+    if(![0,1].includes(view.getUint32(start+4,true))||sfcHex(raw.subarray(start+8,start+20))!=='0c00000000000000ffffffff')issue('okänt ladderhuvud i SFC-delprogram.');
+    const instructions=readGXFragment(raw,start+20,size-20,{strict});total+=instructions.length;if(total>4096)sfcError('fler än 4096 instruktioner totalt.');
+    pos=end;if(word()!==1)sfcError('okänt delprogramslut.');
+    return {kind,name:identity,number,offset:start+20,instructions,caption:kind==='transition'?'Övergång TR'+number:'Stegåtgärd'};
+  };
+  for(let n=count();n--;){const identity=name();children.push(child('action',identity));}
+  for(let n=count();n--;){const identity=name(),number=word(),rows=[];for(let k=count();k--;)rows.push({qualifier:word(),name:name()});if(word()!==1)sfcError('skadad åtgärdsregistrering.');registrations.push({name:identity,number,rows});}
+  for(let n=count();n--;){const identity=name(),number=word();children.push(child('transition',identity,number));}
+  if(pos!==raw.length&&!(pos+4===raw.length&&word()===0))sfcError('okända efterföljande SFC-data.');
+  for(const c of children.filter(c=>c.kind==='action')){const refs=registrations.filter(r=>r.rows.some(x=>x.name===c.name));const nums=steps.filter(s=>refs.some(r=>r.number===s.actionNumber)).map(s=>'S'+s.number);c.caption=ladder?'Ladderblock':nums.length?'Steg '+nums.join(', '):'Oanknuten stegåtgärd';}
+  return {steps,children,registrations,issues,mode,ladder};
+}
+
+function compileGXLadderBlock(source,labels,profile,scope,prefix){
+  if(source.issues.length)sfcError(source.issues.join(' '));
+  const reg=source.registrations[0],actions=source.children.filter(c=>c.kind==='action'),trans=source.children.filter(c=>c.kind==='transition');
+  if(!source.ladder||source.steps.length||source.registrations.length!==1||reg.number!==source.ladder.actionNumber||reg.rows.length!==1||reg.rows[0].qualifier!==0||actions.length!==1||actions[0].name!==reg.rows[0].name||trans.length!==1||trans[0].number!==source.ladder.transitionNumber||trans[0].instructions.length)sfcError('ladderblockets form eller övergång stöds inte.');
+  const m=compileGXInstructions(actions[0].instructions,labels,profile,scope,{fragment:true,prefix});
+  m.region={role:'ladder',caption:'Ladderblock '+scope,program:scope};
+  m.instructions=m.instructions.map(i=>({...i,program:scope,region:m.region.caption}));return m;
+}
+
+function compileGXSFC(sfc,labels,profile,scope,{prefix=''}={}){
+  if(sfc.issues.length)sfcError(sfc.issues.join(' '));if(!sfc.steps.length||!sfc.steps.some(s=>s.initial))sfcError('initialsteg saknas.');
+  const unique=(rows,key,kind)=>{const m=new Map();for(const r of rows){const k=r[key];if(m.has(k))sfcError('dubblerad '+kind+' '+k);m.set(k,r);}return m;};
+  const steps=unique(sfc.steps,'number','stegreferens'),regs=unique(sfc.registrations,'number','åtgärdsreferens');
+  const zooms=unique(sfc.children.filter(c=>c.kind==='action'),'name','åtgärdsnamn'),trans=unique(sfc.children.filter(c=>c.kind==='transition'),'number','övergångsreferens');
+  const models=[],instructions=[],usedZooms=new Set(),usedRegs=new Set(),usedTrans=new Set();
+  for(const step of sfc.steps){
+    validateDevice('S'+step.number,profile);if(step.initial&&step.number>9)sfcError('FX-initialsteg måste ligga i S0–S9.');
+    if(step.transition.target===step.number)sfcError('självhopp till samma steg stöds ännu inte.');
+    if(!steps.has(step.transition.target))sfcError('övergången pekar på ett saknat steg S'+step.transition.target);
+    const reg=regs.get(step.actionNumber),condition=trans.get(step.transition.number);
+    if(!reg||reg.rows.length!==1||reg.rows[0].qualifier!==0)sfcError('saknad eller okänd åtgärdskvalificering vid S'+step.number);
+    const action=zooms.get(reg.rows[0].name);if(!action||!condition)sfcError('delprogram saknas vid S'+step.number);
+    if(usedRegs.has(reg.number)||usedTrans.has(condition.number)||usedZooms.has(action.name))sfcError('delade delprogram/övergångar stöds inte.');
+    usedRegs.add(reg.number);usedTrans.add(condition.number);usedZooms.add(action.name);
+    for(const [role,c]of [['action',action],['transition',condition]]){
+      if(c.instructions.some(i=>i.op==='END'))sfcError('END inuti ett SFC-delprogram.');
+      // Pulse cleanup and edge initialization inside skipped STL blocks have
+      // separate native rules; never silently reuse the ordinary ladder model.
+      if(c.instructions.some(i=>['LDP','LDF','ANDP','ANDF','ORP','ORF','PLS','PLF',...PULSE_ACTIONS].includes(i.op)))sfcError('flank-/pulsinstruktioner i SFC stöds ännu inte.');
+      if(role==='transition'&&c.instructions.some(i=>['ANB','ORB','MPS','MRD','MPP'].includes(i.op)))sfcError('FX tillåter inte block-/stackinstruktioner i övergångsvillkor.');
+      const m=compileGXInstructions(c.instructions,labels,profile,scope,{fragment:true,condition:role==='transition',prefix:`${prefix}sfc${step.number}_${role}_`});
+      if(m.actions.some(a=>a.target[0]==='S'))sfcError('direkt skrivning till S-relä inuti steg stöds inte.');
+      const caption=role==='action'?'Steg S'+step.number:'Övergång TR'+step.transition.number;
+      m.region={step:step.number,role,caption};models.push(m);step[role+'Model']=m;
+      instructions.push(...c.instructions.map(i=>({...i,program:scope,region:caption})));
+    }
+  }
+  if(usedRegs.size!==regs.size||usedZooms.size!==zooms.size||usedTrans.size!==trans.size)sfcError('oanknutna SFC-delprogram finns; RUN kan inte verifieras.');
+  const merged={version:6,format:'GXW · SFC',programName:scope,executable:true,validated:true,issues:[],profile,labels,instructions,sfc,models,contacts:[],actions:[],sources:[],networks:[],devices:[],symbols:Object.create(null),incoming:Object.create(null),gates:Object.create(null),pageCount:0,ladderPages:[]};
+  for(const m of models){for(const k of ['contacts','actions','sources','devices'])merged[k].push(...m[k]);Object.assign(merged.symbols,m.symbols);Object.assign(merged.incoming,m.incoming);Object.assign(merged.gates,m.gates);for(const n of m.networks){n.page=merged.networks.length+1;merged.networks.push(n);}}
+  const actualDevices=models.flatMap(m=>[...m.contacts.flatMap(c=>[c.device,...(c.operands||[])]),...m.actions.flatMap(a=>[a.target,a.preset,a.source,...a.sources])]).filter(Boolean);
+  for(const kind of ['M','T','C'])if(Object.values(merged.symbols).some(s=>s.kind===kind)&&actualDevices.some(d=>d[0]===kind&&(kind!=='M'||+d.slice(1)<8000)))sfcError('automatiska labels blandas med råa '+kind+'-adresser mellan SFC-delprogram.');
+  for(const step of sfc.steps){const next=steps.get(step.transition.target),timers=new Set(step.actionModel.actions.filter(a=>a.op==='OUT'&&deviceKind(a.target,merged)==='T').map(a=>a.target));if(next.actionModel.actions.some(a=>a.op==='OUT'&&timers.has(a.target)))sfcError('samma timer används i intilliggande steg.');}
+  merged.devices=[...new Set([...merged.devices,...sfc.steps.map(s=>'S'+s.number)])];
+  merged.notes=[`GXW-källan ${scope}.Program.pou läses direkt; SFC-steg, övergångar och ladderdelar binds med filens referenser.`,
+    'SFC-stöd: FX3S/FX3U, sekventiella steg, serieövergångar, explicita hopp/loopar och cykliska ladderblock. Förgreningar, parallella flöden och flank-/pulsinstruktioner inne i SFC-steg spärrar RUN.',
+    'FX-initialsteget måste aktiveras av programkod. Utan startkod förblir sekvensen inaktiv; simulatorn sätter inga S-reläer manuellt eller automatiskt.',
+    'Steg körs i källordning. Ett senare steg kan köras samma scan som övergången. Det föregående stegets vanliga spolar återställs nästa scan; SET behålls. Grönt visar instruktionstillfället, lampor visar slutvärdet.',
+    'SFC-diagrammet återskapas från logiska referenser; GX Works2-redigerarens exakta placering återges inte.'];
+  return merged;
+}
+
+/* Read-only GX Works2 ladder/SFC container import. Format research and portions adapted
+ * from gxworks-agent (Apache-2.0) and gxwlib (MIT); see vendor/GXW-NOTICES.txt.
+ * Unknown layouts/instructions fail closed. No native project bytes are changed. */
+const GXW_LIMIT=40*1024*1024,CFB_END=0xfffffffe,CFB_FREE=0xffffffff;
+
 
 class GXCompoundFile {
   constructor(bytes){
@@ -524,12 +861,6 @@ class GXCompoundFile {
   }
 }
 
-class GXReader {
-  constructor(b){this.b=b;this.v=gxView(b);this.o=0;}
-  u(){if(this.o+4>this.b.length)gxError('avkortad tabell.');const n=this.v.getUint32(this.o,true);this.o+=4;return n;}
-  s(){const n=this.u(),end=this.o+n*2;if(n<1||end>this.b.length||this.v.getUint16(end-2,true)!==0)gxError('ogiltig tabelltext.');const s=gxText(this.b.subarray(this.o,end-2));this.o=end;if(s.includes('\0'))gxError('NUL i tabelltext.');return s;}
-  header(){this.s();this.s();this.o+=42;if(this.o>=this.b.length)gxError('avkortat källhuvud.');return this.o;}
-}
 const gxXml=s=>s.replace(/&(#x[0-9a-f]+|#\d+|amp|lt|gt|quot|apos);/gi,(_,e)=>e[0]==='#'?String.fromCodePoint(parseInt(e.slice(e[1]?.toLowerCase()==='x'?2:1),e[1]?.toLowerCase()==='x'?16:10)):({amp:'&',lt:'<',gt:'>',quot:'"',apos:"'"}[e.toLowerCase()]));
 function gxDirectory(raw){
   if(raw.length>1024*1024)gxError('för stor projektkatalog.');const xml=gxText(raw,'utf-8');if(/<!DOCTYPE|<!ENTITY/i.test(xml))gxError('XML-deklarationer stöds inte.');
@@ -543,9 +874,11 @@ function gxDirectory(raw){
   }
   if(!files.size)gxError('projektkatalogen är tom.');return files;
 }
-function readGXLabels(raw,name){
+function readGXDeclarations(raw,name,{sfc=false}={}){
   const r=new GXReader(raw),local=/\.lh$/i.test(name);r.header();let owner='global';
   if(local){owner=r.s();const type=r.u(),status=r.u();r.s();r.s();if(type!==0x1000000||status!==0)gxError('lokala FB-/funktionsdeklarationer stöds inte.');}
+  let block=null;
+  if(sfc){if(!local)gxError('SFC-blockmetadata kräver en lokal deklaration.');const number=r.u(),properties=Array.from({length:6},()=>r.s());if(number>24)gxError('FX-blocknummer måste ligga i 0–24.');block={number,properties,owner};}
   const count=r.u();if(count>4096)gxError('för många labels.');const rows=[];
   for(let i=0;i<count;i++){
     const label={name:r.s(),type:r.s(),classCode:r.u(),device:r.s(),iec:r.s(),extension:r.u(),scope:owner,table:name};
@@ -557,170 +890,51 @@ function readGXLabels(raw,name){
     if(!label.device&&(!local||!['BOOL','TIMER','COUNTER'].includes(label.type)))gxError('label saknar stödd fysisk adress: '+label.name);
     rows.push(label);
   }
-  return rows;
+  return {labels:rows,block};
 }
+function readGXLabels(raw,name,options){return readGXDeclarations(raw,name,options).labels;}
 
 // Binary spellings are explicit observations, not an arithmetic FNC mapping.
-const GX_OPS={
-  ...GX_LEXICON,
-  '030003':['LD',1],'030103':['LDI',1],'030603':['OR',1],'030703':['ORI',1],
-  '030c03':['AND',1],'030d03':['ANI',1],'031903':['ANB',0],'031803':['ORB',0],
-  '031a03':['MPS',0],'031b03':['MRD',0],'031c03':['MPP',0],
-  '032003':['OUT',1],'032303':['SET',1],'032403':['RST',1],'04210304':['OUT',2],
-  '054c050005':['MOV',2],'054a030005':['INC',1],'054a030205':['DEC',1],
-  // Native three-byte OUT for a symbolic timer/counter still has a preset.
-  '032103':['OUT',2],
-  '033403':['END',0],'0202':['NOP',0]
-};
-function readGXTokens(raw,{strict=true}={}){
-  const r=new GXReader(raw),h=r.header();if(raw[h]!==1||h+25>raw.length)gxError('endast enkel ladder stöds; detta källformat känns inte igen.');
-  const v=gxView(raw),size=v.getUint32(h+1,true),again=v.getUint32(h+5,true),start=h+25,end=start+size-20;
-  if(size!==again||size<23||end>raw.length||![20,24].includes(raw.length-end)||![0,1].includes(v.getUint32(h+9,true))||gxHex(raw.subarray(h+13,start))!=='0c00000000000000ffffffff')gxError('okänt eller skadat ladderhuvud.');
-  const tokens=[];for(let o=start;o<end;){const n=raw[o];if(n<2||o+n>end||raw[o+n-1]!==n)gxError('skadad instruktion vid byte '+o);if(tokens.length>=20000)gxError('för många källposter.');tokens.push({raw:raw.subarray(o,o+n),offset:o});o+=n;}
-  const instructions=[];let comment='';
-  const operand=t=>{
-    const b=t.raw,kind=b[1],payload=b.subarray(2,-1);
-    if(kind===0xdf){const label=gxText(payload,'windows-1252');if(!label||/[\x00-\x1f]/.test(label))gxError('ogiltig labelkodning.');return label;}
-    const dev={144:'M',152:'S',156:'X',157:'Y',168:'D',194:'T',197:'C'}[kind];
-    if(dev&&payload.length>=1&&payload.length<=2){const value=payload[0]+(payload[1]||0)*256;return dev+(dev==='X'||dev==='Y'?value.toString(8):value);}
-    if(kind===0xe8&&payload.length>=1&&payload.length<=2){let n=payload[0]+(payload[1]||0)*256;if(payload.length===2&&n>=32768)n-=65536;return 'K'+n;}
-    if([0xea,0xeb].includes(kind)&&payload.length>=1&&payload.length<=4){let n=0;for(let i=0;i<payload.length;i++)n+=payload[i]*2**(i*8);return 'H'+n.toString(16).toUpperCase();}
-    if(!strict)return '<'+gxHex(b)+'>';
-    gxError('okänd operand '+gxHex(b)+' vid byte '+t.offset);
-  };
-  for(let i=0;i<tokens.length;){
-    const t=tokens[i++],b=t.raw;
-    if(b[1]===0x80&&[0,1].includes(b[2])){const text=gxText(b.subarray(3,-1),'windows-1252');comment+= (comment?'\n':'')+text;continue;}
-    let op=GX_OPS[gxHex(b)];if(!op){if(strict)gxError('instruktionen '+gxHex(b)+' vid byte '+t.offset+' stöds inte.');const args=[];while(tokens[i]&&tokens[i].raw[1]>0x82)args.push(operand(tokens[i++]));instructions.push({op:'OP_'+gxHex(b),args,offset:t.offset,comment,unknown:true});comment='';continue;}
-    if(op[0]==='OUT_T_C')op=['OUT',2];if(op[0]==='ANDI')op=['ANI',1];
-    const args=[];for(let a=0;a<op[1];a++){if(!tokens[i])gxError('saknad operand.');args.push(operand(tokens[i++]));}
-    if(instructions.length>=4096)gxError('fler än 4096 instruktioner.');instructions.push({op:op[0],args,offset:t.offset,comment});comment='';
-    if(op[0]==='END'&&i!==tokens.length)gxError('kod efter END stöds inte.');
-  }
-  if(instructions.at(-1)?.op!=='END')gxError('END saknas.');return instructions;
-}
-
-function compileGXInstructions(instructions,labels=[],profile='FX3U',scope='MAIN'){
-  if(instructions.length>4096)gxError('fler än 4096 instruktioner.');
-  const map=new Map();for(const l of labels){const key=(l.scope+':'+l.name).toUpperCase();if(map.has(key))gxError('dubblerad label '+l.name);map.set(key,l);}
-  const symbols=Object.create(null),rawM=new Set(),symbolic=new Set(),rawTC=new Set(),symbolicTC=new Set(),resolve=(name,write=false)=>{
-    const local=map.get((scope+':'+name).toUpperCase()),global=map.get(('global:'+name).toUpperCase());if(local&&global)gxError('tvetydig lokal/global label '+name);
-    const l=local||global,device=l?(l.device||'@'+scope+':'+l.name):canonical(name);
-    validateDevice(device,profile,write);
-    if(device[0]==='@'){
-      if(!['BOOL','TIMER','COUNTER'].includes(l.type))gxError('automatisk labeltyp stöds inte: '+name);
-      const kind={BOOL:'M',TIMER:'T',COUNTER:'C'}[l.type];symbols[device]={kind,type:l.type,name:l.name,scope};
-      if(kind==='M')symbolic.add(device);else symbolicTC.add(kind);
-    }
-    if(!l&&/^M\d+$/.test(device)&&+device.slice(1)<8000)rawM.add(device);
-    if(/^[TC]\d+$/.test(device))rawTC.add(device[0]);
-    if(l&&((l.type==='BOOL'&&device[0]==='D')||(['INT','WORD'].includes(l.type)&&device[0]!=='D')||(l.type==='TIMER'&&device[0]!=='@'&&device[0]!=='T')||(l.type==='COUNTER'&&device[0]!=='@'&&device[0]!=='C')))gxError('labelns datatyp passar inte adressen: '+name);return device;
-  };
-  const kindOf=key=>deviceKind(key,{symbols}),wordDevice=key=>/^[DTC]\d+$/.test(key)||key[0]==='@'&&['T','C'].includes(kindOf(key));
-  const contacts=[],actions=[],sources=[],incoming=Object.create(null),gates=Object.create(null),groups=[],blocks=[],branches=[];
-  let current=null,afterAction=false,ended=false;
-  const rail=()=>{const id='gxrail'+sources.length;sources.push(id);return id;};
-  const contact=(name,kind,feed=null)=>{
-    const device=resolve(name);if(device[0]==='D')gxError('ordregister kan inte användas som bitkontakt.');
-    if(['RISE','FALL'].includes(kind)&&profile==='FX3U'&&/^M\d+$/.test(device)&&+device.slice(1)>=2800&&+device.slice(1)<=3071)gxError('flankkontakter M2800–M3071 har särskild förbrukningssemantik som ännu inte kan köras.');
-    const from=feed?.node||rail(),to='gxn'+contacts.length,c={id:'gxc'+contacts.length,from,to,device,kind,label:name};
-    contacts.push(c);incoming[to]=[c];return {node:to,kind:'contact',contact:c,depth:1};
-  };
-  const combine=(op,a,b,node=null)=>{const depth=Math.max(a.depth,b.depth)+1;if(depth>64)gxError('logikdjupet överstiger 64 nivåer.');if(!node){node='gxgate'+Object.keys(gates).length;gates[node]={op,inputs:[a.node,b.node]};}return {node,kind:op,left:a,right:b,depth};};
-  const numeric=name=>{const value=/^(K-?\d+|H[0-9A-F]+)$/.test(name)?name:resolve(name);if(!(/^(K-?\d+|H[0-9A-F]+)$/.test(value)||wordDevice(value))||value[0]==='K'&&(+value.slice(1)<-32768||+value.slice(1)>32767)||value[0]==='H'&&parseInt(value.slice(1),16)>65535)gxError('operanden kräver 16-bitars K/H eller D/T/C.');return value;};
-  const need=()=>{if(!current)gxError('logiskt villkor saknas.');};
-  for(const ins of instructions){
-    const {op,args}=ins;if(ended)gxError('kod efter END.');
-    if(op==='NOP')continue;
-    const comparison=/^(LD|AND|OR)(=|<>|>=|<=|>|<)$/.exec(op);
-    if(comparison){
-      const [,connection,operator]=comparison;
-      if(connection==='LD'){if(current&&!afterAction){blocks.push(current);if(blocks.length>8)gxError('fler än 8 logikblock.');}else if(blocks.length)gxError('oavslutat logikblock.');}
-      else need();
-      const from=connection==='AND'?current.node:rail(),to='gxn'+contacts.length,c={id:'gxc'+contacts.length,from,to,kind:'COMPARE',comparison:operator,operands:args.map(numeric),label:op+' '+args.join(' '),device:null};
-      contacts.push(c);incoming[to]=[c];const e={node:to,kind:'contact',contact:c,depth:1};current=connection==='LD'?e:combine(connection==='AND'?'AND':'OR',current,e,connection==='AND'?to:null);afterAction=false;
-    }else if(['LD','LDI','LDP','LDF'].includes(op)){
-      if(current&&!afterAction){blocks.push(current);if(blocks.length>8)gxError('fler än 8 logikblock.');}
-      else if(blocks.length)gxError('oavslutat logikblock före nytt nätverk.');
-      current=contact(args[0],{LD:'NO',LDI:'NC',LDP:'RISE',LDF:'FALL'}[op]);afterAction=false;
-    }else if(['AND','ANI','OR','ORI','ANDP','ANDF','ORP','ORF'].includes(op)){
-      need();const serial=['AND','ANI','ANDP','ANDF'].includes(op),kind={ANI:'NC',ORI:'NC',ANDP:'RISE',ORP:'RISE',ANDF:'FALL',ORF:'FALL'}[op]||'NO',c=contact(args[0],kind,serial?current:null);
-      current=combine(serial?'AND':'OR',current,c,serial?c.node:null);afterAction=false;
-    }else if(op==='ANB'||op==='ORB'){
-      need();if(!blocks.length)gxError(op+' saknar sparat block.');current=combine(op==='ANB'?'AND':'OR',blocks.pop(),current);afterAction=false;
-    }else if(op==='MPS'){need();if(branches.length>=11)gxError('fler än 11 MPS-nivåer.');branches.push(current);}
-    else if(op==='MRD'||op==='MPP'){if(!branches.length)gxError(op+' saknar MPS.');current=op==='MPP'?branches.pop():branches.at(-1);afterAction=false;}
-    else if(op==='END'){if(blocks.length||branches.length||current&&!afterAction)gxError('ofullständigt nätverk eller obalanserad stack vid END.');ended=true;}
-    else if(['OUT','SET','RST','MOV','INC','DEC','PLS','PLF','ALT',...Object.keys(WORD_LOGIC_ARITY),...PULSE_ACTIONS].includes(op)){
-      need();if(blocks.length)gxError('oavslutat ANB/ORB-block vid spole.');
-      const base=PULSE_ACTIONS.includes(op)?op.slice(0,-1):op,wordArity=WORD_LOGIC_ARITY[base],arity=wordArity||(base==='MOV'?2:1);
-      if(op!=='OUT'&&args.length!==arity)gxError(op+' kräver '+arity+' operander.');
-      const label=args[wordArity?wordArity-1:base==='MOV'?1:0],target=resolve(label,true);let preset=null,source=null,wordSources=[];
-      if(op==='OUT'&&['T','C'].includes(kindOf(target))){if(args.length!==2)gxError('timer/räknare saknar förval.');preset=/^K\d+$/.test(args[1])?args[1]:resolve(args[1]);if(!/^(K\d+|D\d+)$/.test(preset)||preset[0]==='K'&&+preset.slice(1)>32767)gxError('förval måste vara K0–K32767 eller D-register.');}
-      else if(op==='OUT'&&args.length!==1)gxError('förval vid vanlig spole.');
-      if(op==='OUT'&&target[0]==='D'||op==='SET'&&['T','C','D'].includes(kindOf(target)))gxError(op+' '+target+' stöds inte.');
-      if(['PLS','PLF'].includes(op)&&!/^([YM])\d+$/.test(target))gxError(op+' kräver fysisk Y-/M-adress.');
-      if(base==='ALT'&&!['Y','M','S'].includes(kindOf(target)))gxError(op+' kräver Y, M, S eller lokal BOOL.');
-      if((['MOV','INC','DEC'].includes(base)||wordArity)&&target[0]!=='D')gxError(op+' kräver D-register.');
-      if(wordArity)wordSources=args.slice(0,-1).map(numeric);
-      if(base==='MOV'){source=/^(K-?\d+|H[0-9A-F]+)$/.test(args[0])?args[0]:resolve(args[0]);if(!(/^(K-?\d+|H[0-9A-F]+)$/.test(source)||wordDevice(source))||source[0]==='K'&&(+source.slice(1)<-32768||+source.slice(1)>32767)||source[0]==='H'&&parseInt(source.slice(1),16)>65535)gxError('MOV-källan stöds inte.');}
-      const a={id:'gxa'+actions.length,node:current.node,op,target,label,preset,source,sources:wordSources,operandLabels:[...args],step:ins.offset??actions.length};actions.push(a);
-      const previous=groups.at(-1);if(previous?.expr===current)previous.actions.push(a);else groups.push({expr:current,actions:[a],comment:ins.comment||''});afterAction=true;
-    }else gxError('instruktionen '+op+' stöds inte.');
-  }
-  if(!ended)gxError('END saknas.');
-  if(rawM.size&&symbolic.size)gxError('automatiska lokala labels blandas med råa M-adresser; deras alias kan inte verifieras.');
-  for(const kind of symbolicTC)if(rawTC.has(kind))gxError('automatiska lokala '+kind+'-labels blandas med fysiska '+kind+'-adresser; deras alias kan inte verifieras.');
-  const tc=new Set();for(const a of actions)if(a.op==='OUT'&&['T','C'].includes(kindOf(a.target))){if(tc.has(a.target))gxError('flera OUT till samma timer/räknare.');tc.add(a.target);}
-  // Reject contacts that never contribute to an action, including abandoned LDs.
-  const used=new Set(),visit=(id)=>{if(used.has(id))return;used.add(id);for(const c of incoming[id]||[])visit(c.from);for(const id2 of gates[id]?.inputs||[])visit(id2);};for(const a of actions)visit(a.node);
-  if(contacts.some(c=>!used.has(c.to)))gxError('villkor utan spole.');
-  const networks=groups.map((g,i)=>gxLayout(g,i+1));
-  const notes=[`GXW-källan ${scope}.Program.pou läses direkt; kompilerade resurskopior används inte som aktuell kod.`,'Ladderbilden återskapas från instruktionerna. Positionerna motsvarar inte GX Works2-redigerarens ursprungliga layout.'];
-  if(symbolic.size)notes.push('Automatiska lokala BOOL-labels körs som separata symboliska minnen. Råa M-adresser får inte blandas in.');
-  const coilCounts=new Map();for(const a of actions)if(a.op==='OUT')coilCounts.set(a.target,(coilCounts.get(a.target)||0)+1);for(const [device,count] of coilCounts)if(count>1)notes.push(`${device}: ${count} OUT-spolar. Sista skrivningen i scan bestämmer slutvärdet.`);
-  if(symbolicTC.size)notes.push('Lokala TIMER/COUNTER körs med egna typade tillstånd. Automatisk TIMER har 100 ms tidsbas; fysisk T-/C-adress gissas inte.');
-  return {version:5,format:'GXW',programName:scope,executable:true,issues:[],profile,symbols,instructions,networks,contacts,actions,sources,incoming,gates,devices:[...new Set([...contacts.map(c=>c.device).filter(Boolean),...contacts.flatMap(c=>c.operands||[]).filter(wordDevice),...actions.map(a=>a.target),...actions.flatMap(a=>[a.preset,a.source,...a.sources]).filter(x=>x&&wordDevice(x)),...labels.map(l=>l.device).filter(Boolean)])],labels,notes,pageCount:0,ladderPages:[],validated:true};
-}
-
-function gxLayout(group,page){
-  const sizes=new WeakMap(),measure=e=>{if(sizes.has(e))return sizes.get(e);let size;if(e.kind==='contact')size={w:190,h:85};else{const a=measure(e.left),b=measure(e.right);size=e.kind==='AND'?{w:a.w+b.w,h:Math.max(a.h,b.h)}:{w:Math.max(a.w,b.w),h:a.h+b.h};}sizes.set(e,size);return size;};
-  const m=measure(group.expr),left=55,right=Math.max(840,left+m.w+280),top=0,bottom=Math.max(m.h,group.actions.length*85)+65;
-  const n={page,left,right,top,bottom,height:14,contacts:[],actions:[],wires:[],sources:[],symbols:[],texts:[],steps:group.actions.map(a=>({step:a.step}))};
-  const wire=(x1,y1,x2,y2,node)=>n.wires.push({x1,y1,x2,y2,node});
-  const text=(value,x,y,size=14,max=180)=>n.texts.push({text:value,x,y,h:size,w:Math.min(max,value.length*size*.57)});
-  const draw=(e,x,y,w)=>{
-    if(e.kind==='contact'){
-      const c=e.contact,center=x+w/2;n.contacts.push({...c,x:center,y,x1:center-6,x2:center+6,height:18});wire(x,y,center-6,y,c.from);wire(center+6,y,x+w,y,c.to);text(c.label,x+5,y-22,14,w-10);return;
-    }
-    const a=measure(e.left),b=measure(e.right);
-    if(e.kind==='AND'){const split=w*a.w/(a.w+b.w);draw(e.left,x,y,split);draw(e.right,x+split,y,w-split);}
-    else{
-      const y2=y+a.h;draw(e.left,x,y,w);draw(e.right,x,y2,w);wire(x,y,x,y2,e.right.kind==='contact'?e.right.contact.from:e.right.node);wire(x+w,y,x+w,y2,e.node);
-    }
-  };
-  draw(group.expr,left,45,m.w);const join=left+m.w;
-  for(let i=0;i<group.actions.length;i++){
-    const a=group.actions[i],y=45+i*85,x1=right-225,x2=right-8;n.actions.push({...a,y});wire(join,45,join,y,a.node);wire(join,y,x1,y,a.node);wire(x2,y,right,y,a.node);
-    const caption=a.sources.length?a.op+' '+a.operandLabels.join(' '):`${a.op==='OUT'?'':a.op+' '}${a.label}${a.preset?' '+a.preset:''}${a.source?' ← '+a.source:''}`;
-    n.symbols.push({x1,x2,y,y1:y-13,y2:y+13,kind:'box'});text(caption,x1+12,y+5,14,x2-x1-24);
-  }
-  return n;
-}
-
 function compileGXW(bytes,profile='FX3U'){
   const outer=new GXCompoundFile(bytes),files=gxDirectory(outer.read('projectdatalist.xml')),inner=new GXCompoundFile(outer.read('_hdb'));
   const read=name=>{const id=files.get(name);if(!id)gxError('källfil saknas: '+name);return inner.read(id);};
   const projects=[...files.keys()].filter(n=>/\.prj$/i.test(n));if(projects.length!==1)gxError('projektets CPU-uppgifter är tvetydiga.');
   const r=new GXReader(read(projects[0]));r.s();const cpu=r.s(),expected={'FX3U/FX3UC':'FX3U',FX3S:'FX3S'}[cpu];
   if(!expected)gxError('CPU '+cpu+' stöds inte.');if(expected!==profile)gxError('projektet använder '+cpu+'. Välj den CPU-profilen och importera igen.');
-  const pous=[...files.keys()].filter(n=>/\.Program\.pou$/i.test(n));if(pous.length!==1)gxError('endast ett fristående cykliskt program kan köras.');const scope=pous[0].slice(0,-12);
-  if([...files.keys()].some(n=>/\.pou$/i.test(n)&&n!==pous[0]))gxError('fler POU-/FB-källor stöds inte.');
+  const pous=[...files.keys()].filter(n=>/\.Program\.pou$/i.test(n));if(!pous.length||pous.length>25)gxError('en till 25 FX-programblock krävs.');
+  if([...files.keys()].some(n=>/\.pou$/i.test(n)&&!pous.includes(n)))gxError('fler POU-/FB-källor stöds inte.');
+  const sources=pous.map(name=>{const raw=read(name),h=new GXReader(raw).header();return {name,scope:name.slice(0,-12),raw,sfc:raw[h]===0xf0};});
+  if(sources.length>1&&sources.some(s=>!s.sfc))gxError('flera POU stöds bara som FX-SFC-/ladderblock i samma task.');
   const tasks=[...files.keys()].filter(n=>/\.tsk$/i.test(n));if(tasks.length!==1)gxError('endast en cyklisk task stöds.');
   const task=new GXReader(read(tasks[0]));task.header();const event=task.s(),interval=task.s();task.u();task.u();const count=task.u();
-  if(event!=='TRUE'||interval!=='0'||count!==1||task.s()!==scope||task.u()!==1||task.s()!=='')gxError('taskens körvillkor eller programordning stöds inte.');
-  const labels=[...files.keys()].filter(n=>/\.(gh|lh)$/i.test(n)).flatMap(n=>readGXLabels(read(n),n));
-  const model=compileGXInstructions(readGXTokens(read(pous[0])),labels,profile,scope);model.cpu=cpu;model.project=projects[0].slice(0,-4);return model;
+  if(event!=='TRUE'||interval!=='0'||count!==sources.length)gxError('taskens körvillkor eller programordning stöds inte.');
+  const registered=new Set();for(let i=0;i<count;i++){const scope=task.s(),enabled=task.u(),condition=task.s();if(!sources.some(s=>s.scope===scope)||registered.has(scope)||enabled!==1||condition!=='')gxError('taskens körvillkor eller programordning stöds inte.');registered.add(scope);}
+  const declarations=[...files.keys()].filter(n=>/\.(gh|lh)$/i.test(n)).map(name=>{const source=sources.find(s=>name.toUpperCase()===(s.scope+'.Labels.lh').toUpperCase());return readGXDeclarations(read(name),name,{sfc:!!source?.sfc});});
+  const labels=declarations.flatMap(d=>d.labels);let model;
+  if(!sources[0].sfc){const s=sources[0];model=compileGXInstructions(readGXTokens(s.raw),labels,profile,s.scope);}
+  else{
+    const usedNumbers=new Set(),blocks=sources.map(s=>{
+      const metadata=declarations.find(d=>d.block?.owner.toUpperCase()===s.scope.toUpperCase())?.block;
+      if(!metadata||usedNumbers.has(metadata.number))gxError('saknat eller dubblerat FX-blocknummer.');usedNumbers.add(metadata.number);
+      const source=readGXSFC(s.raw),kind=source.ladder?'ladder':'sfc';
+      // Only the observed native FX cyclic Ladder Block property form is
+      // executable. Other block-control attributes remain review-only.
+      const allowed=kind==='ladder'?['','','M8000','','','']:['','','','','',''];
+      if(metadata.properties.some((p,i)=>p!==allowed[i]))gxError('FX-blockets styrattribut stöds inte: '+s.scope);
+      const prefix=sources.length>1?'block'+metadata.number+'_':'';
+      const m=kind==='ladder'?compileGXLadderBlock(source,labels,profile,s.scope,prefix):compileGXSFC(source,labels,profile,s.scope,{prefix});
+      return {number:metadata.number,scope:s.scope,kind,model:m};
+    }).sort((a,b)=>a.number-b.number);
+    const sfcs=blocks.filter(b=>b.kind==='sfc');if(sfcs.length>1)gxError('flera SFC-sekvenser i samma projekt stöds ännu inte.');
+    if(blocks.length===1&&sfcs.length===1)model=sfcs[0].model;
+    else{
+      const models=blocks.map(b=>b.model),timers=new Map();
+      for(const b of blocks)for(const a of b.model.actions)if(a.op==='OUT'&&/^[TC]\d+$/.test(a.target)){if(timers.has(a.target)&&timers.get(a.target)!==b.number)gxError('timer/räknare skrivs i flera FX-block: '+a.target);timers.set(a.target,b.number);}
+      model=mergeGXModels(models,{format:sfcs.length?'GXW · SFC + ladderblock':'GXW · ladderblock',profile,labels,programName:blocks.map(b=>b.scope).join(' + '),sfc:sfcs[0]?.model.sfc||null,blocks});
+      model.notes=[...new Set(models.flatMap(m=>m.notes)), 'FX-block körs i stigande blocknummer: '+blocks.map(b=>b.number+' '+b.scope+' ('+b.kind+')').join(' → ')+'. Alla block delar samma PLC-bild och M8002-startpuls.'];
+    }
+  }
+  model.cpu=cpu;model.project=projects[0].slice(0,-4);return model;
 }
 
 // Loading and execution are different operations. A readable GXW stays available
@@ -728,23 +942,59 @@ function compileGXW(bytes,profile='FX3U'){
 function importGXW(bytes,profile='FX3U'){
   try{return compileGXW(bytes,profile);}catch(error){
     const outer=new GXCompoundFile(bytes),files=gxDirectory(outer.read('projectdatalist.xml')),inner=new GXCompoundFile(outer.read('_hdb'));
-    const issues=[error.message],labels=[],instructions=[],programs=[];let cpu='Okänd',project='GXW-projekt';
+    const issues=[error.message],labels=[],instructions=[],programs=[],blocks=[],metadata=new Map();let sfc=null;let cpu='Okänd',project='GXW-projekt';
     for(const [name,id] of files){
       if(!inner.streams.has(id))continue;
       const raw=inner.read(id);
       try{
         if(/\.prj$/i.test(name)){const r=new GXReader(raw);r.s();cpu=r.s();project=name.slice(0,-4);}
-        if(/\.(gh|lh)$/i.test(name))labels.push(...readGXLabels(raw,name));
-        if(/\.Program\.pou$/i.test(name)){const nameOnly=name.slice(0,-12);programs.push(nameOnly);instructions.push(...readGXTokens(raw,{strict:false}).map(x=>({...x,program:nameOnly})));}
+        if(/\.(gh|lh)$/i.test(name)){const paired=name.replace(/\.Labels\.lh$/i,'.Program.pou'),source=files.has(paired)?inner.read(files.get(paired)):null,doc=readGXDeclarations(raw,name,{sfc:!!source&&source[new GXReader(source).header()]===0xf0});labels.push(...doc.labels);if(doc.block)metadata.set(doc.block.owner.toUpperCase(),doc.block);}
+        if(/\.Program\.pou$/i.test(name)){
+          const nameOnly=name.slice(0,-12),block={scope:nameOnly,number:null,kind:'unknown',model:null,sfc:null,instructions:[]};programs.push(nameOnly);blocks.push(block);
+          const h=new GXReader(raw).header();
+          if(raw[h]===0xf0){const parsed=readGXSFC(raw,{strict:false});block.kind=parsed.ladder?'ladder':'sfc';if(!parsed.ladder){block.sfc=parsed;if(!sfc||parsed.steps.length)sfc=parsed;}for(const c of parsed.children)block.instructions.push(...c.instructions.map(x=>({...x,program:nameOnly,region:parsed.ladder?'Ladderblock '+nameOnly:c.caption})));}
+          else{block.kind='ladder';block.instructions=readGXTokens(raw,{strict:false}).map(x=>({...x,program:nameOnly}));}
+          instructions.push(...block.instructions);
+        }
       }catch(e){if(!issues.includes(e.message))issues.push(name+': '+e.message);}
     }
     const devices=new Set(labels.map(l=>l.device).filter(Boolean));for(const ins of instructions)for(const arg of ins.args)if(/^[XYMTCDS]\d+$/.test(arg))devices.add(canonical(arg));
     const symbols=Object.create(null);for(const l of labels)if(!l.device&&['BOOL','TIMER','COUNTER'].includes(l.type)){const scope=programs.find(p=>p.toUpperCase()===l.scope.toUpperCase())||l.scope;symbols['@'+scope+':'+l.name]={kind:{BOOL:'M',TIMER:'T',COUNTER:'C'}[l.type],type:l.type,name:l.name,scope};}
-    return {version:5,format:'GXW',programName:programs.join(', ')||'Program',project,cpu,profile,symbols,executable:false,validated:false,issues,labels,instructions,devices:[...devices],networks:[],contacts:[],actions:[],sources:[],incoming:{},gates:{},notes:['Projektet är inläst för granskning. RUN är spärrad tills alla instruktioner och programvillkor kan köras korrekt.'],projectFiles:[...files.keys()]};
+    for(const block of blocks)block.number=metadata.get(block.scope.toUpperCase())?.number??null;
+    blocks.sort((a,b)=>(a.number??Infinity)-(b.number??Infinity));
+    return {version:5,format:'GXW',programName:programs.join(', ')||'Program',project,cpu,profile,symbols,executable:false,validated:false,issues,labels,instructions,devices:[...devices],networks:[],contacts:[],actions:[],sources:[],incoming:{},gates:{},notes:['Projektet är inläst för granskning. RUN är spärrad tills alla instruktioner och programvillkor kan köras korrekt.'],sfc,blocks:blocks.length>1?blocks:undefined,projectFiles:[...files.keys()]};
   }
 }
 
+/* Logical SFC flow, independent of PLC execution and native editor geometry. */
+const sfcEscape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function layoutSFC(sfc){
+  const rows=sfc.steps.map((step,index)=>({step,x:112,y:48+index*148,transitionY:116+index*148}));
+  return {width:320,height:Math.max(190,rows.length*148+40),rows};
+}
+function sfcDiagram(sfc,selected){
+  const layout=layoutSFC(sfc),positions=new Map(layout.rows.map(r=>[r.step.number,r.y]));
+  let svg=`<svg viewBox="0 0 ${layout.width} ${layout.height}" role="group" aria-label="SFC-diagram. Välj steg för att visa laddervillkor och åtgärder."><defs><marker id="sfcArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="currentColor"/></marker></defs>`;
+  for(const {step,x,y,transitionY:t}of layout.rows){
+    const tr=step.transition,targetY=positions.get(tr.target),direct=targetY===y+148;
+    svg+=`<path class="sfc-edge" data-sfc-edge="${tr.number}" d="M${x} ${y+23}V${t}${direct?'V'+(targetY-23):'V'+(t+25)+'H34V'+targetY+'H'+(x-39)}" marker-end="url(#sfcArrow)"/><g class="sfc-step${selected===step.number?' selected':''}" data-sfc-step="${step.number}" role="button" tabindex="0" aria-label="Steg S${step.number}${step.initial?', initialsteg':''}"><title>Steg S${step.number}${step.initial?' · initialsteg':''}. Välj för att visa ladder.</title><rect x="${x-39}" y="${y-23}" width="78" height="46" rx="2"/>${step.initial?`<rect class="sfc-initial" x="${x-34}" y="${y-18}" width="68" height="36" rx="1"/>`:''}<text x="${x}" y="${y+5}" text-anchor="middle">S${step.number}</text><circle class="sfc-active-dot" cx="${x+29}" cy="${y-13}" r="3"/></g>`;
+    svg+=`<text class="sfc-step-state" data-sfc-state="${step.number}" x="${x+51}" y="${y+5}">Vilar</text><g class="sfc-transition" data-sfc-transition="${tr.number}" role="button" tabindex="0" data-sfc-owner="${step.number}" aria-label="Övergång TR${tr.number}, S${step.number} till S${tr.target}"><title>TR${tr.number}: S${step.number} → S${tr.target}</title><rect class="sfc-hit" x="${x-33}" y="${t-17}" width="194" height="34"/><path d="M${x-24} ${t}H${x+24}"/><text x="${x+39}" y="${t+4}">TR${tr.number}${direct?'':' → S'+tr.target}</text></g>`;
+  }
+  return svg+'</svg>';
+}
+function sfcRegionListing(instructions){
+  return instructions.length?`<pre class="sfc-listing">${instructions.map(i=>sfcEscape((i.comment?'; '+i.comment+'\n':'')+(i.op==='OUT'?'':i.op+' ')+i.args.join(' '))).join('\n')}</pre>`:'<p class="muted">Tom stegåtgärd.</p>';
+}
+
 /* Layout and scan diagnostics for the offline ladder monitor. MIT. */
+
+// UI edits made after the frozen scan must not recolor its instruction trace.
+function changesSinceScan(trace,bit,number) {
+  if(!trace)return [];
+  const inputs=Object.entries(trace.inputs||{}).filter(([key,value])=>bit(key)!==value).map(([key])=>key);
+  const words=Object.entries(trace.words||{}).filter(([key,value])=>number(key)!==value).map(([key])=>key);
+  return [...inputs,...words];
+}
 
 function layoutLadderSheet(model) {
   const networks=model.networks;
@@ -784,9 +1034,10 @@ function outputWriteConflicts(model,trace,bit) {
   if(!trace)return [];
   const network=new Map(model.networks.flatMap(n=>n.actions.map(a=>[a.id,n.page])));
   const writes=new Map();
-  for(const a of model.actions){
-    const state=trace.actions.get(a.id);
-    if(!/^Y\d+$/.test(a.target)||!state)continue;
+  const byId=new Map(model.actions.map(a=>[a.id,a]));
+  for(const entry of trace.writes||model.actions){
+    const a=trace.writes?byId.get(entry.id):entry,state=trace.writes?entry:trace.actions.get(a.id);
+    if(!/^Y\d+$/.test(a.target)||!state||state.executed===false)continue;
     if(!['OUT','PLS','PLF'].includes(a.op)&&!state.powered)continue;
     const row={id:a.id,op:a.op,network:network.get(a.id),state:state.state};
     if(!writes.has(a.target))writes.set(a.target,[]);
@@ -838,6 +1089,7 @@ function programDevices(model){
       else if(/^[XYMTCDS]\d+$/i.test(arg)){try{devices.add(canonical(arg));}catch{/* Keep malformed operands in source inspection only. */}}
     }
   }
+  for(const step of model.sfc?.steps||[])devices.add('S'+step.number);
   return [...devices].sort(compareDevices);
 }
 function monitorDevices(model,hardware,scope='simple'){
@@ -852,6 +1104,9 @@ function hardwareLedPositions(hardware){
 }
 
 const $=id=>document.getElementById(id);
+let sfcSelected=null;
+let blockSelected=0;
+const blockScroll=new Map();
 let ioScope='simple',ioLayout='list',plcPictureSignature='';
 const hardwareSelection={FX3S:'FX3S-30MR/ES',FX3U:'FX3U-32MR/ES'};
 function activeHardware(){return hardwareFor($('profile').value,hardwareSelection[$('profile').value]);}
@@ -865,10 +1120,10 @@ function runnable(){return !!model?.executable;}
 function showTab(name){activeTab=name;for(const k of ['Ladder','IO','Code','Import']){$('tab'+k).setAttribute('aria-selected',String(name===k));$(k==='Ladder'?'ladderView':k==='IO'?'ioView':k==='Code'?'codeView':'importView').hidden=name!==k;}render(true);}
 for(const k of ['Ladder','IO','Code','Import'])$('tab'+k).onclick=()=>showTab(k);
 function clear(invalidate=true){
-  if(invalidate)epoch++;plc?.stop();box.releaseMomentary();boxReleaseQueue.clear();model=null;plc=null;paused=false;acc=0;busy=false;buttonDown.clear();pulseQueue.clear();$('programFile').value='';$('empty').hidden=false;$('monitor').hidden=true;$('ladderPages').replaceChildren();$('timerchips').replaceChildren();$('codeRows').replaceChildren();$('globalLabelRows').replaceChildren();$('localLabelRows').replaceChildren();$('inputPins').replaceChildren();$('outputPins').replaceChildren();$('fileName').textContent='Inget program inläst';$('notes').replaceChildren();$('compatibility').hidden=true;$('outputDiagnostics').hidden=true;message('Välj en GXW-fil. PLC:n och anläggningen startar i STOP.');render(true);
+  if(invalidate)epoch++;sfcSelected=null;blockSelected=0;blockScroll.clear();plc?.stop();box.releaseMomentary();boxReleaseQueue.clear();model=null;plc=null;paused=false;acc=0;busy=false;buttonDown.clear();pulseQueue.clear();$('programFile').value='';$('empty').hidden=false;$('monitor').hidden=true;$('programBlocks').replaceChildren();$('programBlocks').hidden=true;$('blockExecution').hidden=true;$('tracePending').hidden=true;$('programBlockPanel').removeAttribute('role');$('programBlockPanel').removeAttribute('aria-labelledby');$('ladderPages').replaceChildren();$('ladderPages').onclick=null;$('ladderPages').onkeydown=null;$('timerchips').replaceChildren();$('codeRows').replaceChildren();$('globalLabelRows').replaceChildren();$('localLabelRows').replaceChildren();$('inputPins').replaceChildren();$('outputPins').replaceChildren();$('fileName').textContent='Inget program inläst';$('notes').replaceChildren();$('compatibility').hidden=true;$('outputDiagnostics').hidden=true;message('Välj en GXW-fil. PLC:n och anläggningen startar i STOP.');render(true);
 }
 async function loadFile(file){
-  clear();const token=epoch;busy=true;logLines=[];log('PLC-simulator 6.1 · generell GXW-import');$('fileName').textContent=file.name;message('Läser projekt…');render();
+  clear();const token=epoch;busy=true;logLines=[];log('PLC-simulator 6.4 · generell GXW-import');$('fileName').textContent=file.name;message('Läser projekt…');render();
   try{
     if(!/\.gxw$/i.test(file.name))throw Error('Välj projektfilen från GX Works2 (.gxw).');
     if(file.size>40*1024*1024)throw Error('Filen överstiger 40 MB.');
@@ -949,7 +1204,7 @@ function renderPlantSelection(){
   }
   const lamps=box.lampValues(plc,inBox);for(const l of PUSH_BOX_IO.lamps){const el=$('box'+l.id),on=lamps[l.id];el.classList.toggle('on',on);el.setAttribute('aria-label',`${l.id}, ${l.output}, ${on?'tänd':'släckt'}`);el.title=el.getAttribute('aria-label');}
 }
-function svgNetwork(n){
+function svgNetwork(n,scope=model.programName){
   let s=`<g data-network="${n.page}"><title>Nätverk ${n.page} · källbyte 0x${n.firstByte.toString(16)}–0x${n.lastByte.toString(16)}</title><text class="network-number" x="8" y="${n.numberY+4}">${n.page}</text>`;
   for(const c of n.comments)s+=`<text class="ladder-comment" x="${c.x}" y="${c.y}">${esc(c.text)}</text>`;
   s+=n.wires.map(l=>`<line class="wire" data-node="${l.node}" x1="${l.x1}" y1="${l.y1}" x2="${l.x2}" y2="${l.y2}"/>`).join('');
@@ -958,31 +1213,83 @@ function svgNetwork(n){
     if(c.kind==='NC')d+=` M${c.x1-4} ${c.y+c.height/2}L${c.x2+4} ${c.y-c.height/2}`;
     if(['RISE','FALL'].includes(c.kind)){const mid=(c.x1+c.x2)/2,dir=c.kind==='RISE'?-1:1,tip=c.y+dir*6;d+=` M${mid} ${c.y-dir*6}V${tip} M${mid-3} ${tip-dir*3}L${mid} ${tip}L${mid+3} ${tip-dir*3}`;}
     if(c.kind==='COMPARE')d=`M${c.x1-11} ${c.y-10}H${c.x2+11}V${c.y+10}H${c.x1-11}Z`;
-    s+=`<path class="symbol" data-contact="${c.id}" data-kind="${c.kind}" d="${d}"><title>${esc(c.label)} · ${esc(c.device||c.operands?.join(', '))} · ${c.kind}${esc(referenceComments(model.labels,[c.label],model.programName)?'\n'+referenceComments(model.labels,[c.label],model.programName):'')}</title></path>`;
+    s+=`<path class="symbol" data-contact="${c.id}" data-kind="${c.kind}" data-scope="${esc(scope)}" d="${d}"><title>${esc(c.label)}</title></path>`;
     if(c.kind==='COMPARE')s+=`<text x="${c.x1-4}" y="${c.y+4}" font-size="12">${esc(c.comparison)}</text>`;
   }
-  for(const a of n.symbols){const d=`M${a.x1+2} ${a.y1}H${a.x1}V${a.y2}H${a.x1+2} M${a.x2-2} ${a.y1}H${a.x2}V${a.y2}H${a.x2-2}`,action=n.actions.find(b=>Math.abs(b.y-a.y)<.5);s+=`<path class="symbol" ${action?`data-action="${action.id}"`:''} d="${d}"><title>${action?.op==='OUT'?'':esc(action?.op)+' '}${esc(action?.label)} · ${esc(action?.target)}</title></path>`;if(action)s+=`<text class="coil-final" data-coil-final="${action.id}" x="${a.x1+12}" y="${a.y+28}" font-size="11"></text>`;}
+  for(const a of n.symbols){const d=`M${a.x1+2} ${a.y1}H${a.x1}V${a.y2}H${a.x1+2} M${a.x2-2} ${a.y1}H${a.x2}V${a.y2}H${a.x2-2}`,action=n.actions.find(b=>Math.abs(b.y-a.y)<.5);s+=`<path class="symbol" ${action?`data-action="${action.id}" data-scope="${esc(scope)}"`:''} d="${d}"><title>${action?.op==='OUT'?'':esc(action?.op)+' '}${esc(action?.label)} · ${esc(action?.target)}</title></path>`;if(action&&!action.virtual)s+=`<text class="coil-final" data-coil-final="${action.id}" x="${a.x1+12}" y="${a.y+28}" font-size="11"></text>`;}
   for(const t of n.texts)s+=`<text x="${t.x}" y="${t.y}" font-size="${t.h}" textLength="${t.w}" lengthAdjust="spacingAndGlyphs">${esc(t.text)}</text>`;
   return s+'</g>';
 }
-function svgMonitor(){
-  const sheet=layoutLadderSheet(model);
-  let s=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="${sheet.x} 0 ${sheet.width} ${sheet.height}" style="min-width:${Math.max(680,sheet.width)}px" role="img" aria-label="Sammanhängande ladderblad för ${esc(model.programName)}"><text class="network-heading" x="8" y="19">Nätv.</text>`;
-  s+=`<path class="symbol" data-rail="1" d="M${sheet.left} 26V${sheet.height-20} M${sheet.right} 26V${sheet.height-20}"/>`;
-  s+=sheet.rows.map(svgNetwork).join('');
-  s+=`<g data-end="1"><line class="wire" data-node="${esc(model.sources[0]||'')}" x1="${sheet.left}" y1="${sheet.endY}" x2="${sheet.right-225}" y2="${sheet.endY}"/><path class="symbol" d="M${sheet.right-223} ${sheet.endY-13}H${sheet.right-225}V${sheet.endY+13}H${sheet.right-223} M${sheet.right-10} ${sheet.endY-13}H${sheet.right-8}V${sheet.endY+13}H${sheet.right-10}"/><text x="${sheet.right-213}" y="${sheet.endY+5}" font-size="14">END</text><line class="wire" data-node="${esc(model.sources[0]||'')}" x1="${sheet.right-8}" y1="${sheet.endY}" x2="${sheet.right}" y2="${sheet.endY}"/></g>`;
+function svgMonitor(graph=model){
+  const sheet=layoutLadderSheet(graph);
+  let s=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="${sheet.x} 0 ${sheet.width} ${sheet.height}" style="min-width:${(graph.region?500:Math.max(680,sheet.width))}px" role="img" aria-label="Sammanhängande ladderblad för ${esc(graph.region?.caption||graph.programName)}"><text class="network-heading" x="8" y="19">Nätv.</text>`;
+  s+=`<path class="symbol" data-rail="${esc(graph.sources[0]||'')}" d="M${sheet.left} 26V${sheet.height-20} M${sheet.right} 26V${sheet.height-20}"/>`;
+  s+=sheet.rows.map(n=>svgNetwork(n,graph.programName)).join('');
+  if(!graph.region)s+=`<g data-end="1"><line class="wire" data-node="${esc(graph.sources[0]||'')}" x1="${sheet.left}" y1="${sheet.endY}" x2="${sheet.right-225}" y2="${sheet.endY}"/><path class="symbol" d="M${sheet.right-223} ${sheet.endY-13}H${sheet.right-225}V${sheet.endY+13}H${sheet.right-223} M${sheet.right-10} ${sheet.endY-13}H${sheet.right-8}V${sheet.endY+13}H${sheet.right-10}"/><text x="${sheet.right-213}" y="${sheet.endY+5}" font-size="14">END</text><line class="wire" data-node="${esc(graph.sources[0]||'')}" x1="${sheet.right-8}" y1="${sheet.endY}" x2="${sheet.right}" y2="${sheet.endY}"/></g>`;
   return s+'</svg>';
 }
-function buildMonitor(){
-  $('programSummary').textContent=`${model.format} · ${model.cpu} · ${model.programName} · ${model.executable?model.contacts.length+' kontakter · '+model.actions.length+' instruktioner/spolar':'granskningsläge'}`;
-  $('tabLadder').textContent='Ladder · '+model.programName;
-  $('ladderPages').innerHTML=model.executable?`<div class="ladder-sheet"><div class="ladder-title"><span>${esc(model.programName)} · sammanhängande ladder</span><span>${model.networks.length} nätverk · programordning uppifrån och ned</span></div>${svgMonitor()}</div>`:`<div class="notice">Ladderbilden kan inte köras. Projektets läsbara instruktioner och labels finns under Källkod och I/O & minnen.</div>`;
+function displayedBlock(){return model?.blocks?.[blockSelected];}
+function displayedModel(){const b=displayedBlock();return b?b.model:model;}
+function displayedSFC(){const b=displayedBlock();return b?(b.model?.sfc||b.sfc):model?.sfc;}
+function rememberMonitorScroll(){blockScroll.set(blockSelected,[...$('ladderPages').querySelectorAll('.sfc-flow,.ladder-sheet')].map(el=>({left:el.scrollLeft,top:el.scrollTop})));}
+function restoreMonitorScroll(){const positions=blockScroll.get(blockSelected)||[];[...$('ladderPages').querySelectorAll('.sfc-flow,.ladder-sheet')].forEach((el,i)=>{el.scrollLeft=positions[i]?.left||0;el.scrollTop=positions[i]?.top||0;});}
+function selectProgramBlock(index,focus=false){
+  if(!model?.blocks?.[index]||index===blockSelected)return;
+  rememberMonitorScroll();blockSelected=index;buildMonitor();restoreMonitorScroll();render(true);
+  if(focus)$('programBlocks').querySelector(`[data-program-block="${index}"]`).focus({preventScroll:true});
 }
+$('programBlocks').onclick=e=>{const button=e.target.closest('[data-program-block]');if(button)selectProgramBlock(+button.dataset.programBlock,true);};
+$('programBlocks').onkeydown=e=>{
+  if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key)||!model?.blocks)return;e.preventDefault();
+  const count=model.blocks.length,index=e.key==='Home'?0:e.key==='End'?count-1:(blockSelected+(e.key==='ArrowRight'?1:-1)+count)%count;selectProgramBlock(index,true);
+};
+function buildMonitor(){
+  const block=displayedBlock(),graph=displayedModel(),sfc=displayedSFC(),hasTabs=model.blocks?.length>1;
+  $('programBlocks').hidden=!hasTabs;$('blockExecution').hidden=!hasTabs;
+  $('programBlocks').innerHTML=hasTabs?model.blocks.map((b,i)=>`<button type="button" id="programBlock${i}" role="tab" data-program-block="${i}" aria-controls="programBlockPanel" aria-selected="${i===blockSelected}" tabindex="${i===blockSelected?0:-1}">${esc(b.scope)}</button>`).join(''):'';
+  if(hasTabs){$('programBlockPanel').setAttribute('role','tabpanel');$('programBlockPanel').setAttribute('aria-labelledby','programBlock'+blockSelected);$('blockExecution').textContent=(model.executable?'Alla programblock körs oavsett vald flik. Körordning: ':'RUN är spärrad för hela projektet. Blocknummer: ')+model.blocks.map(b=>(b.number===null?'?':b.number)+' '+b.scope).join(' → ')+'.';}
+  else{$('programBlockPanel').removeAttribute('role');$('programBlockPanel').removeAttribute('aria-labelledby');}
+  $('programSummary').textContent=`${model.format} · ${model.cpu} · ${block?.scope||model.programName} · ${model.executable?sfc?sfc.steps.length+' steg · '+sfc.steps.length+' övergångar':graph.contacts.length+' kontakter · '+graph.actions.length+' instruktioner/spolar':'granskningsläge'}`;
+  $('tabLadder').textContent=model.blocks?(model.sfc?'Ladder / SFC':'Ladder'):(model.sfc?'SFC':'Ladder')+' · '+model.programName;
+  $('ladderPages').onclick=null;$('ladderPages').onkeydown=null;
+  if(sfc?.steps.length){buildSFCMonitor();return;}
+  if(model.executable&&block){$('ladderPages').innerHTML=`<section class="sfc-ladder-block" data-ladder-block="${block.number}"><h3>Block ${block.number} · ${esc(block.scope)} · Ladder</h3><div class="ladder-sheet">${svgMonitor(graph)}</div></section>`;return;}
+  $('ladderPages').innerHTML=model.executable?`<div class="ladder-sheet"><div class="ladder-title"><span>${esc(model.programName)} · sammanhängande ladder</span><span>${model.networks.length} nätverk · programordning uppifrån och ned</span></div>${svgMonitor()}</div>`:`<div class="notice">RUN är spärrad för hela projektet. Läsbara instruktioner för ${esc(block?.scope||model.programName)}:</div>${sfcRegionListing(block?.instructions||model.instructions)}`;
+}
+function buildSFCMonitor(){
+  const sfc=displayedSFC(),step=sfc.steps.find(s=>s.number===sfcSelected)||sfc.steps[0];sfcSelected=step.number;
+  const reg=sfc.registrations.find(r=>r.number===step.actionNumber),action=sfc.children.find(c=>c.kind==='action'&&c.name===reg?.rows[0]?.name),transition=sfc.children.find(c=>c.kind==='transition'&&c.number===step.transition.number);
+  const region=(graph,child)=>graph?graph.networks.length?`<div class="ladder-sheet">${svgMonitor(graph)}</div>`:'<p class="muted">Tom stegåtgärd.</p>':sfcRegionListing(child?.instructions||[]);
+  $('ladderPages').innerHTML=`<p class="explain">SFC / Grafcet · välj ett steg eller en övergång för att följa dess ladder. Grönt visar vad som kördes i senaste scan.</p><p id="sfcStatus" class="sfc-status" aria-live="polite"></p><div id="sfcStartHelp" class="sfc-start-help" hidden><strong>Inget SFC-steg är aktivt</strong><p id="sfcStartText"></p></div><p id="sfcPhase" class="explain"></p><div class="sfc-workspace"><div class="sfc-flow">${sfcDiagram(sfc,step.number)}</div><div class="sfc-detail"><h3>Steg S${step.number}${step.initial?' · initialsteg':''}</h3><h3>Åtgärder</h3>${region(step.actionModel,action)}<h3>TR${step.transition.number} → S${step.transition.target}</h3>${region(step.transitionModel,transition)}<p class="notice">FX kräver att startsteget aktiveras av programkod. En tom initialstegsåtgärd startar inte flödet. Förgreningar, parallella flöden och vissa SFC-instruktioner stöds ännu inte.</p></div></div>`;
+  const select=e=>{const hit=e.target.closest('[data-sfc-step],[data-sfc-owner]');if(!hit)return;const attribute=hit.hasAttribute('data-sfc-step')?'data-sfc-step':'data-sfc-owner';rememberMonitorScroll();sfcSelected=Number(hit.getAttribute(attribute));buildSFCMonitor();restoreMonitorScroll();render(true);$('ladderPages').querySelector(`[${attribute}="${sfcSelected}"]`)?.focus({preventScroll:true});};
+  $('ladderPages').onclick=select;$('ladderPages').onkeydown=e=>{if(['Enter',' '].includes(e.key)&&e.target.matches('[data-sfc-step],[data-sfc-owner]')){e.preventDefault();select(e);}};
+}
+function renderSFC(trace){
+  if(!$('sfcStatus'))return;
+  const sfc=displayedSFC(),activeSteps=sfc.steps.filter(s=>plc.bit('S'+s.number)),active=activeSteps.map(s=>'S'+s.number),taken=trace?.sfc?.transitions||[];
+  const mode=plc.running?paused?'PAUS':'RUN':'STOP',status=`PLC ${mode} · Aktiva steg: ${active.join(', ')||'inga'}${taken.length?' · Övergång denna scan: '+taken.map(t=>'TR'+t.number).join(', '):''}`;
+  if($('sfcStatus').textContent!==status)$('sfcStatus').textContent=status;
+  $('sfcStatus').classList.toggle('waiting',!active.length);
+  $('sfcStartHelp').hidden=!!active.length||!runnable();
+  const initial=sfc.steps.filter(s=>s.initial).map(s=>'S'+s.number).join(', '),help=plc.scanCount===0?`Ingen scan har körts. Välj RUN eller Ett scan för att köra programkoden som ska aktivera ${initial}.`:`PLC:n har kört ${plc.scanCount} scan. Initialsteget ${initial} måste aktiveras av din kod, exempelvis M8002 → SET ${initial} i ett ladderblock. Kontrollera startkoden och dess villkor.`;
+  if($('sfcStartText').textContent!==help)$('sfcStartText').textContent=help;
+  const phases=activeSteps.map(step=>{
+    const t=step.transition,condition=trace?.sfc?.conditions.get(t.number),check=condition===false?'väntar på':condition===true?'har passerat':'nästa scan prövar';
+    const values=(step.transitionModel?.contacts||[]).slice(0,4).map(c=>{const state=trace?.contacts.get(c.id);if(c.device){const now=+plc.bit(c.device),then=state?+state.raw:now;return `${c.label} = ${then}${then!==now?' (nu '+now+')':''}`;}const now=c.operands.map(k=>(plc.number(k)<<16)>>16),then=state?.values||now;return `${c.label} (${then.join(', ')})${then.some((v,i)=>v!==now[i])?' (nu '+now.join(', ')+')':''}`;});
+    return `S${step.number} ${check} TR${t.number} → S${t.target}${values.length?' · '+(condition===undefined?'värden nu':'värden vid prövningen')+': '+values.join(', '):''}`;
+  });
+  const phase=!runnable()?'RUN är spärrad. Se importinformationen.':active.length?phases.join(' | '):'Sekvensen står still. Scan-räknaren visar PLC:ns cykler, inte genomförda SFC-övergångar.';
+  if($('sfcPhase').textContent!==phase)$('sfcPhase').textContent=phase;
+  for(const el of $('ladderPages').querySelectorAll('[data-sfc-step]'))el.classList.toggle('active',plc.bit('S'+el.dataset.sfcStep));
+  for(const el of $('ladderPages').querySelectorAll('[data-sfc-state]')){const n=+el.dataset.sfcState,on=plc.bit('S'+n),ran=trace?.sfc?.executedSteps.includes(n);el.textContent=on?'Aktiv':ran?'Lämnad':'Vilar';}
+  for(const el of $('ladderPages').querySelectorAll('[data-sfc-transition],[data-sfc-edge]'))el.classList.toggle('taken',taken.some(t=>t.number===Number(el.dataset.sfcTransition??el.dataset.sfcEdge)));
+}
+
 function buildCode(){
   $('codeSummary').textContent=`${model.instructions.length} läsbara instruktioner · källbyte i respektive POU`;
   $('codeRows').innerHTML=model.instructions.map(ins=>{
     const scope=ins.program||model.programName,section=ins.comment?`<tr class="code-section" data-section-comment><td colspan="5"><small>Avsnitt · ${esc(scope)}</small>${esc(ins.comment)}</td></tr>`:'';
-    return section+`<tr data-instruction><td>${esc(scope)}</td><td>0x${ins.offset.toString(16)}</td><td>${esc(ins.op)}</td><td>${esc(ins.args.join(' '))}</td><td class="label-comment">${esc(referenceComments(model.labels,ins.args,scope))}</td></tr>`;
+    return section+`<tr data-instruction><td>${esc(scope)}${ins.region?'<br>'+esc(ins.region):''}</td><td>0x${ins.offset.toString(16)}</td><td>${esc(ins.op)}</td><td>${esc(ins.args.join(' '))}</td><td class="label-comment">${esc(referenceComments(model.labels,ins.args,scope))}</td></tr>`;
   }).join('');
 }
 function buildLabels(){
@@ -1052,21 +1359,40 @@ $('deviceFilter').oninput=()=>render(true);
 $('hardwareModel').onchange=()=>{hardwareSelection[$('profile').value]=$('hardwareModel').value;render(true);};
 for(const [id,value]of [['ioSimple','simple'],['ioFull','full']])$(id).onclick=()=>{ioScope=value;render(true);};
 for(const [id,value]of [['ioList','list'],['ioPLC','plc']])$(id).onclick=()=>{ioLayout=value;render(true);};
+function monitoredAction(a,trace){
+  const state=trace?.actions.get(a.id),kind=deviceKind(a.target||'',model),numeric=['D','T','C'].includes(kind);
+  const now=a.virtual?null:numeric?plc.number(a.target):+plc.bit(a.target),value=kind==='D'?(trace?.words?.[a.target]??now):now;
+  const wrote=state&&state.executed!==false&&(['OUT','PLS','PLF'].includes(a.op)||state.powered),changed=!a.virtual&&!!wrote&&(numeric?state.value!==value:state.state!==!!value);
+  return {state,numeric,now,value,changed};
+}
 function renderOutputDiagnostics(trace){
   const conflicts=outputWriteConflicts(model,trace,key=>plc.bit(key));
   $('outputDiagnostics').hidden=!conflicts.length;
   const html=conflicts.map(c=>`<p><strong>${esc(c.target)}</strong>: nätverk ${c.earlier.network} skriver ${+c.earlier.state}, nätverk ${c.last.network} skriver ${+c.last.state}. <strong>Slutvärde ${+c.final}.</strong></p>`).join('');
   if($('outputDiagnosticRows').innerHTML!==html)$('outputDiagnosticRows').innerHTML=html;
   const actionById=new Map(model.actions.map(a=>[a.id,a]));
-  const titles=new Map([...$('ladderPages').querySelectorAll('[data-action]')].map(el=>[el.dataset.action,el.querySelector('title')]));
+  for(const el of $('ladderPages').querySelectorAll('[data-action]')){
+    const a=actionById.get(el.dataset.action),{state,value,now,changed}=monitoredAction(a,trace),operands=a.operandLabels||[a.label],comment=referenceComments(model.labels,operands,el.dataset.scope);
+    const signal=!trace?'Ingen scan körd':!state||state.executed===false?'Ej körd i senaste scan':'Signal vid instruktionen: '+(+state.powered);
+    el.querySelector('title').textContent=`${a.op==='OUT'?'':a.op+' '}${operands.join(' ')}${a.virtual?'':' · '+a.target}${comment?'\n'+comment:''}\n${signal}${a.virtual?'':'\nSlutvärde: '+value}${changed?' · ändras av en senare instruktion':''}${value!==now?'\nVärde nu: '+now:''}`;
+  }
   for(const el of $('ladderPages').querySelectorAll('[data-coil-final]')){
-    const a=actionById.get(el.dataset.coilFinal),state=trace?.actions.get(a.id),numeric=['D','T','C'].includes(deviceKind(a.target,model)),value=numeric?plc.number(a.target):+plc.bit(a.target);
-    const wrote=state&&(['OUT','PLS','PLF'].includes(a.op)||state.powered),changed=!!wrote&&(numeric?state.value!==value:state.state!==!!value);
-    el.textContent=`${a.target[0]==='@'?deviceKind(a.target,model)==='T'?'Timer':deviceKind(a.target,model)==='C'?'Räknare':'Minne':a.target} · ${numeric?'värde':'slut'} ${value}${changed?' · ändras senare':''}`;
+    const a=actionById.get(el.dataset.coilFinal),{numeric,value,now,changed}=monitoredAction(a,trace);
+    el.textContent=`${a.target[0]==='@'?deviceKind(a.target,model)==='T'?'Timer':deviceKind(a.target,model)==='C'?'Räknare':'Minne':a.target} · ${numeric?'värde':'slut'} ${value}`;
+    const suffix=[changed?'ändras senare':'',value!==now?'nu '+now:''].filter(Boolean).join(' · ');
+    if(suffix){const note=document.createElementNS('http://www.w3.org/2000/svg','tspan');note.setAttribute('x',el.getAttribute('x'));note.setAttribute('dy','14');note.textContent=' · '+suffix;el.append(note);}
     el.classList.toggle('final-on',!!value);el.classList.toggle('overwritten',changed);
-    const symbol=titles.get(a.id);
-    const operands=a.operandLabels||[a.label],comment=referenceComments(model.labels,operands,model.programName);
-    if(symbol)symbol.textContent=`${a.op==='OUT'?'':a.op+' '}${operands.join(' ')} · ${a.target}${comment?'\n'+comment:''}\n${state?'Signal vid instruktionen: '+(+state.powered):'Ingen scan körd'}\nSlutvärde: ${value}${changed?' · ändras av en senare instruktion':''}`;
+  }
+}
+function renderContactTrace(trace){
+  const contacts=new Map(model.contacts.map(c=>[c.id,c]));
+  for(const el of $('ladderPages').querySelectorAll('[data-contact]')){
+    const c=contacts.get(el.dataset.contact),state=trace?.contacts.get(c.id),comment=referenceComments(model.labels,[c.label],el.dataset.scope);
+    const read=state?.values?state.values.join(', '):state?String(+state.raw):null;
+    const now=c.device?String(+plc.bit(c.device)):c.operands.map(k=>(plc.number(k)<<16)>>16).join(', ');
+    const detail=!trace?'Ingen scan körd':!state?'Ej läst i senaste scan':`Värde vid läsning: ${read} · villkor: ${+state.pass}\nMatning: ${+state.feed} · genomgång: ${+state.powered}${read!==now?'\nVärde nu: '+now:''}`;
+    el.querySelector('title').textContent=`${c.label} · ${c.device||c.operands.join(', ')} · ${c.kind}${comment?'\n'+comment:''}\n${detail}${c.device==='M8002'?'\nM8002 är en puls under första scan efter STOP → RUN.':''}`;
+    el.classList.toggle('hot',!!state?.powered);
   }
 }
 function render(force=false){
@@ -1086,13 +1412,17 @@ function render(force=false){
   renderIOPins();
   if(model){
     const trace=plc.trace;$('traceSummary').textContent=trace?`Scan ${trace.scan}${trace.first?' · startpuls M8002':''} · ${paused?'fryst':'senaste scan'}`:canRun?'Ingen scan körd':'RUN spärrad';
+    const pending=paused?changesSinceScan(trace,k=>plc.bit(k),k=>plc.number(k)):[];
+    $('tracePending').hidden=!pending.length;
+    $('tracePending').textContent=pending.length?`${pending.slice(0,8).join(', ')}${pending.length>8?' …':''} har ändrats efter visad scan. Grönt är fryst från scan ${trace.scan}. Välj Ett scan eller Fortsätt för att läsa de nya värdena.`:'';
     if(force||activeTab==='Ladder'){
       renderOutputDiagnostics(trace);
-      for(const el of $('ladderPages').querySelectorAll('[data-node]'))el.classList.toggle('hot',!!trace&&(model.sources.includes(el.dataset.node)||trace.nodes.get(el.dataset.node)));
-      for(const el of $('ladderPages').querySelectorAll('[data-contact]'))el.classList.toggle('hot',!!trace?.contacts.get(el.dataset.contact)?.powered);
+      if(displayedSFC())renderSFC(trace);
+      for(const el of $('ladderPages').querySelectorAll('[data-node]'))el.classList.toggle('hot',!!trace?.nodes.get(el.dataset.node));
+      renderContactTrace(trace);
       for(const el of $('ladderPages').querySelectorAll('[data-action]'))el.classList.toggle('hot',!!trace?.actions.get(el.dataset.action)?.powered);
-      for(const el of $('ladderPages').querySelectorAll('[data-rail]'))el.classList.toggle('hot',!!trace);
-      $('timerchips').innerHTML=model.actions.filter(a=>a.op==='OUT'&&['T','C'].includes(deviceKind(a.target,model))).map(a=>{const t=plc.timers[a.target]||plc.counters[a.target],timer=deviceKind(a.target,model)==='T';return `<span class="chip${t?.done?' on':''}">${esc(a.label)} · ${t?.value||0}/${t?.preset??plc.number(a.preset)}${timer?' · '+((t?.elapsed||0)/1000).toFixed(3)+' s':''}${timer?' · '+(t?.base||timerInfo(a.target,model.profile,plc.bits,model.symbols).base)+' ms/tick':''}</span>`;}).join('');
+      for(const el of $('ladderPages').querySelectorAll('[data-rail]'))el.classList.toggle('hot',!!trace&&!!trace.nodes.get(el.dataset.rail));
+      $('timerchips').innerHTML=(displayedModel()?.actions||[]).filter(a=>a.op==='OUT'&&['T','C'].includes(deviceKind(a.target,model))).map(a=>{const t=plc.timers[a.target]||plc.counters[a.target],timer=deviceKind(a.target,model)==='T';return `<span class="chip${t?.done?' on':''}">${esc(a.label)} · ${t?.value||0}/${t?.preset??plc.number(a.preset)}${timer?' · '+((t?.elapsed||0)/1000).toFixed(3)+' s':''}${timer?' · '+(t?.base||timerInfo(a.target,model.profile,plc.bits,model.symbols).base)+' ms/tick':''}</span>`;}).join('');
     }
     if(force&&activeTab==='IO')buildDevices();
     if(activeTab==='IO')renderPLCValues();
@@ -1101,7 +1431,7 @@ function render(force=false){
   }else if(activeTab==='IO')buildDevices();
 }
 function frame(now){let dt=Math.max(0,now-last);last=now;if(plc?.running&&!paused&&!busy){acc+=Math.min(dt,250)*Number($('speed').value);let count=0;while(acc>=SCAN_MS&&count++<300){oneScan();acc-=SCAN_MS;if(!plc?.running)break;}}if(now-lastRender>=90){render();lastRender=now;}requestAnimationFrame(frame);}
-window.GXSimulator=window.Kulhissen={loadFile,snapshot:()=>({loaded:!!model,executable:!!model?.executable,issues:model?.issues||[],program:model?.programName,running:!!plc?.running,paused,scan:plc?.scanCount||0,time:plc?.time||0,position:lift.position,connected:station.current.connected,elevatorConnected:lift.connected,plant:station.active,box:{connected:box.connected,hold:box.hold,positions:{...box.positions},inputs:box.inputValues,lamps:box.lampValues(plc,station.active==='pushbox')},ioScope,ioLayout,hardware:activeHardware().id,bits:plc?{...plc.bits}:{},words:plc?{...plc.words}:{},timers:plc?JSON.parse(JSON.stringify(plc.timers)):{},counters:plc?JSON.parse(JSON.stringify(plc.counters)):{},actions:model?.actions.map(a=>({step:a.step,op:a.op,target:a.target,preset:a.preset}))||[]}),advance:ms=>{if(!plc||!paused||!runnable())throw Error('Pausa ett körbart program först.');if(!Number.isInteger(ms)||ms<0||ms>120000||ms%SCAN_MS)throw Error('Välj en multipel av 5 ms, högst 120000 ms.');for(let t=0;t<ms;t+=SCAN_MS)oneScan();render(true);}};
+window.GXSimulator=window.Kulhissen={loadFile,snapshot:()=>({loaded:!!model,executable:!!model?.executable,issues:model?.issues||[],program:model?.programName,running:!!plc?.running,paused,scan:plc?.scanCount||0,blocks:model?.blocks?.map(b=>({number:b.number,scope:b.scope,kind:b.kind}))||[],selectedBlock:displayedBlock()?.scope||null,executedBlocks:plc?.trace?.blocks||[],sfc:model?.sfc?{activeSteps:model.sfc.steps.filter(s=>plc.bit('S'+s.number)).map(s=>s.number),executedSteps:plc.trace?.sfc?.executedSteps||[],transitions:plc.trace?.sfc?.transitions||[]}:null,time:plc?.time||0,position:lift.position,connected:station.current.connected,elevatorConnected:lift.connected,plant:station.active,box:{connected:box.connected,hold:box.hold,positions:{...box.positions},inputs:box.inputValues,lamps:box.lampValues(plc,station.active==='pushbox')},ioScope,ioLayout,hardware:activeHardware().id,bits:plc?{...plc.bits}:{},words:plc?{...plc.words}:{},timers:plc?JSON.parse(JSON.stringify(plc.timers)):{},counters:plc?JSON.parse(JSON.stringify(plc.counters)):{},actions:model?.actions.map(a=>({step:a.step,op:a.op,target:a.target,preset:a.preset}))||[]}),advance:ms=>{if(!plc||!paused||!runnable())throw Error('Pausa ett körbart program först.');if(!Number.isInteger(ms)||ms<0||ms>120000||ms%SCAN_MS)throw Error('Välj en multipel av 5 ms, högst 120000 ms.');for(let t=0;t<ms;t+=SCAN_MS)oneScan();render(true);}};
 setupHardware();render(true);requestAnimationFrame(frame);
 
 </script>
@@ -1117,7 +1447,7 @@ setupHardware();render(true);requestAnimationFrame(frame);
     status.dataset.state=failed?'unavailable':waiting?'update':ready?(navigator.onLine?'ready':'offline'):'preparing';
     status.textContent=failed?'Offlinekopian kunde inte sparas. Sidan fungerar medan den är öppen.':
       waiting?(running?'Ny version finns. Stoppa PLC:n när du vill uppdatera.':'Ny version finns. Efter uppdatering väljer du din GXW-fil igen.'):
-      ready?(navigator.onLine?'Offlinekopia klar · 6.1':'Offline · sparad version 6.1'):'Förbereder offlinekopia…';
+      ready?(navigator.onLine?'Offlinekopia klar · 6.4':'Offline · sparad version 6.4'):'Förbereder offlinekopia…';
   }
   if(!navigator.serviceWorker||!window.isSecureContext){failed=true;render();return;}
   navigator.serviceWorker.addEventListener('controllerchange',()=>{if(updating)location.reload();});
