@@ -1,4 +1,4 @@
-<!doctype html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; worker-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'"><title>PLC-simulator 6.4.1 · GX PLC-labb offline</title><style>
+<!doctype html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; worker-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'"><title>PLC-simulator 7.2.2 · GX PLC-labb offline</title><style>
 :root{color-scheme:dark;--bg:#0c1420;--panel:#142131;--edge:#2a3c50;--muted:#9aadc1;--ink:#edf3f9;--accent:#6fddc3;--red:#ff9b9f;--amber:#f2cc88}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}button,input,select{font:inherit}button,select{cursor:pointer}button{color:var(--ink);background:#21364b;border:1px solid #3b5269;border-radius:7px;padding:8px 12px;white-space:nowrap}button:hover:not(:disabled){background:#2d4962}button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}button:disabled{opacity:.42;cursor:default}.primary{background:#29735f;border-color:#499a82}.primary:hover:not(:disabled){background:#33876e}.danger{color:var(--red)}h1,h2,h3,p{margin:0}h1{font-size:24px;letter-spacing:-.6px}h1 span{color:var(--muted);font-weight:400}h2{font-size:15px}h3{font-size:13px;margin:15px 0 8px}p{color:var(--muted)}small,.muted{color:var(--muted)}.mono{font-family:Consolas,ui-monospace,monospace}.header{max-width:1600px;padding:21px 26px 15px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:16px}.eyebrow{text-transform:uppercase;letter-spacing:2px;color:var(--accent);font-size:10px;font-weight:750;margin-bottom:4px}.version{font-size:11px;border:1px solid var(--edge);border-radius:6px;padding:4px 7px;vertical-align:middle;margin-left:5px;color:var(--muted)}.badge{font:600 12px Consolas,monospace;border:1px solid #46566a;padding:8px 12px;border-radius:7px;background:#1b2838}.badge.run{color:var(--accent);border-color:#39816b}.badge.pause{color:var(--amber)}.toolbar{max-width:1548px;margin:0 auto 18px;padding:13px 15px;background:#172535;border:1px solid var(--edge);border-radius:10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}.toolbar .push{margin-left:auto}.select{background:#111c2b;border:1px solid #3b4e63;padding:7px;color:var(--ink);border-radius:6px}.layout{max-width:1600px;margin:auto;padding:0 26px 25px;display:grid;grid-template-columns:335px minmax(0,1fr);gap:18px}.sidebar{display:flex;flex-direction:column;gap:16px}.panel{border:1px solid var(--edge);background:var(--panel);border-radius:11px;padding:17px}.row{display:flex;align-items:center;justify-content:space-between;gap:8px}.stack{display:flex;flex-direction:column;gap:9px}.drop{margin-top:13px;padding:17px 12px;border:1px dashed #5b738b;border-radius:8px;text-align:center;background:#101b29;display:block;cursor:pointer}.drop.drag{border-color:var(--accent);background:#123b32}.drop strong{font-size:13px;display:block}.drop small{display:block;font-size:11px;margin-top:4px}.drop input{display:block;width:100%;font-size:11px;color:var(--muted);margin-top:12px}.import-message{font-size:12px;padding-top:11px;overflow-wrap:anywhere}.import-message.error{color:var(--red)}.import-message.success{color:var(--accent)}.sourcefile{font-size:11px;overflow-wrap:anywhere;margin:7px 0;color:var(--muted)}.buttonrow{display:flex;gap:6px;margin-top:12px}.buttonrow button{font-size:11px;padding:6px 8px}.shaft{position:relative;height:270px;background:linear-gradient(90deg,#101b27,#172d3c 50%,#101b27);margin:17px 0 12px;border:1px solid #405468;border-radius:8px;overflow:hidden}.shaft:before,.shaft:after{content:'';position:absolute;top:15px;bottom:15px;width:3px;background:#43586a;left:42%}.shaft:after{left:77%}.floorline{position:absolute;bottom:16px;left:0;right:0;height:1px;background:#415569}.floorline.top{bottom:210px}.floorlabel{position:absolute;left:11px;font-size:11px;color:#a9bfd2;bottom:24px}.floorlabel.top{bottom:218px}.sensor{position:absolute;right:12px;bottom:22px;font:10px Consolas,monospace;color:#71869a}.sensor.top{bottom:216px}.sensor.on{color:var(--accent)}.hall{display:inline-block;height:9px;width:9px;border-radius:50%;background:#405268;margin-right:6px}.hall.on{background:#f9d780;box-shadow:0 0 11px #f9d78088}.car{position:absolute;bottom:16px;left:47%;width:25%;height:52px;border:2px solid #8fd7e4;background:linear-gradient(135deg,#24536b,#16384d);border-radius:5px;z-index:2;display:flex;align-items:center;justify-content:center;flex-direction:column;font-size:10px;font-weight:700;letter-spacing:1px}.car b{font-size:18px;line-height:22px}.statrow{display:flex;justify-content:space-between;border-bottom:1px solid var(--edge);padding-bottom:10px;margin-bottom:11px;font-size:12px}.buttons{display:grid;grid-template-columns:1fr 1fr;gap:7px}.floorbutton{padding:12px 5px;touch-action:none;font-size:12px}.floorbutton.pressed{background:#33776b;border-color:var(--accent)}.extra{grid-column:1/-1;padding:7px}.check{display:flex;align-items:center;gap:7px;font-size:11px;color:var(--muted);margin-top:10px}.check input{accent-color:var(--accent)}.plantnote{font-size:11px;color:var(--muted);margin-top:10px}.fault{font-size:11px;border-left:2px solid var(--red);color:var(--red);padding-left:9px;margin-top:9px}.workspace{min-width:0}.tabs{display:flex;border-bottom:1px solid var(--edge);gap:3px;margin-bottom:15px;flex-wrap:wrap}.tabs button{background:transparent;border:0;border-bottom:2px solid transparent;border-radius:0;color:var(--muted);padding:11px 13px;font-size:13px}.tabs button[aria-selected=true]{border-bottom-color:var(--accent);color:var(--ink)}.workspace>.panel{min-height:650px;padding:0;overflow:hidden}.workspacehead{padding:17px 18px 0}.view{padding:0 18px 18px}.empty{min-height:490px;display:flex;align-items:center;justify-content:center;text-align:center;padding:35px}.empty-inner{max-width:370px}.empty-icon{color:#819aae;border:1px solid var(--edge);border-radius:13px;margin:0 auto 20px;width:62px;height:62px;display:grid;place-items:center;font:25px Consolas,monospace}.empty h2{font-size:19px;margin-bottom:9px}.empty p{font-size:13px}.subhead{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:10px 0 11px;flex-wrap:wrap;font-size:11px;color:var(--muted)}.ladder-sheet{border:1px solid #c7d3dc;border-radius:7px;background:#f8fafc;overflow:auto;margin-bottom:14px}.ladder-title{padding:8px 13px;color:#536578;background:#edf2f6;border-bottom:1px solid #d5dfe8;font-size:11px;display:flex;justify-content:space-between}.ladder-sheet svg{display:block;width:100%;min-width:560px;color-scheme:light}.ladder-sheet text{fill:#263b4e;font-family:Arial,sans-serif}.wire{stroke:#526779;stroke-width:.7;stroke-linecap:round}.wire.hot{stroke:#119268;stroke-width:1.05}.symbol{stroke:#3c5369;stroke-width:.8;fill:none}.symbol.hot{stroke:#09845c;stroke-width:1.2}.symbol.hot+text{fill:#087858}.timerchips{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.chip{background:#101c2a;border:1px solid #344b61;border-radius:6px;font:11px/1.5 Consolas,monospace;padding:7px 10px}.chip.on{border-color:#349277;color:var(--accent)}.explain{font-size:11px;color:var(--muted)}table{border-collapse:collapse;width:100%;font-size:12px}th,td{text-align:left;border-bottom:1px solid var(--edge);padding:9px 10px;overflow-wrap:anywhere}th{color:#a2b7ca;font-size:11px;font-weight:500}td:first-child{font-family:Consolas,monospace}td button{font:11px Consolas,monospace;padding:4px 9px;min-width:48px}.onbit{color:var(--accent)}.wordedit{width:90px;background:#101c2a;color:var(--ink);border:1px solid #3a5065;border-radius:4px;padding:4px}.devicefilter{background:#101c2a;color:var(--ink);border:1px solid #3a5065;padding:7px 10px;border-radius:6px;width:min(300px,100%);margin:10px 0}.log{background:#0e1926;border:1px solid var(--edge);border-radius:7px;white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.8 Consolas,monospace;color:#c4d3e2;padding:14px;margin-top:13px;max-height:390px;overflow:auto}.helpbox{margin-top:15px;font-size:12px;color:var(--muted)}.helpbox ul{padding-left:19px}.helpbox li{margin:7px 0}.helpbox strong{color:#dbe6ee}details{padding:9px 0;border-bottom:1px solid var(--edge)}summary{cursor:pointer;color:#dbe6ee}details p{margin:9px 0;font-size:12px}.notice{padding:10px 12px;background:#202d3b;border-left:2px solid #688eac;font-size:12px;color:#b8cbdc;border-radius:3px;margin-top:12px}.footer{max-width:1600px;padding:0 26px 25px;margin:auto;color:#8198ad;font-size:11px}.hidden,[hidden]{display:none!important}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}@media(min-width:1400px){.layout{grid-template-columns:350px minmax(0,1fr)}}@media(max-width:900px){.header{padding:16px}.toolbar{margin:0 16px 16px}.layout{padding:0 16px 20px;grid-template-columns:290px minmax(0,1fr);gap:12px}.panel{padding:13px}.workspacehead{padding:12px 12px 0}.view{padding:0 12px 12px}.tabs button{padding:10px 8px}.toolbar .push{margin-left:0}}@media(max-width:720px){.header{align-items:flex-start}.header p{font-size:11px}h1{font-size:21px}.layout{grid-template-columns:1fr}.sidebar{display:grid;grid-template-columns:1fr 1fr;align-items:start}.shaft{height:250px}.floorline.top{bottom:190px}.floorlabel.top{bottom:198px}.sensor.top{bottom:196px}.toolbar{gap:6px}.toolbar button{font-size:12px}.workspace>.panel{min-height:460px}.empty{min-height:350px}}@media(max-width:480px){.sidebar{display:flex}.header .badge{font-size:10px;padding:6px}.toolbar .push{width:100%}.layout{padding-left:12px;padding-right:12px}.header{padding:15px 12px}.toolbar{margin:0 12px 12px}.view{padding:0 10px 14px}td,th{padding:8px 5px}}
 
 .shaft{height:365px}.buttons{grid-template-columns:repeat(3,minmax(0,1fr))}.floorbutton{white-space:normal;font-size:11px}.car{height:61px;left:47%;width:25%}.car b{font-size:16px}.output-pins{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.pin-label{align-self:center;min-width:65px;font-size:11px;color:var(--muted)}.input-pin,.output-pin{font:11px Consolas,monospace;border:1px solid #3a4e63;background:#101c2b;padding:5px 8px;border-radius:5px}.input-pin i,.output-pin i{display:inline-block;width:7px;height:7px;background:#44576b;border-radius:50%;margin-right:6px}.input-pin.on i,.output-pin.on i{background:#6fddc3;box-shadow:0 0 6px #6fddc366}.input-pin.on,.output-pin.on{color:#6fddc3;border-color:#50826e}.compatibility{color:#f2cc88;background:#352d22;border-left-color:#f2cc88;margin:10px 0}.code-table td{font:11px/1.6 Consolas,monospace;white-space:pre-wrap}.code-wrap{max-height:700px;overflow:auto}.code-table th{position:sticky;top:0;background:#142131}.physical-title{font-size:12px;color:#b8ccdc;margin:13px 0 7px}.footer{line-height:1.7}.wiring td,.wiring th{font-size:10px;padding:5px}.plantnote p{font-size:11px}.check select{margin-left:auto}.sourcefile{line-height:1.7}.connected-note{font-size:11px;margin-top:9px}
@@ -9,19 +9,20 @@
 .io-controls{display:flex;align-items:end;gap:15px;flex-wrap:wrap;margin:17px 0 12px}.io-control{display:flex;flex-direction:column;gap:6px;font-size:11px;color:var(--muted)}.segmented{display:flex;padding:3px;border:1px solid #3b5269;border-radius:8px;background:#101c2b;gap:3px}.segmented button{font-size:12px;padding:6px 13px;border:1px solid transparent;background:transparent;color:var(--muted)}.segmented button[aria-pressed=true]{color:#eafff7;background:#275649;border-color:#499a82}.plc-picture{margin-top:10px;padding:16px;border:1px solid #32485e;border-radius:9px;background:radial-gradient(ellipse at top,#233c4d,#101c2b 80%);overflow:auto}.plc-picture svg{display:block;width:100%;max-width:760px;min-width:420px;margin:auto}.plc-picture text{font-family:Consolas,ui-monospace,monospace;fill:#2b3940}.plc-shell{fill:#d6dad9;stroke:#8b999e;stroke-width:2}.plc-cover{fill:#e8eae5;stroke:#a6b0af}.plc-terminal{fill:#a3ada9;stroke:#6c7878}.plc-terminal-label{font-size:11px;text-anchor:middle;stroke:none}.plc-terminal.filtered{opacity:.22}.plc-led{fill:#543537;stroke:#3a3535;stroke-width:1.5}.plc-led.on{fill:#ff574b;stroke:#bc2726;filter:drop-shadow(0 0 4px #ff554bc0)}.plc-led-slot.unused{opacity:.18}.plc-led-slot text{font-size:11px;text-anchor:middle}.plc-led-slot[data-plc-input]{cursor:pointer}.plc-led-slot[aria-disabled=true]{cursor:default}.plc-led-slot:focus{outline:none}.plc-led-slot:focus-visible .plc-led{stroke:#09775c;stroke-width:4}.plc-status-led{fill:#3c5146;stroke:#76867b}.plc-status-led.on{fill:#42b96e;filter:drop-shadow(0 0 3px #37af6f)}.plc-status-label{font-size:12px}.plc-port{fill:#2c3a3c;stroke:#8c9997}.plc-body-label{font:16px system-ui,sans-serif}.plc-model-label{font-size:13px}.io-none{font-size:12px;color:var(--muted)}@media(max-width:480px){.io-controls{gap:11px}.io-control:last-child{width:100%}.io-control select{max-width:100%}.plc-picture{padding:8px}}
 
 .plant-tabs{display:flex;gap:5px;margin:-3px 0 16px;padding-bottom:12px;border-bottom:1px solid var(--edge)}.plant-tabs button{flex:1;min-width:0;white-space:normal;font-size:11px;padding:8px 5px}.plant-tabs button[aria-selected=true]{background:#245446;border-color:#53947f;color:#dcfff2}.push-box{position:relative;margin:17px 0 13px;padding:27px 12px 22px;border:3px solid #71808a;border-radius:9px;background:linear-gradient(125deg,#d9e0e4,#f1f4f5 55%,#cbd4da);box-shadow:inset 0 0 0 3px #f7f9fa,inset 0 -8px 18px #78889535,0 6px 12px #0002;color:#253442}.push-box:before,.push-box:after{content:'⊕';position:absolute;top:3px;color:#71808a;font-size:12px}.push-box:before{left:7px}.push-box:after{right:7px}.box-lamps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-bottom:40px}.box-lamp-unit,.box-control{display:flex;min-width:0;flex-direction:column;align-items:center;gap:5px}.box-lamp{width:44px;max-width:100%;aspect-ratio:1;border:3px solid #56636c;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#fbfcfc,#c3cdd3);box-shadow:0 2px 3px #0003,inset 0 0 0 2px #ffffff70;color:#354652;font-size:12px;font-weight:750}.box-lamp.on{background:radial-gradient(circle at 35% 30%,#fffde5,#f5d36a 70%);border-color:#a07d26;box-shadow:0 0 12px #efc654a0,inset 0 0 0 2px #ffffff90;color:#544316}.box-address{font:9px/1.5 Consolas,monospace;color:#425563;white-space:nowrap}.box-bit{font:10px Consolas,monospace;color:#324651}.box-controls{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}.box-button{position:relative;display:grid;place-items:center;width:44px;max-width:100%;aspect-ratio:1;padding:0;border:3px solid #4b5963;border-radius:50%;color:#e8eff3;background:radial-gradient(circle at 37% 30%,#60717d,#344550 75%);box-shadow:0 3px 0 #24343f,0 5px 6px #0003;font-size:12px;touch-action:none;user-select:none;-webkit-user-select:none}.box-button:hover:not(:disabled){background:radial-gradient(circle at 37% 30%,#728591,#425a69 75%)}.box-button.pressed{transform:translateY(2px);box-shadow:0 1px 0 #24343f,inset 0 2px 6px #0005;border-color:#3b9b80}.box-button:disabled{opacity:.55}.box-selector .box-control-name{position:absolute;bottom:3px;font-size:8px;z-index:1}.selector-handle{height:29px;width:8px;background:linear-gradient(90deg,#151f27,#92a0a8 50%,#202e38);border:1px solid #14212b;border-radius:4px;transform:rotate(-38deg);transition:transform .12s;display:block;margin-top:-5px}.box-selector[aria-pressed=true] .selector-handle{transform:rotate(38deg)}.box-selector[aria-pressed=true]{border-color:#409c80}.box-button:focus-visible{outline:3px solid #067e62;outline-offset:3px}
-.sfc-workspace{display:grid;grid-template-columns:300px minmax(0,1fr);gap:18px;margin-top:12px;align-items:start}.sfc-flow{background:#f8fafc;color:#4e6476;border:1px solid #c7d3dc;border-radius:4px;overflow:auto;max-height:820px}.sfc-flow svg{display:block;width:100%;min-width:280px}.sfc-flow text{font:13px Consolas,monospace;fill:#344b5e}.sfc-step rect{fill:#fff;stroke:#74899a;stroke-width:1.5}.sfc-step .sfc-initial{fill:none}.sfc-step{cursor:pointer}.sfc-step:focus{outline:none}.sfc-step:focus rect,.sfc-step.selected rect{stroke:#2276be;stroke-width:2.5}.sfc-step.active rect{fill:#d8f5e8;stroke:#138c62}.sfc-step .sfc-active-dot{fill:transparent}.sfc-step.active .sfc-active-dot{fill:#0c8b5d}.sfc-edge{stroke:#718598;stroke-width:1.5;fill:none}.sfc-transition{cursor:pointer}.sfc-transition path{stroke:#4e6476;stroke-width:3}.sfc-hit{fill:transparent}.sfc-transition:focus .sfc-hit{stroke:#2276be;stroke-width:1;outline:none}.sfc-transition.taken path,.sfc-edge.taken{stroke:#0a9265;stroke-width:3}.sfc-status{margin:12px 0;padding:9px 12px;border-left:3px solid var(--accent);background:#142b2b;color:#b9e9d6;font-size:12px}.sfc-detail{min-width:0}.sfc-detail h3{margin:14px 0 9px}.sfc-detail .ladder-sheet{margin-top:8px}.sfc-detail .ladder-sheet svg{min-width:500px}.sfc-listing{padding:12px;white-space:pre-wrap;border:1px solid var(--edge);font:12px/1.7 Consolas,monospace}.sfc-step-state{font-size:11px!important}@media(max-width:1200px){.sfc-workspace{grid-template-columns:1fr}.sfc-flow{max-height:440px}.sfc-flow svg{width:300px;margin:auto}}
+.sfc-workspace{display:grid;grid-template-columns:300px minmax(0,1fr);gap:18px;margin-top:12px;align-items:start}.sfc-flow{background:#f8fafc;color:#4e6476;border:1px solid #c7d3dc;border-radius:4px;overflow:auto;max-height:820px}.sfc-flow svg{display:block;width:100%;min-width:280px}.sfc-flow text{font:13px Consolas,monospace;fill:#344b5e}.sfc-step rect{fill:#fff;stroke:#74899a;stroke-width:1.5}.sfc-step .sfc-initial{fill:none}.sfc-step{cursor:pointer}.sfc-step:focus{outline:none}.sfc-step:focus rect,.sfc-step.selected rect{stroke:#2276be;stroke-width:2.5}.sfc-step.active rect{fill:#d8f5e8;stroke:#138c62}.sfc-step .sfc-active-dot{fill:transparent}.sfc-step.active .sfc-active-dot{fill:#0c8b5d}.sfc-edge{stroke:#718598;stroke-width:1.5;fill:none}.sfc-transition{cursor:pointer}.sfc-transition path{stroke:#4e6476;stroke-width:3}.sfc-hit{fill:transparent}.sfc-transition:focus .sfc-hit{stroke:#2276be;stroke-width:1;outline:none}.sfc-transition.taken path,.sfc-edge.taken{stroke:#0a9265;stroke-width:3}.sfc-status{margin:12px 0;padding:9px 12px;border-left:3px solid var(--accent);background:#142b2b;color:#b9e9d6;font-size:12px}.sfc-workspace.sfc-branched{grid-template-columns:minmax(0,1fr)}.sfc-branched .sfc-flow{max-height:680px}.sfc-branched .sfc-flow svg{width:auto;margin:auto}.sfc-detail{min-width:0}.sfc-detail h3{margin:14px 0 9px}.sfc-detail .ladder-sheet{margin-top:8px}.sfc-detail .ladder-sheet svg{min-width:500px}.sfc-listing{padding:12px;white-space:pre-wrap;border:1px solid var(--edge);font:12px/1.7 Consolas,monospace}.sfc-step-state{font-size:11px!important}@media(max-width:1200px){.sfc-workspace{grid-template-columns:1fr}.sfc-flow{max-height:440px}.sfc-flow svg{width:300px;margin:auto}}
 .sfc-status,#sfcPhase{overflow-wrap:anywhere}.sfc-status.waiting{border-left-color:#d5ac68;background:#30291f;color:#efd49c}.sfc-start-help{border:1px solid #695837;border-radius:5px;padding:12px 14px;margin:10px 0 12px;background:#28251f;font-size:12px;color:#e8d2ac}.sfc-start-help p{margin:7px 0 10px;color:#cfc0aa}.sfc-ladder-block{margin:16px 0;min-width:0}.sfc-ladder-block h3{font-size:14px;overflow-wrap:anywhere}.sfc-ladder-block .ladder-sheet svg{min-width:500px}
 .program-block-tabs{display:flex;gap:5px;overflow:auto;max-width:100%;padding:3px 2px 7px;margin:12px 0 3px}.program-block-tabs button{flex:none;border-radius:5px 5px 0 0;padding:8px 17px;color:var(--muted);background:#101c2b}.program-block-tabs button[aria-selected=true]{color:var(--ink);border-color:var(--accent);border-bottom:3px solid var(--accent);background:#25463f}.block-execution{margin:0 0 12px;overflow-wrap:anywhere}.trace-pending{border-left-color:var(--amber);color:var(--amber);margin:9px 0 12px}.sfc-ladder-block{min-width:0}
+.plant-tabs{flex-wrap:wrap}.plant-tabs button{min-width:0;flex:1 1 85px}.sorter-art svg{display:block;width:100%;height:auto}.sorter-art svg text{font:14px system-ui,sans-serif;fill:#23342b}.sorter-art .sorter-device-label{font-size:12px;font-weight:600}.sorter-art .sorter-title{font-size:18px;font-weight:750;letter-spacing:.6px}.sorter-art .sorter-tick{font-size:12px}.sorter-art .sorter-meter-label{font-size:12px;fill:#f0f1e3}.sorter-art .sorter-bin-title{font-weight:700}.sorter-buttons{display:flex;gap:5px;flex-wrap:wrap;margin:10px 0}.sorter-buttons button{flex:1;padding:8px 5px;font-size:11px}.sorter-status,.sorter-meter{font-size:12px;line-height:1.6;overflow-wrap:anywhere;color:#bfd5cf}.sorter-sensors{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:12px;margin:10px 0}.sorter-sensors span{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:6px;background:#101f27;border:1px solid #3c565b;border-radius:4px}.sorter-sensors b{font:700 12px monospace;white-space:nowrap}.sorter-feed-status{font-size:13px;line-height:1.5;color:#e0e9df;margin:10px 0}.sorter-sensors .on{color:#68efba;border-color:#4ea484}.sorter-pots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}.sorter-pots label,.sorter-settings label{display:block;font-size:12px;margin:10px 0}.sorter-pots input,.sorter-settings input{display:block;width:100%;max-width:100%;margin:8px 0}.sorter-settings .check input{display:inline;width:auto}.sorter-warning{color:#ffd08b;font-size:12px;line-height:1.5}.plc-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.plc-actions button{min-width:0;padding:8px 2px;font-size:10px;line-height:1.25;white-space:normal;min-height:36px}#powerFailure[aria-pressed="true"]{color:var(--amber);border-color:#b9965b;background:#392e1f}.badge.power-off{color:var(--amber);border-color:#b9965b;background:#392e1f}.power-state{font-size:11px;color:var(--amber);margin:8px 0 0}.power-state:empty{display:none}.power-memory{margin-top:12px;color:var(--muted);font-size:11px}.power-memory summary{cursor:pointer;color:var(--ink)}.power-memory p{margin:8px 0}.power-memory label{display:grid;grid-template-columns:90px 1fr;gap:8px;align-items:center;margin:6px 0}.power-memory input{min-width:0;width:100%;padding:5px;background:#0e1b29;color:var(--ink);border:1px solid var(--edge);border-radius:4px}.power-memory button{font-size:11px;padding:6px 9px}.power-memory [hidden]{display:none}
 </style><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icon.svg" type="image/svg+xml"><meta name="theme-color" content="#142131"></head><body>
-<header class="header"><div><div class="eyebrow">Lokalt PLC-labb</div><h1>PLC-simulator <span>/ GX Works2</span><span class="version">6.4.1</span></h1><p>Din PLC-kod. Filerna läses och simuleras på din dator.</p></div><span id="status" class="badge" role="status">● INGET PROGRAM</span></header><section id="webDelivery" style="max-width:1548px;margin:0 auto 14px;padding:0 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:12px;color:#9aadc1"><span id="webState" role="status" aria-live="polite">Förbereder offlinekopia…</span><button id="webUpdate" hidden>Uppdatera sidan</button></section>
+<header class="header"><div><div class="eyebrow">Lokalt PLC-labb</div><h1>PLC-simulator <span>/ GX Works2</span><span class="version">7.2.2</span></h1><p>Din PLC-kod. Filerna läses och simuleras på din dator.</p></div><span id="status" class="badge" role="status">● INGET PROGRAM</span></header><section id="webDelivery" style="max-width:1548px;margin:0 auto 14px;padding:0 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:12px;color:#9aadc1"><span id="webState" role="status" aria-live="polite">Förbereder offlinekopia…</span><button id="webUpdate" hidden>Uppdatera sidan</button></section>
 <div class="toolbar" aria-label="PLC-kontroller"><button id="run" class="primary" disabled>▶ RUN</button><button id="pause" disabled>Ⅱ Paus</button><button id="stop" disabled>■ STOP</button><button id="step" disabled>↦ Ett scan</button><span id="scan" class="muted mono" style="font-size:11px">Scan 0 · 0.000 s</span><label class="push muted" style="font-size:11px">Simuleringstid <select id="speed" class="select" aria-label="Simuleringshastighet"><option value="0.25">0,25×</option><option value="0.5">0,5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="5">5×</option></select></label></div>
 <main class="layout"><aside class="sidebar">
-<section class="panel" id="droparea"><div class="row"><h2>PLC-program</h2><span class="muted" style="font-size:10px">GXW → PLC</span></div><label class="drop" id="drop"><strong>Välj eller släpp din GXW-fil</strong><small>Filen läses bara på din dator</small><input id="programFile" type="file" accept=".gxw" aria-label="Välj GX Works2-projekt (.gxw)"></label><label class="check" for="profile">CPU-profil <select id="profile" class="select"><option value="FX3S" selected>FX3S</option><option value="FX3U">FX3U / FX3UC</option></select></label><p id="fileName" class="sourcefile">Inget program inläst</p><p id="message" class="import-message" aria-live="polite">Välj en GXW-fil. PLC:n och anläggningen startar i STOP.</p><div class="buttonrow"><button id="reset" disabled>Nollställ PLC</button><button id="clear" class="danger">Töm program</button></div></section>
-<section class="panel" id="simulationPanel"><nav class="plant-tabs" role="tablist" aria-label="Simuleringsanläggning"><button id="plantElevator" role="tab" aria-selected="true" aria-controls="elevatorPlant">3-våningshiss</button><button id="plantPushBox" role="tab" aria-selected="false" aria-controls="pushBoxPlant" tabindex="-1">Tryckknappslåda</button></nav><div id="elevatorPlant" role="tabpanel" aria-labelledby="plantElevator"><div class="row"><h2>3-våningshiss</h2><span id="position" class="muted" style="font-size:11px">Våning 1</span></div><label class="check"><input id="connected" type="checkbox" checked> Anslut anläggningen till PLC:n</label><div id="shaft" class="shaft">
+<section class="panel" id="droparea"><div class="row"><h2>PLC-program</h2><span class="muted" style="font-size:10px">GXW → PLC</span></div><label class="drop" id="drop"><strong>Välj eller släpp din GXW-fil</strong><small>Filen läses bara på din dator</small><input id="programFile" type="file" accept=".gxw" aria-label="Välj GX Works2-projekt (.gxw)"></label><label class="check" for="profile">CPU-profil <select id="profile" class="select"><option value="FX3S" selected>FX3S</option><option value="FX3U">FX3U / FX3UC</option></select></label><p id="fileName" class="sourcefile">Inget program inläst</p><p id="message" class="import-message" aria-live="polite">Välj en GXW-fil. PLC:n och anläggningen startar i STOP.</p><div class="buttonrow plc-actions" aria-label="PLC-åtgärder"><button id="powerFailure" aria-pressed="false" disabled>Strömbortfall</button><button id="reset" disabled>Nollställ PLC</button><button id="clear" class="danger">Töm program</button></div><p id="powerState" class="power-state" aria-live="polite"></p><details class="power-memory"><summary>Minne vid strömbortfall</summary><p id="retentionSummary"></p><p>Övriga vanliga minnen nollställs. Programmet är kvar. Återställd ström återgår till tidigare RUN/STOP; startkod, exempelvis M8002, körs på nytt och kan ändra sparade värden.</p><p>CPU-standard används. GXW:s latch-/filregisterparametrar läses ännu inte. Automatiska lokala labels utan fysisk adress behandlas som vanliga, ej sparade minnen. Testet gäller denna öppna sida. FX3U förutsätter ett fungerande batteri.</p><form id="retentionForm" hidden><p>FX3U: ange dina variabla latchområden vid STOP. Fasta latchområden behålls alltid. Skriv ett talintervall per rad; tomt betyder inget variabelt latchområde.</p><label>M0–M1023<input id="retentionM" value="500-1023" aria-label="FX3U variabelt latchområde M"></label><label>S0–S999<input id="retentionS" value="500-999" aria-label="FX3U variabelt latchområde S"></label><label>C0–C199<input id="retentionC" value="100-199" aria-label="FX3U variabelt latchområde C"></label><label>D0–D511<input id="retentionD" value="200-511" aria-label="FX3U variabelt latchområde D"></label><button id="applyRetention" type="submit">Använd latchområden</button></form><p id="retentionResult" role="status"></p></details></section>
+<section class="panel" id="simulationPanel"><nav class="plant-tabs" role="tablist" aria-label="Simuleringsanläggning"><button id="plantElevator" role="tab" aria-selected="true" aria-controls="elevatorPlant">3-våningshiss</button><button id="plantPushBox" role="tab" aria-selected="false" aria-controls="pushBoxPlant" tabindex="-1">Tryckknappslåda</button><button id="plantSorter" role="tab" aria-controls="sorterPlant" aria-selected="false" tabindex="-1">Kulsortering</button></nav><div id="elevatorPlant" role="tabpanel" aria-labelledby="plantElevator"><div class="row"><h2>3-våningshiss</h2><span id="position" class="muted" style="font-size:11px">Våning 1</span></div><label class="check"><input id="connected" type="checkbox" checked> Anslut anläggningen till PLC:n</label><div id="shaft" class="shaft">
 <div id="floor3" class="floorline"></div><div id="floor2" class="floorline"></div><div id="floor1" class="floorline"></div>
 <div id="floorLabel3" class="floorlabel"><i id="lamp3" class="hall"></i>VÅNING 3 · Y2</div><div id="floorLabel2" class="floorlabel"><i id="lamp2" class="hall"></i>VÅNING 2 · Y1</div><div id="floorLabel1" class="floorlabel"><i id="lamp1" class="hall"></i>VÅNING 1 · Y0</div>
 <div id="sensor3" class="sensor">X5 ●</div><div id="sensor2" class="sensor">X4 ●</div><div id="sensor1" class="sensor">X3 ●</div><div id="car" class="car"><b id="direction">■</b>HISS</div></div>
-<div class="statrow"><span>Motor <b id="motor">Stopp</b></span><span id="percent" class="mono">1.00 vån</span></div><div class="buttons"><button id="x0" class="floorbutton" disabled>X0 · Våning 1</button><button id="x1" class="floorbutton" disabled>X1 · Våning 2</button><button id="x2" class="floorbutton" disabled>X2 · Våning 3</button></div><label class="check"><input id="hold" type="checkbox"> Lås knappar på/av</label><label class="check"><input id="autoSensors" type="checkbox" checked> Automatiska givare X3–X5</label><div id="fault" class="fault" hidden></div><details class="plantnote"><summary>Flytta hissen vid STOP / paus</summary><input id="placement" type="range" min="0" max="2000" value="0" style="width:100%" aria-label="Hissens position"><p>Ändrar anläggningens läge. PLC-minnen nollställs separat.</p></details><p class="plantnote">Y3 = upp · Y4 = ner. Lamporna följer Y0–Y2. Körvägar, service, räknare och automatisk återgång bestäms av din PLC-kod.</p></div><div id="pushBoxPlant" role="tabpanel" aria-labelledby="plantPushBox" hidden><h2>Tryckknappslåda</h2><label class="check"><input id="boxConnected" type="checkbox" checked> Anslut anläggningen till PLC:n</label><div class="push-box" aria-label="Tryckknappslåda med fyra lampor och fem manöverdon"><div class="box-lamps"><div class="box-lamp-unit"><div class="box-lamp" id="boxH1" data-box-lamp="H1" role="img" aria-label="H1, Y0, släckt"><span>H1</span></div><span class="box-address">Y0</span></div><div class="box-lamp-unit"><div class="box-lamp" id="boxH2" data-box-lamp="H2" role="img" aria-label="H2, Y1, släckt"><span>H2</span></div><span class="box-address">Y1</span></div><div class="box-lamp-unit"><div class="box-lamp" id="boxH3" data-box-lamp="H3" role="img" aria-label="H3, Y2, släckt"><span>H3</span></div><span class="box-address">Y2</span></div><div class="box-lamp-unit"><div class="box-lamp" id="boxH4" data-box-lamp="H4" role="img" aria-label="H4, Y3, släckt"><span>H4</span></div><span class="box-address">Y3</span></div></div><div class="box-controls"><div class="box-control"><button id="boxS1" class="box-button" data-box-control="S1" aria-label="S1, brytande tryckknapp, X0" disabled><span class="box-control-name">S1</span></button><span class="box-address">X0 · NC</span><span class="box-bit" id="boxBitS1">–</span></div><div class="box-control"><button id="boxS2" class="box-button" data-box-control="S2" aria-label="S2, brytande tryckknapp, X1" disabled><span class="box-control-name">S2</span></button><span class="box-address">X1 · NC</span><span class="box-bit" id="boxBitS2">–</span></div><div class="box-control"><button id="boxS3" class="box-button box-selector" data-box-control="S3" aria-pressed="false" aria-label="S3, väljare, X2" disabled><span class="box-control-name">S3</span><i class="selector-handle" aria-hidden="true"></i></button><span class="box-address">X2 · 0/1</span><span class="box-bit" id="boxBitS3">–</span></div><div class="box-control"><button id="boxS4" class="box-button" data-box-control="S4" aria-label="S4, slutande tryckknapp, X3" disabled><span class="box-control-name">S4</span></button><span class="box-address">X3 · NO</span><span class="box-bit" id="boxBitS4">–</span></div><div class="box-control"><button id="boxS5" class="box-button" data-box-control="S5" aria-label="S5, slutande tryckknapp, X4" disabled><span class="box-control-name">S5</span></button><span class="box-address">X4 · NO</span><span class="box-bit" id="boxBitS5">–</span></div></div></div><label class="check"><input id="boxHold" type="checkbox"> Lås knappar på/av</label><p class="plantnote">Håll inne S1, S2, S4 och S5, eller slå på låsning för att växla dem med klick. Vrid S3 genom att klicka; läget ligger kvar. Lamporna följer PLC:ns Y0–Y3.</p><p class="plantnote">S1/S2 är brytande (NC): 1 i vila, 0 intryckt. S4/S5 är slutande (NO): 0 i vila, 1 intryckt.</p><details class="plantnote"><summary>Koppling enligt ritningen</summary><table class="wiring"><thead><tr><th>Don</th><th>PLC</th><th>Kontakt</th></tr></thead><tbody><tr><td>S1 / S2</td><td>X0 / X1</td><td>NC · 21–22</td></tr><tr><td>S3</td><td>X2</td><td>NO · väljare</td></tr><tr><td>S4 / S5</td><td>X3 / X4</td><td>NO · 13–14</td></tr><tr><td>H1–H4</td><td>Y0–Y3</td><td>Lampor</td></tr></tbody></table><p>Den första dubbla X3-märkningen i ritningen är korrigerad till X2.</p></details></div></section>
+<div class="statrow"><span>Motor <b id="motor">Stopp</b></span><span id="percent" class="mono">1.00 vån</span></div><div class="buttons"><button id="x0" class="floorbutton" disabled>X0 · Våning 1</button><button id="x1" class="floorbutton" disabled>X1 · Våning 2</button><button id="x2" class="floorbutton" disabled>X2 · Våning 3</button></div><label class="check"><input id="hold" type="checkbox"> Lås knappar på/av</label><label class="check"><input id="autoSensors" type="checkbox" checked> Automatiska givare X3–X5</label><div id="fault" class="fault" hidden></div><details class="plantnote"><summary>Flytta hissen vid STOP / paus</summary><input id="placement" type="range" min="0" max="2000" value="0" style="width:100%" aria-label="Hissens position"><p>Ändrar anläggningens läge. PLC-minnen nollställs separat.</p></details><p class="plantnote">Y3 = upp · Y4 = ner. Lamporna följer Y0–Y2. Körvägar, service, räknare och automatisk återgång bestäms av din PLC-kod.</p></div><div id="pushBoxPlant" role="tabpanel" aria-labelledby="plantPushBox" hidden><h2>Tryckknappslåda</h2><label class="check"><input id="boxConnected" type="checkbox" checked> Anslut anläggningen till PLC:n</label><div class="push-box" aria-label="Tryckknappslåda med fyra lampor och fem manöverdon"><div class="box-lamps"><div class="box-lamp-unit"><div class="box-lamp" id="boxH1" data-box-lamp="H1" role="img" aria-label="H1, Y0, släckt"><span>H1</span></div><span class="box-address">Y0</span></div><div class="box-lamp-unit"><div class="box-lamp" id="boxH2" data-box-lamp="H2" role="img" aria-label="H2, Y1, släckt"><span>H2</span></div><span class="box-address">Y1</span></div><div class="box-lamp-unit"><div class="box-lamp" id="boxH3" data-box-lamp="H3" role="img" aria-label="H3, Y2, släckt"><span>H3</span></div><span class="box-address">Y2</span></div><div class="box-lamp-unit"><div class="box-lamp" id="boxH4" data-box-lamp="H4" role="img" aria-label="H4, Y3, släckt"><span>H4</span></div><span class="box-address">Y3</span></div></div><div class="box-controls"><div class="box-control"><button id="boxS1" class="box-button" data-box-control="S1" aria-label="S1, brytande tryckknapp, X0" disabled><span class="box-control-name">S1</span></button><span class="box-address">X0 · NC</span><span class="box-bit" id="boxBitS1">–</span></div><div class="box-control"><button id="boxS2" class="box-button" data-box-control="S2" aria-label="S2, brytande tryckknapp, X1" disabled><span class="box-control-name">S2</span></button><span class="box-address">X1 · NC</span><span class="box-bit" id="boxBitS2">–</span></div><div class="box-control"><button id="boxS3" class="box-button box-selector" data-box-control="S3" aria-pressed="false" aria-label="S3, väljare, X2" disabled><span class="box-control-name">S3</span><i class="selector-handle" aria-hidden="true"></i></button><span class="box-address">X2 · 0/1</span><span class="box-bit" id="boxBitS3">–</span></div><div class="box-control"><button id="boxS4" class="box-button" data-box-control="S4" aria-label="S4, slutande tryckknapp, X3" disabled><span class="box-control-name">S4</span></button><span class="box-address">X3 · NO</span><span class="box-bit" id="boxBitS4">–</span></div><div class="box-control"><button id="boxS5" class="box-button" data-box-control="S5" aria-label="S5, slutande tryckknapp, X4" disabled><span class="box-control-name">S5</span></button><span class="box-address">X4 · NO</span><span class="box-bit" id="boxBitS5">–</span></div></div></div><label class="check"><input id="boxHold" type="checkbox"> Lås knappar på/av</label><p class="plantnote">Håll inne S1, S2, S4 och S5, eller slå på låsning för att växla dem med klick. Vrid S3 genom att klicka; läget ligger kvar. Lamporna följer PLC:ns Y0–Y3.</p><p class="plantnote">S1/S2 är brytande (NC): 1 i vila, 0 intryckt. S4/S5 är slutande (NO): 0 i vila, 1 intryckt.</p><details class="plantnote"><summary>Koppling enligt ritningen</summary><table class="wiring"><thead><tr><th>Don</th><th>PLC</th><th>Kontakt</th></tr></thead><tbody><tr><td>S1 / S2</td><td>X0 / X1</td><td>NC · 21–22</td></tr><tr><td>S3</td><td>X2</td><td>NO · väljare</td></tr><tr><td>S4 / S5</td><td>X3 / X4</td><td>NO · 13–14</td></tr><tr><td>H1–H4</td><td>Y0–Y3</td><td>Lampor</td></tr></tbody></table><p>Den första dubbla X3-märkningen i ritningen är korrigerad till X2.</p></details></div><div id="sorterPlant" role="tabpanel" aria-labelledby="plantSorter" hidden><h2>Kulsortering</h2><label class="check"><input id="sorterConnected" type="checkbox" checked> Anslut anläggningen till PLC:n</label><div id="sorterArt" class="sorter-art"></div><div class="sorter-buttons"><button id="sorterAddPlastic">+ Plastkula</button><button id="sorterAddMetal">+ Metallkula</button><button id="sorterAddMixed">+ 10 blandade</button></div><div class="sorter-buttons"><button id="sorterX0" disabled>X0 · Våning 1</button><button id="sorterX1" disabled>X1 · Våning 2</button><button id="sorterX2" disabled>X2 · Våning 3</button></div><label class="check"><input id="sorterHold" type="checkbox"> Lås knappar på/av</label><p id="sorterFeedStatus" class="sorter-feed-status" aria-live="polite"></p><div id="sorterSensors" class="sorter-sensors" aria-label="Fysiska givare"></div><p id="sorterSensorNote" class="plantnote"></p><p id="sorterStatus" class="sorter-status" aria-live="polite"></p><p id="sorterFault" class="sorter-warning" hidden></p><div class="sorter-pots"><label>Vred 1 · <output id="sorterPotValue0">0,00</output><input id="sorterPot0" type="range" min="0" max="10" step="0.01" value="0" aria-label="Vridpotentiometer 1"></label><label>Vred 2 · <output id="sorterPotValue1">0,00</output><input id="sorterPot1" type="range" min="0" max="10" step="0.01" value="0" aria-label="Vridpotentiometer 2"></label></div><div id="sorterMeter" class="sorter-meter"></div><details class="sorter-settings"><summary>Inställningar och fysisk placering</summary><label class="check"><input id="sorterAutoSensors" type="checkbox" checked> Automatiska givare X3–X7, X10</label><label>Flytta korgen vid STOP / paus<input id="sorterPlacement" type="range" min="0" max="2000" value="0" aria-label="Kulhissens position"></label><label>Skivans startvinkel vid STOP / paus<input id="sorterAngle" type="range" min="0" max="359" value="0" aria-label="Matarskivans vinkel"></label><label>Ett skivvarv (sekunder)<input id="sorterCycle" type="number" min="0.5" max="10" step="0.1" value="1.8"></label><label>Råvärde vid vredets 10<input id="sorterInputMax" type="number" min="10" max="16000" step="1" value="4000"></label><label>D8282 för 10 V<input id="sorterOutputAt10" type="number" min="10" max="16000" step="1" value="4000"></label><button id="sorterEmpty">Töm kulor och fack</button><p>Varvtid och skivfas är modellantaganden. Analog standard 0–4000 ↔ 0–10 V är justerbar tills skolans kalibrering är bekräftad. Instrumentet har skala 0–15 V men utspänningen begränsas till 0–10 V. D8280/81/82 följer uppgiftsbladets laboratoriekoppling, inte en fullständig analogadapteremulering.</p></details><details><summary>Koppling och kulornas väg</summary><p>Y3 upp, Y4 ner, Y5 matarskiva moturs. X3/X4/X5: våning 1/2/3. X6: klickgivare vid skivan. X7: plast- eller metallkula i matarläget vid skivan. X10: metall vid skivan. X7/X10 slocknar när skivan hämtar kulan. Nästa kula läggs i matarläget när urtaget återkommer, även om skivan stannar vid X6:s fallande flank. Inmatning från höger på våning 2. Avlämning åt vänster: våning 3 till vänstra facket, våning 1 till högra. Fel material kan hamna i fel fack om PLC-programmet väljer fel våning.</p><p>PLC-koden sköter själv lampor, sekvens, D100–D104, service och visningsvärden. D8280/D8281 är analoga ingångar; D8282 är instrumentutgång. Fackens kulantal är fysisk statistik och skriver inga PLC-register. STOP stänger motorer; redan fallande kulor fortsätter. Paus fryser processen.</p></details></div></section>
 </aside>
 <section class="workspace"><div class="panel"><div class="workspacehead"><nav class="tabs" role="tablist" aria-label="Arbetsyta"><button role="tab" id="tabLadder" aria-selected="true" aria-controls="ladderView">Ladder</button><button role="tab" id="tabIO" aria-selected="false" aria-controls="ioView">I/O & minnen</button><button role="tab" id="tabCode" aria-selected="false" aria-controls="codeView">Källkod</button><button role="tab" id="tabImport" aria-selected="false" aria-controls="importView">Import & hjälp</button></nav><div id="compatibility" class="notice compatibility" hidden></div></div>
 <div class="view" id="ladderView" role="tabpanel" aria-labelledby="tabLadder"><div id="empty" class="empty"><div class="empty-inner"><div class="empty-icon">─┤ ├─</div><h2>Börja med ditt PLC-program</h2><p>PLC:n är tom. Ladda en GXW-fil för att läsa och övervaka koden.</p><p style="margin-top:14px;font-size:11px">Ingen installation · ingen server · ingen internetanslutning</p></div></div><div id="monitor" hidden><div class="subhead"><span id="programSummary"></span><span id="traceSummary">Ingen scan körd</span></div><div id="outputDiagnostics" class="output-diagnostics" hidden><strong>Utgången ändras senare i samma scan</strong><div id="outputDiagnosticRows"></div><p>Grönt visar villkoret vid instruktionen. Lamporna följer utgångens slutvärde efter hela programmet.</p></div><p id="tracePending" class="notice trace-pending" hidden></p><nav id="programBlocks" class="program-block-tabs" role="tablist" aria-label="Programblock" hidden></nav><p id="blockExecution" class="explain block-execution" hidden></p><div id="programBlockPanel"><div id="ladderPages"></div><div id="timerchips" class="timerchips"></div></div><p class="explain">Ett sammanhängande blad per programblock i programordning. Grönt visar villkoret när instruktionen kördes; texten under spolen visar slutvärdet efter hela scan. Lamporna följer slutvärdet. Nätverksnumren är inte PLC-stegnummer. Flankkontakter markeras med pil upp/ned.</p></div></div>
@@ -31,9 +32,9 @@
 <details open><summary>PLC och anläggning är skilda delar</summary><p>PLC:n läser och kör instruktionerna i din fil utan krav på hiss-labels. Anläggningen reagerar enbart på de Y-adresser som är kopplade enligt listan nedan. Y20 kan därför ändras i PLC:n utan att hissen rör sig. Koppla bort anläggningen för ren PLC-testning.</p><p>Ett program med en ännu ej stödd instruktion läses in i granskningsläge. Källkod och kända devices visas, men RUN spärras. Ingen okänd instruktion hoppas över under körning.</p></details>
 <details><summary>Kopplingslista för 3-våningshiss</summary><table class="wiring"><tr><th>Ingång</th><th>Funktion</th><th>Utgång</th><th>Funktion</th></tr><tr><td>X0 / X1 / X2</td><td>Knapp våning 1 / 2 / 3</td><td>Y0 / Y1 / Y2</td><td>Lampa våning 1 / 2 / 3</td></tr><tr><td>X3 / X4 / X5</td><td>Givare våning 1 / 2 / 3</td><td>Y3 / Y4</td><td>Motor upp / ner</td></tr></table><p>I övning 6 används X2 som servicekvittering. Samma fysiska knapp är våning 3 i senare övningar. Funktionen bestäms av din kod.</p></details>
 <details><summary>Körbara instruktioner</summary><p>LD/LDI, AND/ANI, OR/ORI; LDP/LDF, ANDP/ANDF, ORP/ORF; ANB/ORB och MPS/MRD/MPP; 16-bitars LD/AND/OR-jämförelser =, &lt;&gt;, &gt;, &gt;=, &lt;, &lt;=; OUT, SET/RST, vanliga T-/C-förval, PLS/PLF till fysiska Y/M, MOV/MOVP samt INC/DEC/INCP/DECP till D-register eller K1–K4-grupper av Y/M/S. CMP/CMPP jämför två signerade 16-bitarsvärden och skriver större/lika/mindre till tre Y-/M-/S-bitar i följd. ALT/ALTP till Y, M, S och lokala BOOL. 16-bitars CML/CMLP, WAND/WANDP, WOR/WORP och WXOR/WXORP till D-register med K/H, D/T/C eller K1–K4-grupper av X/Y/M/S som källor.</p><p>ALT växlar varje scan när villkoret är sant. ALTP växlar en gång när villkoret går från falskt till sant. K1–K4 väljer 4–16 sammanhängande bitar. Exempel: MOV D0 K1Y0 skriver D0:s fyra lägsta bitar till Y0–Y3 och lämnar andra Y kvar. 32-bitars former, K5–K8, D.b och indexering stöds ännu inte.</p><p>Godtyckliga label- och programnamn fungerar inom den stödda grammatiken. Körning stöder ett fristående program i en cyklisk task för FX3U/FX3UC eller FX3S. Annan läsbar kod kan visas i granskningsläge.</p></details>
-<details><summary>SFC / Grafcet</summary><p>Sekventiella FX-SFC-program kan läsas direkt ur GXW, visas som ett flödesdiagram och köras med stegvis liveövervakning av åtgärder och övergångsvillkor. Serieövergångar och explicita hopp/loopar stöds. Flödet följer programmets egna stegnummer, adresser och villkor.</p><p>FX kräver programkod som aktiverar initialsteget, exempelvis M8002 → SET S0 i ett separat ladderblock. Cykliska ladderblock körs tillsammans med en SFC-sekvens i stigande blocknummer och visas live. Utan startkod förblir sekvensen inaktiv. Förgreningar, parallella flöden, flera SFC-sekvenser, andra åtgärdskvalificeringar och flank-/pulsinstruktioner inne i SFC-steg spärrar RUN. Läsbar kod behålls för granskning.</p></details><details><summary>Tidsmodell och gränser</summary><p>Fast scan 5 ms i simuleringstid. PLC-koden körs i ordning, därefter rör sig anläggningen. En våning tar 4,2 sekunder. STOP släcker Y; Paus fryser simuleringen. Ingen destinationsstyrning eller servicelogik är inbyggd i mekaniken.</p><p>Detta är en begränsad utbildningsmodell. Fysisk timerfas, I/O-filter, exakta instruktionstider, specialmoduler, avbrott, ST/FBD, FB och flera tasks efterliknas inte. Flankkontakter på FX3U:s M2800–M3071 kan endast granskas. Lokala BOOL-, TIMER- och COUNTER-labels stöds. Automatisk TIMER har 100 ms tidsbas. Automatiska labels får inte blandas med fysiska adresser av samma typ när deras alias inte kan verifieras.</p></details>
+<details><summary>SFC / Grafcet</summary><p>Sekventiella FX-SFC-program kan läsas direkt ur GXW, visas som ett flödesdiagram och köras med stegvis liveövervakning av åtgärder och övergångsvillkor. Serieövergångar, valgrenar med egna villkor, native valåterföreningar och villkorade hopp/loopar stöds. Flödet följer programmets egna stegnummer, adresser och villkor. Implementerade P-instruktioner som INCP, MOVP och ALTP stöds i stegåtgärder; flankkontakter och PLS/PLF i SFC är ännu avgränsade bort.</p><p>FX kräver programkod som aktiverar initialsteget, exempelvis M8002 → SET S0 i ett separat ladderblock. Cykliska ladderblock körs tillsammans med en SFC-sekvens i stigande blocknummer och visas live. Utan startkod förblir sekvensen inaktiv. Samtidiga AND-förgreningar, flera SFC-sekvenser, andra åtgärdskvalificeringar samt flankkontakter och PLS/PLF inne i SFC-steg spärrar RUN. Läsbar kod behålls för granskning.</p></details><details><summary>Specialreläer M8xxx</summary><p>Stöd beror på CPU-profil. Listan visar körstödet för vald profil. Övriga M8000–M8999 ger ett förklarande fel och spärrar hela RUN; de blir aldrig vanliga minnesbitar. RTC, avbrott, analogmoduler, kommunikation och positionering är ännu inte simulerade.</p><pre id="specialRelayList" style="white-space:pre-wrap"></pre><p>M8034 spärrar de fysiska Y-utgångarna, medan ladder och adresslistan visar PLC:ns interna Y-värden. M8040 spärrar SFC-övergångar men låter stegens åtgärder köras. M8047 uppdaterar M8046 och D8040–D8047 vid scanens slut. M8049 gör motsvarande för S900–S999 på FX3U. Tomma registerplatser visas som −1, ett uttryckligt simulatorval eftersom referensen inte anger tomvärdet. När övervakningen stängs av släcks statusreläet och registren behåller senaste värdet. ADD/SUB uppdaterar M8020–M8022. MUL/DIV använder M8304; DIV använder också M8306. INC/DEC ändrar inte aritmetikflaggorna. Hårdvaru-/kommunikationsdiagnostik visar en felfri virtuell CPU; ingen fysisk felinjektion efterliknas. Operationsfel sätter M8067 och M8068; ny RUN nollställer M8067 och RST kan nollställa M8068.</p></details><details><summary>Tidsmodell och gränser</summary><p>Fast scan 5 ms i simuleringstid. PLC-koden körs i ordning, därefter rör sig anläggningen. En våning tar 4,2 sekunder. STOP släcker Y; Paus fryser simuleringen. Ingen destinationsstyrning eller servicelogik är inbyggd i mekaniken.</p><p>Detta är en begränsad utbildningsmodell. Fysisk timerfas, I/O-filter, exakta instruktionstider, specialmoduler, avbrott, ST/FBD, FB och flera tasks efterliknas inte. Flankkontakter på FX3U:s M2800–M3071 kan endast granskas. Lokala BOOL-, TIMER- och COUNTER-labels stöds. Automatisk TIMER har 100 ms tidsbas. Automatiska labels får inte blandas med fysiska adresser av samma typ när deras alias inte kan verifieras.</p></details>
 <details><summary>Tom start och lokal hantering</summary><p>All kod ingår i HTML-filen. Inga nätverksanrop görs och ingen installation behövs. En omladdning börjar med tom PLC. Det krävs ingen PDF eller färdig mall för ditt program.</p></details>
-</div></div></div></section></main><footer class="footer">PLC-simulator 6.4.1 · Offline PLC-labb · Hiss och tryckknappslåda · Fast PLC-scan 5 ms · Körstöd och eventuella hinder visas vid import.</footer>
+</div></div></div></section></main><footer class="footer">PLC-simulator 7.2.2 · Offline PLC-labb · Hiss · tryckknappslåda · kulsortering · Fast PLC-scan 5 ms · Körstöd och eventuella hinder visas vid import.</footer>
 <!--
 GXW importer acknowledgements
 
@@ -276,11 +277,75 @@ Version 5 additions: observed FX opcode catalogue, edge contacts, comparisons, g
 
 -->
 <script>
+// FX special devices: only entries with implemented behavior may pass RUN validation.
+// Source: Mitsubishi JY997D16601-R §37.1, §37.2.14, §37.2.17.
+const SPECIAL_DEFINITIONS={
+  8000:['RUN-monitor'],8001:['STOP-monitor'],8002:['Första scan i RUN'],8003:['Invers första scan'],
+  8004:['Felsammanfattning'],8011:['10 ms klocka'],8012:['100 ms klocka'],8013:['1 s klocka'],8014:['1 min klocka'],
+  8020:['Nollflagga'],8021:['Låneflagga'],8022:['Carryflagga',true],
+  8028:['T32–T62: 10 ms i stället för 100 ms',true,'FX3S'],
+  8034:['Spärra fysiska Y-utgångar',true],8040:['Spärra SFC-stegövergångar',true],
+  8046:['Aktivt STL-steg (M8047)'],8047:['Övervaka aktiva STL-steg',true],
+  8048:['Aktiv annunciator (M8049)',false,'FX3U'],8049:['Övervaka annunciator',true,'FX3U'],
+  8304:['Nollflagga MUL/DIV'],8306:['Overflow DIV'],
+  8060:['Minnes-/I/O-konfigurationsfel'],8061:['CPU-fel'],8063:['Kommunikationsfel'],
+  8064:['Parameterfel'],8065:['Syntaxfel'],8066:['Ladderfel'],8067:['Operationsfel'],8068:['Låst operationsfel',true]
+};
+const SPECIAL_UNSUPPORTED={
+  8005:'Batterispänning',8006:'Låst batterifel',8007:'Spänningsbortfallspuls',8008:'Låst spänningsbortfall',8009:'Extern 24 V',
+  8015:'RTC stopp/preset',8016:'RTC visningsstopp',8017:'RTC minutjustering',8018:'RTC installerad',8019:'RTC tidsfel',
+  8024:'BMOV-riktning',8025:'Höghastighetsräknare',8026:'RAMP-läge',8027:'PR-läge',8029:'Instruktion slutförd',
+  8030:'Batteri-LED',8031:'Rensa icke-latchade minnen',8032:'Rensa latchade minnen',8033:'Behåll utgångar vid STOP',
+  8035:'Forcerat RUN-läge',8036:'Forcerad RUN-signal',8037:'Forcerad STOP-signal',8038:'N:N-kommunikation',8039:'Konstant scan',
+  8041:'IST överföringsstart',8042:'IST startpuls',8043:'IST nollställning klar',8044:'IST nollpunkt',8045:'IST resetspärr',
+  8062:'Modellberoende kommunikation',8069:'I/O-busskontroll',8099:'0,1 ms ringräknare',8398:'1 ms ringräknare'
+};
+function specialRelayInfo(key,profile='FX3S'){
+  const match=/^M(8\d{3})$/.exec(key);if(!match)return null;
+  const n=+match[1],entry=SPECIAL_DEFINITIONS[n];
+  if(n===8028&&profile==='FX3U')return {key,name:'Avbrott under FROM/TO',supported:false,writable:false,reason:'Avbrott under FROM/TO: specialreläet stöds inte.'};
+  if(entry){const supported=!entry[2]||entry[2]===profile;return {key,name:entry[0],supported,writable:!!entry[1],reason:supported?'':`${entry[0]} stöds bara för ${entry[2]}.`};}
+  let name=SPECIAL_UNSUPPORTED[n];
+  if(n===8028&&profile==='FX3U')name='Avbrott under FROM/TO';
+  if(!name)name=n>=8050&&n<=8059?'Avbrottsspärr':n>=8200&&n<=8255?'32-bitars-/höghastighetsräknare':n>=8260&&n<=8299?'Analog hårdvara (modellberoende)':n>=8300&&n<=8389?'Positionering / hårdvara (modellberoende)':n>=8400&&n<=8511?'Kommunikation / hårdvara (modellberoende)':'Ej implementerad eller reserverad specialadress';
+  return {key,name,supported:false,writable:false,reason:`${name}: specialreläet stöds inte i denna simulator. Adressen behandlas inte som ett vanligt M-minne.`};
+}
+function specialWordInfo(key,profile='FX3S'){
+  const n=/^D(\d+)$/.exec(key)?.[1];if(n===undefined)return null;
+  if(+n>=8280&&+n<=8282)return {key,writable:+n===8282,name:+n===8282?'Laboratoriets analogutgång':'Laboratoriets analogingång'};
+  return +n>=8040&&+n<=8047||(+n===8049&&profile==='FX3U')?{key,writable:false}:null;
+}
+function supportedSpecialRelays(profile){return Object.keys(SPECIAL_DEFINITIONS).map(n=>specialRelayInfo('M'+n,profile)).filter(x=>x.supported);}
+
+/* FX backup defaults: Mitsubishi JY997D16601R §§2.6, 4.1.
+ * GXW latch/file-register parameters are not inferred. */
+const POWER_MEMORY={
+ FX3S:{fixed:{M:[[384,511]],S:[[0,127]],T:[[128,137]],C:[[16,31]],D:[[128,255]]},variable:{}},
+ FX3U:{fixed:{M:[[1024,7679]],S:[[1000,4095]],T:[[246,255]],C:[],D:[[512,7999]]},variable:{M:[[500,1023]],S:[[500,999]],C:[[100,199]],D:[[200,511]]}}
+};
+const VARIABLE_LIMITS={M:1023,S:999,C:199,D:511};
+function retentionConfig(profile='FX3S',overrides={}){
+ const source=POWER_MEMORY[profile];if(!source)throw Error('Okänd CPU för minnesbackup.');
+ if(Object.keys(overrides).some(k=>profile!=='FX3U'||!Object.hasOwn(VARIABLE_LIMITS,k)))throw Error('Latchområden kan bara ändras i FX3U:s variabla M/S/C/D-områden.');
+ const variable={},ranges={};
+ for(const key of ['M','S','T','C','D']){
+  const rows=overrides[key]??source.variable[key]??[];
+  if(!Array.isArray(rows)||rows.length>1)throw Error('Ange högst ett sammanhängande latchintervall per device.');
+  variable[key]=rows.map(r=>{if(!Array.isArray(r)||r.length!==2||r.some(n=>!Number.isInteger(n)||n<0)||r[0]>r[1]||r[1]>VARIABLE_LIMITS[key])throw Error('Ogiltigt latchintervall för '+key);return Object.freeze([...r]);});
+  ranges[key]=Object.freeze([...(source.fixed[key]||[]).map(r=>Object.freeze([...r])),...variable[key]]);Object.freeze(variable[key]);
+ }
+ return Object.freeze({profile,variable:Object.freeze(variable),ranges:Object.freeze(ranges)});
+}
+function isRetained(key,config){const m=/^([MSTCD])(\d+)$/.exec(key);return !!m&&config.ranges[m[1]].some(([lo,hi])=>+m[2]>=lo&&+m[2]<=hi);}
+function formatRetentionRanges(key,ranges){return ranges.length?ranges.map(([lo,hi])=>key+lo+(lo===hi?'':'–'+key+hi)).join(', '):'Inga';}
+function parseRetentionRanges(text,key){if(!text.trim())return [];return text.split(',').map(s=>{const m=/^\s*(\d+)\s*(?:[-–]\s*(\d+))?\s*$/.exec(s);if(!m)throw Error(key+': skriv exempelvis 500-1023 eller lämna tomt.');return [+m[1],+(m[2]??m[1])];});}
+
 /* Kulhissen 4 - deterministic educational FX ladder runtime. MIT. */
 const SCAN_MS = 5;
 // Verified 16-bit forms; wider operands remain inspection-only.
+const MATH_ARITY=Object.freeze({ADD:3,SUB:3,MUL:3,DIV:3});
 const WORD_LOGIC_ARITY=Object.freeze({CML:2,WAND:3,WOR:3,WXOR:3});
-const PULSE_ACTIONS=Object.freeze(['MOVP','INCP','DECP','CMPP','ALTP',...Object.keys(WORD_LOGIC_ARITY).map(op=>op+'P')]);
+const PULSE_ACTIONS=Object.freeze(['MOVP','INCP','DECP','CMPP','ALTP',...Object.keys(MATH_ARITY).map(op=>op+'P'),...Object.keys(WORD_LOGIC_ARITY).map(op=>op+'P')]);
 function canonical(s) {
   const group=/^K([1-8])([XYMS])(\d+)$/i.exec(String(s).trim());
   if(group)return 'K'+group[1]+canonical(group[2]+group[3]);
@@ -310,8 +375,9 @@ function validateDevice(s, profile='FX3U', write=false) {
   const [,k,ns]=m,n=Number(ns),small=profile==='FX3S';
   const max={X:small?17:377,Y:small?15:377,M:small?1535:7679,S:small?255:4095,T:small?137:511,C:small?31:199,D:small?2999:7999}[k];
   if(k==='M'&&n>=8000){
-    if(![8000,8001,8002,8003,8011,8012,8013,8014,8028].includes(n))throw Error(`${s}: specialreläet stöds inte.`);
-    if(write && !(small&&n===8028))throw Error(`${s}: skrivning till specialrelä stöds inte.`);
+    const info=specialRelayInfo(s,profile);if(!info?.supported)throw Error(`${s}: ${info?.reason||'specialreläet stöds inte.'}`);
+    if(write&&!info.writable)throw Error(`${s}: skrivning till specialrelä stöds inte (${info.name}, skrivskyddat).`);
+  }else if(k==='D'&&specialWordInfo(s,profile)){if(write&&!specialWordInfo(s,profile).writable)throw Error(`${s}: skrivskyddat specialregister.`);
   }else if(n>max)throw Error(`${s}: ligger utanför den stödda ${profile}-profilen.`);
   if(write&&k==='X')throw Error(`Ingång ${s} får inte skrivas av programmet.`);
   if(!small && k==='T' && n>=192 && n<=199)throw Error(`${s}: timer för subrutin/avbrott stöds inte.`);
@@ -327,11 +393,25 @@ function timerInfo(key,profile,bits={},symbols={}) {
   return {base:n<200?100:n<=245?10:n<=249?1:n<=255?100:1,retentive:n>=246&&n<=255};
 }
 class PLC {
-  constructor(program){this.program=program;this.reset();}
-  reset(){this.bits=Object.create(null);this.words=Object.create(null);this.timers=Object.create(null);this.counters=Object.create(null);this.edges=Object.create(null);this.pulses=new Set();this.running=false;this.first=true;this.scanCount=0;this.time=0;this.trace=null;this.sfcPrevious=new Set();}
-  start(){if(this.program.executable===false)throw Error('Programmet är inläst för granskning; RUN är spärrad.');if(!this.running){this.running=true;this.first=true;for(const c of this.program.contacts)if(['RISE','FALL'].includes(c.kind))this.edges[c.id]=false;for(const a of this.program.actions){if(PULSE_ACTIONS.includes(a.op))this.edges[a.id]=false;if(['PLS','PLF'].includes(a.op)){const n=+a.target.slice(1),ranges=this.program.latchM||(this.program.profile==='FX3S'?[[384,511]]:[[500,1023]]),latched=a.target[0]==='M'&&ranges.some(([lo,hi])=>n>=lo&&n<=hi);if(!latched)this.edges[a.id]=false;}}} }
-  stop(){this.running=false;for(const k of Object.keys(this.bits))if(k[0]==='Y')this.bits[k]=false;for(const [k,t] of Object.entries(this.timers))if(!timerInfo(k,this.program.profile,this.bits,this.program.symbols).retentive){t.elapsed=0;t.value=0;t.done=false;t.previous=false;}this.trace=null;}
+  constructor(program){this.program=program;this.retention=retentionConfig(program.profile);this.powered=true;this.reset();}
+  reset(){this.bits=Object.create(null);this.words=Object.create(null);this.timers=Object.create(null);this.counters=Object.create(null);this.inputImage=Object.create(null);this.edges=Object.create(null);this.pulses=new Set();this.restoreRun=false;this.running=false;this.first=true;this.scanCount=0;this.time=0;this.trace=null;this.sfcPrevious=new Set();}
+  setRetention(overrides){if(this.running||!this.powered)throw Error('Ändra latchområden vid STOP med strömmen på.');this.retention=retentionConfig(this.program.profile,overrides);}
+  powerOff(){
+    if(!this.powered)return false;this.restoreRun=this.running;
+    const heldEdges=Object.fromEntries(this.program.actions.filter(a=>['PLS','PLF'].includes(a.op)&&isRetained(a.target,this.retention)&&this.edges[a.id]!==undefined).map(a=>[a.id,this.edges[a.id]]));
+    Object.assign(this.inputImage,Object.fromEntries(Object.entries(this.bits).filter(([k])=>k[0]==='X')));
+    for(const bank of [this.bits,this.words,this.timers,this.counters])for(const key of Object.keys(bank))if(!isRetained(key,this.retention))delete bank[key];
+    for(const [key,t]of Object.entries(this.timers)){t.base=timerInfo(key,this.program.profile,{},this.program.symbols).base;t.elapsed=t.value*t.base;}
+    this.powered=false;this.running=false;this.first=true;this.edges=Object.assign(Object.create(null),heldEdges);this.pulses.clear();this.sfcPrevious.clear();this.scanCount=0;this.time=0;this.trace=null;return true;
+  }
+  powerOn(){if(this.powered)return false;this.powered=true;Object.assign(this.bits,this.inputImage);const resume=this.restoreRun;this.restoreRun=false;if(resume)this.start();return true;}
+  start(){if(!this.powered)throw Error('PLC:n är strömlös. Återställ strömmen först.');if(this.program.executable===false)throw Error('Programmet är inläst för granskning; RUN är spärrad.');if(!this.running){this.running=true;this.first=true;delete this.bits.M8067;for(const c of this.program.contacts)if(['RISE','FALL'].includes(c.kind))this.edges[c.id]=false;for(const a of this.program.actions){if(PULSE_ACTIONS.includes(a.op))this.edges[a.id]=false;if(['PLS','PLF'].includes(a.op)){const n=+a.target.slice(1),latched=a.target[0]==='M'&&(this.program.latchM?this.program.latchM.some(([lo,hi])=>n>=lo&&n<=hi):isRetained(a.target,this.retention));if(!latched)this.edges[a.id]=false;}}} }
+  stop(){this.restoreRun=false;this.running=false;for(const k of Object.keys(this.bits))if(k[0]==='Y')this.bits[k]=false;for(const [k,t] of Object.entries(this.timers))if(!timerInfo(k,this.program.profile,this.bits,this.program.symbols).retentive){t.elapsed=0;t.value=0;t.done=false;t.previous=false;}delete this.bits.M8049;this.trace=null;}
+  output(k){return this.powered&&this.running&&!this.bits.M8034&&this.bit(k);}
   bit(k){
+    if(!this.powered&&(/^[XY]/.test(k)||/^M8\d{3}$/.test(k)))return false;
+    if(k==='M8004')return [8060,8061,8064,8065,8066,8067].some(n=>this.bit('M'+n));
+    if(['M8060','M8061','M8063','M8064','M8065','M8066'].includes(k))return false;
     if(k==='M8000')return this.running;if(k==='M8001')return !this.running;
     if(k==='M8002')return this.running&&this.first;if(k==='M8003')return !(this.running&&this.first);
     if(['M8011','M8012','M8013','M8014'].includes(k))return this.running&&Math.floor(this.time/({M8011:5,M8012:50,M8013:500,M8014:30000}[k]))%2===1;
@@ -340,7 +420,7 @@ class PLC {
   }
   number(k){if(/^K-?\d+$/.test(k))return Number(k.slice(1));if(/^H[0-9A-F]+$/i.test(k))return parseInt(k.slice(1),16);const group=digitDevices(k);if(group.length)return (group.reduce((v,key,i)=>v+(+this.bit(key))*2**i,0)<<16)>>16;const kind=deviceKind(k,this.program);if(kind==='T')return this.timers[k]?.value||0;if(kind==='C')return this.counters[k]?.value||0;return this.words[k]||0;}
   writeNumber(k,value){const group=digitDevices(k);if(group.length)for(let i=0;i<group.length;i++)this.bits[group[i]]=!!((value>>>i)&1);else this.words[k]=(value<<16)>>16;}
-  input(k,v){k=canonical(k);if(!/^X[0-7]+$/.test(k))throw Error('Endast X-ingångar får påverkas.');this.bits[k]=!!v;}
+  input(k,v){k=canonical(k);if(!/^X[0-7]+$/.test(k))throw Error('Endast X-ingångar får påverkas.');this.inputImage[k]=!!v;if(this.powered)this.bits[k]=!!v;}
   action(a,on,dt){
     const k=a.target,kind=deviceKind(k,this.program);
     if(PULSE_ACTIONS.includes(a.op)){const previous=!!this.edges[a.id];this.edges[a.id]=on;const fire=on&&!previous;if(fire)this.action({...a,op:a.op.slice(0,-1)},true,dt);return fire;}
@@ -368,6 +448,21 @@ class PLC {
       const prev=!!this.edges[a.id],pulse=a.op==='PLS'?on&&!prev:!on&&prev;
       this.edges[a.id]=on;this.bits[k]=pulse;this.pulses.add(k);
     }else if(a.op==='ALT'&&on)this.bits[k]=!this.bit(k);
+    else if(MATH_ARITY[a.op]&&on){
+      const [s1,s2]=a.sources.map(key=>(this.number(key)<<16)>>16);
+      if(a.op==='ADD'||a.op==='SUB'){
+        const raw=a.op==='ADD'?s1+s2:s1-s2;
+        // FX ADD/SUB wrap through zero on carry/borrow (manual §10.1/10.2).
+        const value=raw>32767?raw-32768:raw< -32768?raw+32769:raw;
+        this.bits.M8020=value===0;this.bits.M8021=raw< -32768;this.bits.M8022=raw>32767;this.writeNumber(k,value);
+      }else if(a.op==='MUL'){
+        const value=s1*s2;this.writeNumber(k,value);this.writeNumber(a.wordTargets[1],value>>16);this.bits.M8304=value===0;
+      }else{
+        if(s2===0)throw Error('DIV: division med noll.');
+        const q=Math.trunc(s1/s2);if(q>32767){this.bits.M8306=true;throw Error('DIV: kvoten ryms inte i 16 bitar.');}
+        this.writeNumber(k,q);this.writeNumber(a.wordTargets[1],s1-q*s2);this.bits.M8304=q===0;this.bits.M8306=false;
+      }
+    }
     else if(WORD_LOGIC_ARITY[a.op]&&on){
       const [s1,s2]=a.sources.map(key=>this.number(key)),value=a.op==='CML'?~s1:a.op==='WAND'?s1&s2:a.op==='WOR'?s1|s2:s1^s2;
       this.words[k]=(value<<16)>>16;
@@ -376,7 +471,7 @@ class PLC {
     else if(a.op==='CMP'&&on){const [s1,s2]=a.sources.map(key=>(this.number(key)<<16)>>16),results=[s1>s2,s1===s2,s1<s2];for(let i=0;i<3;i++)this.bits[a.targets[i]]=results[i];}
   }
   scan(dt=SCAN_MS){
-    if(!this.running)return false;
+    if(!this.powered||!this.running)return false;
     if(!Number.isFinite(dt)||dt<=0||dt>100)throw Error('Ogiltig scantid.');
     const nodes=new Map(),contacts=new Map(),actions=new Map(),visiting=new Set();
     const inputOperands=[...this.program.contacts.flatMap(c=>[c.device,...(c.operands||[])]),...this.program.actions.flatMap(a=>[a.source,...(a.sources||[])])].filter(Boolean);
@@ -400,43 +495,67 @@ class PLC {
       visiting.delete(id);nodes.set(id,powered);return powered;
     };
     try{
-      const writes=[],evaluate=(m,enabled)=>{
+      const writes=[],timerTicks=new Set(),evaluate=(m,enabled,holdTimers=new Set())=>{
         for(const id of m.sources)rails.set(id,enabled);
         for(const c of m.contacts)nodes.delete(c.to);for(const id of Object.keys(m.gates||{}))nodes.delete(id);
         for(const a of m.actions){
-          const on=power(a.node),values=on?(a.sources?.length?a.sources:a.source?[a.source]:[]).map(key=>(this.number(key)<<16)>>16):[],fired=a.virtual?on:this.action(a,on,dt),powered=fired??on;
+          const on=power(a.node),isTimer=a.op==='OUT'&&deviceKind(a.target,this.program)==='T',held=!enabled&&isTimer&&holdTimers.has(a.target),actionDt=isTimer&&timerTicks.has(a.target)?0:dt;
+          const values=on?(a.sources?.length?a.sources:a.source?[a.source]:[]).map(key=>(this.number(key)<<16)>>16):[],fired=a.virtual?on:held?false:this.action(a,on,actionDt),powered=fired??on;
+          if(isTimer&&on&&!held)timerTicks.add(a.target);
           const targets=a.targets||digitDevices(a.target),outputs=targets.map(target=>({target,state:this.bit(target)}));
-          const state={powered,state:a.virtual?on:this.bit(a.target),value:a.virtual?+on:this.number(a.target),executed:true,...(powered&&values.length?{values}:{}),...(outputs.length?{outputs}:{})};
-          actions.set(a.id,state);if(!a.virtual)writes.push({id:a.id,...state});
+          const state={powered,state:a.virtual?on:this.bit(a.target),value:a.virtual?+on:this.number(a.target),executed:!held,...(powered&&values.length?{values}:{}),...(outputs.length?{outputs}:{}),...(a.wordTargets?{wordOutputs:a.wordTargets.map(target=>({target,value:this.number(target)}))}:{})};
+          actions.set(a.id,state);if(!a.virtual&&!held)writes.push({id:a.id,...state});
         }
         for(const c of m.contacts)if(!contacts.has(c.id))power(c.to);
       };
       let sfcTrace=null;
       const executeSFC=()=>{
-        const steps=this.program.sfc.steps,executed=[],cleared=[],transitions=[],conditions=new Map(),nextPrevious=new Set();
+        const steps=this.program.sfc.steps,executed=[],cleared=[],transitions=[],conditions=new Map(),nextPrevious=new Set(),warnings=[];
+        const activeTimers=new Set(steps.filter(s=>this.bit('S'+s.number)).flatMap(s=>s.actionModel.actions.filter(a=>a.op==='OUT'&&deviceKind(a.target,this.program)==='T').map(a=>a.target)));
         // One OFF execution after leaving an STL state, then jump its body.
         // Clear departing coils before active state drives, including a backward
         // jump to a state sharing the same Y. SET and word operations retain.
-        for(const step of steps)if(this.sfcPrevious.has(step.number)&&!this.bit('S'+step.number)){evaluate(step.actionModel,false);cleared.push(step.number);}
-        for(const step of steps){
-          if(!this.bit('S'+step.number))continue;
-          executed.push(step.number);nextPrevious.add(step.number);evaluate(step.actionModel,true);evaluate(step.transitionModel,true);
-          const result=!!actions.get(step.transitionModel.actions[0].id)?.powered;conditions.set(step.transition.number,result);
-          if(result){this.bits['S'+step.number]=false;this.bits['S'+step.transition.target]=true;transitions.push({number:step.transition.number,from:step.number,to:step.transition.target});}
+        for(const step of steps)if(this.sfcPrevious.has(step.number)&&!this.bit('S'+step.number)){evaluate(step.actionModel,false,activeTimers);cleared.push(step.number);}
+        const mergeEnds=new Map(),mergeMembers=new Set(),pending=new Map(),stepIndices=new Map(steps.map((s,i)=>[s.number,i]));
+        for(const group of this.program.sfc.mergeGroups||[]){const last=Math.max(...group.map(n=>stepIndices.get(n)));for(const n of group){mergeMembers.add(n);mergeEnds.set(n,last);}}
+        const transfer=step=>{let matches=0;
+          // Native STL latches the source-state power for its whole block.
+          // Test every branch in source order, including conflicting true ones.
+          for(const tr of step.transitions||[step.transition]){const m=tr.model||step.transitionModel;evaluate(m,true);
+            const result=!!actions.get(m.actions[0].id)?.powered;conditions.set(tr.number,result);if(result)matches++;
+            if(result&&!this.bit('M8040')){this.bits['S'+step.number]=false;this.bits['S'+tr.target]=true;transitions.push({number:tr.number,from:step.number,to:tr.target});}
+          }
+          if(matches>1)warnings.push(`S${step.number}: flera valgrensvillkor är sanna samtidigt. Gör villkoren ömsesidigt uteslutande i PLC-koden.`);
+        };
+        for(const [index,step]of steps.entries()){
+          if(this.bit('S'+step.number)){
+            executed.push(step.number);nextPrevious.add(step.number);evaluate(step.actionModel,true);
+            if(mergeMembers.has(step.number))pending.set(step.number,step);else transfer(step);
+          }
+          // Selective recombination drives all active predecessor bodies before
+          // their transfer circuits (FX manual). One active arm is sufficient.
+          for(const [n,queued]of pending)if(mergeEnds.get(n)===index){transfer(queued);pending.delete(n);}
         }
         this.sfcPrevious=nextPrevious;
         // Inactive bodies are skipped, not evaluated with false contacts.
         // This also avoids changing edge history in a skipped state.
-        sfcTrace={activeSteps:steps.filter(s=>this.bit('S'+s.number)).map(s=>s.number),executedSteps:executed,clearedSteps:cleared,transitions,conditions};
+        sfcTrace={activeSteps:steps.filter(s=>this.bit('S'+s.number)).map(s=>s.number),executedSteps:executed,clearedSteps:cleared,transitions,conditions,warnings};
       };
       const blocks=[];
       if(this.program.blocks){for(const block of this.program.blocks){blocks.push({number:block.number,scope:block.scope,kind:block.kind});if(block.kind==='sfc')executeSFC();else evaluate(block.model,true);}}
       else if(this.program.sfc)executeSFC();else evaluate(this.program,true);
       if(sfcTrace){sfcTrace.activeSteps=this.program.sfc.steps.filter(s=>this.bit('S'+s.number)).map(s=>s.number);for(const a of this.program.actions)if(!actions.has(a.id))actions.set(a.id,{powered:false,state:a.virtual?false:this.bit(a.target),value:a.virtual?0:this.number(a.target),executed:false});}
+      // Native state monitoring is updated at END. Unused slots use the
+      // simulator sentinel -1 (the reference does not specify empty-slot contents).
+      const activeStates=Object.keys(this.bits).filter(k=>/^S\d+$/.test(k)&&this.bits[k]).map(k=>+k.slice(1)).sort((a,b)=>a-b);
+      if(this.bit('M8047')||'M8046' in this.bits)this.bits.M8046=this.bit('M8047')&&activeStates.some(n=>n<900||n>=1000);
+      if(this.bit('M8049')||'M8048' in this.bits)this.bits.M8048=this.program.profile!=='FX3S'&&this.bit('M8049')&&activeStates.some(n=>n>=900&&n<=999);
+      if(this.bit('M8047')){const states=activeStates.filter(n=>n<900||n>=1000);this.bits.M8046=states.length>0;for(let i=0;i<8;i++)this.words['D'+(8040+i)]=states[i]??-1;}
+      if(this.program.profile!=='FX3S'&&this.bit('M8049')){const states=activeStates.filter(n=>n>=900&&n<=999);this.bits.M8048=states.length>0;this.words.D8049=states[0]??-1;}
       const words={...Object.fromEntries((this.program.devices||[]).filter(k=>k[0]==='D').map(k=>[k,this.number(k)])),...this.words};
       const outputBits=Object.fromEntries(this.program.actions.flatMap(a=>a.targets||digitDevices(a.target)).map(key=>[key,this.bit(key)]));
       this.scanCount++;this.time+=dt;this.trace={nodes,contacts,actions,writes,sfc:sfcTrace,blocks,inputs,words,outputBits,scan:this.scanCount,first:this.first};this.first=false;return true;
-    }catch(e){this.stop();throw e;}
+    }catch(e){this.bits.M8067=true;this.bits.M8068=true;this.stop();throw e;}
   }
 }
 
@@ -456,11 +575,71 @@ class Lift {
   setConnected(plc,value){this.connected=!!value;this.conflict=false;this.limit=false;if(!this.connected)for(const key of [...this.wiring.buttons,...Object.keys(this.sensorInputs)])plc?.input(key,false);}
   step(plc,ms){
     if(!Number.isFinite(ms)||ms<0)throw Error('Ogiltig anläggningstid.');if(!this.connected)return;
-    const w=this.wiring,up=plc.running&&plc.bit(w.up),down=plc.running&&plc.bit(w.down);
+    const w=this.wiring,up=plc.running&&plc.output(w.up),down=plc.running&&plc.output(w.down);
     this.conflict=up&&down;this.limit=(up&&this.position>=this.maxPosition)||(down&&this.position<=0);
     if(up&&!down)this.position=Math.min(this.maxPosition,this.position+ms/4200);
     else if(down&&!up)this.position=Math.max(0,this.position-ms/4200);
   }
+}
+
+/* Independent laboratory mechanics; all sorting/sequence logic belongs to the PLC. */
+const SORTER_IO=Object.freeze({...ELEVATOR_IO,cam:'Y5',camSensor:'X6',ballSensor:'X7',metalSensor:'X10',pots:['D8280','D8281'],instrument:'D8282'});
+class BallSorter extends Lift {
+ constructor(){super();this.angle=0;this.cycleMs=1800;this.queue=[];this.diskBall=null;this.carriedBall=null;this.flight=null;this.chuteBalls=[];this.bucket=[];this.bins={left:[],right:[]};this.spills=[];this.pots=[0,0];this.inputMax=4000;this.outputAt10=4000;this.outputRaw=0;this.nextBallId=1;this.lastEvent='Fyll på plast- eller metallkulor.';}
+ add(material,count=1){if(!['plastic','metal'].includes(material)||!Number.isInteger(count)||count<1||count>50)throw Error('Välj plast/metall och 1–50 kulor.');if(this.queue.length+(this.diskBall?1:0)+count>100)throw Error('Magasinet rymmer högst 100 kulor.');for(let i=0;i<count;i++)this.queue.push({id:this.nextBallId++,material});this.seat();this.lastEvent='Magasinet har fyllts på.';}
+ seat(){if(!this.diskBall&&!this.carriedBall&&(this.angle<60||this.angle>=330)&&this.queue.length)this.diskBall=this.queue.shift();}
+ setPot(index,value){if(![0,1].includes(index)||!Number.isFinite(value)||value<0||value>10)throw Error('Vredet ska vara 0–10.');this.pots[index]=value;}
+ calibrate(inputMax,outputAt10){if(![inputMax,outputAt10].every(n=>Number.isInteger(n)&&n>=10&&n<=16000))throw Error('Analog skalning ska vara 10–16000.');this.inputMax=inputMax;this.outputAt10=outputAt10;}
+ get analogInputs(){return {D8280:Math.round(this.pots[0]/10*this.inputMax),D8281:Math.round(this.pots[1]/10*this.inputMax)};}
+ get meter(){const requested=this.outputRaw/this.outputAt10*10;return {raw:this.outputRaw,requested,value:Math.max(0,Math.min(10,requested)),limited:requested<0||requested>10};}
+ get sensorInputs(){return {...super.sensorInputs,X6:this.angle>=60&&this.angle<330,X7:!!this.diskBall,X10:this.diskBall?.material==='metal'};}
+ syncInputs(plc,autoSensors=true){if(!this.connected||!plc||plc.powered===false)return;if(autoSensors)for(const [key,value]of Object.entries(this.sensorInputs))plc.input(key,value);for(const [key,value]of Object.entries(this.analogInputs))plc.words[key]=value;}
+ setConnected(plc,value){super.setConnected(plc,value);if(!value)for(const key of ['X6','X7','X10'])plc?.input(key,false);if(value)this.syncInputs(plc);}
+ place(position){if(!Number.isFinite(position)||position<0||position>2)throw Error('Positionen ska vara våning 1–3.');this.position=position;}
+ setAngle(angle){if(!Number.isFinite(angle)||angle<0||angle>=360)throw Error('Skivvinkeln ska vara 0–359 grader.');this.angle=angle;this.seat();}
+ empty(){this.queue=[];this.diskBall=null;this.carriedBall=null;this.flight=null;this.chuteBalls=[];this.bucket=[];this.bins={left:[],right:[]};this.spills=[];this.lastEvent='Kulorna är tömda. PLC-programmet är kvar.';}
+ drop(){if(!this.carriedBall)return;this.flight={...this.carriedBall,remaining:180};this.carriedBall=null;this.lastEvent='Kula matas mot våning 2.';}
+ discharge(){if(!this.bucket.length||![1,3].includes(this.atFloor))return;const floor=this.atFloor,bin=floor===3?'left':'right';for(const ball of this.bucket)this.chuteBalls.push({...ball,bin,floor,remaining:1000});this.bucket=[];this.lastEvent=`Avlämning våning ${floor} → ${bin==='left'?'vänstra':'högra'} facket.`;}
+ step(plc,ms){
+  if(!Number.isFinite(ms)||ms<0||ms>120000)throw Error('Ogiltig anläggningstid.');if(!this.connected||!plc)return;if(plc.powered===false)this.outputRaw=0;
+  for(let t=0;t<ms;t+=5){const dt=Math.min(5,ms-t);super.step(plc,dt);if(plc.running)this.outputRaw=plc.number('D8282');
+   for(const ball of this.chuteBalls)ball.remaining-=dt;
+   for(const ball of this.chuteBalls.filter(b=>b.remaining<=0))this.bins[ball.bin].push({id:ball.id,material:ball.material});this.chuteBalls=this.chuteBalls.filter(b=>b.remaining>0);
+   if(this.flight){this.flight.remaining-=dt;if(this.flight.remaining<=0){const ball={id:this.flight.id,material:this.flight.material};if(this.atFloor===2){this.bucket.push(ball);this.lastEvent='Kula i hisskorgen.';}else{this.spills.push(ball);this.lastEvent='Spill: korgen stod inte vid våning 2.';}this.flight=null;}}
+   this.discharge();
+   if(plc.output('Y5')){const before=this.angle,after=before+360*dt/this.cycleMs;if(before<90&&after>=90&&this.diskBall){this.carriedBall=this.diskBall;this.diskBall=null;}if(before<330&&after>=330)this.drop();this.angle=after%360;this.seat();}
+  }
+ }
+ snapshot(){return {position:this.position,floor:this.atFloor,connected:this.connected,angle:this.angle,cycleMs:this.cycleMs,queue:this.queue.map(b=>({...b})),diskBall:this.diskBall?{...this.diskBall}:null,carriedBall:this.carriedBall?{...this.carriedBall}:null,flight:this.flight?{...this.flight}:null,bucket:this.bucket.map(b=>({...b})),bins:{left:this.bins.left.map(b=>({...b})),right:this.bins.right.map(b=>({...b}))},spills:this.spills.map(b=>({...b})),chuteBalls:this.chuteBalls.map(b=>({...b})),sensors:this.sensorInputs,pots:[...this.pots],analogInputs:this.analogInputs,meter:this.meter,lastEvent:this.lastEvent};}
+}
+
+/* Self-contained SVG front view, drawn from the supplied photographs. */
+const ballFill=material=>material==='metal'?'url(#steel)':'#e4f0e9';
+function ballSVG(b,x,y,r=6,location=''){return `<circle ${location?`data-sorter-ball="${location}"`:''} cx="${x}" cy="${y}" r="${r}" fill="${ballFill(b.material)}" stroke="#4d655d" stroke-width="1.2"><title>${b.material==='metal'?'Metallkula':'Plastkula'}</title></circle>`;}
+function sorterSVG(b,plc){
+ const y=450-b.position*160,inputs=Object.fromEntries(Object.entries(b.sensorInputs).map(([k,v])=>[k,b.connected&&plc?.powered!==false&&v])),meter=b.connected?b.meter:{value:0},a=(-140+meter.value/15*100)*Math.PI/180;
+ const led=(key,x,y)=>`<g><title>${key}: ${inputs[key]?'aktiv':'inaktiv'} fysisk givare</title><rect data-sorter-label-box="${key}" x="${x-8}" y="${y-13}" width="48" height="25" rx="5" fill="#f0e4cc" stroke="#725236"/><circle data-sorter-sensor="${key}" data-on="${!!inputs[key]}" cx="${x}" cy="${y}" r="4" fill="${inputs[key]?'#16845a':'#778178'}"/><text class="sorter-device-label" x="${x+8}" y="${y+5}">${key}</text></g>`;
+ const counts=bin=>b.bins[bin].reduce((r,x)=>(r[x.material]++,r),{metal:0,plastic:0});
+ return `<svg viewBox="0 0 400 670" role="img" aria-label="Kulsorterare. ${b.diskBall?(b.diskBall.material==='metal'?'Metallkula':'Plastkula')+' i matarläge.':'Ingen kula i matarläget.'} X7 ${inputs.X7?'aktiv':'inaktiv'}, X10 ${inputs.X10?'aktiv':'inaktiv'}. Övre bana till vänstra facket och nedre bana till högra."><defs><linearGradient id="wood"><stop stop-color="#b68d61"/><stop offset=".48" stop-color="#d2b183"/><stop offset="1" stop-color="#bd976c"/></linearGradient><radialGradient id="steel" cx=".3" cy=".25"><stop stop-color="#f4fbff"/><stop offset=".45" stop-color="#acb9c1"/><stop offset="1" stop-color="#4f5c68"/></radialGradient><linearGradient id="carMetal" x2="0" y2="1"><stop stop-color="#f0e5cb"/><stop offset="1" stop-color="#c4bda3"/></linearGradient><radialGradient id="knobFace" cx=".35" cy=".25"><stop stop-color="#3f5950"/><stop offset="1" stop-color="#23372f"/></radialGradient></defs><rect x="8" y="8" width="384" height="654" rx="12" fill="url(#wood)" stroke="#74573c" stroke-width="2.5"/>
+ ${Array.from({length:18},(_,i)=>`<path d="M${20+i*21} 16q-10 140 0 280t0 350" fill="none" stroke="#674528" opacity=".055"/>`).join('')}
+ <text x="26" y="39" class="sorter-title">KULSORTERING</text><path d="M26 50H185" stroke="#6e6245" opacity=".3"/>
+ <path d="M217 130L80 160Q58 167 58 190V554M217 450L157 482Q147 491 147 510V554" fill="none" stroke="#6b472b" stroke-width="21" stroke-linejoin="round"/><path d="M217 130L80 160Q58 167 58 190V554M217 450L157 482Q147 491 147 510V554" fill="none" stroke="#3f2e24" stroke-width="10" stroke-linejoin="round"/>
+ <g data-sorter-part="rails"><path d="M209 84V481M245 84V481" stroke="#68736b" stroke-width="5"/><path d="M209 84V481M245 84V481" stroke="#e3e8da" stroke-width="2"/></g><path d="M227 61V${y-12}" stroke="#54564b" stroke-width="1.5"/>
+ ${[0,1,2].map(i=>`<rect x="179" y="${442-i*160}" width="18" height="15" rx="3" fill="#263f3a"/><circle cx="187" cy="${450-i*160}" r="3" fill="${inputs['X'+(i+3)]?'#4bf3b6':'#778b7e'}"/><rect x="114" y="${413-i*160}" width="83" height="25" rx="5" fill="#f0e4cc" stroke="#725236"/><text x="155" y="${431-i*160}" text-anchor="middle">V${i+1} · X${i+3}</text><circle data-sorter-lamp="Y${i}" cx="27" cy="${450-i*160}" r="7" fill="${b.connected&&plc?.output('Y'+i)?'#fff29a':'#706440'}" stroke="#342e21"/><rect data-sorter-label-box="Y${i}" x="11" y="${463-i*160}" width="32" height="20" rx="4" fill="#f1e6cf" stroke="#9d8059"/><text data-sorter-label="Y${i}" class="sorter-device-label" x="27" y="${478-i*160}" text-anchor="middle">Y${i}</text>`).join('')}
+ <g id="sorterCar" transform="translate(227 ${y})"><path data-sorter-part="bucket" d="M-13 -12V18Q-13 23 -8 23H8Q13 23 13 18V-12" fill="url(#carMetal)" stroke="#4d594b" stroke-width="2"/><path d="M-11 17H11" stroke="#a7ab94" stroke-width="1"/>${b.bucket.slice(0,5).map((v,i)=>ballSVG(v,-6+i%2*12,14-Math.floor(i/2)*10,5)).join('')}</g>
+ <path data-sorter-part="magazine" d="M316 76V241" stroke="#dbe4d5" stroke-opacity=".8" stroke-width="18" stroke-linecap="round"/><path d="M316 76V241" stroke="#4d4937" stroke-width="12" stroke-linecap="round"/>
+ ${b.queue.slice(0,10).map((v,i)=>ballSVG(v,316,225-i*14,5)).join('')}<rect x="258" y="42" width="116" height="25" rx="5" fill="#f0e4cc" stroke="#725236"/><text x="316" y="60" text-anchor="middle">Magasin: ${b.queue.length+(b.diskBall?1:0)}</text>
+ <path d="M281 288L243 303" stroke="#48362a" stroke-width="13"/><circle cx="316" cy="284" r="38" fill="#4e4d42"/><g id="sorterDisk" transform="rotate(${15-b.angle} 316 284)"><path d="M316 284L316 320A36 36 0 1 1 352 284Z" fill="#f3f4e6" stroke="#b6beb3" stroke-width="1.5"/><path d="M300 261l-6 7m6-7l-10 1" stroke="#6f8e7e" fill="none" stroke-width="2"/></g><circle cx="316" cy="284" r="4" fill="#637269"/>
+ <path d="M282 246H344" stroke="${inputs.X7?'#187a53':'#59695b'}" stroke-width="2" stroke-dasharray="3 4"/><rect x="344" y="241" width="24" height="10" rx="3" fill="#6c7c86"/><rect x="270" y="238" width="12" height="16" fill="#263f3a"/><rect x="342" y="311" width="20" height="12" rx="2" fill="#263f3a"/><path d="M342 312L339 306" stroke="#c8d3cd" stroke-width="3"/>
+ ${b.diskBall?`<circle cx="316" cy="246" r="10" fill="none" stroke="${inputs.X7?'#187a53':'#657568'}" stroke-width="2"/>`+ballSVG(b.diskBall,316,246,6,'staged'):''}${b.carriedBall?ballSVG(b.carriedBall,316+25*Math.cos((150-b.angle)*Math.PI/180),284+25*Math.sin((150-b.angle)*Math.PI/180),6,'carried'):''}
+ ${led('X10',340,213)}${led('X7',258,213)}${led('X6',340,348)}<text x="316" y="375" text-anchor="middle">Y5 · ${Math.round(b.angle)}° ↶</text>
+ ${b.flight?(()=>{const p=1-b.flight.remaining/180;return ballSVG(b.flight,280-50*p,280+16*p+8*p*p);})():''}
+ ${b.chuteBalls.map(v=>{const p=1-v.remaining/1000;return ballSVG(v,v.floor===3?217-159*Math.min(1,p*3):217-70*Math.min(1,p*3),v.floor===3?130+425*p:450+105*p,5);}).join('')}
+ <rect x="258" y="390" width="121" height="104" rx="6" fill="#24322f" stroke="#a9b8ac" stroke-width="3"/><rect x="266" y="399" width="105" height="73" rx="3" fill="#f5f1e5"/><path d="M280 423Q319 393 358 423" fill="none" stroke="#a8ac9d" stroke-width="2"/><text x="278" y="421" class="sorter-tick">0</text><text x="319" y="409" text-anchor="middle" class="sorter-tick">7,5</text><text x="354" y="421" class="sorter-tick">15</text><path d="M319 459L${319+50*Math.cos(a)} ${459+50*Math.sin(a)}" stroke="#ba4038" stroke-width="2"/><circle cx="319" cy="459" r="5" fill="#647b6a"/><text x="319" y="489" text-anchor="middle" class="sorter-meter-label">D8282 · ${meter.value.toFixed(2).replace('.',',')} V</text>
+ ${[0,1].map(i=>{const a=(-225+b.pots[i]*27)*Math.PI/180;return `<circle cx="${282+i*68}" cy="542" r="21" fill="url(#knobFace)" stroke="#b2bcac" stroke-width="2"/><path d="M${282+i*68} 542l${15*Math.cos(a)} ${15*Math.sin(a)}" stroke="#e5efdf" stroke-width="3"/><text x="${282+i*68}" y="579" text-anchor="middle">Vred ${i+1}</text><text x="${282+i*68}" y="601" text-anchor="middle">${b.pots[i].toFixed(2).replace('.',',')}</text>`;}).join('')}
+ <g data-sorter-part="bins"><rect x="23" y="556" width="100" height="34" rx="3" fill="#e2ead9" fill-opacity=".85" stroke="#556650" stroke-width="2"/><rect x="132" y="556" width="100" height="34" rx="3" fill="#e2ead9" fill-opacity=".85" stroke="#556650" stroke-width="2"/><path d="M24 563H122M133 563H231" stroke="#b4c2ab" stroke-width="1"/></g>
+ ${['left','right'].map((bin,j)=>b.bins[bin].slice(-12).map((v,i)=>ballSVG(v,37+j*109+i%6*14,582-Math.floor(i/6)*12,5)).join('')).join('')}
+ ${['left','right'].map((bin,i)=>{const c=counts(bin);return `<rect x="${22+i*109}" y="598" width="103" height="57" rx="5" fill="#efe4cc" fill-opacity=".82"/><text x="${73+i*109}" y="612" text-anchor="middle" class="sorter-bin-title">Våning ${i?1:3}</text><text x="${73+i*109}" y="631" text-anchor="middle">Plast: ${c.plastic}</text><text x="${73+i*109}" y="650" text-anchor="middle">Metall: ${c.metal}</text>`;}).join('')}</svg>`;
 }
 
 /* Pushbutton box, wired from the supplied schematic. No PLC program logic. */
@@ -485,26 +664,26 @@ class PushBox {
   get inputValues(){return Object.fromEntries(PUSH_BOX_IO.controls.map(c=>[c.input,c.contact==='NC'?!this.positions[c.id]:this.positions[c.id]]));}
   syncInputs(plc){if(plc&&this.connected)for(const [key,value]of Object.entries(this.inputValues))plc.input(key,value);}
   setConnected(plc,value){this.connected=!!value;if(!this.connected){this.releaseMomentary();for(const c of PUSH_BOX_IO.controls)plc?.input(c.input,false);}else this.syncInputs(plc);}
-  lampValues(plc,active=true){return Object.fromEntries(PUSH_BOX_IO.lamps.map(l=>[l.id,!!(active&&this.connected&&plc?.bit(l.output))]));}
+  lampValues(plc,active=true){return Object.fromEntries(PUSH_BOX_IO.lamps.map(l=>[l.id,!!(active&&this.connected&&plc?.output(l.output))]));}
 }
 
 /* One active physical attachment shares the same PLC and monitor. */
 class PlantStation {
-  constructor(){this.elevator=new Lift();this.pushbox=new PushBox();this.active='elevator';}
+  constructor(){this.elevator=new Lift();this.pushbox=new PushBox();this.sorter=new BallSorter();this.active='elevator';}
   get current(){return this[this.active];}
   inputKeys(autoSensors=true){
     if(!this.current.connected)return [];
-    return this.active==='pushbox'?PUSH_BOX_IO.controls.map(c=>c.input):[...ELEVATOR_IO.buttons,...(autoSensors?ELEVATOR_IO.floorSensors:[])];
+    return this.active==='sorter'?[...ELEVATOR_IO.buttons,...(autoSensors?[...ELEVATOR_IO.floorSensors,'X6','X7','X10']:[])]:this.active==='pushbox'?PUSH_BOX_IO.controls.map(c=>c.input):[...ELEVATOR_IO.buttons,...(autoSensors?ELEVATOR_IO.floorSensors:[])];
   }
-  ownsInput(key,autoSensors=true){return this.current.connected&&(this.active==='pushbox'?this.inputKeys().includes(key):autoSensors&&ELEVATOR_IO.floorSensors.includes(key));}
-  syncInputs(plc,autoSensors=true){if(!plc)return;if(this.active==='elevator')this.elevator.sensors(plc,autoSensors);else this.pushbox.syncInputs(plc);}
-  select(name,plc,autoSensors=true){
-    if(!['elevator','pushbox'].includes(name))throw Error('Okänd anläggning: '+name);
+  ownsInput(key,autoSensors=true){return this.current.connected&&(this.active==='pushbox'?this.inputKeys().includes(key):autoSensors&&(this.active==='sorter'?[...ELEVATOR_IO.floorSensors,'X6','X7','X10']:ELEVATOR_IO.floorSensors).includes(key));}
+  syncInputs(plc,autoSensors=true){if(!plc||plc.powered===false)return;if(this.active==='elevator')this.elevator.sensors(plc,autoSensors);else if(this.active==='sorter')this.sorter.syncInputs(plc,autoSensors);else this.pushbox.syncInputs(plc);}
+  select(name,plc,autoSensors=true,nextAutoSensors=autoSensors){
+    if(!['elevator','pushbox','sorter'].includes(name))throw Error('Okänd anläggning: '+name);
     if(name===this.active)return false;
     for(const key of this.inputKeys(autoSensors))plc?.input(key,false);
-    this.pushbox.releaseMomentary();this.active=name;this.syncInputs(plc,autoSensors);return true;
+    this.pushbox.releaseMomentary();this.active=name;this.syncInputs(plc,nextAutoSensors);return true;
   }
-  step(plc,ms){if(this.active==='elevator')this.elevator.step(plc,ms);}
+  step(plc,ms){if(this.active==='elevator')this.elevator.step(plc,ms);else if(this.active==='sorter')this.sorter.step(plc,ms);}
 }
 
 /* Observed FX lexical encodings from gxworks-agent, Apache-2.0.
@@ -631,12 +810,12 @@ function compileGXInstructions(instructions,labels=[],profile='FX3U',scope='MAIN
     }else if(op==='MPS'){need();if(branches.length>=11)gxError('fler än 11 MPS-nivåer.');branches.push(current);}
     else if(op==='MRD'||op==='MPP'){if(!branches.length)gxError(op+' saknar MPS.');current=op==='MPP'?branches.pop():branches.at(-1);afterAction=false;}
     else if(op==='END'){if(blocks.length||branches.length||current&&!afterAction)gxError('ofullständigt nätverk eller obalanserad stack vid END.');ended=true;}
-    else if(['OUT','SET','RST','MOV','INC','DEC','CMP','PLS','PLF','ALT',...Object.keys(WORD_LOGIC_ARITY),...PULSE_ACTIONS].includes(op)){
+    else if(['OUT','SET','RST','MOV','INC','DEC','CMP','PLS','PLF','ALT',...Object.keys(WORD_LOGIC_ARITY),...Object.keys(MATH_ARITY),...PULSE_ACTIONS].includes(op)){
       if(fragment&&!condition&&!current)current={node:rail(),kind:'rail',depth:1};
       need();if(blocks.length)gxError('oavslutat ANB/ORB-block vid spole.');
-      const base=PULSE_ACTIONS.includes(op)?op.slice(0,-1):op,wordArity=WORD_LOGIC_ARITY[base],arity=wordArity||(base==='CMP'?3:base==='MOV'?2:1);
+      const base=PULSE_ACTIONS.includes(op)?op.slice(0,-1):op,wordArity=WORD_LOGIC_ARITY[base]||MATH_ARITY[base],arity=wordArity||(base==='CMP'?3:base==='MOV'?2:1);
       if(op!=='OUT'&&args.length!==arity)gxError(op+' kräver '+arity+' operander.');
-      const label=args[wordArity||['CMP','MOV'].includes(base)?arity-1:0],target=resolve(label,true),group=digitDevices(target);let preset=null,source=null,wordSources=[],targets;
+      const label=args[wordArity||['CMP','MOV'].includes(base)?arity-1:0],target=resolve(label,true),group=digitDevices(target);let preset=null,source=null,wordSources=[],targets,wordTargets;
       if(group.length&&!['MOV','INC','DEC'].includes(base))gxError(op+' till bitgrupp stöds inte.');
       if(base==='CMP'){
         if(!/^[YMS]\d+$/.test(target))gxError(op+' kräver en fysisk Y-/M-/S-adress för tre resultatbitar.');
@@ -650,9 +829,10 @@ function compileGXInstructions(instructions,labels=[],profile='FX3U',scope='MAIN
       if(base==='ALT'&&!['Y','M','S'].includes(kindOf(target)))gxError(op+' kräver Y, M, S eller lokal BOOL.');
       if(wordArity&&target[0]!=='D')gxError(op+' kräver D-register.');
       if(['MOV','INC','DEC'].includes(base)&&!group.length&&target[0]!=='D')gxError(op+' kräver D-register eller stödd bitgrupp.');
+      if(['MUL','DIV'].includes(base)){wordTargets=[target,'D'+(+target.slice(1)+1)];for(const key of wordTargets)validateDevice(key,profile,true);}
       if(wordArity)wordSources=args.slice(0,-1).map(numeric);
       if(base==='MOV'){source=/^(K-?\d+|H[0-9A-F]+)$/.test(args[0])?args[0]:resolve(args[0]);if(!(/^(K-?\d+|H[0-9A-F]+)$/.test(source)||wordDevice(source))||source[0]==='K'&&(+source.slice(1)<-32768||+source.slice(1)>32767)||source[0]==='H'&&parseInt(source.slice(1),16)>65535)gxError('MOV-källan stöds inte.');}
-      const a={id:prefix+'gxa'+actions.length,node:current.node,op,target,label,preset,source,sources:wordSources,...(targets?{targets}:{}),operandLabels:[...args],step:ins.offset??actions.length};actions.push(a);
+      const a={id:prefix+'gxa'+actions.length,node:current.node,op,target,label,preset,source,sources:wordSources,...(targets?{targets}:{}),...(wordTargets?{wordTargets}:{}),operandLabels:[...args],step:ins.offset??actions.length};actions.push(a);
       const previous=groups.at(-1);if(previous?.expr===current)previous.actions.push(a);else groups.push({expr:current,actions:[a],comment:ins.comment||''});afterAction=true;
     }else gxError('instruktionen '+op+' stöds inte.');
   }
@@ -676,7 +856,7 @@ function compileGXInstructions(instructions,labels=[],profile='FX3U',scope='MAIN
   if(symbolic.size)notes.push('Automatiska lokala BOOL-labels körs som separata symboliska minnen. Råa M-adresser får inte blandas in.');
   const coilCounts=new Map();for(const a of actions)if(a.op==='OUT')coilCounts.set(a.target,(coilCounts.get(a.target)||0)+1);for(const [device,count] of coilCounts)if(count>1)notes.push(`${device}: ${count} OUT-spolar. Sista skrivningen i scan bestämmer slutvärdet.`);
   if(symbolicTC.size)notes.push('Lokala TIMER/COUNTER körs med egna typade tillstånd. Automatisk TIMER har 100 ms tidsbas; fysisk T-/C-adress gissas inte.');
-  const devices=[...contacts.map(c=>c.device).filter(Boolean),...contacts.flatMap(c=>c.operands||[]).filter(wordDevice),...actions.flatMap(a=>a.targets||[a.target]),...actions.flatMap(a=>[a.preset,a.source,...a.sources]).filter(x=>x&&wordDevice(x)),...labels.map(l=>l.device).filter(Boolean)].flatMap(key=>digitDevices(key).length?digitDevices(key):[key]);
+  const devices=[...contacts.map(c=>c.device).filter(Boolean),...contacts.flatMap(c=>c.operands||[]).filter(wordDevice),...actions.flatMap(a=>a.wordTargets||a.targets||[a.target]),...actions.flatMap(a=>[a.preset,a.source,...a.sources]).filter(x=>x&&wordDevice(x)),...labels.map(l=>l.device).filter(Boolean)].flatMap(key=>digitDevices(key).length?digitDevices(key):[key]);
   return {version:5,format:'GXW',programName:scope,executable:true,issues:[],profile,symbols,instructions,networks,contacts,actions,sources,incoming,gates,devices:[...new Set(devices)],labels,notes,pageCount:0,ladderPages:[],validated:true};
 }
 
@@ -761,14 +941,37 @@ function readGXSFC(raw,{strict=true}={}){
     }
     while(ti<tokens.length){
       const t=tokens[ti++];if(!['056c041c05','056c041405'].includes(t.hex))sfcError('grafpost '+t.hex+' vid byte '+t.offset+' stöds inte; förgreningar och andra grafvarianter kräver ytterligare stöd.');
-      const number=reference(0x98),actionNumber=reference(0x98),tr=tokens[ti++];
-      if(!tr||!['056c020405','056c021d05'].includes(tr.hex))sfcError('endast en serieövergång eller ett explicit hopp per steg stöds.');
-      const transitionNumber=reference(0x99),targetOp=tokens[ti++];if(targetOp?.hex!=='0562020005')sfcError('okänd måloperation i övergång.');
-      const target=reference(0x98);if(tokens[ti++]?.hex!=='056c010a05')sfcError('stegavslut saknas.');
-      steps.push({number,initial:t.hex==='056c041c05',actionNumber,offset:t.offset,transition:{number:transitionNumber,target,kind:tr.hex==='056c021d05'?'jump':'next',offset:tr.offset}});
+      const graphReference=reference(0x98),actionNumber=reference(0x98),number=actionNumber,transitions=[];
+      do{
+        const tr=tokens[ti++];
+        if(!tr||!['056c020405','056c021d05','056c020505','056c021e05','056c020b05'].includes(tr.hex))sfcError('okänd övergångs-/grenoperation; denna grafvariant stöds inte.');
+        const transitionNumber=reference(0x99);let mergePrevious;
+        // Observed selective coupling: subsequent arms explicitly link the
+        // preceding source step. This is topology, not an AND-state condition.
+        if(tr.hex==='056c020b05'&&tokens[ti]?.hex==='0542010105'){ti++;mergePrevious=reference(0x98);}
+        const targetOp=tokens[ti++];if(targetOp?.hex!=='0562020005')sfcError('okänd måloperation i övergång.');
+        const target=reference(0x98);transitions.push({number:transitionNumber,target,kind:tr.hex==='056c021d05'?'jump':['056c020505','056c021e05'].includes(tr.hex)?'select':tr.hex==='056c020b05'?'merge':'next',offset:tr.offset,...(tr.hex==='056c021e05'?{jump:true}:{}),...(mergePrevious!==undefined?{mergePrevious}:{})});
+        if(transitions.length>8)sfcError('fler än åtta valgrenar vid S'+number+'.');
+      }while(['056c020505','056c021e05'].includes(tokens[ti]?.hex));
+      if(transitions.length>1&&transitions.some(tr=>tr.kind!=='select'))sfcError('blandade serie-/valgrenar vid S'+number+'.');
+      if(transitions.some((tr,i)=>tr.jump&&(i===0||i!==transitions.length-1)))sfcError('hopp i valgren måste avsluta en valförgrening.');
+      if(tokens[ti++]?.hex!=='056c010a05')sfcError('stegavslut saknas.');
+      steps.push({number,reference:graphReference,initial:t.hex==='056c041c05',actionNumber,offset:t.offset,transition:transitions[0],transitions});
       if(steps.length>512)sfcError('fler än 512 steg.');
     }
   }catch(e){if(strict)throw e;issues.push(e.message);}
+  // FX has two distinct numeric spaces: internal graph references and the
+  // registered PLC S-number. Structural edges/predecessors use graph refs;
+  // explicit jumps use the PLC S-number shown by GX Works2. Never fall back
+  // between the two spaces, even when an unrelated number happens to exist.
+  const byReference=new Map(),stateNumbers=new Set();
+  for(const step of steps){if(stateNumbers.has(step.number))issue('dubblerad stegreferens '+step.number);stateNumbers.add(step.number);if(byReference.has(step.reference))issue('dubblerad grafreferens '+step.reference);byReference.set(step.reference,step);}
+  const resolveReference=(n,kind='övergång')=>{const step=byReference.get(n);if(!step)issue(kind+' pekar på ett saknat steg med grafreferens '+n);return step?.number??n;};
+  for(const step of steps)for(const tr of step.transitions){
+    tr.nativeTarget=tr.target;
+    if(tr.kind!=='jump'&&!tr.jump)tr.target=resolveReference(tr.nativeTarget);
+    if(tr.mergePrevious!==undefined){tr.nativeMergePrevious=tr.mergePrevious;tr.mergePrevious=resolveReference(tr.nativeMergePrevious,'länk i valåterförening');}
+  }
   pos=end;
   const child=(kind,identity,number=null)=>{
     if(word()!==1)sfcError('okänd delprogramlagring.');const size=word(),start=pos,end=start+size;
@@ -800,26 +1003,36 @@ function compileGXSFC(sfc,labels,profile,scope,{prefix=''}={}){
   const unique=(rows,key,kind)=>{const m=new Map();for(const r of rows){const k=r[key];if(m.has(k))sfcError('dubblerad '+kind+' '+k);m.set(k,r);}return m;};
   const steps=unique(sfc.steps,'number','stegreferens'),regs=unique(sfc.registrations,'number','åtgärdsreferens');
   const zooms=unique(sfc.children.filter(c=>c.kind==='action'),'name','åtgärdsnamn'),trans=unique(sfc.children.filter(c=>c.kind==='transition'),'number','övergångsreferens');
+  // Validate every native coupling link, including inactive arms. Only the
+  // observed selective chain is accepted; never reinterpret an AND coupling.
+  const merges=sfc.steps.filter(s=>s.transitions?.some(t=>t.kind==='merge')),successors=new Map();sfc.mergeGroups=[];
+  for(const s of merges){const [tr]=s.transitions;if(s.transitions.length!==1)sfcError('blandad valåterförening vid S'+s.number);if(tr.mergePrevious!==undefined){const prev=steps.get(tr.mergePrevious);if(!prev||prev===s||prev.transitions?.length!==1||prev.transitions[0].kind!=='merge'||prev.transitions[0].target!==tr.target||successors.has(prev.number))sfcError('ogiltig länk i valåterförening vid S'+s.number);successors.set(prev.number,s.number);}}
+  const mergedSteps=new Set();
+  for(const first of merges.filter(s=>s.transitions[0].mergePrevious===undefined)){const group=[];let n=first.number;while(n!==undefined){if(mergedSteps.has(n))sfcError('cyklisk valåterförening.');mergedSteps.add(n);group.push(n);if(group.length>8)sfcError('fler än åtta grenar i valåterförening.');n=successors.get(n);}if(group.length<2)sfcError('oanknuten valåterförening vid S'+first.number);sfc.mergeGroups.push(group);}
+  if(mergedSteps.size!==merges.length)sfcError('cyklisk eller oanknuten valåterförening.');
   const models=[],instructions=[],usedZooms=new Set(),usedRegs=new Set(),usedTrans=new Set();
   for(const step of sfc.steps){
     validateDevice('S'+step.number,profile);if(step.initial&&step.number>9)sfcError('FX-initialsteg måste ligga i S0–S9.');
-    if(step.transition.target===step.number)sfcError('självhopp till samma steg stöds ännu inte.');
-    if(!steps.has(step.transition.target))sfcError('övergången pekar på ett saknat steg S'+step.transition.target);
-    const reg=regs.get(step.actionNumber),condition=trans.get(step.transition.number);
+    const outgoing=step.transitions||[step.transition];step.transitions=outgoing;
+    for(const tr of outgoing){if(tr.target===step.number)sfcError('självhopp till samma steg stöds ännu inte.');if(!steps.has(tr.target))sfcError('övergången pekar på ett saknat steg S'+tr.target);}
+    const reg=regs.get(step.actionNumber);
     if(!reg||reg.rows.length!==1||reg.rows[0].qualifier!==0)sfcError('saknad eller okänd åtgärdskvalificering vid S'+step.number);
-    const action=zooms.get(reg.rows[0].name);if(!action||!condition)sfcError('delprogram saknas vid S'+step.number);
-    if(usedRegs.has(reg.number)||usedTrans.has(condition.number)||usedZooms.has(action.name))sfcError('delade delprogram/övergångar stöds inte.');
-    usedRegs.add(reg.number);usedTrans.add(condition.number);usedZooms.add(action.name);
-    for(const [role,c]of [['action',action],['transition',condition]]){
+    const action=zooms.get(reg.rows[0].name);if(!action||outgoing.some(tr=>!trans.has(tr.number)))sfcError('delprogram saknas vid S'+step.number);
+    if(usedRegs.has(reg.number)||usedZooms.has(action.name))sfcError('delade delprogram/övergångar stöds inte.');
+    usedRegs.add(reg.number);usedZooms.add(action.name);
+    for(const [role,c,tr]of [['action',action,null],...outgoing.map(tr=>['transition',trans.get(tr.number),tr])]){
+      if(tr){if(usedTrans.has(c.number))sfcError('delade delprogram/övergångar stöds inte.');usedTrans.add(c.number);}
       if(c.instructions.some(i=>i.op==='END'))sfcError('END inuti ett SFC-delprogram.');
-      // Pulse cleanup and edge initialization inside skipped STL blocks have
-      // separate native rules; never silently reuse the ordinary ladder model.
-      if(c.instructions.some(i=>['LDP','LDF','ANDP','ANDF','ORP','ORF','PLS','PLF',...PULSE_ACTIONS].includes(i.op)))sfcError('flank-/pulsinstruktioner i SFC stöds ännu inte.');
+      // Applied P-instructions use the full STL command condition. The existing
+      // one OFF execution rearms their history without writing a destination.
+      // Edge contacts and pulse coils have separate skipped-body rules.
+      if(c.instructions.some(i=>['LDP','LDF','ANDP','ANDF','ORP','ORF','PLS','PLF'].includes(i.op)))sfcError('flankkontakter och PLS/PLF i SFC stöds ännu inte.');
       if(role==='transition'&&c.instructions.some(i=>['ANB','ORB','MPS','MRD','MPP'].includes(i.op)))sfcError('FX tillåter inte block-/stackinstruktioner i övergångsvillkor.');
-      const m=compileGXInstructions(c.instructions,labels,profile,scope,{fragment:true,condition:role==='transition',prefix:`${prefix}sfc${step.number}_${role}_`});
+      const suffix=tr&&tr!==outgoing[0]?'transition'+tr.number:role;
+      const m=compileGXInstructions(c.instructions,labels,profile,scope,{fragment:true,condition:role==='transition',prefix:`${prefix}sfc${step.number}_${suffix}_`});
       if(m.actions.some(a=>[a.target,...(a.targets||[]),...digitDevices(a.target)].some(key=>key[0]==='S')))sfcError('direkt skrivning till S-relä inuti steg stöds inte.');
-      const caption=role==='action'?'Steg S'+step.number:'Övergång TR'+step.transition.number;
-      m.region={step:step.number,role,caption};models.push(m);step[role+'Model']=m;
+      const caption=role==='action'?'Steg S'+step.number:'Övergång TR'+tr.number;
+      m.region={step:step.number,role,caption};models.push(m);if(tr)tr.model=m;if(!tr||tr===outgoing[0])step[role+'Model']=m;
       instructions.push(...c.instructions.map(i=>({...i,program:scope,region:caption})));
     }
   }
@@ -828,13 +1041,15 @@ function compileGXSFC(sfc,labels,profile,scope,{prefix=''}={}){
   for(const m of models){for(const k of ['contacts','actions','sources','devices'])merged[k].push(...m[k]);Object.assign(merged.symbols,m.symbols);Object.assign(merged.incoming,m.incoming);Object.assign(merged.gates,m.gates);for(const n of m.networks){n.page=merged.networks.length+1;merged.networks.push(n);}}
   const actualDevices=models.flatMap(m=>[...m.contacts.flatMap(c=>[c.device,...(c.operands||[])]),...m.actions.flatMap(a=>[a.target,...(a.targets||[]),a.preset,a.source,...a.sources])]).filter(Boolean).flatMap(key=>digitDevices(key).length?digitDevices(key):[key]);
   for(const kind of ['M','T','C'])if(Object.values(merged.symbols).some(s=>s.kind===kind)&&actualDevices.some(d=>d[0]===kind&&(kind!=='M'||+d.slice(1)<8000)))sfcError('automatiska labels blandas med råa '+kind+'-adresser mellan SFC-delprogram.');
-  for(const step of sfc.steps){const next=steps.get(step.transition.target),timers=new Set(step.actionModel.actions.filter(a=>a.op==='OUT'&&deviceKind(a.target,merged)==='T').map(a=>a.target));if(next.actionModel.actions.some(a=>a.op==='OUT'&&timers.has(a.target)))sfcError('samma timer används i intilliggande steg.');}
+  sfc.warnings=[];
+  for(const step of sfc.steps){const timers=new Set(step.actionModel.actions.filter(a=>a.op==='OUT'&&deviceKind(a.target,merged)==='T').map(a=>a.target));for(const tr of step.transitions)for(const a of steps.get(tr.target).actionModel.actions)if(a.op==='OUT'&&timers.has(a.target))sfc.warnings.push(`${a.target} används i intilliggande steg S${step.number} → S${tr.target}. FX-manualen förbjuder detta mönster: timern nollställs inte automatiskt vid övergång. Använd olika timers om båda ska börja från noll.`);}
+  for(const step of sfc.steps){const seen=new Map();for(const tr of step.transitions){const signature=JSON.stringify(tr.model.instructions.map(i=>[i.op,i.args]));if(seen.has(signature))sfc.warnings.push(`S${step.number}: TR${seen.get(signature)} och TR${tr.number} har identiska villkor. Vid sant villkor kan båda vägarna aktiveras. Kontrollera om en gren ska ha ett inverterat villkor.`);else seen.set(signature,tr.number);}}
   merged.devices=[...new Set([...merged.devices,...sfc.steps.map(s=>'S'+s.number)])];
   merged.notes=[`GXW-källan ${scope}.Program.pou läses direkt; SFC-steg, övergångar och ladderdelar binds med filens referenser.`,
-    'SFC-stöd: FX3S/FX3U, sekventiella steg, serieövergångar, explicita hopp/loopar och cykliska ladderblock. Förgreningar, parallella flöden och flank-/pulsinstruktioner inne i SFC-steg spärrar RUN.',
+    'SFC-stöd: FX3S/FX3U, serieövergångar, valförgreningar med egna villkor, native valåterföreningar, gemensamma mål och villkorade hopp/loopar och cykliska ladderblock. Implementerade P-varianter som INCP stöds i stegåtgärder. Samtidiga AND-förgreningar, flankkontakter och PLS/PLF inne i SFC-steg spärrar RUN.',
     'FX-initialsteget måste aktiveras av programkod. Utan startkod förblir sekvensen inaktiv; simulatorn sätter inga S-reläer manuellt eller automatiskt.',
     'Steg körs i källordning. Ett senare steg kan köras samma scan som övergången. Det föregående stegets vanliga spolar återställs nästa scan; SET behålls. Grönt visar instruktionstillfället, lampor visar slutvärdet.',
-    'SFC-diagrammet återskapas från logiska referenser; GX Works2-redigerarens exakta placering återges inte.'];
+    'SFC-diagrammet återskapas från logiska referenser; GX Works2-redigerarens exakta placering återges inte.',...sfc.warnings];
   return merged;
 }
 
@@ -1011,16 +1226,31 @@ function importGXW(bytes,profile='FX3U'){
 /* Logical SFC flow, independent of PLC execution and native editor geometry. */
 const sfcEscape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function layoutSFC(sfc){
-  const rows=sfc.steps.map((step,index)=>({step,x:112,y:48+index*148,transitionY:116+index*148}));
-  return {width:320,height:Math.max(190,rows.length*148+40),rows};
+  const byNumber=new Map(sfc.steps.map(s=>[s.number,s])),seen=new Set(),visiting=new Set(),back=new Set(),order=[],post=[];
+  const outgoing=s=>s.transitions||[s.transition];
+  const visit=s=>{if(seen.has(s.number))return;seen.add(s.number);visiting.add(s.number);order.push(s.number);outgoing(s).forEach((t,i)=>{const target=byNumber.get(t.target);if(!target)return;if(visiting.has(t.target))back.add(s.number+':'+i);else visit(target);});visiting.delete(s.number);post.push(s.number);};
+  for(const s of [...sfc.steps.filter(s=>s.initial),...sfc.steps])visit(s);
+  const levels=new Map(sfc.steps.map(s=>[s.number,0]));
+  for(const n of post.reverse()){const s=byNumber.get(n);outgoing(s).forEach((t,i)=>{if(byNumber.has(t.target)&&!back.has(n+':'+i))levels.set(t.target,Math.max(levels.get(t.target),levels.get(n)+1));});}
+  const groups=new Map();for(const n of order){const level=levels.get(n);if(!groups.has(level))groups.set(level,[]);groups.get(level).push(byNumber.get(n));}
+  const cells=s=>Math.max(1,outgoing(s).length),columns=Math.max(1,...[...groups.values()].map(g=>g.reduce((a,s)=>a+cells(s),0))),width=Math.max(320,columns*220+100),positions=new Map();
+  for(const [level,g]of groups){let x=(width-g.reduce((a,s)=>a+cells(s),0)*220)/2;for(const s of g){positions.set(s.number,{x:x+cells(s)*110,y:48+level*164});x+=cells(s)*220;}}
+  const rows=sfc.steps.map(step=>{const p=positions.get(step.number),ts=outgoing(step);return {step,...p,transitionY:p.y+78,transitions:ts.map((transition,i)=>({transition,x:p.x+(i-(ts.length-1)/2)*220,y:p.y+78,target:positions.get(transition.target),backward:back.has(step.number+':'+i)}))};});
+  return {width,height:Math.max(190,(Math.max(...levels.values())+1)*164+48),rows};
 }
 function sfcDiagram(sfc,selected){
-  const layout=layoutSFC(sfc),positions=new Map(layout.rows.map(r=>[r.step.number,r.y]));
-  let svg=`<svg viewBox="0 0 ${layout.width} ${layout.height}" role="group" aria-label="SFC-diagram. Välj steg för att visa laddervillkor och åtgärder."><defs><marker id="sfcArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="currentColor"/></marker></defs>`;
-  for(const {step,x,y,transitionY:t}of layout.rows){
-    const tr=step.transition,targetY=positions.get(tr.target),direct=targetY===y+148;
-    svg+=`<path class="sfc-edge" data-sfc-edge="${tr.number}" d="M${x} ${y+23}V${t}${direct?'V'+(targetY-23):'V'+(t+25)+'H34V'+targetY+'H'+(x-39)}" marker-end="url(#sfcArrow)"/><g class="sfc-step${selected===step.number?' selected':''}" data-sfc-step="${step.number}" role="button" tabindex="0" aria-label="Steg S${step.number}${step.initial?', initialsteg':''}"><title>Steg S${step.number}${step.initial?' · initialsteg':''}. Välj för att visa ladder.</title><rect x="${x-39}" y="${y-23}" width="78" height="46" rx="2"/>${step.initial?`<rect class="sfc-initial" x="${x-34}" y="${y-18}" width="68" height="36" rx="1"/>`:''}<text x="${x}" y="${y+5}" text-anchor="middle">S${step.number}</text><circle class="sfc-active-dot" cx="${x+29}" cy="${y-13}" r="3"/></g>`;
-    svg+=`<text class="sfc-step-state" data-sfc-state="${step.number}" x="${x+51}" y="${y+5}">Vilar</text><g class="sfc-transition" data-sfc-transition="${tr.number}" role="button" tabindex="0" data-sfc-owner="${step.number}" aria-label="Övergång TR${tr.number}, S${step.number} till S${tr.target}"><title>TR${tr.number}: S${step.number} → S${tr.target}</title><rect class="sfc-hit" x="${x-33}" y="${t-17}" width="194" height="34"/><path d="M${x-24} ${t}H${x+24}"/><text x="${x+39}" y="${t+4}">TR${tr.number}${direct?'':' → S'+tr.target}</text></g>`;
+  const layout=layoutSFC(sfc);
+  let svg=`<svg viewBox="0 0 ${layout.width} ${layout.height}" style="width:${layout.width}px;min-width:${layout.width}px;height:auto" role="group" aria-label="SFC-diagram. Välj steg för att visa laddervillkor och åtgärder."><defs><marker id="sfcArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="currentColor"/></marker></defs>`;
+  for(const {step,x,y,transitions:ts}of layout.rows){
+    const forkY=y+43;
+    if(ts.length>1)svg+=`<path class="sfc-edge" data-sfc-fork="${step.number}" d="M${x} ${y+23}V${forkY}M${ts[0].x} ${forkY}H${ts.at(-1).x}"/>`;
+    for(const [index,{transition:tr,x:tx,y:t,target,backward}]of ts.entries()){
+      const direct=target&&!backward&&target.y===y+164,top=ts.length>1?`M${tx} ${forkY}`:`M${x} ${y+23}`;
+      const returnRight=backward&&ts.length>1;
+      const tail=direct?`V${t+26}H${target.x}V${target.y-23}`:target?backward?`V${t+26}H${returnRight?layout.width-18-index*12:18+index*12}V${target.y}H${target.x+(returnRight?39:-39)}`:`V${t+26}H${18+index*12}V${target.y-43}H${target.x}V${target.y-23}`:`V${t+26}`;
+      svg+=`<path class="sfc-edge" data-sfc-edge="${tr.number}" d="${top}V${t}${tail}" marker-end="url(#sfcArrow)"/><g class="sfc-transition" data-sfc-transition="${tr.number}" role="button" tabindex="0" data-sfc-owner="${step.number}" aria-label="Övergång TR${tr.number}, S${step.number} till S${tr.target}"><title>TR${tr.number}: S${step.number} → S${tr.target}</title><rect class="sfc-hit" x="${tx-33}" y="${t-17}" width="194" height="34"/><path d="M${tx-24} ${t}H${tx+24}"/><text x="${tx+39}" y="${t+4}">TR${tr.number}${!direct||tr.kind==='jump'||ts.length>1?' → S'+tr.target:''}</text></g>`;
+    }
+    svg+=`<g class="sfc-step${selected===step.number?' selected':''}" data-sfc-step="${step.number}" role="button" tabindex="0" aria-label="Steg S${step.number}${step.initial?', initialsteg':''}"><title>Steg S${step.number}${step.initial?' · initialsteg':''}. Välj för att visa ladder.</title><rect x="${x-39}" y="${y-23}" width="78" height="46" rx="2"/>${step.initial?`<rect class="sfc-initial" x="${x-34}" y="${y-18}" width="68" height="36" rx="1"/>`:''}<text x="${x}" y="${y+5}" text-anchor="middle">S${step.number}</text><circle class="sfc-active-dot" cx="${x+29}" cy="${y-13}" r="3"/></g><text class="sfc-step-state" data-sfc-state="${step.number}" x="${x+51}" y="${y+5}">Vilar</text>`;
   }
   return svg+'</svg>';
 }
@@ -1135,7 +1365,7 @@ function programDevices(model){
       else {try{for(const key of digitDevices(arg))devices.add(key);}catch{/* Malformed groups stay in inspection. */}}
     }
   }
-  for(const a of model.actions||[])for(const key of a.targets||[])devices.add(key);
+  for(const a of model.actions||[])for(const key of a.wordTargets||a.targets||[])devices.add(key);
   for(const step of model.sfc?.steps||[])devices.add('S'+step.number);
   return [...devices].sort(compareDevices);
 }
@@ -1159,24 +1389,25 @@ const hardwareSelection={FX3S:'FX3S-30MR/ES',FX3U:'FX3U-32MR/ES'};
 function activeHardware(){return hardwareFor($('profile').value,hardwareSelection[$('profile').value]);}
 function setupHardware(){const profile=$('profile').value;$('hardwareModel').innerHTML=PLC_HARDWARE.filter(h=>h.profile===profile).map(h=>`<option value="${h.id}">${h.id} · ${h.inputCount} IN / ${h.outputCount} OUT</option>`).join('');$('hardwareModel').value=activeHardware().id;plcPictureSignature='';}
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const station=new PlantStation(),lift=station.elevator,box=station.pushbox,boxReleaseQueue=new Set();
+const station=new PlantStation(),lift=station.elevator,box=station.pushbox,sorter=station.sorter,sorterReleaseQueue=new Set(),boxReleaseQueue=new Set();
+let pausedBeforePower=false;
 let model=null,plc=null,paused=false,busy=false,epoch=0,acc=0,last=performance.now(),lastRender=0,activeTab='Ladder',logLines=[],buttonDown=new Set(),pulseQueue=new Set();
 function log(s){logLines.push(s);$('log').textContent=logLines.join('\n');}
 function message(s,kind=''){$('message').textContent=s;$('message').className='import-message '+kind;}
-function runnable(){return !!model?.executable;}
+function runnable(){return !!model?.executable&&plc?.powered!==false;}
 function showTab(name){activeTab=name;for(const k of ['Ladder','IO','Code','Import']){$('tab'+k).setAttribute('aria-selected',String(name===k));$(k==='Ladder'?'ladderView':k==='IO'?'ioView':k==='Code'?'codeView':'importView').hidden=name!==k;}render(true);}
 for(const k of ['Ladder','IO','Code','Import'])$('tab'+k).onclick=()=>showTab(k);
 function clear(invalidate=true){
-  if(invalidate)epoch++;sfcSelected=null;blockSelected=0;blockScroll.clear();plc?.stop();box.releaseMomentary();boxReleaseQueue.clear();model=null;plc=null;paused=false;acc=0;busy=false;buttonDown.clear();pulseQueue.clear();$('programFile').value='';$('empty').hidden=false;$('monitor').hidden=true;$('programBlocks').replaceChildren();$('programBlocks').hidden=true;$('blockExecution').hidden=true;$('tracePending').hidden=true;$('programBlockPanel').removeAttribute('role');$('programBlockPanel').removeAttribute('aria-labelledby');$('ladderPages').replaceChildren();$('ladderPages').onclick=null;$('ladderPages').onkeydown=null;$('timerchips').replaceChildren();$('codeRows').replaceChildren();$('globalLabelRows').replaceChildren();$('localLabelRows').replaceChildren();$('inputPins').replaceChildren();$('outputPins').replaceChildren();$('fileName').textContent='Inget program inläst';$('notes').replaceChildren();$('compatibility').hidden=true;$('outputDiagnostics').hidden=true;message('Välj en GXW-fil. PLC:n och anläggningen startar i STOP.');render(true);
+  if(invalidate)epoch++;sfcSelected=null;blockSelected=0;blockScroll.clear();plc?.stop();box.releaseMomentary();sorterReleaseQueue.clear();boxReleaseQueue.clear();model=null;plc=null;paused=false;acc=0;busy=false;buttonDown.clear();pulseQueue.clear();$('programFile').value='';$('empty').hidden=false;$('monitor').hidden=true;$('programBlocks').replaceChildren();$('programBlocks').hidden=true;$('blockExecution').hidden=true;$('tracePending').hidden=true;$('programBlockPanel').removeAttribute('role');$('programBlockPanel').removeAttribute('aria-labelledby');$('ladderPages').replaceChildren();$('ladderPages').onclick=null;$('ladderPages').onkeydown=null;$('timerchips').replaceChildren();$('codeRows').replaceChildren();$('globalLabelRows').replaceChildren();$('localLabelRows').replaceChildren();$('inputPins').replaceChildren();$('outputPins').replaceChildren();$('fileName').textContent='Inget program inläst';$('notes').replaceChildren();$('compatibility').hidden=true;$('outputDiagnostics').hidden=true;message('Välj en GXW-fil. PLC:n och anläggningen startar i STOP.');render(true);
 }
 async function loadFile(file){
-  clear();const token=epoch;busy=true;logLines=[];log('PLC-simulator 6.4.1 · generell GXW-import');$('fileName').textContent=file.name;message('Läser projekt…');render();
+  clear();const token=epoch;busy=true;logLines=[];log('PLC-simulator 7.2.2 · generell GXW-import');$('fileName').textContent=file.name;message('Läser projekt…');render();
   try{
     if(!/\.gxw$/i.test(file.name))throw Error('Välj projektfilen från GX Works2 (.gxw).');
     if(file.size>40*1024*1024)throw Error('Filen överstiger 40 MB.');
     const data=new Uint8Array(await file.arrayBuffer());if(token!==epoch)return;
     const parsed=importGXW(data,$('profile').value);if(token!==epoch)return;
-    model=parsed;plc=new PLC(model);syncPlantInputs();acc=0;
+    model=parsed;plc=new PLC(model);setupRetentionFields();syncPlantInputs();acc=0;
     log(`${model.project} · CPU ${model.cpu} · ${model.programName}`);
     log(`${model.instructions.length} instruktioner · ${model.labels.length} labels · ${model.devices.length} refererade devices.`);
     log(`PLC-körning: ${model.executable?'tillgänglig, står i STOP':'spärrad; projektet är inläst för granskning'}.`);
@@ -1194,13 +1425,21 @@ $('programFile').onchange=e=>{const file=e.target.files[0];if(file)loadFile(file
 for(const ev of ['dragover','dragenter'])$('droparea').addEventListener(ev,e=>{e.preventDefault();$('drop').classList.add('drag');});
 $('droparea').addEventListener('dragleave',()=>$('drop').classList.remove('drag'));
 $('droparea').addEventListener('drop',e=>{e.preventDefault();$('drop').classList.remove('drag');const f=e.dataTransfer.files[0];if(f)loadFile(f);});
-$('profile').onchange=()=>{setupHardware();if(plc){clear();logLines=[];log('CPU-profil ändrad. Importera projektet på nytt.');message('CPU-profil ändrad. Importera projektet på nytt.');}render(true);};
+$('profile').onchange=()=>{setupHardware();setupRetentionFields();if(plc){clear();logLines=[];log('CPU-profil ändrad. Importera projektet på nytt.');message('CPU-profil ändrad. Importera projektet på nytt.');}render(true);};
 $('clear').onclick=()=>{clear();logLines=[];log('PLC-programmet är tömt.');};
-$('reset').onclick=()=>{if(!plc)return;releaseQueuedBoxInputs();const inputs=Object.fromEntries(Object.entries(plc.bits).filter(([k])=>k[0]==='X'));plc.reset();Object.assign(plc.bits,inputs);paused=false;acc=0;syncPlantInputs();message('PLC-minnen nollställda. Anläggningens läge är kvar.');render(true);};
+$('reset').onclick=()=>{if(!plc)return;releaseQueuedBoxInputs();const inputs=plc.powered?Object.fromEntries(Object.entries(plc.bits).filter(([k])=>k[0]==='X')):{...plc.inputImage};plc.reset();sorter.outputRaw=0;sorterReleaseQueue.clear();for(const [key,value]of Object.entries(inputs))plc.input(key,value);pausedBeforePower=false;paused=false;acc=0;syncPlantInputs();message('PLC-minnen nollställda. Anläggningens läge är kvar.'+(plc.powered?'':' Strömmen är fortfarande av.'));render(true);};
+function setupRetentionFields(){const config=retentionConfig($('profile').value);for(const key of ['M','S','C','D'])$('retention'+key).value=config.variable[key].map(([lo,hi])=>lo+'-'+hi).join(', ');$('retentionResult').textContent='';}
+$('retentionForm').onsubmit=e=>{e.preventDefault();if(!plc)return;try{plc.setRetention(Object.fromEntries(['M','S','C','D'].map(k=>[k,parseRetentionRanges($('retention'+k).value,k)])));$('retentionResult').textContent='Latchområden uppdaterade för detta program.';render(true);}catch(error){$('retentionResult').textContent=error.message;}};
+$('powerFailure').onclick=()=>{
+ if(!plc||busy)return;
+ if(plc.powered){pausedBeforePower=paused;releaseQueuedBoxInputs();releaseSorterInputs();buttonDown.clear();pulseQueue.clear();plc.powerOff();sorter.outputRaw=0;paused=false;message('PLC:n är strömlös. Sparade minnesområden och den fysiska anläggningen finns kvar.');}
+ else{plc.powerOn();paused=pausedBeforePower&&plc.running;syncPlantInputs();message('Strömmen återställd. '+(plc.running?'PLC:n återgår till RUN; startkod körs i nästa scan.':'PLC:n står kvar i STOP.'));}
+ acc=0;last=performance.now();render(true);
+};
 $('run').onclick=()=>{if(!runnable()||busy)return;plc.start();paused=false;acc=0;last=performance.now();render(true);};
 $('pause').onclick=()=>{if(plc?.running){paused=!paused;if(paused)releaseQueuedBoxInputs();acc=0;render(true);}};
-$('stop').onclick=()=>{plc?.stop();releaseQueuedBoxInputs();paused=false;acc=0;render(true);};
-function oneScan(){if(!plc||!runnable())return;syncPlantInputs();try{plc.scan(SCAN_MS);station.step(plc,SCAN_MS);for(const key of pulseQueue)plc.input(key,false);pulseQueue.clear();releaseQueuedBoxInputs();}catch(e){releaseQueuedBoxInputs();paused=false;log('PLC STOPPAD: '+e.message);message('PLC-fel: '+e.message,'error');}}
+$('stop').onclick=()=>{plc?.stop();releaseQueuedBoxInputs();releaseSorterInputs();paused=false;acc=0;render(true);};
+function oneScan(){if(!plc||!runnable())return;syncPlantInputs();try{plc.scan(SCAN_MS);station.step(plc,SCAN_MS);for(const key of pulseQueue)plc.input(key,false);pulseQueue.clear();releaseQueuedBoxInputs();releaseSorterInputs();}catch(e){releaseQueuedBoxInputs();paused=false;log('PLC STOPPAD: '+e.message);message('PLC-fel: '+e.message,'error');}}
 $('step').onclick=()=>{if(!runnable()||busy)return;plc.start();paused=true;oneScan();render(true);};
 $('hold').onchange=()=>{if(station.active!=='elevator')return;for(const key of ELEVATOR_IO.buttons)plc?.input(key,false);buttonDown.clear();pulseQueue.clear();render(true);};
 function press(key){if(!plc||busy||station.active!=='elevator'||!lift.connected)return;pulseQueue.delete(key);if($('hold').checked)plc.input(key,!plc.bit(key));else{plc.input(key,true);buttonDown.add(key);}render(true);}
@@ -1212,20 +1451,22 @@ for(const k of ['0','1','2']){
   b.addEventListener('keydown',e=>{if([' ','Enter'].includes(e.key)&&!e.repeat){e.preventDefault();press(key);}});
   b.addEventListener('keyup',e=>{if([' ','Enter'].includes(e.key)){e.preventDefault();release(key);}});
 }
-window.addEventListener('blur',()=>{if(station.active==='elevator'&&!$('hold').checked&&plc)for(const k of ELEVATOR_IO.buttons){plc.input(k,false);buttonDown.delete(k);pulseQueue.delete(k);}if(!box.hold)box.releaseMomentary();boxReleaseQueue.clear();if(station.active==='pushbox')syncPlantInputs();render(true);});
+window.addEventListener('blur',()=>{if(station.active==='elevator'&&!$('hold').checked&&plc)for(const k of ELEVATOR_IO.buttons){plc.input(k,false);buttonDown.delete(k);pulseQueue.delete(k);}if(station.active==='sorter'&&!$('sorterHold').checked){for(const key of ELEVATOR_IO.buttons)plc?.input(key,false);sorterReleaseQueue.clear();}if(!box.hold)box.releaseMomentary();boxReleaseQueue.clear();if(station.active==='pushbox')syncPlantInputs();render(true);});
 $('autoSensors').onchange=()=>{if(plc)syncPlantInputs();render(true);};
 $('connected').onchange=()=>{lift.setConnected(station.active==='elevator'?plc:null,$('connected').checked);buttonDown.clear();pulseQueue.clear();if(plc)syncPlantInputs();render(true);};
 $('placement').oninput=e=>{if(plc?.running&&!paused)return;lift.position=Number(e.target.value)/1000;if(plc)syncPlantInputs();render(true);};
-function syncPlantInputs(){station.syncInputs(plc,$('autoSensors').checked);}
+function plantAutoSensors(){return $(station.active==='sorter'?'sorterAutoSensors':'autoSensors').checked;}
+function syncPlantInputs(){if(plc?.powered!==false)station.syncInputs(plc,plantAutoSensors());}
+function releaseSorterInputs(){for(const key of sorterReleaseQueue)plc?.input(key,false);sorterReleaseQueue.clear();}
 function releaseQueuedBoxInputs(){if(!boxReleaseQueue.size)return;for(const id of boxReleaseQueue)box.setPosition(id,false);boxReleaseQueue.clear();if(station.active==='pushbox')syncPlantInputs();}
 function selectPlant(name){
   if(busy||name===station.active)return;
-  buttonDown.clear();pulseQueue.clear();boxReleaseQueue.clear();station.select(name,plc,$('autoSensors').checked);render(true);
+  buttonDown.clear();pulseQueue.clear();sorterReleaseQueue.clear();boxReleaseQueue.clear();station.select(name,plc,plantAutoSensors(),$(name==='sorter'?'sorterAutoSensors':'autoSensors').checked);render(true);
 }
-for(const [id,name]of [['plantElevator','elevator'],['plantPushBox','pushbox']])$(id).onclick=()=>selectPlant(name);
+for(const [id,name]of [['plantElevator','elevator'],['plantPushBox','pushbox'],['plantSorter','sorter']])$(id).onclick=()=>selectPlant(name);
 $('simulationPanel').querySelector('[role="tablist"]').onkeydown=e=>{
   if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key)||busy)return;e.preventDefault();
-  const name=e.key==='Home'?'elevator':e.key==='End'?'pushbox':station.active==='elevator'?'pushbox':'elevator';selectPlant(name);$(name==='elevator'?'plantElevator':'plantPushBox').focus();
+  const names=['elevator','pushbox','sorter'],ids=['plantElevator','plantPushBox','plantSorter'],i=e.key==='Home'?0:e.key==='End'?2:(names.indexOf(station.active)+(e.key==='ArrowRight'?1:2))%3;selectPlant(names[i]);$(ids[i]).focus();
 };
 function pressBox(id){if(!plc||busy||station.active!=='pushbox'||!box.connected)return;boxReleaseQueue.delete(id);box.press(id);syncPlantInputs();render(true);}
 function releaseBox(id){
@@ -1243,9 +1484,42 @@ for(const c of PUSH_BOX_IO.controls){
 }
 $('boxConnected').onchange=()=>{boxReleaseQueue.clear();box.setConnected(station.active==='pushbox'?plc:null,$('boxConnected').checked);render(true);};
 $('boxHold').onchange=()=>{boxReleaseQueue.clear();box.setHold($('boxHold').checked);if(station.active==='pushbox')syncPlantInputs();render(true);};
+function sorterEdit(action){try{action();syncPlantInputs();render(true);}catch(e){message(e.message,'error');}}
+for(const [id,material]of [['sorterAddPlastic','plastic'],['sorterAddMetal','metal']])$(id).onclick=()=>sorterEdit(()=>sorter.add(material));
+$('sorterAddMixed').onclick=()=>sorterEdit(()=>{if(sorter.queue.length+(sorter.diskBall?1:0)>90)throw Error('Magasinet rymmer högst 100 kulor.');for(let i=0;i<10;i++)sorter.add(i%2?'metal':'plastic');});
+$('sorterConnected').onchange=()=>{sorterReleaseQueue.clear();sorter.setConnected(station.active==='sorter'?plc:null,$('sorterConnected').checked);syncPlantInputs();render(true);};
+$('sorterAutoSensors').onchange=()=>{syncPlantInputs();render(true);};
+$('sorterHold').onchange=()=>{for(const k of ELEVATOR_IO.buttons)if(station.active==='sorter')plc?.input(k,false);sorterReleaseQueue.clear();render(true);};
+for(let i=0;i<3;i++){
+ const button=$('sorterX'+i),key='X'+i,press=()=>{if(!plc||busy||station.active!=='sorter'||!sorter.connected)return;sorterReleaseQueue.delete(key);plc.input(key,$('sorterHold').checked?!plc.bit(key):true);render(true);},release=()=>{if($('sorterHold').checked||station.active!=='sorter')return;if(plc?.running&&!paused)sorterReleaseQueue.add(key);else plc?.input(key,false);render(true);};
+ button.onpointerdown=e=>{if(e.button!==0)return;e.preventDefault();button.setPointerCapture(e.pointerId);press();};for(const ev of ['pointerup','pointercancel','lostpointercapture'])button.addEventListener(ev,release);
+ button.onkeydown=e=>{if([' ','Enter'].includes(e.key)&&!e.repeat){e.preventDefault();press();}};button.onkeyup=e=>{if([' ','Enter'].includes(e.key)){e.preventDefault();release();}};
+}
+for(let i=0;i<2;i++)$('sorterPot'+i).oninput=e=>sorterEdit(()=>sorter.setPot(i,Number(e.target.value)));
+$('sorterPlacement').oninput=e=>{if(plc?.running&&!paused)return;sorterEdit(()=>sorter.place(Number(e.target.value)/1000));};
+$('sorterAngle').oninput=e=>{if(plc?.running&&!paused)return;sorterEdit(()=>sorter.setAngle(Number(e.target.value)));};
+$('sorterCycle').onchange=e=>{if(plc?.running&&!paused)return;sorterEdit(()=>{const value=Number(e.target.value);if(!Number.isFinite(value)||value<.5||value>10)throw Error('Varvtiden ska vara 0,5–10 sekunder.');sorter.cycleMs=value*1000;});};
+for(const id of ['sorterInputMax','sorterOutputAt10'])$(id).onchange=()=>{if(plc?.running&&!paused)return;sorterEdit(()=>sorter.calibrate(Number($('sorterInputMax').value),Number($('sorterOutputAt10').value)));};
+$('sorterEmpty').onclick=()=>{if(plc?.running&&!paused)return;sorterEdit(()=>sorter.empty());};
+function renderSorter(){
+ if(station.active!=='sorter')return;
+ $('sorterArt').innerHTML=sorterSVG(sorter,plc);const sensors=sorter.sensorInputs,active=sorter.connected,powered=plc?.powered!==false,canEdit=!plc?.running||paused;
+ const names={X3:'Våning 1',X4:'Våning 2',X5:'Våning 3',X6:'Skivkontakt',X7:'Kula',X10:'Metall'};
+ $('sorterSensors').innerHTML=Object.entries(sensors).map(([key,on])=>`<span class="${active&&powered&&on?'on':''}"><b>${key}=${powered?+!!(active&&on):'–'}</b>${names[key]}</span>`).join('');
+ $('sorterFeedStatus').textContent=`Matarläge: ${sorter.diskBall?(sorter.diskBall.material==='metal'?'metallkula':'plastkula'):'tomt'} · Magasin: ${sorter.queue.length+(sorter.diskBall?1:0)}`;
+ $('sorterSensorNote').textContent=!powered?'PLC:n är strömlös. Fysiska lägen finns kvar men inga givarsignaler läses.':!active?'Givarna är frikopplade från PLC:n.':$('sorterAutoSensors').checked?'Fysiska givare · automatiskt kopplade till PLC:n.':'Fysiska givare · PLC-ingångarna styrs manuellt i I/O-vyn.';
+ $('sorterStatus').textContent=`${sorter.atFloor?'Våning '+sorter.atFloor:'Mellan våningar'} · ${sorter.bucket.length} i korgen · ${sorter.spills.length} spill. ${sorter.lastEvent}`;
+ const warnings=[sorter.conflict?'Y3 och Y4 samtidigt: korgen står still.':'',sorter.bucket.length>1?'Flera kulor i korgen – kontrollera PLC-sekvensen.':'',sorter.meter.limited?'Analogutgången är mättad vid 0/10 V. Kontrollera programmets skalning.':'',!active?'Anläggningen är frikopplad.':''];
+ $('sorterFault').textContent=warnings.filter(Boolean).join(' ');$('sorterFault').hidden=!warnings.some(Boolean);
+ $('sorterMeter').textContent=`D8280=${powered?sorter.analogInputs.D8280:'–'} · D8281=${powered?sorter.analogInputs.D8281:'–'} · D8282=${plc?.number('D8282')||0} · ut ${sorter.meter.value.toFixed(2).replace('.',',')} V`;
+ for(let i=0;i<2;i++){$('sorterPotValue'+i).textContent=sorter.pots[i].toFixed(2).replace('.',',');if(document.activeElement!==$('sorterPot'+i))$('sorterPot'+i).value=sorter.pots[i];}
+ for(let i=0;i<3;i++){$('sorterX'+i).disabled=!plc||!plc.powered||busy||!active;$('sorterX'+i).classList.toggle('pressed',!!plc?.bit('X'+i));}
+ for(const id of ['sorterPlacement','sorterAngle','sorterCycle','sorterInputMax','sorterOutputAt10','sorterEmpty'])$(id).disabled=!canEdit||busy;
+ if(document.activeElement!==$('sorterPlacement'))$('sorterPlacement').value=Math.round(sorter.position*1000);if(document.activeElement!==$('sorterAngle'))$('sorterAngle').value=Math.floor(sorter.angle);
+}
 function renderPlantSelection(){
-  const inBox=station.active==='pushbox';$('elevatorPlant').hidden=inBox;$('pushBoxPlant').hidden=!inBox;
-  for(const [id,selected]of [['plantElevator',!inBox],['plantPushBox',inBox]]){$(id).setAttribute('aria-selected',String(selected));$(id).tabIndex=selected?0:-1;$(id).disabled=busy;}
+  const inBox=station.active==='pushbox';$('elevatorPlant').hidden=station.active!=='elevator';$('pushBoxPlant').hidden=!inBox;$('sorterPlant').hidden=station.active!=='sorter';
+  for(const [id,selected]of [['plantElevator',station.active==='elevator'],['plantPushBox',inBox],['plantSorter',station.active==='sorter']]){$(id).setAttribute('aria-selected',String(selected));$(id).tabIndex=selected?0:-1;$(id).disabled=busy;}
   for(const c of PUSH_BOX_IO.controls){const button=$('box'+c.id);button.disabled=!plc||busy||!inBox||!box.connected;button.classList.toggle('pressed',c.kind==='momentary'&&box.positions[c.id]);
     if(c.kind==='selector'||box.hold)button.setAttribute('aria-pressed',String(box.positions[c.id]));else button.removeAttribute('aria-pressed');$('boxBit'+c.id).textContent=plc?String(+plc.bit(c.input)):'–';
   }
@@ -1296,7 +1570,7 @@ function buildMonitor(){
   $('programBlocks').innerHTML=hasTabs?model.blocks.map((b,i)=>`<button type="button" id="programBlock${i}" role="tab" data-program-block="${i}" aria-controls="programBlockPanel" aria-selected="${i===blockSelected}" tabindex="${i===blockSelected?0:-1}">${esc(b.scope)}</button>`).join(''):'';
   if(hasTabs){$('programBlockPanel').setAttribute('role','tabpanel');$('programBlockPanel').setAttribute('aria-labelledby','programBlock'+blockSelected);$('blockExecution').textContent=(model.executable?'Alla programblock körs oavsett vald flik. Körordning: ':'RUN är spärrad för hela projektet. Blocknummer: ')+model.blocks.map(b=>(b.number===null?'?':b.number)+' '+b.scope).join(' → ')+'.';}
   else{$('programBlockPanel').removeAttribute('role');$('programBlockPanel').removeAttribute('aria-labelledby');}
-  $('programSummary').textContent=`${model.format} · ${model.cpu} · ${block?.scope||model.programName} · ${model.executable?sfc?sfc.steps.length+' steg · '+sfc.steps.length+' övergångar':graph.contacts.length+' kontakter · '+graph.actions.length+' instruktioner/spolar':'granskningsläge'}`;
+  $('programSummary').textContent=`${model.format} · ${model.cpu} · ${block?.scope||model.programName} · ${model.executable?sfc?sfc.steps.length+' steg · '+sfc.steps.reduce((n,s)=>n+(s.transitions||[s.transition]).length,0)+' övergångar':graph.contacts.length+' kontakter · '+graph.actions.length+' instruktioner/spolar':'granskningsläge'}`;
   $('tabLadder').textContent=model.blocks?(model.sfc?'Ladder / SFC':'Ladder'):(model.sfc?'SFC':'Ladder')+' · '+model.programName;
   $('ladderPages').onclick=null;$('ladderPages').onkeydown=null;
   if(sfc?.steps.length){buildSFCMonitor();return;}
@@ -1305,10 +1579,11 @@ function buildMonitor(){
 }
 function buildSFCMonitor(){
   const sfc=displayedSFC(),step=sfc.steps.find(s=>s.number===sfcSelected)||sfc.steps[0];sfcSelected=step.number;
-  const reg=sfc.registrations.find(r=>r.number===step.actionNumber),action=sfc.children.find(c=>c.kind==='action'&&c.name===reg?.rows[0]?.name),transition=sfc.children.find(c=>c.kind==='transition'&&c.number===step.transition.number);
+  const reg=sfc.registrations.find(r=>r.number===step.actionNumber),action=sfc.children.find(c=>c.kind==='action'&&c.name===reg?.rows[0]?.name);
   const region=(graph,child)=>graph?graph.networks.length?`<div class="ladder-sheet">${svgMonitor(graph)}</div>`:'<p class="muted">Tom stegåtgärd.</p>':sfcRegionListing(child?.instructions||[]);
-  $('ladderPages').innerHTML=`<p class="explain">SFC / Grafcet · välj ett steg eller en övergång för att följa dess ladder. Grönt visar vad som kördes i senaste scan.</p><p id="sfcStatus" class="sfc-status" aria-live="polite"></p><div id="sfcStartHelp" class="sfc-start-help" hidden><strong>Inget SFC-steg är aktivt</strong><p id="sfcStartText"></p></div><p id="sfcPhase" class="explain"></p><div class="sfc-workspace"><div class="sfc-flow">${sfcDiagram(sfc,step.number)}</div><div class="sfc-detail"><h3>Steg S${step.number}${step.initial?' · initialsteg':''}</h3><h3>Åtgärder</h3>${region(step.actionModel,action)}<h3>TR${step.transition.number} → S${step.transition.target}</h3>${region(step.transitionModel,transition)}<p class="notice">FX kräver att startsteget aktiveras av programkod. En tom initialstegsåtgärd startar inte flödet. Förgreningar, parallella flöden och vissa SFC-instruktioner stöds ännu inte.</p></div></div>`;
-  const select=e=>{const hit=e.target.closest('[data-sfc-step],[data-sfc-owner]');if(!hit)return;const attribute=hit.hasAttribute('data-sfc-step')?'data-sfc-step':'data-sfc-owner';rememberMonitorScroll();sfcSelected=Number(hit.getAttribute(attribute));buildSFCMonitor();restoreMonitorScroll();render(true);$('ladderPages').querySelector(`[${attribute}="${sfcSelected}"]`)?.focus({preventScroll:true});};
+  const outgoing=step.transitions||[step.transition],transitionDetails=outgoing.map(t=>`<section data-sfc-condition="${t.number}"><h3>TR${t.number} → S${t.target}</h3>${region(t.model||step.transitionModel,sfc.children.find(c=>c.kind==='transition'&&c.number===t.number))}</section>`).join('');
+  $('ladderPages').innerHTML=`<p class="explain">SFC / Grafcet · välj ett steg eller en övergång för att följa dess ladder. Grönt visar vad som kördes i senaste scan.</p><p id="sfcStatus" class="sfc-status" aria-live="polite"></p><div id="sfcStartHelp" class="sfc-start-help" hidden><strong>Inget SFC-steg är aktivt</strong><p id="sfcStartText"></p></div><p id="sfcPhase" class="explain"></p><div class="sfc-workspace${sfc.steps.some(s=>(s.transitions||[s.transition]).length>1)?' sfc-branched':''}"><div class="sfc-flow">${sfcDiagram(sfc,step.number)}</div><div class="sfc-detail"><h3>Steg S${step.number}${step.initial?' · initialsteg':''}</h3><h3>Åtgärder</h3>${region(step.actionModel,action)}${transitionDetails}${(sfc.warnings||[]).map(w=>`<p class="notice sfc-program-warning">${esc(w)}</p>`).join('')}<p class="notice">FX kräver att startsteget aktiveras av programkod. En tom initialstegsåtgärd startar inte flödet. Valgrenar har egna övergångsvillkor. P-instruktioner som INCP körs en gång per villkorsflank. Samtidiga AND-förgreningar och vissa SFC-instruktioner stöds ännu inte.</p></div></div>`;
+  const select=e=>{const hit=e.target.closest('[data-sfc-step],[data-sfc-owner]');if(!hit)return;const attribute=hit.hasAttribute('data-sfc-step')?'data-sfc-step':'data-sfc-owner';rememberMonitorScroll();sfcSelected=Number(hit.getAttribute(attribute));buildSFCMonitor();restoreMonitorScroll();render(true);$('ladderPages').querySelector(hit.hasAttribute('data-sfc-transition')?`[data-sfc-transition="${hit.dataset.sfcTransition}"]`:`[${attribute}="${sfcSelected}"]`)?.focus({preventScroll:true});};
   $('ladderPages').onclick=select;$('ladderPages').onkeydown=e=>{if(['Enter',' '].includes(e.key)&&e.target.matches('[data-sfc-step],[data-sfc-owner]')){e.preventDefault();select(e);}};
 }
 function renderSFC(trace){
@@ -1320,13 +1595,13 @@ function renderSFC(trace){
   $('sfcStartHelp').hidden=!!active.length||!runnable();
   const initial=sfc.steps.filter(s=>s.initial).map(s=>'S'+s.number).join(', '),help=plc.scanCount===0?`Ingen scan har körts. Välj RUN eller Ett scan för att köra programkoden som ska aktivera ${initial}.`:`PLC:n har kört ${plc.scanCount} scan. Initialsteget ${initial} måste aktiveras av din kod, exempelvis M8002 → SET ${initial} i ett ladderblock. Kontrollera startkoden och dess villkor.`;
   if($('sfcStartText').textContent!==help)$('sfcStartText').textContent=help;
-  const phases=activeSteps.map(step=>{
-    const t=step.transition,condition=trace?.sfc?.conditions.get(t.number),check=condition===false?'väntar på':condition===true?'har passerat':'nästa scan prövar';
-    const values=(step.transitionModel?.contacts||[]).slice(0,4).map(c=>{const state=trace?.contacts.get(c.id);if(c.device){const now=+plc.bit(c.device),then=state?+state.raw:now;return `${c.label} = ${then}${then!==now?' (nu '+now+')':''}`;}const now=c.operands.map(k=>(plc.number(k)<<16)>>16),then=state?.values||now;return `${c.label} (${then.join(', ')})${then.some((v,i)=>v!==now[i])?' (nu '+now.join(', ')+')':''}`;});
+  const phases=activeSteps.flatMap(step=>(step.transitions||[step.transition]).map(t=>{
+    const condition=trace?.sfc?.conditions.get(t.number),check=condition===false?'väntar på':condition===true?'har passerat':'nästa scan prövar';
+    const values=((t.model||step.transitionModel)?.contacts||[]).slice(0,4).map(c=>{const state=trace?.contacts.get(c.id);if(c.device){const now=+plc.bit(c.device),then=state?+state.raw:now;return `${c.label} = ${then}${then!==now?' (nu '+now+')':''}`;}const now=c.operands.map(k=>(plc.number(k)<<16)>>16),then=state?.values||now;return `${c.label} (${then.join(', ')})${then.some((v,i)=>v!==now[i])?' (nu '+now.join(', ')+')':''}`;});
     return `S${step.number} ${check} TR${t.number} → S${t.target}${values.length?' · '+(condition===undefined?'värden nu':'värden vid prövningen')+': '+values.join(', '):''}`;
-  });
+  }));
   const phase=!runnable()?'RUN är spärrad. Se importinformationen.':active.length?phases.join(' | '):'Sekvensen står still. Scan-räknaren visar PLC:ns cykler, inte genomförda SFC-övergångar.';
-  if($('sfcPhase').textContent!==phase)$('sfcPhase').textContent=phase;
+  const phaseText=phase+(trace?.sfc?.warnings?.length?' · '+trace.sfc.warnings.join(' '):'');if($('sfcPhase').textContent!==phaseText)$('sfcPhase').textContent=phaseText;
   for(const el of $('ladderPages').querySelectorAll('[data-sfc-step]'))el.classList.toggle('active',plc.bit('S'+el.dataset.sfcStep));
   for(const el of $('ladderPages').querySelectorAll('[data-sfc-state]')){const n=+el.dataset.sfcState,on=plc.bit('S'+n),ran=trace?.sfc?.executedSteps.includes(n);el.textContent=on?'Aktiv':ran?'Lämnad':'Vilar';}
   for(const el of $('ladderPages').querySelectorAll('[data-sfc-transition],[data-sfc-edge]'))el.classList.toggle('taken',taken.some(t=>t.number===Number(el.dataset.sfcTransition??el.dataset.sfcEdge)));
@@ -1348,11 +1623,11 @@ function buildLabels(){
 function deviceComments(key){return labelsAtDevice(model.labels,key).filter(l=>l.comment).map(l=>`${l.scope} · ${l.name}: ${l.comment}`).join('\n');}
 function aliases(key){if(!model)return '';if(key[0]==='@')return key.split(':').at(-1);return model.labels.filter(l=>l.device===key).map(l=>l.name).join(', ');}
 function devices(){return monitorDevices(model,activeHardware(),ioScope);}
-function ownedInput(key){return station.ownsInput(key,$('autoSensors').checked);}
+function ownedInput(key){return plc?.powered===false||station.ownsInput(key,plantAutoSensors());}
 function matches(key){return matchesDevice(key,model?.labels||[],$('deviceFilter').value);}
 function deviceTableRow(k){
   const kind=deviceKind(k,model||{}),name=aliases(k),physical=[...activeHardware().inputs,...activeHardware().outputs].includes(k),type=k[0]==='@'&&kind==='M'?'Lokalt BOOL-minne':kind==='X'?'Ingång':kind==='Y'?'Utgång':kind==='T'?'Timer':kind==='C'?'Räknare':kind==='D'?'16-bitars ord':'Minne';
-  return `<tr data-device="${esc(k)}"><td>${esc(k)}</td><td>${esc(name)||'–'}</td><td>${kind==='X'?`<button data-input="${esc(k)}" ${!plc||ownedInput(k)?'disabled':''} aria-label="Ändra ingång ${esc(k)}">${+!!plc?.bit(k)}</button>`:kind==='D'?`<input class="wordedit" data-word="${esc(k)}" type="number" min="-32768" max="32767" value="${plc?.number(k)||0}" ${!plc||plc.running&&!paused?'disabled':''} aria-label="Värde ${esc(k)}">`:`<span data-value="${esc(k)}">${['T','C'].includes(kind)?`${plc?.number(k)||0} · kontakt ${+!!plc?.bit(k)}`:+!!plc?.bit(k)}</span>`}</td><td>${type}${ownedInput(k)?' · anläggning':''}${/^[XY]/.test(k)&&!physical?' · utanför grundmodulen':''}</td><td class="device-comment">${model?esc(deviceComments(k)):''}</td></tr>`;
+  return `<tr data-device="${esc(k)}"><td title="${esc(specialRelayInfo(k,model?.profile)?.name||'')}">${esc(k)}</td><td>${esc(name)||'–'}</td><td>${kind==='X'?`<button data-input="${esc(k)}" ${!plc||ownedInput(k)?'disabled':''} aria-label="Ändra ingång ${esc(k)}">${+!!plc?.bit(k)}</button>`:kind==='D'?`<input class="wordedit" data-word="${esc(k)}" type="number" min="-32768" max="32767" value="${plc?.number(k)||0}" ${!plc||specialWordInfo(k,model.profile)?.writable===false||(plc.running&&!paused||!plc.powered)?'disabled':''} aria-label="Värde ${esc(k)}">`:`<span data-value="${esc(k)}">${['T','C'].includes(kind)?`${plc?.number(k)||0} · kontakt ${+!!plc?.bit(k)}`:+!!plc?.bit(k)}</span>`}</td><td>${type}${ownedInput(k)?' · anläggning':''}${/^[XY]/.test(k)&&!physical?' · utanför grundmodulen':''}</td><td class="device-comment">${model?esc(deviceComments(k)):''}</td></tr>`;
 }
 function buildDevices(){
   const h=activeHardware(),keys=devices(),physical=new Set([...h.inputs,...h.outputs]),visible=keys.filter(matches),inPicture=ioLayout==='plc';
@@ -1378,7 +1653,7 @@ function buildIOPins(visible){
 }
 function renderIOPins(){
   for(const el of $('ioPins').querySelectorAll('[data-input-indicator],[data-output]')){
-    const key=el.dataset.inputIndicator||el.dataset.output,on=!!plc?.bit(key);
+    const key=el.dataset.inputIndicator||el.dataset.output,on=!!(key[0]==='Y'?plc?.output(key):plc?.bit(key));
     el.classList.toggle('on',on);
     const text=`${key} · ${key[0]==='X'?'ingång':'utgång'}${aliases(key)?' · '+aliases(key):''} · ${on?'1 · tänd':'0 · släckt'}`;
     el.title=text;el.setAttribute('aria-label',text);
@@ -1396,8 +1671,8 @@ function buildPLCPicture(visible){
   renderPLCValues();
 }
 function renderPLCValues(){
-  for(const el of $('plcPicture').querySelectorAll('[data-plc-device]')){const key=el.dataset.plcDevice,on=!!plc?.bit(key);el.querySelector('.plc-led').classList.toggle('on',on);el.querySelector('title').textContent=`${key}${aliases(key)?' · '+aliases(key):''} · ${on?'1 · tänd':'0 · släckt'}${ownedInput(key)?station.active==='pushbox'?' · tryckknappslådan':' · automatisk hissgivare':''}`;if(el.hasAttribute('data-plc-input')){const disabled=!plc||ownedInput(key);el.setAttribute('aria-disabled',String(disabled));el.setAttribute('tabindex',disabled?'-1':'0');el.setAttribute('aria-pressed',String(on));}}
-  for(const el of $('plcPicture').querySelectorAll('[data-plc-status]'))el.classList.toggle('on',el.dataset.plcStatus==='POW'||el.dataset.plcStatus==='RUN'&&!!plc?.running);
+  for(const el of $('plcPicture').querySelectorAll('[data-plc-device]')){const key=el.dataset.plcDevice,on=!!(key[0]==='Y'?plc?.output(key):plc?.bit(key));el.querySelector('.plc-led').classList.toggle('on',on);el.querySelector('title').textContent=`${key}${aliases(key)?' · '+aliases(key):''} · ${on?'1 · tänd':'0 · släckt'}${ownedInput(key)?station.active==='pushbox'?' · tryckknappslådan':' · automatisk hissgivare':''}`;if(el.hasAttribute('data-plc-input')){const disabled=!plc||ownedInput(key);el.setAttribute('aria-disabled',String(disabled));el.setAttribute('tabindex',disabled?'-1':'0');el.setAttribute('aria-pressed',String(on));}}
+  for(const el of $('plcPicture').querySelectorAll('[data-plc-status]'))el.classList.toggle('on',el.dataset.plcStatus==='POW'&&plc?.powered!==false||el.dataset.plcStatus==='RUN'&&!!plc?.running);
 }
 function togglePictureInput(el){if(!el||el.getAttribute('aria-disabled')==='true'||!plc)return;plc.input(el.dataset.plcInput,!plc.bit(el.dataset.plcInput));render(true);}
 $('plcPicture').onclick=e=>togglePictureInput(e.target.closest('[data-plc-input]'));
@@ -1410,7 +1685,7 @@ function monitoredAction(a,trace){
   const state=trace?.actions.get(a.id),kind=deviceKind(a.target||'',model),targets=a.targets||digitDevices(a.target),numeric=['D','T','C'].includes(kind)||targets.length>0;
   const outputValues=targets.map(key=>trace?.outputBits?.[key]??plc.bit(key)),currentValues=targets.map(key=>plc.bit(key)),pack=values=>values.reduce((v,on,i)=>v+(+on)*2**i,0),signed=v=>(v<<16)>>16;
   const now=a.virtual?null:targets.length?signed(pack(currentValues)):numeric?plc.number(a.target):+plc.bit(a.target),value=targets.length?signed(pack(outputValues)):kind==='D'?(trace?.words?.[a.target]??now):now;
-  const wrote=state&&state.executed!==false&&(['OUT','PLS','PLF'].includes(a.op)||state.powered),changed=!a.virtual&&!!wrote&&(targets.length?(state.outputs||[]).some((o,i)=>o.state!==outputValues[i]):numeric?state.value!==value:state.state!==!!value);
+  const wrote=state&&state.executed!==false&&(['OUT','PLS','PLF'].includes(a.op)||state.powered),changed=!a.virtual&&!!wrote&&(targets.length?(state.outputs||[]).some((o,i)=>o.state!==outputValues[i]):a.wordTargets?(state.wordOutputs||[]).some(o=>o.value!==(trace?.words?.[o.target]??plc.number(o.target))):numeric?state.value!==value:state.state!==!!value);
   return {state,numeric,now,value,changed,targets,outputValues};
 }
 function renderOutputDiagnostics(trace){
@@ -1423,11 +1698,11 @@ function renderOutputDiagnostics(trace){
     const a=actionById.get(el.dataset.action),{state,value,now,changed,targets,outputValues}=monitoredAction(a,trace),operands=a.operandLabels||[a.label],comment=referenceComments(model.labels,operands,el.dataset.scope);
     const signal=!trace?'Ingen scan körd':!state||state.executed===false?'Ej körd i senaste scan':'Signal vid instruktionen: '+(+state.powered);
     const detail=state?.values?'\nKällvärden vid läsning: '+state.values.join(', '):'',written=state?.powered&&state.outputs?'\nSkrivning vid instruktionen: '+state.outputs.map(o=>o.target+'='+ +o.state).join(', '):'',final=targets.length?'\nSlutbitar: '+targets.map((key,i)=>key+'='+ +outputValues[i]).join(', '):'';
-    el.querySelector('title').textContent=`${a.op==='OUT'?'':a.op+' '}${operands.join(' ')}${a.virtual?'':' · '+a.target}${comment?'\n'+comment:''}\n${signal}${detail}${written}${final}${a.virtual?'':'\nSlutvärde: '+value}${changed?' · ändras av en senare instruktion':''}${value!==now?'\nVärde nu: '+now:''}`;
+    el.querySelector('title').textContent=`${a.op==='OUT'?'':a.op+' '}${operands.join(' ')}${a.virtual?'':' · '+a.target}${comment?'\n'+comment:''}\n${signal}${detail}${written}${final}${state?.wordOutputs?'\nOrd vid instruktionen: '+state.wordOutputs.map(o=>o.target+'='+o.value).join(', '):''}${a.virtual?'':'\nSlutvärde: '+value}${changed?' · ändras av en senare instruktion':''}${value!==now?'\nVärde nu: '+now:''}`;
   }
   for(const el of $('ladderPages').querySelectorAll('[data-coil-final]')){
     const a=actionById.get(el.dataset.coilFinal),{numeric,value,now,changed,targets,outputValues}=monitoredAction(a,trace);
-    el.textContent=a.targets?targets.map((key,i)=>key+'='+ +outputValues[i]).join(' · '):`${a.target[0]==='@'?deviceKind(a.target,model)==='T'?'Timer':deviceKind(a.target,model)==='C'?'Räknare':'Minne':a.target} · ${numeric?'värde':'slut'} ${value}`;
+    el.textContent=a.wordTargets?a.wordTargets.map(key=>key+'='+ (trace?.words?.[key]??plc.number(key))).join(' · '):a.targets?targets.map((key,i)=>key+'='+ +outputValues[i]).join(' · '):`${a.target[0]==='@'?deviceKind(a.target,model)==='T'?'Timer':deviceKind(a.target,model)==='C'?'Räknare':'Minne':a.target} · ${numeric?'värde':'slut'} ${value}`;
     const suffix=[changed?'ändras senare':'',value!==now?'nu '+now:''].filter(Boolean).join(' · ');
     if(suffix){const note=document.createElementNS('http://www.w3.org/2000/svg','tspan');note.setAttribute('x',el.getAttribute('x'));note.setAttribute('dy','14');note.textContent=' · '+suffix;el.append(note);}
     el.classList.toggle('final-on',!!value);el.classList.toggle('overwritten',changed);
@@ -1445,22 +1720,26 @@ function renderContactTrace(trace){
   }
 }
 function render(force=false){
-  renderPlantSelection();
-  const running=!!plc?.running,canRun=runnable();let st=busy?'● LÄSER PROGRAM':!model?'● INGET PROGRAM':!canRun?'◉ GRANSKNING':running?(paused?'Ⅱ PAUS / RUN':'● RUN'):'■ STOP';
-  $('status').textContent=st;$('status').className='badge'+(running?(paused?' pause':' run'):'');
+  $('specialRelayList').textContent=supportedSpecialRelays(model?.profile||$('profile').value).map(x=>`${x.key} · ${x.name} (${x.writable?'läs/skriv':'läs'})`).join('\n');
+
+  renderPlantSelection();renderSorter();
+  const powered=plc?.powered!==false,running=!!plc?.running,canRun=runnable();let st=busy?'● LÄSER PROGRAM':!model?'● INGET PROGRAM':!powered?'⏻ STRÖMLÖS':!canRun?'◉ GRANSKNING':running?(paused?'Ⅱ PAUS / RUN':'● RUN'):'■ STOP';
+  $('powerFailure').disabled=!plc||busy;$('powerFailure').textContent=powered?'Strömbortfall':'Återställ ström';$('powerFailure').setAttribute('aria-pressed',String(!powered));$('powerState').textContent=powered?'':'Strömmen är av · inga PLC-scan eller motorutgångar.';
+  const config=plc?.retention||retentionConfig($('profile').value);$('retentionSummary').textContent=config.profile+' · sparar '+['M','S','T','C','D'].map(k=>formatRetentionRanges(k,config.ranges[k])).join(' · ');$('retentionForm').hidden=config.profile!=='FX3U';for(const key of ['M','S','C','D'])$('retention'+key).disabled=!plc||running||!powered;$('applyRetention').disabled=!plc||running||!powered;
+  $('status').textContent=st;$('status').className='badge'+(!powered?' power-off':running?(paused?' pause':' run'):'');
   $('run').disabled=!canRun||busy||(running&&!paused);$('pause').disabled=!running;$('pause').textContent=paused?'▶ Fortsätt':'Ⅱ Paus';$('stop').disabled=!running;$('step').disabled=!canRun||busy||(running&&!paused);$('reset').disabled=!model||busy;$('placement').disabled=running&&!paused;$('profile').disabled=busy;$('hardwareModel').disabled=busy;
-  for(const k of ['0','1','2']){$('x'+k).disabled=!model||busy||station.active!=='elevator'||!lift.connected;$('x'+k).classList.toggle('pressed',!!plc?.bit('X'+k));}
+  for(const k of ['0','1','2']){$('x'+k).disabled=!model||plc?.powered===false||busy||station.active!=='elevator'||!lift.connected;$('x'+k).classList.toggle('pressed',!!plc?.bit('X'+k));}
   $('scan').textContent=`Scan ${plc?.scanCount||0} · ${((plc?.time||0)/1000).toFixed(3)} s`;
-  const pos=lift.position,up=station.active==='elevator'&&lift.connected&&running&&plc.bit(ELEVATOR_IO.up),down=station.active==='elevator'&&lift.connected&&running&&plc.bit(ELEVATOR_IO.down);
+  const pos=lift.position,up=station.active==='elevator'&&lift.connected&&running&&plc.output(ELEVATOR_IO.up),down=station.active==='elevator'&&lift.connected&&running&&plc.output(ELEVATOR_IO.down);
   $('position').textContent=lift.atFloor?'Våning '+lift.atFloor:'Mellan våningar';$('percent').textContent=(pos+1).toFixed(2)+' vån';
   const travel=$('shaft').clientHeight-88;$('car').style.bottom=(18+travel*pos/lift.maxPosition)+'px';
-  for(let i=0;i<3;i++){const base=18+travel*i/2;$('floor'+(i+1)).style.bottom=base+'px';$('floorLabel'+(i+1)).style.bottom=(base+8)+'px';$('sensor'+(i+1)).style.bottom=(base+6)+'px';$('sensor'+(i+1)).classList.toggle('on',!!plc?.bit('X'+(i+3)));const lit=station.active==='elevator'&&lift.connected&&!!plc?.bit('Y'+i),lamp=$('lamp'+(i+1));lamp.classList.toggle('on',lit);lamp.setAttribute('aria-label',`Lampa våning ${i+1}: ${lit?'tänd':'släckt'}. Y${i} slutvärde ${+!!plc?.bit('Y'+i)}${lift.connected?'':'. Anläggningen är frikopplad'}.`);lamp.title=lamp.getAttribute('aria-label');}
+  for(let i=0;i<3;i++){const base=18+travel*i/2;$('floor'+(i+1)).style.bottom=base+'px';$('floorLabel'+(i+1)).style.bottom=(base+8)+'px';$('sensor'+(i+1)).style.bottom=(base+6)+'px';$('sensor'+(i+1)).classList.toggle('on',!!plc?.bit('X'+(i+3)));const lit=station.active==='elevator'&&lift.connected&&!!plc?.output('Y'+i),lamp=$('lamp'+(i+1));lamp.classList.toggle('on',lit);lamp.setAttribute('aria-label',`Lampa våning ${i+1}: ${lit?'tänd':'släckt'}. Y${i} slutvärde ${+!!plc?.bit('Y'+i)}${lift.connected?'':'. Anläggningen är frikopplad'}.`);lamp.title=lamp.getAttribute('aria-label');}
   $('direction').textContent=up&&down?'!':up?'↑':down?'↓':'■';$('motor').textContent=!lift.connected?'Frikopplad':up&&down?'Konflikt':up?'Upp':down?'Ner':'Stopp';
   $('fault').hidden=!(up&&down);$('fault').textContent='Y3 och Y4 är aktiva samtidigt. Mekaniken står still; PLC-bitarna visar kommandot.';
   if(document.activeElement!==$('placement'))$('placement').value=Math.round(pos*1000);
   renderIOPins();
   if(model){
-    const trace=plc.trace;$('traceSummary').textContent=trace?`Scan ${trace.scan}${trace.first?' · startpuls M8002':''} · ${paused?'fryst':'senaste scan'}`:canRun?'Ingen scan körd':'RUN spärrad';
+    const trace=plc.trace;$('traceSummary').textContent=trace?`Scan ${trace.scan}${trace.first?' · startpuls M8002':''} · ${paused?'fryst':'senaste scan'}`:!powered?'PLC:n är strömlös':canRun?'Ingen scan körd':'RUN spärrad';
     const pending=paused?changesSinceScan(trace,k=>plc.bit(k),k=>plc.number(k)):[];
     $('tracePending').hidden=!pending.length;
     $('tracePending').textContent=pending.length?`${pending.slice(0,8).join(', ')}${pending.length>8?' …':''} har ändrats efter visad scan. Grönt är fryst från scan ${trace.scan}. Välj Ett scan eller Fortsätt för att läsa de nya värdena.`:'';
@@ -1479,9 +1758,9 @@ function render(force=false){
     if(activeTab==='IO')for(const el of $('deviceRows').querySelectorAll('[data-word]'))if(document.activeElement!==el)el.value=plc.number(el.dataset.word);
   }else if(activeTab==='IO')buildDevices();
 }
-function frame(now){let dt=Math.max(0,now-last);last=now;if(plc?.running&&!paused&&!busy){acc+=Math.min(dt,250)*Number($('speed').value);let count=0;while(acc>=SCAN_MS&&count++<300){oneScan();acc-=SCAN_MS;if(!plc?.running)break;}}if(now-lastRender>=90){render();lastRender=now;}requestAnimationFrame(frame);}
-window.GXSimulator=window.Kulhissen={loadFile,snapshot:()=>({loaded:!!model,executable:!!model?.executable,issues:model?.issues||[],program:model?.programName,running:!!plc?.running,paused,scan:plc?.scanCount||0,blocks:model?.blocks?.map(b=>({number:b.number,scope:b.scope,kind:b.kind}))||[],selectedBlock:displayedBlock()?.scope||null,executedBlocks:plc?.trace?.blocks||[],sfc:model?.sfc?{activeSteps:model.sfc.steps.filter(s=>plc.bit('S'+s.number)).map(s=>s.number),executedSteps:plc.trace?.sfc?.executedSteps||[],transitions:plc.trace?.sfc?.transitions||[]}:null,time:plc?.time||0,position:lift.position,connected:station.current.connected,elevatorConnected:lift.connected,plant:station.active,box:{connected:box.connected,hold:box.hold,positions:{...box.positions},inputs:box.inputValues,lamps:box.lampValues(plc,station.active==='pushbox')},ioScope,ioLayout,hardware:activeHardware().id,bits:plc?{...plc.bits}:{},words:plc?{...plc.words}:{},timers:plc?JSON.parse(JSON.stringify(plc.timers)):{},counters:plc?JSON.parse(JSON.stringify(plc.counters)):{},actions:model?.actions.map(a=>({step:a.step,op:a.op,target:a.target,preset:a.preset}))||[]}),advance:ms=>{if(!plc||!paused||!runnable())throw Error('Pausa ett körbart program först.');if(!Number.isInteger(ms)||ms<0||ms>120000||ms%SCAN_MS)throw Error('Välj en multipel av 5 ms, högst 120000 ms.');for(let t=0;t<ms;t+=SCAN_MS)oneScan();render(true);}};
-setupHardware();render(true);requestAnimationFrame(frame);
+function frame(now){let dt=Math.max(0,now-last);last=now;if(plc?.running&&!paused&&!busy){acc+=Math.min(dt,250)*Number($('speed').value);let count=0;while(acc>=SCAN_MS&&count++<300){oneScan();acc-=SCAN_MS;if(!plc?.running)break;}}else if(plc&&!paused&&!busy&&station.active==='sorter')sorter.step(plc,Math.min(dt,250)*Number($('speed').value));if(now-lastRender>=90){render();lastRender=now;}requestAnimationFrame(frame);}
+window.GXSimulator=window.Kulhissen={loadFile,snapshot:()=>({loaded:!!model,powered:plc?.powered!==false,retention:plc?.retention||null,executable:!!model?.executable,issues:model?.issues||[],program:model?.programName,running:!!plc?.running,paused,scan:plc?.scanCount||0,blocks:model?.blocks?.map(b=>({number:b.number,scope:b.scope,kind:b.kind}))||[],selectedBlock:displayedBlock()?.scope||null,executedBlocks:plc?.trace?.blocks||[],sfc:model?.sfc?{activeSteps:model.sfc.steps.filter(s=>plc.bit('S'+s.number)).map(s=>s.number),executedSteps:plc.trace?.sfc?.executedSteps||[],transitions:plc.trace?.sfc?.transitions||[]}:null,time:plc?.time||0,position:lift.position,connected:station.current.connected,elevatorConnected:lift.connected,plant:station.active,sorter:sorter.snapshot(),box:{connected:box.connected,hold:box.hold,positions:{...box.positions},inputs:box.inputValues,lamps:box.lampValues(plc,station.active==='pushbox')},ioScope,ioLayout,hardware:activeHardware().id,bits:plc?{...plc.bits}:{},words:plc?{...plc.words}:{},timers:plc?JSON.parse(JSON.stringify(plc.timers)):{},counters:plc?JSON.parse(JSON.stringify(plc.counters)):{},actions:model?.actions.map(a=>({step:a.step,op:a.op,target:a.target,preset:a.preset}))||[]}),advance:ms=>{if(!plc||!paused||!runnable())throw Error('Pausa ett körbart program först.');if(!Number.isInteger(ms)||ms<0||ms>120000||ms%SCAN_MS)throw Error('Välj en multipel av 5 ms, högst 120000 ms.');for(let t=0;t<ms;t+=SCAN_MS)oneScan();render(true);}};
+setupHardware();setupRetentionFields();render(true);requestAnimationFrame(frame);
 
 </script>
 <script>
@@ -1496,7 +1775,7 @@ setupHardware();render(true);requestAnimationFrame(frame);
     status.dataset.state=failed?'unavailable':waiting?'update':ready?(navigator.onLine?'ready':'offline'):'preparing';
     status.textContent=failed?'Offlinekopian kunde inte sparas. Sidan fungerar medan den är öppen.':
       waiting?(running?'Ny version finns. Stoppa PLC:n när du vill uppdatera.':'Ny version finns. Efter uppdatering väljer du din GXW-fil igen.'):
-      ready?(navigator.onLine?'Offlinekopia klar · 6.4.1':'Offline · sparad version 6.4.1'):'Förbereder offlinekopia…';
+      ready?(navigator.onLine?'Offlinekopia klar · 7.2.2':'Offline · sparad version 7.2.2'):'Förbereder offlinekopia…';
   }
   if(!navigator.serviceWorker||!window.isSecureContext){failed=true;render();return;}
   navigator.serviceWorker.addEventListener('controllerchange',()=>{if(updating)location.reload();});
