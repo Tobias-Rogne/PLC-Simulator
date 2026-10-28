@@ -20,7 +20,9 @@ En webbaserad simulator för att utforska PLC-program skapade i Mitsubishi GX Wo
 
 **Tryckknappslåda** – testa logik med tryckknappar, en väljare och indikatorlampor.
 
-Samma PLC-program och övervakning används i båda miljöerna. Anläggningen reagerar på sina kopplade in- och utgångar. Övriga adresser kan fortfarande användas och övervakas i PLC:n.
+**Kulsortering** – mata plast- och metallkulor, följ givare, skivmatare och hisskorg samt prova analoga vred och instrument med justerbar kalibrering.
+
+Samma PLC-program och övervakning används i alla miljöerna. Anläggningen reagerar på sina kopplade in- och utgångar. Övriga adresser kan fortfarande användas och övervakas i PLC:n.
 
 ## Kom igång
 
@@ -43,7 +45,7 @@ När en ny appversion finns visas ett meddelande i simulatorn. Stoppa PLC:n med 
 
 Simulatorn utvecklas för lärande och experiment med PLC-logik. Stöd finns för en delmängd av GX Works2-projekt och FX-instruktioner.
 
-SFC-stödet omfattar en sekventiell FX-sekvens med serieövergångar och hopp/loopar, tillsammans med cykliska ladderblock som kan aktivera startsteget via programkod. Blocken körs i blocknummerordning och visas live. Saknas startkod förblir sekvensen inaktiv. Förgreningar, parallella flöden, flera SFC-sekvenser och andra blockstyrattribut är ännu inte implementerade.
+SFC-stödet omfattar en FX-sekvens med serieövergångar, alternativa valgrenar, native valåterföreningar och villkorade hopp/loopar, tillsammans med cykliska ladderblock som kan aktivera startsteget via programkod. Blocken körs i blocknummerordning och visas live. Saknas startkod förblir sekvensen inaktiv. Samtidiga AND-förgreningar, flera SFC-sekvenser och andra blockstyrattribut är ännu inte implementerade.
 
 Om ett projekt går att läsa men innehåller kod som inte kan simuleras visas orsaken och **RUN** spärras för hela programmet. Instruktioner som saknar körstöd hoppas inte över.
 
@@ -52,3 +54,7 @@ Laddervyn återger programmets logiska förbindelser; placeringen kan skilja sig
 ## Licens
 
 Simulatorns egen kod är licensierad under MIT. Tredjepartslicenser och attribution finns i [LICENSES.txt](LICENSES.txt).
+
+Simulatorn har även ett strömbortfallstest med CPU-standardens minnesbackup och manuellt inställbara variabla latchområden för FX3U. GXW:s särskilda latch-/filregisterparametrar importeras inte automatiskt. Första scan efter återkomst kör programmets startkod igen.
+
+SFC-steg stöder även implementerade tillämpade P-instruktioner, exempelvis INCP, MOVP och ALTP. De gör operationen en gång per villkorsflank. Flankkontakter och PLS/PLF inne i SFC är fortsatt avgränsade bort.
