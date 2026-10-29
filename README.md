@@ -72,3 +72,5 @@ Du kan också använda båda potentiometerreglagen direkt under den förstorade 
 SFC-valförgreningar kan ha flera villkorade hopp till andra steg. Varje gren följer sitt eget villkor och visas i diagrammet. Kvarvarande SFC-begränsningar framgår vid import.
 
 ROL/ROLP stöds för 16-bitars rotation i D-register och fulla giltiga K4-grupper. Carryflaggan M8022 kan följas i I/O och vid instruktionen.
+
+Kompakta native-former av LDP/ORP för lokala BOOL-labels läses med samma flankbeteende. Sammansatta SFC-källvillkor med ANB/ORB kan simuleras som rena logiska uttryck. Appen visar då en särskild FX-kompatibilitetsvarning: direkt STL-övergångskod har begränsningar enligt FX-manualen och kan behöva mellanminnen inför körning på fysisk PLC.
