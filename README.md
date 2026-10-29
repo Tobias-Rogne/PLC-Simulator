@@ -2,7 +2,7 @@
 
 En webbaserad simulator för att utforska PLC-program skapade i Mitsubishi GX Works2. Ladda in ett GXW-projekt, följ ladderlogiken live och testa hur programmet styr en virtuell anläggning.
 
-**[Öppna simulatorn](https://tobias-rogne.github.io/PLC-Simulator/)**
+**[Öppna simulatorn](https://tobias-rogne.github.io/PLC-Simulator/start.html)**
 
 ## Vad kan du göra?
 
@@ -26,7 +26,7 @@ Samma PLC-program och övervakning används i alla miljöerna. Anläggningen rea
 
 ## Kom igång
 
-1. [Öppna simulatorn](https://tobias-rogne.github.io/PLC-Simulator/) i webbläsaren.
+1. [Öppna simulatorn](https://tobias-rogne.github.io/PLC-Simulator/start.html) i webbläsaren.
 2. Välj CPU-profil som passar ditt projekt och ladda in din `.gxw`-fil.
 3. Läs importinformationen och välj den simuleringsmiljö du vill använda.
 4. Starta med **RUN** och följ programmet i **Ladder/SFC** eller **I/O & minnen**. Använd **Paus** och **Ett scan** för att undersöka körningen steg för steg.
@@ -58,3 +58,15 @@ Simulatorns egen kod är licensierad under MIT. Tredjepartslicenser och attribut
 Simulatorn har även ett strömbortfallstest med CPU-standardens minnesbackup och manuellt inställbara variabla latchområden för FX3U. GXW:s särskilda latch-/filregisterparametrar importeras inte automatiskt. Första scan efter återkomst kör programmets startkod igen.
 
 SFC-steg stöder även implementerade tillämpade P-instruktioner, exempelvis INCP, MOVP och ALTP. De gör operationen en gång per villkorsflank. Flankkontakter och PLS/PLF inne i SFC är fortsatt avgränsade bort.
+
+ZRST/ZRSTP kan nollställa sammanhängande fysiska Y/M/S/T/C/D-områden. Inklusive timers/räknares värden och räkneflanker; automatallokerade lokala områden och direkt S-skrivning inne i SFC-steg ingår inte.
+
+Kulsorterarens yttersta våningsgivare stoppar inte korgen mekaniskt. Motorn kan köra förbi våningarna och givarna blir då OFF; överkörning markeras även utanför bildskalan. PLC-programmet styr stoppet.
+
+Skollabbets vred är steglösa 0–10 med separata uppmätta råvärdeskurvor. Punkt 6 är uppskattad mellan 5 och 7. Mätaren drivs fortsatt enbart av PLC-programmets D8282. Den tidigare linjära kalibreringen finns som ett uttryckligt avancerat alternativ.
+
+Instrumentet har tydlig 0–10-skala och kan förstoras med klick, Enter eller mellanslag. Förstoringen uppdateras under RUN. Reglagen finns direkt under våningsknapparna.
+
+Du kan också använda båda potentiometerreglagen direkt under den förstorade mätaren. Värdena synkroniseras med huvudvyn och kan justeras under RUN.
+
+SFC-valförgreningar kan ha flera villkorade hopp till andra steg. Varje gren följer sitt eget villkor och visas i diagrammet. Kvarvarande SFC-begränsningar framgår vid import.
