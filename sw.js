@@ -1,7 +1,7 @@
 /* Versioned application assets only; no PLC programs, uploads or state. */
 const BASE=new URL(self.registration.scope);
 const PREFIX='plc-simulator:'+BASE.pathname+':';
-const CACHE=PREFIX+'7.2.11-7fede06a374c2365acaf';
+const CACHE=PREFIX+'7.2.12-aab13b8596368a0e568b';
 const ASSETS=['index.html','manifest.webmanifest','icon.svg'].map(path=>new URL(path,BASE).href);
 const NAVIGATIONS=[BASE.pathname,...['index.html','start.html'].map(path=>new URL(path,BASE).pathname)];
 self.addEventListener('install',event=>{
