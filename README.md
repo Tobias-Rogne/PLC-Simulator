@@ -70,3 +70,5 @@ Instrumentet har tydlig 0–10-skala och kan förstoras med klick, Enter eller m
 Du kan också använda båda potentiometerreglagen direkt under den förstorade mätaren. Värdena synkroniseras med huvudvyn och kan justeras under RUN.
 
 SFC-valförgreningar kan ha flera villkorade hopp till andra steg. Varje gren följer sitt eget villkor och visas i diagrammet. Kvarvarande SFC-begränsningar framgår vid import.
+
+ROL/ROLP stöds för 16-bitars rotation i D-register och fulla giltiga K4-grupper. Carryflaggan M8022 kan följas i I/O och vid instruktionen.
